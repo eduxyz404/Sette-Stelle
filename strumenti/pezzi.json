@@ -699,7 +699,7 @@
    "photo": true,
    "fabric": "Velluto di cotone blu notte, tunica di cotone color crema",
    "colorName": "Blu notte e crema",
-   "trimName": "albero e stelle ricamati d'oro, cintura di lana bruna con fibbia d'oro a stella",
+   "trimName": "albero e stelle ricamati d'oro, cintura con fibbia d'oro a stella",
    "garment": "cloak",
    "color": "#1d2a5c",
    "trim": "#e4c47c",
@@ -719,10 +719,6 @@
     [
      1,
      "Oro"
-    ],
-    [
-     1,
-     "Lana"
     ]
    ]
   },
