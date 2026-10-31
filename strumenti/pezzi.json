@@ -1325,23 +1325,54 @@
    ]
   },
   {
-   "code": "A11",
+   "code": "A37",
    "cat": "lui/Accessori",
-   "name": "Lanya",
-   "gloss": "filo",
-   "fabric": "Seta intrecciata",
-   "colorName": "Blu profondo",
-   "trimName": "fibbia a stella e borchie d'argento",
+   "name": "Menelya",
+   "gloss": "celeste",
+   "photo": true,
+   "fabric": "Cotone blu notte lavorato",
+   "colorName": "Blu notte e oro",
+   "trimName": "intrecci ricamati d'oro, fibbia d'oro rotonda con stelle",
    "garment": "belt",
-   "color": "#25366b",
-   "trim": "#dfe6f4",
-   "price": 300,
-   "desc": "Cintura sottile con borchie d'argento, da portare su giacche e completi.",
+   "color": "#1d2340",
+   "trim": "#e4c47c",
+   "price": 650,
+   "desc": "Fascia alta blu notte, ricamata d'oro a intrecci, chiusa da una fibbia rotonda con tre stelle.",
    "cls": "Tessuti · Fascia",
    "recipe": [
     [
      1,
-     "Seta"
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A38",
+   "cat": "lui/Accessori",
+   "name": "Nútë",
+   "gloss": "nodo",
+   "photo": true,
+   "fabric": "Cotone nero lavorato",
+   "colorName": "Nero",
+   "trimName": "fibbia, passante e puntali d'argento",
+   "garment": "belt",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 450,
+   "desc": "Fascia alta nera, annodata in vita, con fibbia d'argento e i lembi bordati d'argento.",
+   "cls": "Tessuti · Fascia",
+   "recipe": [
+    [
+     1,
+     "Cotone"
     ],
     [
      1,
@@ -1354,23 +1385,24 @@
    ]
   },
   {
-   "code": "A12",
+   "code": "A39",
    "cat": "lui/Accessori",
-   "name": "Ondo",
-   "gloss": "pietra",
-   "fabric": "Lana intrecciata",
-   "colorName": "Bruno di quercia",
-   "trimName": "fibbia e borchie d'oro",
+   "name": "Lanya",
+   "gloss": "filo",
+   "photo": true,
+   "fabric": "Cotone nero intrecciato",
+   "colorName": "Nero",
+   "trimName": "fibbia, passante e puntale d'argento con stella",
    "garment": "belt",
-   "color": "#5a3a24",
-   "trim": "#e4c47c",
+   "color": "#141214",
+   "trim": "#dfe6f4",
    "price": 400,
-   "desc": "Cintura larga e robusta di lana intrecciata, compagna di ogni viaggio.",
+   "desc": "Cintura di cotone intrecciato nero, con fibbia d'argento incisa e un puntale con la stella.",
    "cls": "Tessuti · Fascia",
    "recipe": [
     [
      1,
-     "Lana"
+     "Cotone"
     ],
     [
      1,
@@ -1378,7 +1410,37 @@
     ],
     [
      1,
-     "Oro"
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A40",
+   "cat": "lui/Accessori",
+   "name": "Lassë",
+   "gloss": "foglia",
+   "photo": true,
+   "fabric": "Cotone nero intrecciato",
+   "colorName": "Nero",
+   "trimName": "fibbia d'argento a foglia con stella, passante inciso",
+   "garment": "belt",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 400,
+   "desc": "Cintura sottile di cotone intrecciato nero, con fibbia d'argento a forma di foglia e una stella incisa.",
+   "cls": "Tessuti · Fascia",
+   "recipe": [
+    [
+     1,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
     ]
    ]
   }
@@ -1572,7 +1634,7 @@
    "name": "Accessori",
    "slug": "lui-accessori",
    "desc": "cinture intrecciate",
-   "show": "Lanya",
+   "show": "Menelya",
    "crop": [
     2.4,
     "73%",
