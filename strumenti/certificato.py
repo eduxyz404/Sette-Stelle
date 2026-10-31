@@ -173,6 +173,9 @@ dl div{{display:grid;grid-template-columns:86px 1fr;gap:10px}}
 dt{{font-family:"Cinzel",Georgia,serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:5px}}
 dd{{margin:0;font-size:1.08rem}}
 .desc{{margin:12px 0 0;font-style:italic;color:#c4cbe0}}
+.excl{{margin:8px 0 0;font-style:italic;color:var(--gold-b)}}
+.niche.photo{{border-radius:999px 999px 8px 8px / 170px 170px 8px 8px}}
+.niche.photo img{{aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;border-radius:999px 999px 4px 4px / 160px 160px 4px 4px}}
 
 /* Ricetta e firma */
 .foot{{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:24px clamp(22px,5vw,52px) clamp(28px,4vw,40px);
@@ -232,8 +235,8 @@ dd{{margin:0;font-size:1.08rem}}
   {gift}
 
   <section class="body">
-    <figure class="niche">
-      <img src="../img/{e(pezzo['code'])}.png" alt="{e(pezzo['name'])}, {e(info['name'].lower())} {e(per)}">
+    <figure class="niche{' photo' if pezzo.get('photo') else ''}">
+      <img src="../img/{e(pezzo['code'])}.{'jpg' if pezzo.get('photo') else 'png'}" alt="{e(pezzo['name'])}, {e(info['name'].lower())} {e(per)}">
       <figcaption>Cod. {e(pezzo['code'])}</figcaption>
     </figure>
     <div>
@@ -249,6 +252,7 @@ dd{{margin:0;font-size:1.08rem}}
         <span class="cat">{e(info['name'])} {e(per)}</span>
         <dl>{righe}</dl>
         <p class="desc">{e(pezzo['desc'])}</p>
+        {f'<p class="excl">{e(pezzo["excl"])}</p>' if pezzo.get('excl') else ''}
       </div>
     </div>
   </section>

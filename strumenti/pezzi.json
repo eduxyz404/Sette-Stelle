@@ -541,6 +541,41 @@
    ]
   },
   {
+   "code": "A13",
+   "cat": "lei/Vesti",
+   "name": "Tindómë",
+   "gloss": "crepuscolo stellato",
+   "photo": true,
+   "fabric": "Seta color avorio, sopravveste in velluto di seta blu notte",
+   "colorName": "Avorio e blu notte",
+   "trimName": "rami e stelle ricamati d'oro, cintura dorata con cristallo",
+   "garment": "dress",
+   "color": "#e9dcc4",
+   "trim": "#e4c47c",
+   "price": 3400,
+   "desc": "Veste da cerimonia con strascico: l'avorio del giorno e il blu della notte, uniti da rami d'oro.",
+   "excl": "Diadema, orecchini e collana non inclusi",
+   "cls": "Tessuti · Abito, taglia media, con sopravveste e strascico",
+   "recipe": [
+    [
+     4,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "A05",
    "cat": "lei/Accessori",
    "name": "Lindë",
@@ -653,6 +688,41 @@
     [
      2,
      "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A14",
+   "cat": "lui/Vesti",
+   "name": "Ornë",
+   "gloss": "albero",
+   "photo": true,
+   "fabric": "Velluto di seta blu notte, tunica di seta color crema",
+   "colorName": "Blu notte e crema",
+   "trimName": "albero e stelle ricamati d'oro, cintura di lana bruna con fibbia d'oro a stella",
+   "garment": "cloak",
+   "color": "#1d2a5c",
+   "trim": "#e4c47c",
+   "price": 2900,
+   "desc": "Lunga veste da cerimonia: sulla schiena un albero d'oro sale fino alle spalle, tra le stelle.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito, taglia media, con tunica e veste lunga",
+   "recipe": [
+    [
+     4,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Lana"
     ]
    ]
   },
@@ -911,7 +981,7 @@
    "name": "Vesti",
    "slug": "lei-vesti",
    "desc": "abiti lunghi per le sale e le feste",
-   "show": "Elerrína",
+   "show": "Tindómë",
    "crop": [
     2,
     "15%",
@@ -942,6 +1012,19 @@
     2.2,
     "50%",
     "82%"
+   ]
+  },
+  "lui/Vesti": {
+   "kind": "abiti",
+   "who": "lui",
+   "name": "Vesti",
+   "slug": "lui-vesti",
+   "desc": "vesti lunghe da cerimonia",
+   "show": "Ornë",
+   "crop": [
+    2.2,
+    "68%",
+    "45%"
    ]
   },
   "lui/Tuniche": {
