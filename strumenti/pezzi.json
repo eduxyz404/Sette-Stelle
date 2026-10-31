@@ -818,7 +818,7 @@
   },
   {
    "code": "A07",
-   "cat": "lui/Mantelli",
+   "cat": "lui/Completi",
    "name": "Súrë",
    "gloss": "vento",
    "photo": true,
@@ -843,35 +843,6 @@
     [
      1,
      "Oro"
-    ]
-   ]
-  },
-  {
-   "code": "A08",
-   "cat": "lui/Mantelli",
-   "name": "Hrívë",
-   "gloss": "inverno",
-   "fabric": "Lana pesante foderata",
-   "colorName": "Grigio ardesia",
-   "trimName": "bordo e fermaglio d'argento",
-   "garment": "cloak",
-   "color": "#3b4558",
-   "trim": "#dfe6f4",
-   "price": 1200,
-   "desc": "Mantello pesante per le notti d'inverno e i viaggi in montagna.",
-   "cls": "Tessuti · Mantello, taglia media",
-   "recipe": [
-    [
-     3,
-     "Lana"
-    ],
-    [
-     1,
-     "Colori"
-    ],
-    [
-     2,
-     "Argento"
     ]
    ]
   },
@@ -1036,7 +1007,7 @@
   },
   {
    "code": "A19",
-   "cat": "lui/Mantelli",
+   "cat": "lui/Completi",
    "name": "Laiqua",
    "gloss": "verde",
    "photo": true,
@@ -1071,7 +1042,7 @@
   },
   {
    "code": "A27",
-   "cat": "lui/Mantelli",
+   "cat": "lui/Completi",
    "name": "Narwa",
    "gloss": "rosso fuoco",
    "photo": true,
@@ -1102,7 +1073,7 @@
   },
   {
    "code": "A28",
-   "cat": "lui/Mantelli",
+   "cat": "lui/Completi",
    "name": "Olvar",
    "gloss": "ciò che cresce",
    "photo": true,
@@ -1625,8 +1596,8 @@
    "who": "lui",
    "name": "Mantelli",
    "slug": "lui-mantelli",
-   "desc": "da viaggio e da inverno",
-   "show": "Súrë",
+   "desc": "mantelli con cappuccio, anche da inverno",
+   "show": "Calma",
    "crop": [
     2.2,
     "50%",
