@@ -11,7 +11,7 @@ def forte(im):
     im = foto.neutral(im, 0.7); im = ImageEnhance.Color(im).enhance(1.12); im = ImageEnhance.Brightness(im).enhance(1.05); return ImageEnhance.Contrast(im).enhance(1.06)
 VIVO = {'A07','A13','A34','A35','A36','A47','A49','A50','A58','A59','A60','A61'} | {f'A{n}' for n in range(14, 34)}
 FORTE = {'A51','A52','A62'}
-BALCONE = {'A58','A59','A60','A61'} | {f'A{n}' for n in range(63, 81)}
+BALCONE = set()  # niente levigatura: foto il più possibile fedeli all'originale
 codes = sys.argv[1:] or sorted(M)
 for c in codes:
     src = M[c]
@@ -25,6 +25,6 @@ for c in codes:
     out = foto.stamp(foto.fit_specchio(im))
     P = f'/home/claude/sette-stelle/img/{c}.jpg'
     out.save(P, quality=92)
-    if c not in BALCONE: leviga.leviga(P)
+    if False: leviga.leviga(P)
     else: Image.open(P).save(P, quality=90, optimize=True, progressive=True)
     print(c, end=' ', flush=True)
