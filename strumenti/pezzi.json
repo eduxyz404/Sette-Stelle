@@ -917,6 +917,37 @@
    ]
   },
   {
+   "code": "A28",
+   "cat": "lui/Mantelli",
+   "name": "Olvar",
+   "gloss": "ciò che cresce",
+   "photo": true,
+   "fabric": "Mantello e giacca lunga di cotone verde bosco lavorato, camicia color avorio, pantaloni bruni",
+   "colorName": "Verde bosco e avorio",
+   "trimName": "trama a rami intessuta, fermaglio d'oro a stella, cintura di cotone intrecciato con fibbia",
+   "garment": "cloak",
+   "color": "#2f3d27",
+   "trim": "#e4c47c",
+   "price": 2700,
+   "desc": "Mantello e giacca lunga verde bosco, con una trama di rami intessuta e il fermaglio d'oro a stella sulla spalla.",
+   "excl": "Bracciali, gambali e stivali non inclusi",
+   "cls": "Tessuti · Mantello e completo (accorpo), taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
    "code": "A20",
    "cat": "lui/Completi",
    "name": "Morë",
