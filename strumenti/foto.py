@@ -1,6 +1,6 @@
 """Prepara le foto dei pezzi: 900x1200 (3:4, come la cornice), figura intera, sigillo sempre nello stesso punto."""
 import io, base64
-from PIL import Image, ImageFilter, ImageDraw
+from PIL import Image, ImageFilter, ImageDraw, ImageEnhance
 import numpy as np
 SEAL = Image.open('/home/claude/sette-stelle/img/sigillo-bottega.png').convert('RGBA')
 W, H = 900, 1200
@@ -34,9 +34,15 @@ def neutral(im, k=0.7):
     lin = (np.asarray(im.convert('RGB'), float) / 255) ** 2.2
     m = lin.reshape(-1, 3).mean(0); g = (m.mean() / m) ** k
     return Image.fromarray((np.clip(lin * g, 0, 1) ** (1 / 2.2) * 255 + .5).astype('uint8'))
+def neutro_vivo(im):
+    """Meno arancione ma non spento: dominante ridotta a metà, poi un po' più di colore, luce e contrasto."""
+    im = neutral(im, 0.45)
+    im = ImageEnhance.Color(im).enhance(1.15)
+    im = ImageEnhance.Brightness(im).enhance(1.06)
+    return ImageEnhance.Contrast(im).enhance(1.06)
 def build(path, out_jpg, neutro=False):  # neutro=True solo per i Completi per lui
     im = Image.open(path).convert('RGB')
-    im = stamp(fit(neutral(im) if neutro else im))
+    im = stamp(fit(neutro_vivo(im) if neutro else im))
     im.save(out_jpg, quality=86, optimize=True, progressive=True)
     b = io.BytesIO(); im.save(b, 'JPEG', quality=82, optimize=True, progressive=True)
     return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
