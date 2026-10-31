@@ -1132,6 +1132,36 @@
    ]
   },
   {
+   "code": "A35",
+   "cat": "lui/Mantelli",
+   "name": "Mornië",
+   "gloss": "oscurità",
+   "photo": true,
+   "fabric": "Cotone nero lavorato",
+   "colorName": "Nero",
+   "trimName": "fermaglio d'argento a stella con barra",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 2000,
+   "desc": "Ampio mantello nero con cappuccio, dalla trama sottile, chiuso sul petto da un fermaglio d'argento a stella.",
+   "cls": "Tessuti · Mantello, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A20",
    "cat": "lui/Completi",
    "name": "Morë",
