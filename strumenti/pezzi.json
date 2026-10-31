@@ -723,6 +723,41 @@
    ]
   },
   {
+   "code": "A15",
+   "cat": "lui/Vesti",
+   "name": "Ninquë",
+   "gloss": "bianco",
+   "photo": true,
+   "fabric": "Cotone color avorio, fodera di cotone blu polvere",
+   "colorName": "Avorio e blu polvere",
+   "trimName": "rami e stella ricamati d'argento, cintura con fibbia a stella e cristallo",
+   "garment": "cloak",
+   "color": "#ece2cf",
+   "trim": "#dfe6f4",
+   "price": 3100,
+   "desc": "Veste da cerimonia color avorio con mantello lungo: sulla schiena una stella d'argento a otto raggi.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito, taglia media, con veste e mantello lungo",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "A09",
    "cat": "lui/Tuniche",
    "name": "Tavar",
