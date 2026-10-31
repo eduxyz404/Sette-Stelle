@@ -1,0 +1,970 @@
+{
+ "ITEMS": [
+  {
+   "code": "G01",
+   "cat": "lei/Anelli",
+   "name": "Isilmírë",
+   "gloss": "gemma di luna",
+   "metal": "Argento (telpë)",
+   "gem": "Opale lattiginoso",
+   "cut": "cabochon",
+   "ct": "2,0 ct",
+   "color": "#cdd7ea",
+   "shape": "cab",
+   "price": 680,
+   "desc": "Riflessi azzurri che cambiano con la luce della luna.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Opale"
+    ]
+   ]
+  },
+  {
+   "code": "G02",
+   "cat": "lei/Anelli",
+   "name": "Náremírë",
+   "gloss": "gemma di fuoco",
+   "metal": "Oro rosa",
+   "gem": "Rubino rosso scuro",
+   "cut": "brillante",
+   "ct": "1,4 ct",
+   "color": "#a01c2e",
+   "shape": "round",
+   "price": 1250,
+   "desc": "Un rosso profondo che trattiene il calore della forgia.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Rubino Grezzo"
+    ]
+   ]
+  },
+  {
+   "code": "G03",
+   "cat": "lei/Collane",
+   "name": "Elenmírë",
+   "gloss": "gemma di stelle",
+   "metal": "Argento (telpë)",
+   "gem": "Sette zaffiri",
+   "cut": "brillante",
+   "ct": "3,5 ct in tutto",
+   "color": "#2b50b3",
+   "shape": "round",
+   "price": 3900,
+   "desc": "Sette zaffiri disposti come le stelle della Valacirca, che danno il nome alla bottega.",
+   "badge": "simbolo della bottega",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     3,
+     "Zaffiro"
+    ]
+   ]
+  },
+  {
+   "code": "G04",
+   "cat": "lei/Collane",
+   "name": "Nírë",
+   "gloss": "lacrima",
+   "metal": "Argento (telpë)",
+   "gem": "Smeraldo",
+   "cut": "a goccia",
+   "ct": "2,6 ct",
+   "color": "#1f8a5b",
+   "shape": "pear",
+   "price": 2400,
+   "desc": "Una goccia verde come le foglie al primo mattino.",
+   "badge": "pezzo unico",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Smeraldo Grezzo"
+    ]
+   ]
+  },
+  {
+   "code": "G05",
+   "cat": "lei/Orecchini",
+   "name": "Laurëa",
+   "gloss": "d'oro luminoso",
+   "metal": "Oro rosa",
+   "gem": "Due topazi dorati",
+   "cut": "a goccia",
+   "ct": "0,8 ct la coppia",
+   "color": "#e39a52",
+   "shape": "pear",
+   "price": 760,
+   "desc": "Leggeri e caldi, del colore della luce dorata.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     2,
+     "Topazio Grezzo"
+    ]
+   ]
+  },
+  {
+   "code": "G06",
+   "cat": "lei/Orecchini",
+   "name": "Telpëmírë",
+   "gloss": "gemme d'argento",
+   "metal": "Argento (telpë)",
+   "gem": "Due acquamarine",
+   "cut": "ovale",
+   "ct": "1,6 ct la coppia",
+   "color": "#79c3d4",
+   "shape": "oval",
+   "price": 890,
+   "desc": "Un azzurro freddo e limpido, come acqua di fonte.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     2,
+     "Acquamarina Grezza"
+    ]
+   ]
+  },
+  {
+   "code": "G07",
+   "cat": "lei/Bracciali",
+   "name": "Taurëmírë",
+   "gloss": "gemma della foresta",
+   "metal": "Oro giallo",
+   "gem": "Cristallo color ambra",
+   "cut": "cabochon",
+   "ct": "5,0 ct",
+   "color": "#c9771c",
+   "shape": "cab",
+   "price": 520,
+   "desc": "Rami d'oro intrecciati che stringono un cristallo caldo come l'ambra.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G08",
+   "cat": "lei/Diademi",
+   "name": "Menelrië",
+   "gloss": "corona del cielo",
+   "metal": "Oro bianco",
+   "gem": "Ametista",
+   "cut": "ovale",
+   "ct": "6,0 ct",
+   "color": "#5a4fb8",
+   "shape": "oval",
+   "price": 5200,
+   "desc": "Filigrana d'oro bianco sottile come rami d'argento, con un'ametista al centro.",
+   "badge": "su commissione",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     1,
+     "Ametista"
+    ]
+   ]
+  },
+  {
+   "code": "G09",
+   "cat": "lui/Anelli",
+   "name": "Tanna",
+   "gloss": "il segno",
+   "metal": "Oro giallo",
+   "gem": "Agata nera",
+   "cut": "a gradini",
+   "ct": "3,1 ct",
+   "color": "#2a2630",
+   "shape": "emerald",
+   "price": 940,
+   "desc": "Anello sigillo, con lo stemma della tua casata inciso in bottega.",
+   "badge": "incisione inclusa",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Agata"
+    ]
+   ]
+  },
+  {
+   "code": "G10",
+   "cat": "lui/Anelli",
+   "name": "Arquen",
+   "gloss": "il nobile",
+   "metal": "Oro bianco",
+   "gem": "Zaffiro",
+   "cut": "a gradini",
+   "ct": "2,4 ct",
+   "color": "#24408f",
+   "shape": "emerald",
+   "price": 1450,
+   "desc": "Anello massiccio con uno zaffiro scuro come il cielo a mezzanotte.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Zaffiro"
+    ]
+   ]
+  },
+  {
+   "code": "G11",
+   "cat": "lui/Bracciali",
+   "name": "Huinë",
+   "gloss": "ombra",
+   "metal": "Argento (telpë)",
+   "gem": "Cristallo nero",
+   "cut": "a gradini",
+   "ct": "4,2 ct",
+   "color": "#34293a",
+   "shape": "emerald",
+   "price": 610,
+   "desc": "Bracciale rigido, scuro come il cielo prima delle stelle.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G12",
+   "cat": "lui/Bracciali",
+   "name": "Tulca",
+   "gloss": "saldo",
+   "metal": "Argento battuto",
+   "gem": "Ematite",
+   "cut": "cabochon",
+   "ct": "6,0 ct",
+   "color": "#4a4d58",
+   "shape": "cab",
+   "price": 560,
+   "desc": "Bracciale da polso in argento battuto a mano, forte e sobrio.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Ematite"
+    ]
+   ]
+  },
+  {
+   "code": "G13",
+   "cat": "lui/Fermagli",
+   "name": "Lassë",
+   "gloss": "foglia",
+   "metal": "Argento (telpë)",
+   "gem": "Tormalina verde",
+   "cut": "a goccia",
+   "ct": "1,8 ct",
+   "color": "#7fae3e",
+   "shape": "pear",
+   "price": 480,
+   "desc": "Fermaglio da mantello a forma di foglia, con una goccia verde al centro.",
+   "cls": "Monili · Fermaglio",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Tormalina"
+    ]
+   ]
+  },
+  {
+   "code": "G14",
+   "cat": "lui/Fermagli",
+   "name": "Tinwë",
+   "gloss": "scintilla",
+   "metal": "Oro giallo",
+   "gem": "Diamante",
+   "cut": "brillante",
+   "ct": "1,0 ct",
+   "color": "#e8eefc",
+   "shape": "round",
+   "price": 1300,
+   "desc": "Fermaglio a stella a otto raggi, con un diamante che cattura ogni luce.",
+   "badge": "pezzo unico",
+   "cls": "Monili · Fermaglio",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Diamante Grezzo"
+    ]
+   ]
+  },
+  {
+   "code": "G15",
+   "cat": "Coppie",
+   "name": "Isil ar Anar",
+   "gloss": "la luna e il sole",
+   "metal": "Argento e oro giallo",
+   "gem": "Opale e topazio",
+   "cut": "cabochon e brillante",
+   "ct": "1,2 ct ciascuna",
+   "color": "#cdd7ea",
+   "shape": "cab",
+   "metal1": "Argento",
+   "color2": "#e39a52",
+   "shape2": "round",
+   "metal2": "Oro giallo",
+   "price": 1600,
+   "unit": "la coppia",
+   "desc": "Due fedi gemelle: una d'argento come la luna, una d'oro come il sole.",
+   "cls": "Monili · 2 Anelli (accorpo)",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Opale"
+    ],
+    [
+     1,
+     "Topazio Grezzo"
+    ]
+   ]
+  },
+  {
+   "code": "G16",
+   "cat": "Coppie",
+   "name": "Atta",
+   "gloss": "due",
+   "metal": "Argento (telpë)",
+   "gem": "Due zaffiri",
+   "cut": "a goccia",
+   "ct": "0,9 ct ciascuno",
+   "color": "#2b50b3",
+   "shape": "pear",
+   "color2": "#2b50b3",
+   "shape2": "pear",
+   "price": 2100,
+   "unit": "la coppia",
+   "desc": "Due pendenti che, accostati, formano la stella a otto raggi.",
+   "badge": "pezzo unico",
+   "cls": "Monili · 2 Pendenti (accorpo)",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     2,
+     "Zaffiro"
+    ]
+   ]
+  },
+  {
+   "code": "A01",
+   "cat": "lei/Mantelli",
+   "name": "Lómelindë",
+   "gloss": "usignolo",
+   "fabric": "Velluto di seta",
+   "colorName": "Blu notte",
+   "trimName": "stelle ricamate e fermaglio d'argento",
+   "garment": "cloak",
+   "color": "#1d2a5c",
+   "trim": "#dfe6f4",
+   "price": 1800,
+   "desc": "Mantello da cerimonia: quando si muove, le stelle ricamate sembrano accendersi.",
+   "badge": "su misura",
+   "cls": "Tessuti · Mantello, taglia media",
+   "recipe": [
+    [
+     3,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     2,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A02",
+   "cat": "lei/Mantelli",
+   "name": "Isilmë",
+   "gloss": "luce di luna",
+   "fabric": "Seta pesante",
+   "colorName": "Grigio perla",
+   "trimName": "bordo e fermaglio a stella d'oro",
+   "garment": "cloak",
+   "color": "#aeb8d0",
+   "trim": "#e4c47c",
+   "price": 1100,
+   "desc": "Mantellina leggera che cattura la luce come la luna sull'acqua.",
+   "cls": "Tessuti · Mantello, taglia media",
+   "recipe": [
+    [
+     3,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     2,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A03",
+   "cat": "lei/Vesti",
+   "name": "Elerrína",
+   "gloss": "incoronata di stelle",
+   "fabric": "Seta",
+   "colorName": "Azzurro cielo",
+   "trimName": "ricami d'oro su corpetto e orli",
+   "garment": "dress",
+   "color": "#6f93c9",
+   "trim": "#e4c47c",
+   "price": 2200,
+   "desc": "Veste lunga con maniche a campana, per le sale e le feste.",
+   "badge": "pezzo unico",
+   "cls": "Tessuti · Abito, taglia media",
+   "recipe": [
+    [
+     2,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A04",
+   "cat": "lei/Vesti",
+   "name": "Lótë",
+   "gloss": "fiore",
+   "fabric": "Seta e organza di seta",
+   "colorName": "Bianco perla",
+   "trimName": "fiori ricamati d'argento",
+   "garment": "dress",
+   "color": "#e3e1ea",
+   "trim": "#9fb2d8",
+   "price": 1700,
+   "desc": "Leggera come un petalo, con fiori ricamati che scendono lungo la gonna.",
+   "cls": "Tessuti · Abito, taglia media",
+   "recipe": [
+    [
+     2,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A05",
+   "cat": "lei/Accessori",
+   "name": "Lindë",
+   "gloss": "canto",
+   "fabric": "Seta leggera",
+   "colorName": "Grigio perla",
+   "trimName": "frange e greca d'oro",
+   "garment": "stole",
+   "color": "#b9c4dc",
+   "trim": "#e4c47c",
+   "price": 340,
+   "desc": "Stola sottile come un velo, da posare sulle spalle nelle sere fresche.",
+   "cls": "Tessuti · Scialle",
+   "recipe": [
+    [
+     2,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A06",
+   "cat": "lei/Accessori",
+   "name": "Silmë",
+   "gloss": "luce di stelle",
+   "fabric": "Seta intrecciata",
+   "colorName": "Lilla crepuscolo",
+   "trimName": "borchie e fibbia d'argento",
+   "garment": "belt",
+   "color": "#8a76b0",
+   "trim": "#dfe6f4",
+   "price": 220,
+   "desc": "Cintura sottile da annodare in vita sopra le vesti.",
+   "cls": "Tessuti · Fascia",
+   "recipe": [
+    [
+     1,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A07",
+   "cat": "lui/Mantelli",
+   "name": "Súrë",
+   "gloss": "vento",
+   "fabric": "Lana leggera",
+   "colorName": "Grigio-verde di bosco",
+   "trimName": "bordo intrecciato, fermaglio a foglia d'argento",
+   "garment": "cloak",
+   "color": "#4f6457",
+   "trim": "#dfe6f4",
+   "price": 650,
+   "desc": "Mantello da viaggio con cappuccio: caldo, leggero e quasi invisibile tra gli alberi.",
+   "cls": "Tessuti · Mantello, taglia media",
+   "recipe": [
+    [
+     3,
+     "Lana"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A08",
+   "cat": "lui/Mantelli",
+   "name": "Hrívë",
+   "gloss": "inverno",
+   "fabric": "Lana pesante foderata",
+   "colorName": "Grigio ardesia",
+   "trimName": "bordo e fermaglio d'argento",
+   "garment": "cloak",
+   "color": "#3b4558",
+   "trim": "#dfe6f4",
+   "price": 980,
+   "desc": "Mantello pesante per le notti d'inverno e i viaggi in montagna.",
+   "cls": "Tessuti · Mantello, taglia media",
+   "recipe": [
+    [
+     3,
+     "Lana"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     2,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A09",
+   "cat": "lui/Tuniche",
+   "name": "Tavar",
+   "gloss": "bosco",
+   "fabric": "Cotone",
+   "colorName": "Verde foresta",
+   "trimName": "bordi intrecciati d'oro",
+   "garment": "tunic",
+   "color": "#2f5a3c",
+   "trim": "#e4c47c",
+   "price": 420,
+   "desc": "Tunica di tutti i giorni, comoda per il viaggio e per la caccia.",
+   "cls": "Tessuti · Abito, taglia media",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A10",
+   "cat": "lui/Tuniche",
+   "name": "Telumë",
+   "gloss": "la volta del cielo",
+   "fabric": "Velluto di seta",
+   "colorName": "Blu notte",
+   "trimName": "stella a otto raggi ricamata in oro",
+   "garment": "tunic",
+   "motif": "star",
+   "color": "#1f2c5e",
+   "trim": "#e4c47c",
+   "price": 780,
+   "desc": "Casacca elegante con la stella della bottega ricamata in oro.",
+   "cls": "Tessuti · Giacca, taglia media",
+   "recipe": [
+    [
+     3,
+     "Seta"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A11",
+   "cat": "lui/Accessori",
+   "name": "Lanya",
+   "gloss": "filo",
+   "fabric": "Cuoio morbido",
+   "colorName": "Blu profondo",
+   "trimName": "fibbia a stella e borchie d'argento",
+   "garment": "belt",
+   "color": "#25366b",
+   "trim": "#dfe6f4",
+   "price": 260,
+   "desc": "Cintura sottile con borchie d'argento, da portare su tuniche e casacche.",
+   "cls": "Articoli in Pelle · Cintola",
+   "recipe": [
+    [
+     1,
+     "Pelle"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A12",
+   "cat": "lui/Accessori",
+   "name": "Ondo",
+   "gloss": "pietra",
+   "fabric": "Cuoio naturale",
+   "colorName": "Bruno di quercia",
+   "trimName": "fibbia e borchie d'oro",
+   "garment": "belt",
+   "color": "#5a3a24",
+   "trim": "#e4c47c",
+   "price": 310,
+   "desc": "Cintura larga e robusta, compagna di ogni viaggio.",
+   "cls": "Articoli in Pelle · Cintola",
+   "recipe": [
+    [
+     1,
+     "Pelle"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  }
+ ],
+ "CAT_INFO": {
+  "lei/Anelli": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Anelli",
+   "slug": "lei-anelli",
+   "desc": "anelli di gemma",
+   "show": "Náremírë",
+   "crop": [
+    2.6,
+    "15%",
+    "48%"
+   ]
+  },
+  "lei/Collane": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Collane",
+   "slug": "lei-collane",
+   "desc": "pendenti e collari di stelle",
+   "show": "Elenmírë",
+   "crop": [
+    2.4,
+    "4%",
+    "42%"
+   ]
+  },
+  "lei/Orecchini": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Orecchini",
+   "slug": "lei-orecchini",
+   "desc": "gocce di luce da portare al viso",
+   "show": "Laurëa",
+   "crop": [
+    2.4,
+    "88%",
+    "48%"
+   ]
+  },
+  "lei/Bracciali": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Bracciali",
+   "slug": "lei-bracciali",
+   "desc": "bracciali intrecciati",
+   "show": "Taurëmírë",
+   "crop": [
+    2.2,
+    "45%",
+    "45%"
+   ]
+  },
+  "lei/Diademi": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Diademi",
+   "slug": "lei-diademi",
+   "desc": "corone di filigrana sottile",
+   "show": "Menelrië",
+   "crop": [
+    2.4,
+    "10%",
+    "22%"
+   ]
+  },
+  "lui/Anelli": {
+   "kind": "gioielli",
+   "who": "lui",
+   "name": "Anelli",
+   "slug": "lui-anelli",
+   "desc": "sigilli e anelli massicci",
+   "show": "Arquen",
+   "crop": [
+    2.4,
+    "22%",
+    "75%"
+   ]
+  },
+  "lui/Bracciali": {
+   "kind": "gioielli",
+   "who": "lui",
+   "name": "Bracciali",
+   "slug": "lui-bracciali",
+   "desc": "bracciali rigidi e battuti a mano",
+   "show": "Huinë",
+   "crop": [
+    2,
+    "32%",
+    "62%"
+   ]
+  },
+  "lui/Fermagli": {
+   "kind": "gioielli",
+   "who": "lui",
+   "name": "Fermagli",
+   "slug": "lui-fermagli",
+   "desc": "fermagli da mantello",
+   "show": "Tinwë",
+   "crop": [
+    2.2,
+    "27%",
+    "20%"
+   ]
+  },
+  "Coppie": {
+   "kind": "gioielli",
+   "who": "coppia",
+   "name": "Coppie",
+   "slug": "coppie",
+   "desc": "fedi e pendenti gemelli, da portare in due",
+   "show": "Isil ar Anar",
+   "crop": [
+    2.6,
+    "28%",
+    "82%"
+   ]
+  },
+  "lei/Mantelli": {
+   "kind": "abiti",
+   "who": "lei",
+   "name": "Mantelli",
+   "slug": "lei-mantelli",
+   "desc": "mantelli e mantelline",
+   "show": "Lómelindë",
+   "crop": [
+    2.2,
+    "50%",
+    "45%"
+   ]
+  },
+  "lei/Vesti": {
+   "kind": "abiti",
+   "who": "lei",
+   "name": "Vesti",
+   "slug": "lei-vesti",
+   "desc": "abiti lunghi per le sale e le feste",
+   "show": "Elerrína",
+   "crop": [
+    2,
+    "15%",
+    "40%"
+   ]
+  },
+  "lei/Accessori": {
+   "kind": "abiti",
+   "who": "lei",
+   "name": "Accessori",
+   "slug": "lei-accessori",
+   "desc": "stole e cinture",
+   "show": "Lindë",
+   "crop": [
+    2.4,
+    "25%",
+    "72%"
+   ]
+  },
+  "lui/Mantelli": {
+   "kind": "abiti",
+   "who": "lui",
+   "name": "Mantelli",
+   "slug": "lui-mantelli",
+   "desc": "da viaggio e da inverno",
+   "show": "Súrë",
+   "crop": [
+    2.2,
+    "50%",
+    "82%"
+   ]
+  },
+  "lui/Tuniche": {
+   "kind": "abiti",
+   "who": "lui",
+   "name": "Tuniche",
+   "slug": "lui-tuniche",
+   "desc": "tuniche e casacche",
+   "show": "Telumë",
+   "crop": [
+    2.2,
+    "33%",
+    "30%"
+   ]
+  },
+  "lui/Accessori": {
+   "kind": "abiti",
+   "who": "lui",
+   "name": "Accessori",
+   "slug": "lui-accessori",
+   "desc": "cinture di cuoio",
+   "show": "Lanya",
+   "crop": [
+    2.4,
+    "73%",
+    "42%"
+   ]
+  }
+ }
+}

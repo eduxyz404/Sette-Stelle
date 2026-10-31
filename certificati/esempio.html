@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certificato di esempio · Lómelindë</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root{--bg:#0a0f1f;--paper:#101934;--line:#5c4a26;--gold:#d9b468;--gold-b:#e6c27a;--fg:#ece6d6;--muted:#a9b2cc;
+  --gild:linear-gradient(180deg,#fff1c8 0%,#e6c27a 45%,#a77a2c 100%);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.5;
+  padding:clamp(16px,4vw,40px) max(16px,env(safe-area-inset-left,0px));
+  background-image:radial-gradient(1px 1px at 20% 30%,rgba(255,255,255,.22) 50%,transparent 51%),radial-gradient(1.5px 1.5px at 80% 70%,rgba(230,194,122,.3) 50%,transparent 51%);background-size:150px 150px}
+.cert{position:relative;max-width:660px;margin:0 auto;background:var(--paper);border:1px solid var(--line);
+  box-shadow:inset 0 0 0 6px var(--paper),inset 0 0 0 7px var(--line),0 30px 60px -30px rgba(0,0,0,.9);
+  padding:clamp(28px,6vw,52px) clamp(20px,6vw,56px);text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.corner{position:absolute;width:clamp(44px,9vw,70px);color:var(--gold)}
+.tl{top:5px;left:5px}.tr{top:5px;right:5px;transform:scaleX(-1)}.bl{bottom:5px;left:5px;transform:scaleY(-1)}.br{bottom:5px;right:5px;transform:scale(-1,-1)}
+.seal{width:64px;height:64px}
+.shop{font-family:"Cinzel",Georgia,serif;letter-spacing:.18em;font-size:.82rem;text-transform:uppercase;color:var(--muted);margin:0}
+h1{margin:4px 0 0;font-family:"Cinzel Decorative",Georgia,serif;font-weight:700;font-size:clamp(1.6rem,5.4vw,2.3rem);line-height:1.1;
+  background:var(--gild);-webkit-background-clip:text;background-clip:text;color:transparent}
+.num{font-family:"Cinzel",Georgia,serif;font-size:.86rem;letter-spacing:.2em;color:var(--gold)}
+.date{margin:6px 0 0;font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:1.02rem;letter-spacing:.06em}
+.to{margin:0;font-size:1.25rem;font-style:italic}
+.to b{font-style:normal;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;color:var(--gold-b)}
+.img{width:min(100%,420px);height:auto;margin:10px 0 4px;border:1px solid var(--line);box-shadow:0 0 0 4px var(--paper),0 0 0 5px var(--line)}
+.item{width:100%;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin-top:6px}
+.item h2{margin:0;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;font-size:1.5rem;color:#f1e6c8}
+.item .code{font-family:"Cinzel",Georgia,serif;letter-spacing:.16em;font-size:.82rem;color:var(--gold)}
+.item .gl{margin:2px 0 0;font-style:italic;color:var(--muted)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:3px 14px;text-align:left;margin:12px auto 0;max-width:440px}
+dt{font-family:"Cinzel",Georgia,serif;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+dd{margin:0}
+.desc{margin:10px 0 0;font-style:italic;color:var(--muted)}
+.recipe h3{margin:4px 0 6px;font-family:"Cinzel",Georgia,serif;font-weight:400;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.recipe small{display:block;font-style:italic;color:var(--muted);margin-bottom:8px}
+.recipe ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.recipe li{border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-family:"Cinzel",Georgia,serif;font-size:.86rem}
+.sign{margin-top:12px;font-style:italic;color:var(--muted)}
+.sign b{display:block;font-style:normal;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;color:var(--fg);font-size:1.1rem}
+.note{margin:8px 0 0;font-size:.95rem;color:#e6c27a;font-style:italic}
+</style>
+</head>
+<body>
+<main class="cert">
+  <svg class="corner tl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner tr" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner bl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner br" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg>
+  <svg class="seal" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="none" stroke="#c9d2ea" stroke-width="1" opacity=".6"/><circle cx="60" cy="60" r="50" fill="none" stroke="#d9b468" stroke-width=".8" opacity=".6"/><polygon points="60,60 56.2,50.8 60.0,14.0 63.8,50.8" fill="#c9d2ea"/><polygon points="60,60 63.8,50.8 82.6,37.4 69.2,56.2" fill="#d9b468"/><polygon points="60,60 69.2,56.2 106.0,60.0 69.2,63.8" fill="#c9d2ea"/><polygon points="60,60 69.2,63.8 82.6,82.6 63.8,69.2" fill="#d9b468"/><polygon points="60,60 63.8,69.2 60.0,106.0 56.2,69.2" fill="#c9d2ea"/><polygon points="60,60 56.2,69.2 37.4,82.6 50.8,63.8" fill="#d9b468"/><polygon points="60,60 50.8,63.8 14.0,60.0 50.8,56.2" fill="#c9d2ea"/><polygon points="60,60 50.8,56.2 37.4,37.4 56.2,50.8" fill="#d9b468"/><circle cx="60" cy="60" r="5" fill="#d9b468"/></svg>
+  <p class="shop">Bottega delle Sette Stelle · Valacirca</p>
+  <h1>Certificato di Proprietà</h1>
+  <span class="num">esempio</span>
+  <p class="date">Anno XXV · Mese 2° · Giorno 10°</p>
+  <p class="to">Intestato a <b>Nome del personaggio</b></p>
+  <img class="img" src="../img/A01.png" alt="Lómelindë, mantelli per lei">
+  <section class="item">
+    <h2>Lómelindë</h2>
+    <span class="code">Mantelli per lei · Cod. A01</span>
+    <p class="gl">«usignolo»</p>
+    <dl><dt>Tessuto</dt><dd>Velluto di seta</dd><dt>Colore</dt><dd>Blu notte</dd><dt>Ricami</dt><dd>stelle ricamate e fermaglio d&#x27;argento</dd></dl>
+    <p class="desc">Mantello da cerimonia: quando si muove, le stelle ricamate sembrano accendersi.</p>
+  </section>
+  <section class="recipe">
+    <h3>Ricetta di creazione</h3>
+    <small>Tessuti · Mantello, taglia media</small>
+    <ul><li>3xSeta</li><li>1xColori</li><li>2xArgento</li><li>1xConfezione</li></ul>
+  </section>
+  <p class="sign">certificato rilasciato da<b>Bottega delle Sette Stelle</b></p>
+  <p class="note">Esempio: il nome e la data verranno sostituiti con quelli del personaggio che acquista.</p>
+</main>
+</body>
+</html>
