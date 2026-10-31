@@ -655,6 +655,37 @@
    ]
   },
   {
+   "code": "A79",
+   "cat": "lei/Completi",
+   "name": "Laurë",
+   "gloss": "oro",
+   "photo": true,
+   "fabric": "Sopravveste di cotone color oro, camicia e pantaloni ampi di cotone bordeaux, fascia bordeaux",
+   "colorName": "Oro e bordeaux",
+   "trimName": "rami ricamati, polsini ricamati d'oro, colletto alto",
+   "garment": "cloak",
+   "color": "#c9a66b",
+   "trim": "#e4c47c",
+   "price": 2400,
+   "desc": "Sopravveste dorata ricamata, camicia e pantaloni ampi bordeaux.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Completo con fascia, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
    "code": "A41",
    "cat": "lei/Cerimonia",
    "name": "Elenindis",
