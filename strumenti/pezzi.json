@@ -845,6 +845,76 @@
    ]
   },
   {
+   "code": "A63",
+   "cat": "lei/Cerimonia",
+   "name": "Lómëwen",
+   "gloss": "fanciulla della notte",
+   "photo": true,
+   "fabric": "Cotone nero lavorato, mantella di velo nero con colletto alto",
+   "colorName": "Nero",
+   "trimName": "intrecci ricamati d'argento, catenelle d'argento, pendenti di ametista",
+   "garment": "dress",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 5000,
+   "desc": "Abito nero dal colletto alto, con una mantella di velo ricamata a intrecci d'argento e catenelle che scendono dalla vita. Tema tenebra: si abbina a Morion e Fuinur.",
+   "excl": "Orecchini non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Ametista"
+    ]
+   ]
+  },
+  {
+   "code": "A64",
+   "cat": "lei/Cerimonia",
+   "name": "Tindómiel",
+   "gloss": "figlia del crepuscolo",
+   "photo": true,
+   "fabric": "Cotone nero aderente, veli neri alle braccia, a spalle scoperte",
+   "colorName": "Nero e viola",
+   "trimName": "rami ricamati d'argento, ametiste sul corpetto",
+   "garment": "dress",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 4900,
+   "desc": "Abito nero aderente a spalle scoperte, percorso da rami d'argento, con ametiste sul corpetto e lunghi veli alle braccia. Tema tenebra: si abbina a Morion e Fuinur.",
+   "excl": "Collana, orecchini e anello non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Ametista"
+    ]
+   ]
+  },
+  {
    "code": "A42",
    "cat": "lui/Cerimonia",
    "name": "Tinwerína",
@@ -1210,6 +1280,76 @@
     [
      1,
      "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A65",
+   "cat": "lui/Cerimonia",
+   "name": "Morion",
+   "gloss": "il figlio oscuro",
+   "photo": true,
+   "fabric": "Cotone nero lavorato, ampio mantello nero",
+   "colorName": "Nero e viola",
+   "trimName": "intrecci ricamati d'argento, catenelle e fermagli d'argento con ametista",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 4300,
+   "desc": "Lunga veste nera ricamata a intrecci d'argento, con un ampio mantello fermato sulle spalle da due spille con ametista. Tema tenebra: si abbina a Lómëwen e Tindómiel.",
+   "excl": "Stivali e collana non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Ametista"
+    ]
+   ]
+  },
+  {
+   "code": "A66",
+   "cat": "lui/Cerimonia",
+   "name": "Fuinur",
+   "gloss": "l'ombra",
+   "photo": true,
+   "fabric": "Cotone nero, mantello di veli neri sfrangiati",
+   "colorName": "Nero",
+   "trimName": "rami ricamati d'argento, fermaglio d'argento con ametista in vita",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 4200,
+   "desc": "Veste nera con un mantello di veli sfrangiati che sembra fatto d'ombra, attraversata da sottili rami d'argento. Tema tenebra: si abbina a Lómëwen e Tindómiel.",
+   "excl": "Stivali e collana non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Ametista"
     ]
    ]
   },
@@ -2117,7 +2257,7 @@
    "who": "lei",
    "name": "Cerimonia",
    "slug": "lei-cerimonia",
-   "desc": "abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco",
+   "desc": "abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra",
    "show": "Elenindis",
    "crop": [
     2,
@@ -2169,7 +2309,7 @@
    "who": "lui",
    "name": "Cerimonia",
    "slug": "lui-cerimonia",
-   "desc": "abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco",
+   "desc": "abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra",
    "show": "Tinwerína",
    "crop": [
     2.2,

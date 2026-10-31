@@ -650,6 +650,10 @@ details.recipe ul{justify-content:center}
 <script>
 /* Foto vere dei pezzi, per codice */
 const PHOTOS = {
+  A63:"img/A63.jpg",
+  A64:"img/A64.jpg",
+  A65:"img/A65.jpg",
+  A66:"img/A66.jpg",
   A58:"img/A58.jpg",
   A59:"img/A59.jpg",
   A60:"img/A60.jpg",
@@ -797,6 +801,10 @@ const ITEMS = [
     cls:"Tessuti · Abito da cerimonia con veli, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
   {code:"A59", cat:"lei/Cerimonia", name:"Nárwen", gloss:"fanciulla di fuoco", photo:true, fabric:"Velo di cotone rosso fuoco, sottogonna di cotone avorio", colorName:"Rosso fuoco e avorio", trimName:"fiamme ricamate d'oro, fascia d'oro con pietra rossa, drappo alle braccia", garment:"dress", color:"#8e1c1c", trim:"#e4c47c", price:4800, desc:"Abito rosso fuoco incrociato sul petto, aperto su un velo avorio, con fiamme d'oro e una fascia con pietra rossa. Tema fuoco: si abbina a Ruinë e Úrion.", excl:"Collana, orecchini e bracciali non inclusi",
     cls:"Tessuti · Abito da cerimonia con drappo, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
+  {code:"A63", cat:"lei/Cerimonia", name:"Lómëwen", gloss:"fanciulla della notte", photo:true, fabric:"Cotone nero lavorato, mantella di velo nero con colletto alto", colorName:"Nero", trimName:"intrecci ricamati d'argento, catenelle d'argento, pendenti di ametista", garment:"dress", color:"#141214", trim:"#dfe6f4", price:5000, desc:"Abito nero dal colletto alto, con una mantella di velo ricamata a intrecci d'argento e catenelle che scendono dalla vita. Tema tenebra: si abbina a Morion e Fuinur.", excl:"Orecchini non inclusi",
+    cls:"Tessuti · Abito da cerimonia con mantella, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Argento"],[1,"Ametista"]]},
+  {code:"A64", cat:"lei/Cerimonia", name:"Tindómiel", gloss:"figlia del crepuscolo", photo:true, fabric:"Cotone nero aderente, veli neri alle braccia, a spalle scoperte", colorName:"Nero e viola", trimName:"rami ricamati d'argento, ametiste sul corpetto", garment:"dress", color:"#141214", trim:"#dfe6f4", price:4900, desc:"Abito nero aderente a spalle scoperte, percorso da rami d'argento, con ametiste sul corpetto e lunghi veli alle braccia. Tema tenebra: si abbina a Morion e Fuinur.", excl:"Collana, orecchini e anello non inclusi",
+    cls:"Tessuti · Abito da cerimonia con veli, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Argento"],[1,"Ametista"]]},
   {code:"A42", cat:"lui/Cerimonia", name:"Tinwerína", gloss:"incoronato di stelle", photo:true, fabric:"Cotone blu notte, camicia color avorio, mantella di velo di cotone", colorName:"Blu notte e avorio", trimName:"raggi e stelle ricamati d'argento, due stelle d'argento alla spalla e in vita", garment:"cloak", color:"#1b2034", trim:"#dfe6f4", price:4200, desc:"Lunga veste blu notte attraversata da raggi d'argento, con una mantella di velo stellato sulla spalla. Tema stelle: si abbina a Elenindis.", excl:"Diadema non incluso",
     cls:"Tessuti · Abito da cerimonia con mantella, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Argento"]]},
   {code:"A43", cat:"lui/Cerimonia", name:"Menelmacar", gloss:"lo spadaccino del cielo", photo:true, fabric:"Cotone blu notte, camicia color avorio", colorName:"Blu notte", trimName:"costellazioni ricamate d'argento, fascia con stella d'argento", garment:"cloak", color:"#1b2034", trim:"#dfe6f4", price:3600, desc:"Veste blu notte con costellazioni d'argento che scendono dalla spalla, stretta da una fascia con la stella. Tema stelle: si abbina a Elenindis.", excl:"Diadema non incluso",
@@ -821,6 +829,10 @@ const ITEMS = [
     cls:"Tessuti · Abito da cerimonia, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
   {code:"A61", cat:"lui/Cerimonia", name:"Úrion", gloss:"figlio del fuoco", photo:true, fabric:"Cotone nero lavorato, mantello di cotone rosso fuoco", colorName:"Nero e rosso fuoco", trimName:"fiamme ricamate d'oro sul mantello, spilla d'oro con pietra rossa, fascia di cotone nero", garment:"cloak", color:"#141214", trim:"#9a1f2a", price:4200, desc:"Veste nera con un mantello rosso fuoco drappeggiato sulla spalla, fermato da una spilla con pietra rossa. Tema fuoco: si abbina a Nárië e Nárwen.", excl:"Stivali non inclusi",
     cls:"Tessuti · Abito da cerimonia con mantello, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
+  {code:"A65", cat:"lui/Cerimonia", name:"Morion", gloss:"il figlio oscuro", photo:true, fabric:"Cotone nero lavorato, ampio mantello nero", colorName:"Nero e viola", trimName:"intrecci ricamati d'argento, catenelle e fermagli d'argento con ametista", garment:"cloak", color:"#141214", trim:"#dfe6f4", price:4300, desc:"Lunga veste nera ricamata a intrecci d'argento, con un ampio mantello fermato sulle spalle da due spille con ametista. Tema tenebra: si abbina a Lómëwen e Tindómiel.", excl:"Stivali e collana non inclusi",
+    cls:"Tessuti · Abito da cerimonia con mantello, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Argento"],[1,"Ametista"]]},
+  {code:"A66", cat:"lui/Cerimonia", name:"Fuinur", gloss:"l'ombra", photo:true, fabric:"Cotone nero, mantello di veli neri sfrangiati", colorName:"Nero", trimName:"rami ricamati d'argento, fermaglio d'argento con ametista in vita", garment:"cloak", color:"#141214", trim:"#dfe6f4", price:4200, desc:"Veste nera con un mantello di veli sfrangiati che sembra fatto d'ombra, attraversata da sottili rami d'argento. Tema tenebra: si abbina a Lómëwen e Tindómiel.", excl:"Stivali e collana non inclusi",
+    cls:"Tessuti · Abito da cerimonia con mantello, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Argento"],[1,"Ametista"]]},
   {code:"A29", cat:"lui/Toghe", name:"Istyar", gloss:"sapiente", photo:true, fabric:"Cotone blu notte e color sabbia", colorName:"Blu notte e sabbia", trimName:"bande ricamate d'oro, fermaglio d'oro, fascia annodata", garment:"cloak", color:"#1d2340", trim:"#e4c47c", price:3400, desc:"Toga blu notte con mantella e bande ricamate d'oro, sopra una sottoveste color sabbia: per studiosi e maestri.", excl:"Libro non incluso",
     cls:"Tessuti · Abito con mantella, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
   {code:"A30", cat:"lui/Toghe", name:"Lumbë", gloss:"ombra", photo:true, fabric:"Cotone nero lavorato", colorName:"Nero", trimName:"bande ricamate a intrecci, fermaglio d'argento a stella, fascia annodata", garment:"cloak", color:"#1a1517", trim:"#dfe6f4", price:3200, desc:"Toga nera con cappuccio e mantella, dalla trama scura e fitta: per chi cammina la notte.",
@@ -885,11 +897,11 @@ const CAT_INFO = {
   "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Vanda", crop:[2.0,"32%","62%"]},
   "lei/Mantelli":{kind:"abiti", who:"lei", name:"Mantelli", slug:"lei-mantelli", desc:"mantelli e mantelline", show:"Kemen", crop:[2.2,"50%","45%"]},
   "lei/Abiti":{kind:"abiti", who:"lei", name:"Abiti", slug:"lei-abiti", desc:"abiti lunghi per le sale e le feste", show:"Tindómë", crop:[2.0,"15%","40%"]},
-  "lei/Cerimonia":{kind:"abiti", who:"lei", name:"Cerimonia", slug:"lei-cerimonia", desc:"abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco", show:"Elenindis", crop:[2.0,"15%","40%"]},
+  "lei/Cerimonia":{kind:"abiti", who:"lei", name:"Cerimonia", slug:"lei-cerimonia", desc:"abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Elenindis", crop:[2.0,"15%","40%"]},
   "lui/Mantelli":{kind:"abiti", who:"lui", name:"Mantelli", slug:"lui-mantelli", desc:"mantelli con cappuccio, anche da inverno", show:"Calma", crop:[2.2,"50%","82%"]},
   "lui/Completi":{kind:"abiti", who:"lui", name:"Completi", slug:"lui-completi", desc:"vesti da cerimonia, giacche, gilet e camicie", show:"Ornë", crop:[2.2,"68%","45%"]},
   "lui/Toghe":{kind:"abiti", who:"lui", name:"Toghe", slug:"lui-toghe", desc:"vesti lunghe da studioso, mago e astronomo", show:"Ilmen", crop:[2.2,"35%","25%"]},
-  "lui/Cerimonia":{kind:"abiti", who:"lui", name:"Cerimonia", slug:"lui-cerimonia", desc:"abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco", show:"Tinwerína", crop:[2.2,"68%","45%"]},
+  "lui/Cerimonia":{kind:"abiti", who:"lui", name:"Cerimonia", slug:"lui-cerimonia", desc:"abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Tinwerína", crop:[2.2,"68%","45%"]},
   "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture intrecciate", show:"Menelya", crop:[2.4,"73%","42%"]}
 };
 const KINDS = {
