@@ -482,6 +482,36 @@
    ]
   },
   {
+   "code": "A34",
+   "cat": "lei/Mantelli",
+   "name": "Kemen",
+   "gloss": "terra",
+   "photo": true,
+   "fabric": "Cotone bruno lavorato",
+   "colorName": "Bruno castagna",
+   "trimName": "fermaglio d'oro a stella",
+   "garment": "cloak",
+   "color": "#4a2c1e",
+   "trim": "#e4c47c",
+   "price": 2000,
+   "desc": "Ampio mantello color castagna con cappuccio, dalla trama a foglie, chiuso sul petto da un fermaglio d'oro a stella.",
+   "cls": "Tessuti · Mantello, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
    "code": "A03",
    "cat": "lei/Abiti",
    "name": "Elerrína",
@@ -1497,7 +1527,7 @@
    "name": "Mantelli",
    "slug": "lei-mantelli",
    "desc": "mantelli e mantelline",
-   "show": "Lómelindë",
+   "show": "Kemen",
    "crop": [
     2.2,
     "50%",
