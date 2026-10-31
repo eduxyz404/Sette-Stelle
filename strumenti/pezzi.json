@@ -395,6 +395,84 @@
    ]
   },
   {
+   "code": "G22",
+   "cat": "lui/Bracciali",
+   "name": "Lómë",
+   "gloss": "notte",
+   "photo": true,
+   "metal": "Argento",
+   "gem": "Agata nera",
+   "cut": "a sfera",
+   "ct": "perle da 6 mm",
+   "color": "#151418",
+   "shape": "cab",
+   "price": 850,
+   "desc": "Perle di agata nera, lucide come il cielo senza luna, scandite da anelli d'argento.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Agata"
+    ]
+   ]
+  },
+  {
+   "code": "G23",
+   "cat": "lui/Bracciali",
+   "name": "Alda",
+   "gloss": "albero",
+   "photo": true,
+   "metal": "Argento brunito",
+   "finish": "cotone nero intrecciato, chiusura cesellata con l'albero",
+   "price": 800,
+   "desc": "Treccia di cotone nero chiusa da un cilindro d'argento cesellato, con un albero inciso al centro.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G24",
+   "cat": "lui/Bracciali",
+   "name": "Varnë",
+   "gloss": "bruno",
+   "photo": true,
+   "metal": "Argento satinato",
+   "finish": "cotone bruno intrecciato, chiusura liscia",
+   "price": 600,
+   "desc": "Treccia piatta di cotone color castagna, chiusa da due placche d'argento satinato.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "G15",
    "cat": "Coppie",
    "name": "Isil ar Anar",
@@ -1619,7 +1697,7 @@
    "who": "lui",
    "name": "Bracciali",
    "slug": "lui-bracciali",
-   "desc": "bracciali rigidi, battuti a mano e a catena",
+   "desc": "bracciali d'argento, di perle e di cotone intrecciato",
    "show": "Huinë",
    "crop": [
     2,
