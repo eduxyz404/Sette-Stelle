@@ -64,7 +64,7 @@ VALACIRCA = """<svg class="dipper" viewBox="-8 -8 176 106" aria-hidden="true">
 ) + "</g></svg>"
 
 
-def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False):
+def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False, dedica=None, firma=None):
     e = html.escape
     per = {'lei': 'per lei', 'lui': 'per lui', 'coppia': 'per la coppia'}[info['who']]
     abito = 'fabric' in pezzo
@@ -78,6 +78,24 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
         f'<b>{q}×</b>{e(m)}</li>' for q, m in ricetta(pezzo['recipe'], confezione))
     etichetta = "esempio" if esempio else f"N° {numero}"
     titolo = f"Certificato di esempio · {pezzo['name']}" if esempio else f"Certificato {numero} · {pezzo['name']}"
+    # Confezione e dedica: compaiono solo se richieste
+    extra = []
+    if confezione:
+        extra.append(f"""<div class="box">
+      <img src="../img/confezione.jpg" alt="La confezione della bottega: scatola color pergamena con fregi d'oro, nastro di velluto blu e sigillo d'oro">
+      <div><span class="lbl">Confezione</span>
+        <p>Scatola della bottega in carta color pergamena con fregi d'oro, chiusa da un nastro di velluto blu notte e dal sigillo d'oro delle sette stelle.</p></div>
+    </div>""")
+    if dedica:
+        da = f'<span class="from">{e(firma)}</span>' if firma else ''
+        extra.append(f"""<div class="tag">
+      <span class="hole" aria-hidden="true"></span>
+      <svg class="tag-stars" viewBox="0 0 80 40" aria-hidden="true"><g fill="#c99a45">{''.join(f'<path d="M{x} {y-r} L{x+r*.3:.1f} {y-r*.3:.1f} L{x+r} {y} L{x+r*.3:.1f} {y+r*.3:.1f} L{x} {y+r} L{x-r*.3:.1f} {y+r*.3:.1f} L{x-r} {y} L{x-r*.3:.1f} {y-r*.3:.1f}Z"/>' for x, y, r in [(22,20,4),(32,12,4),(40,8,5),(48,12,4),(58,20,4),(40,28,7)])}</g></svg>
+      <span class="lbl">Dedica</span>
+      <p class="msg">«{e(dedica)}»</p>
+      {da}
+    </div>""")
+    extras = f'<section class="extras{" one" if len(extra) == 1 else ""}">{"".join(extra)}</section>' if extra else ''
     nota = ('<p class="note">Questo è un esempio: nome e data saranno quelli del personaggio che acquista.</p>' if esempio else '')
     corners = "".join(f'<svg class="corner {k}" viewBox="0 0 80 80" aria-hidden="true">{CORNER}</svg>' for k in ("tl", "tr", "bl", "br"))
     return f"""<!doctype html>
@@ -155,6 +173,26 @@ dd{{margin:0;font-size:1.08rem}}
 .seal-num{{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:.82rem !important;letter-spacing:.2em;color:var(--gold-b) !important}}
 .sign span{{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}}
 .note{{margin:0;padding:14px 20px 22px;text-align:center;font-style:italic;color:var(--gold-b)}}
+
+/* Confezione e dedica */
+.extras{{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(20px,3.5vw,36px);align-items:center;
+  padding:0 clamp(22px,5vw,52px) clamp(26px,4vw,40px)}}
+.extras.one{{grid-template-columns:minmax(0,1fr)}}
+.extras.one .tag{{max-width:360px;justify-self:center}}
+@media (max-width:720px){{.extras{{grid-template-columns:1fr}}}}
+.box{{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}}
+.extras.one .box{{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center}}
+@media (max-width:620px){{.extras.one .box{{grid-template-columns:1fr}}}}
+.box img{{display:block;width:100%;height:auto;border-radius:12px;border:1px solid rgba(230,194,122,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(230,194,122,.3),0 24px 40px -20px rgba(0,0,0,.9)}}
+.box p{{margin:4px 0 0;font-size:1.05rem;color:#c4cbe0}}
+.tag{{position:relative;text-align:center;color:#3b2a10;padding:34px 24px 26px;
+  background:linear-gradient(160deg,#f6ecd2,#ead9b0);border-radius:6px;clip-path:polygon(18% 0,82% 0,100% 12%,100% 100%,0 100%,0 12%);
+  box-shadow:inset 0 0 0 6px #f3e6c4,inset 0 0 0 7px #c99a45;transform:rotate(1.5deg)}}
+.tag .hole{{position:absolute;top:12px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1.5px #c99a45}}
+.tag-stars{{display:block;width:84px;height:42px;margin:6px auto 2px}}
+.tag .lbl{{color:#8a6420}}
+.tag .msg{{margin:6px 0 10px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.3rem;line-height:1.35;color:#3b2a10;overflow-wrap:anywhere}}
+.tag .from{{display:block;font-family:"Cinzel Decorative",Georgia,serif;font-size:1rem;color:#7a5518}}
 </style>
 </head>
 <body>
@@ -187,7 +225,7 @@ dd{{margin:0;font-size:1.08rem}}
       </div>
     </div>
   </section>
-
+  {extras}
   <footer class="foot">
     <div class="recipe">
       <h3>Ricetta di creazione</h3>
@@ -224,6 +262,8 @@ def main():
     ap.add_argument('--mese', required=True)
     ap.add_argument('--giorno', required=True)
     ap.add_argument('--confezione', action='store_true')
+    ap.add_argument('--dedica', help='testo della dedica, facoltativo')
+    ap.add_argument('--firma', help='chi firma la dedica, facoltativo')
     ap.add_argument('--esempio', action='store_true')
     ap.add_argument('--uscita')
     a = ap.parse_args()
@@ -232,7 +272,7 @@ def main():
     info = dati['CAT_INFO'][pezzo['cat']]
     out = pathlib.Path(a.uscita) if a.uscita else REPO / 'certificati' / f"{a.numero}.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio))
+    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio, a.dedica, a.firma))
     print(out)
 
 
