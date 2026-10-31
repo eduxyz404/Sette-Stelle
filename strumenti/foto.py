@@ -23,6 +23,21 @@ def fit(src):
         m = Image.new('L', fig.size, 0); ImageDraw.Draw(m).rectangle((0, 6, fig.width, fig.height - 6), fill=255)
         c.paste(fig, (0, y0), m.filter(ImageFilter.GaussianBlur(4)))
     return c
+def fit_specchio(src):
+    """Porta a 3:4 riempiendo i lati con lo sfondo riflesso e sfocato (niente righe stirate)."""
+    import cv2
+    a = np.asarray(src.convert('RGB')); h, w = a.shape[:2]
+    if w / h < 0.75:
+        nw = round(w * H / h); fig = cv2.resize(a, (nw, H), interpolation=cv2.INTER_LANCZOS4)
+        l = (W - nw) // 2; big = cv2.copyMakeBorder(fig, 0, 0, l, W - nw - l, cv2.BORDER_REFLECT)
+        m = np.zeros((H, W), np.float32); m[:, l:l + nw] = 1
+    else:
+        nh = round(h * W / w); fig = cv2.resize(a, (W, nh), interpolation=cv2.INTER_LANCZOS4)
+        t = (H - nh) // 2; big = cv2.copyMakeBorder(fig, t, H - nh - t, 0, 0, cv2.BORDER_REFLECT)
+        m = np.zeros((H, W), np.float32); m[t:t + nh, :] = 1
+    bl = cv2.GaussianBlur(big, (0, 0), 14).astype(np.float32) * 0.85
+    m = cv2.GaussianBlur(m, (0, 0), 10)[..., None]
+    return Image.fromarray(np.clip(big.astype(np.float32) * m + bl * (1 - m), 0, 255).astype(np.uint8))
 def stamp(im):
     im = im.convert('RGBA')
     sl = SEAL.resize((SW, round(SW * SEAL.height / SEAL.width)), Image.LANCZOS)
