@@ -631,6 +631,38 @@
    ]
   },
   {
+   "code": "A74",
+   "cat": "lei/Cerimonia",
+   "name": "Elenwë",
+   "gloss": "fanciulla delle stelle",
+   "photo": true,
+   "fabric": "Velo di cotone color cipria, aderente, con spacco e strascico",
+   "colorName": "Cipria e argento",
+   "trimName": "scintille e raggi ricamati d'argento, catenella d'argento sul petto",
+   "garment": "dress",
+   "color": "#d9b29a",
+   "trim": "#dfe6f4",
+   "price": 4900,
+   "desc": "Velo color cipria con scintille d'argento e catenella sul petto.",
+   "tema": "stelle",
+   "excl": "Orecchini e fermagli non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A46",
    "cat": "lei/Cerimonia",
    "name": "Falassë",
