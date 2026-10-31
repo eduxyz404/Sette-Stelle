@@ -8,36 +8,32 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus+SC&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Marcellus+SC&display=swap">
 <style>
 /* Layout: ingresso (arco sul cielo con la facciata della bottega) → stanze delle categorie (nicchie ad arco) → vetrina della categoria; argento (Telperion) per gli ornamenti, oro (Laurelin) per i prezzi */
 :root{
-  --bg:#0c1322; --surface:#131d33; --night:#1e2e55; --night-2:#080e1d;
-  --fg:#e9edf5; --muted:#9ba7be; --silver:#c3d0ea; --gold:#d9b86a; --line:#28355a;
-  --on-night:#eef2fb; --on-night-muted:#b0bcd6; --star:#d3ddf3; --gold-bright:#e4c47c;
+  /* Stile «Regale»: sempre notte profonda, oro brunito per cornici e titoli, argento per i dettagli */
+  --bg:#0a0f1f; --surface:#101934; --night:#1e2e55; --night-2:#080e1d;
+  --fg:#ece6d6; --muted:#a9b2cc; --silver:#c9d2ea; --gold:#d9b468; --line:#5c4a26;
+  --on-night:#f1ecdf; --on-night-muted:#c3cbe0; --star:#d3ddf3; --gold-bright:#e6c27a;
+  --title:"Cinzel Decorative", "Cinzel", Georgia, serif;
   --display:"Cormorant Garamond", "Cormorant", Georgia, serif;
-  --body:"EB Garamond", Garamond, Georgia, serif;
-  --label:"Marcellus SC", "Cormorant Garamond", Georgia, serif;
+  --body:"Cormorant Garamond", "Cormorant", Garamond, Georgia, serif;
+  --label:"Cinzel", "Marcellus SC", Georgia, serif;
+  --gild:linear-gradient(180deg,#fff1c8 0%,#e6c27a 45%,#a77a2c 100%);
   color-scheme:dark;
-}
-@media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]){
-    --bg:#ecf0f6; --surface:#ffffff; --night:#22355f; --night-2:#0d1530;
-    --fg:#172036; --muted:#5b6782; --silver:#3e5488; --gold:#8b6a1f; --line:#cfd6e6;
-    color-scheme:light;
-  }
-}
-:root[data-theme="light"]{
-  --bg:#ecf0f6; --surface:#ffffff; --night:#22355f; --night-2:#0d1530;
-  --fg:#172036; --muted:#5b6782; --silver:#3e5488; --gold:#8b6a1f; --line:#cfd6e6;
-  color-scheme:light;
 }
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.55;
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:19.5px;line-height:1.55;
   padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));
-  background-image:radial-gradient(ellipse 60% 40% at 50% 0%, rgba(120,150,220,.10), transparent 70%)}
+  background-image:radial-gradient(ellipse 60% 40% at 50% 0%, rgba(120,150,220,.12), transparent 70%),
+    radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,.22) 50%, transparent 51%),
+    radial-gradient(1px 1px at 70% 80%, rgba(255,255,255,.18) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 85% 20%, rgba(255,255,255,.25) 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 65%, rgba(230,194,122,.25) 50%, transparent 51%);
+  background-size:100% 900px, 160px 160px, 160px 160px, 160px 160px, 160px 160px;background-repeat:no-repeat, repeat, repeat, repeat, repeat}
 .wrap{max-width:1120px;margin:0 auto;padding-block:clamp(20px,4vw,40px) 48px;display:flex;flex-direction:column;gap:clamp(44px,6vw,72px)}
 .view{display:flex;flex-direction:column;gap:clamp(44px,6vw,72px)}
 .label{font-family:var(--label);letter-spacing:.2em;font-size:.82rem;color:var(--silver);text-transform:uppercase}
@@ -55,7 +51,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
 .hall .photo{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:42% 45%;z-index:-2}
 .hall::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg, rgba(8,14,29,0) 30%, rgba(8,14,29,.5) 58%, rgba(8,14,29,.92) 100%)}
 .hall-text{text-shadow:0 2px 14px rgba(0,0,0,.7)}
-.hall::after{content:"";position:absolute;inset:10px;border:1px solid rgba(211,221,243,.28);border-radius:inherit;pointer-events:none}
+.hall::after{content:"";position:absolute;inset:10px;border:1px solid rgba(230,194,122,.45);border-radius:inherit;pointer-events:none}
 #sky{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
 .hall .eyebrow{font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(1.1rem,2.4vw,1.45rem);color:var(--on-night-muted);margin:0;letter-spacing:.04em}
 h1{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,7.4vw,5rem);line-height:1;margin:.12em 0 .18em;text-wrap:balance;letter-spacing:.02em}
@@ -84,7 +80,7 @@ h1 em{font-style:italic;font-weight:500;color:var(--gold-bright)}
 .banner .photo{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;z-index:-2;
   transform:scale(var(--z,1));transform-origin:var(--ox,50%) var(--oy,50%);transition:transform 1.4s ease, transform-origin 1.4s ease}
 .banner::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg, rgba(8,14,29,.1) 0%, rgba(8,14,29,.5) 45%, rgba(8,14,29,.93) 100%)}
-.banner::after{content:"";position:absolute;inset:10px;border:1px solid rgba(211,221,243,.3);border-radius:inherit;pointer-events:none}
+.banner::after{content:"";position:absolute;inset:10px;border:1px solid rgba(230,194,122,.45);border-radius:inherit;pointer-events:none}
 .banner-text{display:flex;flex-direction:column;align-items:center;gap:4px;text-shadow:0 2px 14px rgba(0,0,0,.75)}
 .banner .label{color:var(--star)}
 .banner h2{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,6.4vw,4rem);margin:0;line-height:1;text-wrap:balance}
@@ -210,6 +206,38 @@ footer{color:var(--muted);font-size:.95rem;font-style:italic;text-align:center;d
   .room p{display:none}
 }
 @media (prefers-reduced-motion: reduce){.window svg.garment{transition:none}.item:hover svg.garment,.room:hover svg.garment{transform:none}.banner .photo,.item,.room .go{transition:none}.item:hover,.spark{animation:none!important}.item:hover{transform:none}.window svg.gem,.room,.enter{transition:none}.item:hover svg.gem,.room:hover svg.gem{transform:none}.room:hover{transform:none}}
+
+/* ===== Stile «Regale» ===== */
+h1,.banner h2,.wing-head h3,.subwing-head,.room h3,.item h3,.note h3,.brand span,.roomnav span,.sec-head h2{font-family:var(--title);font-style:normal;letter-spacing:.01em}
+h1,.banner h2,.wing-head h3{font-weight:700;background:var(--gild);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 6px rgba(0,0,0,.7))}
+h1 em{font-style:normal;font-weight:700;color:transparent}
+h1{font-size:clamp(2.1rem,6.4vw,4.4rem);line-height:1.08;margin:.15em 0 .2em}
+.banner h2{font-size:clamp(1.8rem,4.8vw,3.1rem);line-height:1.1}
+.wing-head h3{font-size:clamp(1.9rem,4.4vw,2.7rem);line-height:1.1}
+.subwing-head{font-weight:400;font-size:clamp(1.4rem,3vw,1.85rem);color:var(--gold)}
+.room h3{font-weight:400;font-size:clamp(1.15rem,2.2vw,1.45rem);color:#f1e6c8}
+.item h3{font-weight:400;font-size:1.4rem;line-height:1.15;color:#f1e6c8}
+.note h3{font-weight:400;font-size:1.35rem;color:#f1e6c8}
+.brand span{font-size:1rem;font-weight:400}
+.brand em{font-style:normal;color:var(--gold)}
+.roomnav span{font-size:1.2rem}
+.price strong{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:1.3rem}
+.price strong,.cat,.count,.go{letter-spacing:.12em}
+.hall .eyebrow,.banner .q,.wing-head .q,.note .q,.gloss,.desc{font-family:var(--display)}
+.specs dd{font-size:1.02rem}
+.tab{font-family:"Cinzel",Georgia,serif;font-size:.82rem}
+
+/* Cornici con angoli a volute */
+[data-frame]{position:relative}
+.corner{position:absolute;width:clamp(44px,7vw,74px);height:auto;color:var(--gold);z-index:2;pointer-events:none}
+.corner.tl{top:4px;left:4px}.corner.tr{top:4px;right:4px;transform:scaleX(-1)}
+.corner.bl{bottom:4px;left:4px;transform:scaleY(-1)}.corner.br{bottom:4px;right:4px;transform:scale(-1,-1)}
+.welcome,.notes{background:var(--surface);border:1px solid var(--line);box-shadow:inset 0 0 0 5px var(--surface), inset 0 0 0 6px var(--line), 0 30px 60px -30px rgba(0,0,0,.8)}
+.welcome{max-width:780px;width:100%;text-align:left;padding:clamp(28px,5vw,48px) clamp(22px,5vw,56px)}
+.welcome p{font-size:1.2rem}
+.welcome p:first-child::first-letter{font-family:var(--title);font-weight:700;float:left;font-size:3.6em;line-height:.85;padding:6px 12px 0 0;color:var(--gold-bright)}
+.welcome .small{font-size:1.08rem}
+.notes{padding:clamp(30px,5vw,48px) clamp(20px,4vw,44px)}
 </style>
 
 </head>
@@ -228,7 +256,7 @@ footer{color:var(--muted);font-size:.95rem;font-style:italic;text-align:center;d
       </div>
     </header>
 
-    <section class="welcome">
+    <section class="welcome" data-frame>
       <p>Varca la soglia: dietro le vetrine illuminate le gemme sono tagliate e incastonate come le lavoravano gli artefici noldor. Argento lucente come la luce di luna, oro caldo come il primo sole, pietre che trattengono la luce delle stelle.</p>
       <p class="small">Oltre all'oreficeria, la bottega ha aperto una sartoria: mantelli, vesti e tuniche cuciti con stoffe elfiche e ricamati d'argento e d'oro.</p>
     </section>
@@ -274,7 +302,7 @@ footer{color:var(--muted);font-size:.95rem;font-style:italic;text-align:center;d
 
     <section style="display:flex;flex-direction:column;gap:30px">
       <span data-orn></span>
-      <div class="notes">
+      <div class="notes" data-frame>
         <div class="note">
           <svg class="star" data-star viewBox="0 0 120 120" aria-hidden="true"></svg>
           <h3>Su commissione</h3><span class="q">carmë · l'arte del fare</span>
@@ -410,6 +438,18 @@ function star8(silver, gold, ring){
 }
 document.querySelectorAll("[data-star]").forEach(el => el.innerHTML = star8("currentColor","currentColor",false));
 document.querySelectorAll("[data-star-brand]").forEach(el => el.innerHTML = star8("var(--silver)","var(--gold)",true));
+
+
+/* Angoli a volute sulle cornici */
+const CORNER = `<path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/>
+  <path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/>
+  <path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/>
+  <path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/>
+  <path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/>
+  <path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/>`;
+document.querySelectorAll("[data-frame]").forEach(f => {
+  for(const k of ["tl","tr","bl","br"]) f.insertAdjacentHTML("beforeend", `<svg class="corner ${k}" viewBox="0 0 80 80" aria-hidden="true">${CORNER}</svg>`);
+});
 
 /* Fregio a volute con foglie e stella centrale */
 function ornament(){
