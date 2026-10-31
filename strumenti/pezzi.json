@@ -1041,6 +1041,37 @@
    ]
   },
   {
+   "code": "A25",
+   "cat": "lui/Completi",
+   "name": "Fuinë",
+   "gloss": "ombra profonda",
+   "photo": true,
+   "fabric": "Cotone nero",
+   "colorName": "Nero",
+   "trimName": "intrecci ricamati d'argento, bottoni e fibbia a stella d'argento",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 3100,
+   "desc": "Lunga giacca nera a doppia fila di bottoni, aperta sui fianchi e ricamata d'argento ai polsi.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Completo con giacca lunga, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A09",
    "cat": "lui/Tuniche",
    "name": "Tavar",
