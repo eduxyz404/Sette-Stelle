@@ -142,14 +142,15 @@ body{{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font-family
 .tl{{top:6px;left:6px}}.tr{{top:6px;right:6px;transform:scaleX(-1)}}.bl{{bottom:6px;left:6px;transform:scaleY(-1)}}.br{{bottom:6px;right:6px;transform:scale(-1,-1)}}
 
 /* Testata con la foto */
-.head{{position:relative;isolation:isolate;aspect-ratio:16/8;max-width:100%}}
+.head{{position:relative;isolation:isolate;aspect-ratio:16/5;max-width:100%}}
 .head::before{{content:"";position:absolute;inset:0;z-index:-2;background:url(../img/sigillo.jpg) 50% 42%/cover}}
 .head::after{{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,11,23,.05) 0%,rgba(7,11,23,0) 55%,rgba(15,23,49,.85) 88%,rgba(15,23,49,1) 100%)}}
-.title{{display:flex;flex-direction:column;align-items:center;text-align:center;padding:4px 20px 22px;border-bottom:1px solid rgba(230,194,122,.45)}}
+.title{{display:flex;flex-direction:column;align-items:center;text-align:center;padding:10px 20px 22px;border-bottom:1px solid rgba(230,194,122,.45)}}
 .dipper{{position:absolute;top:22px;right:clamp(40px,10%,110px);width:clamp(90px,16vw,150px);filter:drop-shadow(0 0 6px rgba(255,220,150,.9))}}
 .shop{{margin:0;font-family:"Cinzel",Georgia,serif;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}}
-h1{{margin:6px 0 10px;font-family:"Cinzel Decorative",Georgia,serif;font-weight:700;font-size:clamp(1.8rem,5.6vw,3rem);line-height:1.05;
-  background:var(--gild);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 8px rgba(0,0,0,.8))}}
+@font-face{{font-family:"Bellavoir Delight";src:url(../img/bellavoir-delight.otf) format("opentype");font-display:swap}}
+h1{{margin:2px 0 10px;padding:0 .12em;font-family:"Bellavoir Delight","Cinzel Decorative",Georgia,serif;font-weight:400;font-size:clamp(2.4rem,6.4vw,3.6rem);line-height:1.15;
+  background:linear-gradient(180deg,#f3e2b6 0%,#ddb86a 45%,#b98c3e 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 8px rgba(0,0,0,.6))}}
 .pill{{font-family:"Cinzel",Georgia,serif;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-b);
   border:1px solid rgba(230,194,122,.7);border-radius:999px;padding:4px 16px;background:rgba(7,11,23,.55)}}
 
@@ -228,7 +229,6 @@ dd{{margin:0;font-size:1.08rem}}
   {corners}
   {head}
   <header class="title">
-    <p class="shop">Bottega delle Sette Stelle · Valacirca</p>
     {titolo_h1}
     <span class="pill">{e(etichetta)}</span>
   </header>

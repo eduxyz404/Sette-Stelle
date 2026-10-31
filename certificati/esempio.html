@@ -25,14 +25,15 @@ body{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font-family:
 .tl{top:6px;left:6px}.tr{top:6px;right:6px;transform:scaleX(-1)}.bl{bottom:6px;left:6px;transform:scaleY(-1)}.br{bottom:6px;right:6px;transform:scale(-1,-1)}
 
 /* Testata con la foto */
-.head{position:relative;isolation:isolate;aspect-ratio:16/8;max-width:100%}
+.head{position:relative;isolation:isolate;aspect-ratio:16/5;max-width:100%}
 .head::before{content:"";position:absolute;inset:0;z-index:-2;background:url(../img/sigillo.jpg) 50% 42%/cover}
 .head::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,11,23,.05) 0%,rgba(7,11,23,0) 55%,rgba(15,23,49,.85) 88%,rgba(15,23,49,1) 100%)}
-.title{display:flex;flex-direction:column;align-items:center;text-align:center;padding:4px 20px 22px;border-bottom:1px solid rgba(230,194,122,.45)}
+.title{display:flex;flex-direction:column;align-items:center;text-align:center;padding:10px 20px 22px;border-bottom:1px solid rgba(230,194,122,.45)}
 .dipper{position:absolute;top:22px;right:clamp(40px,10%,110px);width:clamp(90px,16vw,150px);filter:drop-shadow(0 0 6px rgba(255,220,150,.9))}
 .shop{margin:0;font-family:"Cinzel",Georgia,serif;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
-h1{margin:6px 0 10px;font-family:"Cinzel Decorative",Georgia,serif;font-weight:700;font-size:clamp(1.8rem,5.6vw,3rem);line-height:1.05;
-  background:var(--gild);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 8px rgba(0,0,0,.8))}
+@font-face{font-family:"Bellavoir Delight";src:url(../img/bellavoir-delight.otf) format("opentype");font-display:swap}
+h1{margin:2px 0 10px;padding:0 .12em;font-family:"Bellavoir Delight","Cinzel Decorative",Georgia,serif;font-weight:400;font-size:clamp(2.4rem,6.4vw,3.6rem);line-height:1.15;
+  background:linear-gradient(180deg,#f3e2b6 0%,#ddb86a 45%,#b98c3e 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 8px rgba(0,0,0,.6))}
 .pill{font-family:"Cinzel",Georgia,serif;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-b);
   border:1px solid rgba(230,194,122,.7);border-radius:999px;padding:4px 16px;background:rgba(7,11,23,.55)}
 
@@ -56,6 +57,9 @@ dl div{display:grid;grid-template-columns:86px 1fr;gap:10px}
 dt{font-family:"Cinzel",Georgia,serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:5px}
 dd{margin:0;font-size:1.08rem}
 .desc{margin:12px 0 0;font-style:italic;color:#c4cbe0}
+.excl{margin:8px 0 0;font-style:italic;color:var(--gold-b)}
+.niche.photo{border-radius:999px 999px 8px 8px / 170px 170px 8px 8px}
+.niche.photo img{aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;border-radius:999px 999px 4px 4px / 160px 160px 4px 4px}
 
 /* Ricetta e firma */
 .foot{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:24px clamp(22px,5vw,52px) clamp(28px,4vw,40px);
@@ -108,7 +112,6 @@ dd{margin:0;font-size:1.08rem}
   <svg class="corner tl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner tr" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner bl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner br" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg>
   <div class="head" role="img" aria-label="La busta della Bottega delle Sette Stelle, chiusa da un nastro di velluto blu e dal sigillo d'oro con la stella"></div>
   <header class="title">
-    <p class="shop">Bottega delle Sette Stelle · Valacirca</p>
     <h1>Certificato di Proprietà</h1>
     <span class="pill">esempio</span>
   </header>
@@ -132,6 +135,7 @@ dd{margin:0;font-size:1.08rem}
         <span class="cat">Mantelli per lei</span>
         <dl><div><dt>Tessuto</dt><dd>Velluto di seta</dd></div><div><dt>Colore</dt><dd>Blu notte</dd></div><div><dt>Ricami</dt><dd>stelle ricamate e fermaglio d&#x27;argento</dd></div></dl>
         <p class="desc">Mantello da cerimonia: quando si muove, le stelle ricamate sembrano accendersi.</p>
+        
       </div>
     </div>
   </section>
