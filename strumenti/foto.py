@@ -40,7 +40,7 @@ def neutro_vivo(im):
     im = ImageEnhance.Color(im).enhance(1.15)
     im = ImageEnhance.Brightness(im).enhance(1.06)
     return ImageEnhance.Contrast(im).enhance(1.06)
-def build(path, out_jpg, neutro=False):  # neutro=True per Completi, Toghe e Mantelli
+def build(path, out_jpg, neutro=False):  # neutro=True per tutti i vestiti
     im = Image.open(path).convert('RGB')
     im = stamp(fit(neutro_vivo(im) if neutro else im))
     im.save(out_jpg, quality=86, optimize=True, progressive=True)
