@@ -1,4 +1,4 @@
-# Bottega della Notte d'Oro (Laurelómë)
+# Bottega delle Sette Stelle (Valacirca)
 
 Vetrina della bottega di gioielli e abiti in stile elfico noldor, per il gioco di ruolo Extremelot.
 
