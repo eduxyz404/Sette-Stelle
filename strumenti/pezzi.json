@@ -1167,18 +1167,18 @@
    "name": "Calma",
    "gloss": "lampada",
    "photo": true,
-   "fabric": "Cotone nero lavorato",
+   "fabric": "Cotone nero pesante, foderato",
    "colorName": "Nero e oro",
    "trimName": "bande di rami ricamate d'oro su cappuccio e orli, fermaglio d'oro a stella",
    "garment": "cloak",
    "color": "#141214",
    "trim": "#e4c47c",
    "price": 2800,
-   "desc": "Mantello nero con cappuccio e mantellina, percorso da bande di rami ricamate d'oro e chiuso da una stella d'oro: una luce nel buio.",
-   "cls": "Tessuti · Mantello con mantellina, taglia media",
+   "desc": "Mantello invernale nero, pesante e foderato, con cappuccio e mantellina, percorso da bande di rami ricamate d'oro: una luce nelle notti d'inverno.",
+   "cls": "Tessuti · Mantello invernale foderato con mantellina, taglia media",
    "recipe": [
     [
-     3,
+     4,
      "Cotone"
     ],
     [
