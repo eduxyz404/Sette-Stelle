@@ -433,6 +433,11 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .np-msg{margin:0;min-height:1.2em;color:var(--gold-bright);font-style:italic}
 .np-out{min-height:150px;font-size:.95rem}
 @media (prefers-reduced-motion: reduce){.note-fab.pulse{animation:none}}
+
+footer .owner{font-style:normal;font-family:"Cinzel",Georgia,serif;font-size:.82rem;letter-spacing:.14em;color:var(--fg)}
+footer .owner b{font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;color:var(--gold-bright);letter-spacing:.04em}
+footer .ludic{max-width:62ch;margin:4px auto 0;font-size:.88rem;opacity:.85}
+footer .ludic b{font-style:normal;font-weight:500;color:var(--fg)}
 </style>
 
 </head>
@@ -564,7 +569,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
           <h3>Come acquistare</h3><span class="q">manen · in che modo</span>
           <ul>
             <li>Scegli il gioiello o l'abito dalla vetrina.</li>
-            <li>Cerca il bottegaio in gioco e indica il nome del pezzo.</li>
+            <li>Scrivi a Elrohir, il bottegaio, e indica il codice del pezzo.</li>
             <li>Paga in monete alla consegna.</li>
             <li>Ricevi il certificato di proprietà con il suo link.</li>
             <li>Su richiesta: confezione della bottega e dedica sul certificato.</li>
@@ -613,18 +618,19 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
   <footer>
     <span data-orn></span>
-    <span>Bottega delle Sette Stelle · Valacirca · prezzi in monete del regno · ogni gemma e ogni stoffa sono uniche e possono variare leggermente nella luce.</span>
+    <span class="owner">Bottega delle Sette Stelle · Valacirca · bottegaio: <b>Elrohir</b></span>
+    <span>Prezzi in monete del regno · ogni gemma e ogni stoffa sono uniche e possono variare leggermente nella luce.</span>
+    <span class="ludic">Sito creato a scopo esclusivamente ludico per il gioco di ruolo <b>ExtremeLot</b>. Bottega, oggetti e prezzi esistono solo all'interno del gioco.</span>
   </footer>
 </div>
 
 <button type="button" class="note-fab" id="note-fab" hidden aria-controls="note-panel" aria-expanded="false"><span class="nf-ico" aria-hidden="true">✎</span> Taccuino <b id="note-count">0</b></button>
 <aside class="note-panel" id="note-panel" hidden aria-labelledby="note-title">
   <header class="np-head"><div><span class="label">il tuo</span><h2 id="note-title">Taccuino</h2></div><button type="button" class="np-close" id="note-close" aria-label="Chiudi il taccuino">✕</button></header>
-  <p class="np-intro">Annota i pezzi che ti piacciono, poi copia l'elenco e invialo al bottegaio con una missiva in gioco.</p>
+  <p class="np-intro">Annota i pezzi che ti piacciono, poi copia l'elenco e invialo a Elrohir, il bottegaio, con una missiva in gioco.</p>
   <ul class="np-list" id="note-list"></ul>
   <p class="np-empty" id="note-empty">Il taccuino è vuoto. Tocca «Annota nel taccuino» sotto un pezzo per aggiungerlo.</p>
   <div class="np-total" id="note-total"></div>
-  <label class="np-field" for="note-name"><span>Il tuo nome in gioco</span><input id="note-name" type="text" autocomplete="off" placeholder="es. Elenwë"></label>
   <label class="np-field" for="note-extra"><span>Note per il bottegaio</span><textarea id="note-extra" rows="3" placeholder="confezione, dedica, taglia, colori…"></textarea></label>
   <div class="np-actions"><button type="button" class="np-copy" id="note-copy">Copia l'elenco</button><button type="button" class="np-clear" id="note-clear">Svuota</button></div>
   <p class="np-msg" id="note-msg" role="status"></p>
@@ -1092,12 +1098,12 @@ note.codes = note.codes.filter(c => ITEMS.some(i => i.code === c));
 function inNote(code){ return note.codes.includes(code); }
 function saveNote(){ try { localStorage.setItem(NOTE_KEY, JSON.stringify(note)); } catch(e) {} }
 const fab = document.getElementById("note-fab"), panel = document.getElementById("note-panel");
-const nName = document.getElementById("note-name"), nExtra = document.getElementById("note-extra"), nMsg = document.getElementById("note-msg"), nOut = document.getElementById("note-out");
-nName.value = note.name; nExtra.value = note.extra;
+const nExtra = document.getElementById("note-extra"), nMsg = document.getElementById("note-msg"), nOut = document.getElementById("note-out");
+nExtra.value = note.extra;
 function noteText(){
   const list = note.codes.map(c => ITEMS.find(i => i.code === c));
   const tot = list.reduce((n, it) => n + it.price, 0);
-  return ["Ordine per la Bottega delle Sette Stelle", note.name ? "Da: " + note.name : "", "",
+  return ["Ordine per la Bottega delle Sette Stelle (bottegaio: Elrohir)", "",
     ...list.map(it => `• ${it.code} · ${it.name} (${nameOf(it.cat)}${whoOf(it.cat) === "coppia" ? "" : " per " + whoOf(it.cat)}) · ${fmt(it.price)} monete`),
     "", "Totale: " + fmt(tot) + " monete", note.extra ? "Note: " + note.extra : ""].filter((l, i, a) => l !== "" || (a[i-1] !== "" && i > 0)).join("\n").trim();
 }
@@ -1122,14 +1128,13 @@ document.addEventListener("click", e => {
 fab.addEventListener("click", () => setPanel(panel.hidden));
 document.getElementById("note-close").addEventListener("click", () => { setPanel(false); fab.focus(); });
 document.addEventListener("keydown", e => { if(e.key === "Escape" && !panel.hidden){ setPanel(false); fab.focus(); } });
-nName.addEventListener("input", () => { note.name = nName.value; saveNote(); });
 nExtra.addEventListener("input", () => { note.extra = nExtra.value; saveNote(); });
 document.getElementById("note-clear").addEventListener("click", () => { note.codes = []; saveNote(); renderNote(); });
 document.getElementById("note-copy").addEventListener("click", () => {
   if(!note.codes.length){ nMsg.textContent = "Aggiungi almeno un pezzo prima di copiare."; return; }
   const t = noteText();
   const fallback = () => { nOut.value = t; nOut.hidden = false; nOut.focus(); nOut.select(); nMsg.textContent = "Seleziona il testo qui sotto e copialo."; };
-  try { navigator.clipboard.writeText(t).then(() => { nMsg.textContent = "Elenco copiato: incollalo nella missiva al bottegaio."; }, fallback); } catch(err) { fallback(); }
+  try { navigator.clipboard.writeText(t).then(() => { nMsg.textContent = "Elenco copiato: incollalo nella missiva a Elrohir."; }, fallback); } catch(err) { fallback(); }
 });
 const _route = route;
 route = function(){ _route(); fab.hidden = document.getElementById("menubar").hidden; if(fab.hidden) setPanel(false); renderNote(); };
