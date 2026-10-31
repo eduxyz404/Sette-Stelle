@@ -1162,6 +1162,36 @@
    ]
   },
   {
+   "code": "A36",
+   "cat": "lui/Mantelli",
+   "name": "Calma",
+   "gloss": "lampada",
+   "photo": true,
+   "fabric": "Cotone nero lavorato",
+   "colorName": "Nero e oro",
+   "trimName": "bande di rami ricamate d'oro su cappuccio e orli, fermaglio d'oro a stella",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#e4c47c",
+   "price": 2800,
+   "desc": "Mantello nero con cappuccio e mantellina, percorso da bande di rami ricamate d'oro e chiuso da una stella d'oro: una luce nel buio.",
+   "cls": "Tessuti · Mantello con mantellina, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
    "code": "A20",
    "cat": "lui/Completi",
    "name": "Morë",
