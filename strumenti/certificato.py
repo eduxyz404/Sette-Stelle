@@ -83,8 +83,7 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
     if confezione:
         extra.append(f"""<div class="box">
       <img src="../img/confezione.jpg" alt="La confezione della bottega: scatola color pergamena con fregi d'oro, nastro di velluto blu e sigillo d'oro">
-      <div><span class="lbl">Confezione</span>
-        <p>Scatola della bottega in carta color pergamena con fregi d'oro, chiusa da un nastro di velluto blu notte e dal sigillo d'oro delle sette stelle.</p></div>
+      <span class="lbl">Confezione</span>
     </div>""")
     if dedica:
         da = f'<span class="from">{e(firma)}</span>' if firma else ''
@@ -181,8 +180,7 @@ dd{{margin:0;font-size:1.08rem}}
 .extras.one .tag{{max-width:360px;justify-self:center}}
 @media (max-width:720px){{.extras{{grid-template-columns:1fr}}}}
 .box{{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}}
-.extras.one .box{{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center}}
-@media (max-width:620px){{.extras.one .box{{grid-template-columns:1fr}}}}
+.extras.one .box{{max-width:560px;justify-self:center;text-align:center}}
 .box img{{display:block;width:100%;height:auto;border-radius:12px;border:1px solid rgba(230,194,122,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(230,194,122,.3),0 24px 40px -20px rgba(0,0,0,.9)}}
 .box p{{margin:4px 0 0;font-size:1.05rem;color:#c4cbe0}}
 .tag{{position:relative;text-align:center;color:#3b2a10;padding:34px 24px 26px;
