@@ -693,7 +693,7 @@
   },
   {
    "code": "A14",
-   "cat": "lui/Vesti",
+   "cat": "lui/Completi",
    "name": "Ornë",
    "gloss": "albero",
    "photo": true,
@@ -724,7 +724,7 @@
   },
   {
    "code": "A15",
-   "cat": "lui/Vesti",
+   "cat": "lui/Completi",
    "name": "Ninquë",
    "gloss": "bianco",
    "photo": true,
@@ -887,7 +887,7 @@
   },
   {
    "code": "A20",
-   "cat": "lui/Vesti",
+   "cat": "lui/Completi",
    "name": "Morë",
    "gloss": "oscuro",
    "photo": true,
@@ -918,7 +918,7 @@
   },
   {
    "code": "A21",
-   "cat": "lui/Vesti",
+   "cat": "lui/Completi",
    "name": "Arië",
    "gloss": "il giorno",
    "photo": true,
@@ -1011,7 +1011,7 @@
   },
   {
    "code": "A24",
-   "cat": "lui/Vesti",
+   "cat": "lui/Completi",
    "name": "Helin",
    "gloss": "viola",
    "photo": true,
@@ -1328,30 +1328,17 @@
     "82%"
    ]
   },
-  "lui/Vesti": {
-   "kind": "abiti",
-   "who": "lui",
-   "name": "Vesti",
-   "slug": "lui-vesti",
-   "desc": "vesti lunghe da cerimonia",
-   "show": "Ornë",
-   "crop": [
-    2.2,
-    "68%",
-    "45%"
-   ]
-  },
   "lui/Completi": {
    "kind": "abiti",
    "who": "lui",
    "name": "Completi",
    "slug": "lui-completi",
-   "desc": "camicie, gilet, giacche e pantaloni",
-   "show": "Carnë",
+   "desc": "vesti da cerimonia, giacche, gilet e camicie",
+   "show": "Ornë",
    "crop": [
-    2,
-    "80%",
-    "55%"
+    2.2,
+    "68%",
+    "45%"
    ]
   },
   "lui/Tuniche": {
