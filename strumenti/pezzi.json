@@ -1072,6 +1072,33 @@
    ]
   },
   {
+   "code": "A26",
+   "cat": "lui/Completi",
+   "name": "Ranya",
+   "gloss": "viandante",
+   "photo": true,
+   "fabric": "Camicia di cotone damascato color sabbia, pantaloni di cotone bruno",
+   "colorName": "Sabbia e bruno",
+   "trimName": "trama a foglie intessuta nella camicia",
+   "garment": "cloak",
+   "color": "#b9a184",
+   "trim": "#e4c47c",
+   "price": 1650,
+   "desc": "Camicia color sabbia dalla trama a foglie, con le maniche arrotolate, e pantaloni bruni: per il viaggio e la bottega.",
+   "excl": "Cinghie, bracciali e stivali non inclusi",
+   "cls": "Tessuti · Completo, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A11",
    "cat": "lui/Accessori",
    "name": "Lanya",
