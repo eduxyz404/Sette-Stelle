@@ -79,13 +79,13 @@
    "gloss": "il segno",
    "photo": true,
    "metal": "Argento lucido",
-   "gem": "Diamante",
+   "gem": "Cristallo",
    "cut": "quadrato",
    "ct": "0,1 ct",
    "color": "#e8eef8",
    "shape": "round",
    "price": 1100,
-   "desc": "Due piastrine d'argento: una rigata con un piccolo diamante, l'altra liscia e lucida.",
+   "desc": "Due piastrine d'argento: una rigata con un piccolo cristallo, l'altra liscia e lucida.",
    "cls": "Monili · Collana",
    "recipe": [
     [
@@ -94,7 +94,7 @@
     ],
     [
      1,
-     "Diamante Grezzo"
+     "Cristallo"
     ]
    ]
   },
@@ -177,13 +177,13 @@
    "gloss": "notte",
    "photo": true,
    "metal": "Argento",
-   "gem": "Agata nera",
+   "gem": "Cristallo tinto di nero",
    "cut": "a sfera",
    "ct": "perle da 6 mm",
    "color": "#151418",
    "shape": "cab",
    "price": 850,
-   "desc": "Perle di agata nera, lucide come il cielo senza luna, scandite da anelli d'argento.",
+   "desc": "Perle di cristallo nero, lucide come il cielo senza luna, scandite da anelli d'argento.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -192,7 +192,11 @@
     ],
     [
      1,
-     "Agata"
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -255,14 +259,14 @@
    "gloss": "tre",
    "photo": true,
    "metal": "Oro",
-   "gem": "Pietra lavica, agata bruna, ematite",
+   "gem": "Cristalli tinti di nero, bruno e grigio",
    "cut": "a sfera e a disco",
    "ct": "tre fili",
    "color": "#2a2220",
    "shape": "cab",
    "price": 1500,
    "unit": "il tris",
-   "desc": "Tre bracciali da portare insieme: pietra lavica, agata bruna venata d'oro ed ematite opaca, con inserti d'oro.",
+   "desc": "Tre bracciali da portare insieme: cristalli tinti di nero, di bruno venato d'oro e di grigio opaco, con inserti d'oro.",
    "cls": "Monili · 3 Bracciali (accorpo)",
    "recipe": [
     [
@@ -270,16 +274,12 @@
      "Oro"
     ],
     [
-     1,
-     "Pietra"
+     3,
+     "Cristallo"
     ],
     [
      1,
-     "Agata"
-    ],
-    [
-     1,
-     "Ematite"
+     "Colori"
     ]
    ]
   },
@@ -316,13 +316,13 @@
    "gloss": "occhio",
    "photo": true,
    "metal": "Argento cesellato",
-   "gem": "Agata nera",
+   "gem": "Cristallo tinto di nero",
    "cut": "cabochon",
    "ct": "8,0 ct",
    "color": "#121114",
    "shape": "cab",
    "price": 1200,
-   "desc": "Doppia treccia di cotone nero e bruno, con un'agata nera tonda in una cornice d'argento a corda e passanti cesellati.",
+   "desc": "Doppia treccia di cotone nero e bruno, con un cristallo nero tondo in una cornice d'argento a corda e passanti cesellati.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -335,7 +335,7 @@
     ],
     [
      1,
-     "Agata"
+     "Cristallo"
     ],
     [
      1,
@@ -394,13 +394,13 @@
    "gloss": "leone",
    "photo": true,
    "metal": "Argento martellato",
-   "gem": "Agata nera",
+   "gem": "Cristalli tinti di nero",
    "cut": "cabochon",
    "ct": "2 × 1,5 ct",
    "color": "#121114",
    "shape": "cab",
    "price": 1600,
-   "desc": "Metà treccia di cotone nero, metà intreccio di fili d'argento, chiusi da una placca martellata con la testa di leone e due agate nere.",
+   "desc": "Metà treccia di cotone nero, metà intreccio di fili d'argento, chiusi da una placca martellata con la testa di leone e due cristalli neri.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -413,7 +413,7 @@
     ],
     [
      1,
-     "Agata"
+     "Cristallo"
     ],
     [
      1,
@@ -852,7 +852,7 @@
    "photo": true,
    "fabric": "Cotone nero lavorato, mantella di velo nero con colletto alto",
    "colorName": "Nero",
-   "trimName": "intrecci ricamati d'argento, catenelle d'argento, pendenti di ametista",
+   "trimName": "intrecci ricamati d'argento, catenelle d'argento, pendenti di cristallo viola",
    "garment": "dress",
    "color": "#141214",
    "trim": "#dfe6f4",
@@ -875,7 +875,7 @@
     ],
     [
      1,
-     "Ametista"
+     "Cristallo"
     ]
    ]
   },
@@ -887,12 +887,12 @@
    "photo": true,
    "fabric": "Cotone nero aderente, veli neri alle braccia, a spalle scoperte",
    "colorName": "Nero e viola",
-   "trimName": "rami ricamati d'argento, ametiste sul corpetto",
+   "trimName": "rami ricamati d'argento, cristalli viola sul corpetto",
    "garment": "dress",
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 4900,
-   "desc": "Abito nero aderente a spalle scoperte, percorso da rami d'argento, con ametiste sul corpetto e lunghi veli alle braccia. Tema tenebra: si abbina a Morion e Fuinur.",
+   "desc": "Abito nero aderente a spalle scoperte, percorso da rami d'argento, con cristalli viola sul corpetto e lunghi veli alle braccia. Tema tenebra: si abbina a Morion e Fuinur.",
    "excl": "Collana, orecchini e anello non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -910,7 +910,7 @@
     ],
     [
      1,
-     "Ametista"
+     "Cristallo"
     ]
    ]
   },
@@ -1291,12 +1291,12 @@
    "photo": true,
    "fabric": "Cotone nero lavorato, ampio mantello nero",
    "colorName": "Nero e viola",
-   "trimName": "intrecci ricamati d'argento, catenelle e fermagli d'argento con ametista",
+   "trimName": "intrecci ricamati d'argento, catenelle e fermagli d'argento con cristallo viola",
    "garment": "cloak",
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 4300,
-   "desc": "Lunga veste nera ricamata a intrecci d'argento, con un ampio mantello fermato sulle spalle da due spille con ametista. Tema tenebra: si abbina a Lómëwen e Tindómiel.",
+   "desc": "Lunga veste nera ricamata a intrecci d'argento, con un ampio mantello fermato sulle spalle da due spille con cristallo viola. Tema tenebra: si abbina a Lómëwen e Tindómiel.",
    "excl": "Stivali e collana non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
@@ -1314,7 +1314,7 @@
     ],
     [
      1,
-     "Ametista"
+     "Cristallo"
     ]
    ]
   },
@@ -1326,7 +1326,7 @@
    "photo": true,
    "fabric": "Cotone nero, mantello di veli neri sfrangiati",
    "colorName": "Nero",
-   "trimName": "rami ricamati d'argento, fermaglio d'argento con ametista in vita",
+   "trimName": "rami ricamati d'argento, fermaglio d'argento con cristallo viola in vita",
    "garment": "cloak",
    "color": "#141214",
    "trim": "#dfe6f4",
@@ -1349,7 +1349,7 @@
     ],
     [
      1,
-     "Ametista"
+     "Cristallo"
     ]
    ]
   },
