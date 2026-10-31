@@ -576,6 +576,159 @@
    ]
   },
   {
+   "code": "A29",
+   "cat": "lui/Toghe",
+   "name": "Istyar",
+   "gloss": "sapiente",
+   "photo": true,
+   "fabric": "Cotone blu notte e color sabbia",
+   "colorName": "Blu notte e sabbia",
+   "trimName": "bande ricamate d'oro, fermaglio d'oro, fascia annodata",
+   "garment": "cloak",
+   "color": "#1d2340",
+   "trim": "#e4c47c",
+   "price": 3400,
+   "desc": "Toga blu notte con mantella e bande ricamate d'oro, sopra una sottoveste color sabbia: per studiosi e maestri.",
+   "excl": "Libro non incluso",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A30",
+   "cat": "lui/Toghe",
+   "name": "Lumbë",
+   "gloss": "ombra",
+   "photo": true,
+   "fabric": "Cotone nero lavorato",
+   "colorName": "Nero",
+   "trimName": "bande ricamate a intrecci, fermaglio d'argento a stella, fascia annodata",
+   "garment": "cloak",
+   "color": "#1a1517",
+   "trim": "#dfe6f4",
+   "price": 3200,
+   "desc": "Toga nera con cappuccio e mantella, dalla trama scura e fitta: per chi cammina la notte.",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A31",
+   "cat": "lui/Toghe",
+   "name": "Carnil",
+   "gloss": "stella rossa",
+   "photo": true,
+   "fabric": "Cotone bordeaux e color sabbia",
+   "colorName": "Bordeaux e sabbia",
+   "trimName": "bande ricamate d'oro, fermaglio d'oro, fascia annodata",
+   "garment": "cloak",
+   "color": "#3c1a1e",
+   "trim": "#e4c47c",
+   "price": 3400,
+   "desc": "Toga color vino con cappuccio e mantella, ricamata d'oro lungo le bande e gli orli.",
+   "excl": "Pendente a stella non incluso",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A32",
+   "cat": "lui/Toghe",
+   "name": "Ilmen",
+   "gloss": "la regione delle stelle",
+   "photo": true,
+   "fabric": "Cotone avorio e grigio-azzurro",
+   "colorName": "Avorio e grigio-azzurro",
+   "trimName": "stelle e rami ricamati d'oro, stella a otto raggi sul petto, fermaglio d'oro",
+   "garment": "cloak",
+   "color": "#e5dccb",
+   "trim": "#e4c47c",
+   "price": 3600,
+   "desc": "Toga avorio con mantella grigio-azzurra, ricamata di stelle d'oro, con la stella della bottega sul petto.",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A33",
+   "cat": "lui/Toghe",
+   "name": "Nolmë",
+   "gloss": "sapienza",
+   "photo": true,
+   "fabric": "Cotone viola e color sabbia",
+   "colorName": "Viola e sabbia",
+   "trimName": "cerchi e stelle ricamati d'oro, fermaglio d'oro, fascia annodata",
+   "garment": "cloak",
+   "color": "#3a1d4a",
+   "trim": "#e4c47c",
+   "price": 3500,
+   "desc": "Toga viola con mantella color sabbia, ricamata d'oro con cerchi e costellazioni: la veste di un astronomo.",
+   "excl": "Portapergamene e pendente non inclusi",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
    "code": "A05",
    "cat": "lei/Accessori",
    "name": "Lindë",
@@ -1401,6 +1554,19 @@
     2.2,
     "68%",
     "45%"
+   ]
+  },
+  "lui/Toghe": {
+   "kind": "abiti",
+   "who": "lui",
+   "name": "Toghe",
+   "slug": "lui-toghe",
+   "desc": "vesti lunghe da studioso, mago e astronomo",
+   "show": "Ilmen",
+   "crop": [
+    2.2,
+    "35%",
+    "25%"
    ]
   },
   "lui/Accessori": {
