@@ -764,8 +764,70 @@
    "color": "#d2b48c",
    "trim": "#e4c47c",
    "price": 5000,
-   "desc": "Abito di veli color sabbia coperto da una rete d'oro, con un drappo rubino che scende dalle spalle come sotto le stelle del deserto. Tema notte d'oriente: si abbina a Rómestámo.",
+   "desc": "Abito di veli color sabbia coperto da una rete d'oro, con un drappo rubino che scende dalle spalle come sotto le stelle del deserto. Tema notte d'oriente: si abbina a Rómestámo e Rómendil.",
    "excl": "Diadema, orecchini e bracciali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A58",
+   "cat": "lei/Cerimonia",
+   "name": "Nárië",
+   "gloss": "la fiamma",
+   "photo": true,
+   "fabric": "Cotone color avorio, veli di cotone rosso fuoco",
+   "colorName": "Avorio e rosso fuoco",
+   "trimName": "lingue di fuoco ricamate d'oro e di rosso, maniche lunghe a velo",
+   "garment": "dress",
+   "color": "#ece0cf",
+   "trim": "#e4c47c",
+   "price": 4900,
+   "desc": "Abito avorio a spalle scoperte, attraversato da lingue rosse e d'oro come fiamme che salgono, con veli rossi alle maniche. Tema fuoco: si abbina a Ruinë e Úrion.",
+   "excl": "Collana e orecchini non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A59",
+   "cat": "lei/Cerimonia",
+   "name": "Nárwen",
+   "gloss": "fanciulla di fuoco",
+   "photo": true,
+   "fabric": "Velo di cotone rosso fuoco, sottogonna di cotone avorio",
+   "colorName": "Rosso fuoco e avorio",
+   "trimName": "fiamme ricamate d'oro, fascia d'oro con pietra rossa, drappo alle braccia",
+   "garment": "dress",
+   "color": "#8e1c1c",
+   "trim": "#e4c47c",
+   "price": 4800,
+   "desc": "Abito rosso fuoco incrociato sul petto, aperto su un velo avorio, con fiamme d'oro e una fascia con pietra rossa. Tema fuoco: si abbina a Ruinë e Úrion.",
+   "excl": "Collana, orecchini e bracciali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
    "recipe": [
     [
@@ -1043,6 +1105,99 @@
    "price": 3900,
    "desc": "Veste rosso rubino con bordi d'oro a rete e un ampio drappo avorio sulla spalla. Tema notte d'oriente: si abbina a Rómelótë.",
    "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A62",
+   "cat": "lui/Cerimonia",
+   "name": "Rómendil",
+   "gloss": "amico dell'oriente",
+   "photo": true,
+   "fabric": "Cotone viola profondo, mantello di cotone viola foderato",
+   "colorName": "Viola e oro",
+   "trimName": "rete ricamata d'oro, luna crescente sul mantello, nappe d'oro, fascia con pietra viola",
+   "garment": "cloak",
+   "color": "#3a1d4a",
+   "trim": "#e4c47c",
+   "price": 4200,
+   "desc": "Veste viola profondo coperta da una rete d'oro, con un ampio mantello su cui brilla una luna crescente. Tema notte d'oriente: si abbina a Rómelótë.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A60",
+   "cat": "lui/Cerimonia",
+   "name": "Ruinë",
+   "gloss": "la vampa",
+   "photo": true,
+   "fabric": "Cotone nero lavorato, fodera di cotone rosso fuoco",
+   "colorName": "Nero e rosso fuoco",
+   "trimName": "fiamme ricamate di rosso, fascia di cotone nero con pietra rossa",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#9a1f2a",
+   "price": 4000,
+   "desc": "Lunga veste nera dal colletto alto, percorsa da fiamme rosse che salgono dall'orlo, con la fodera color brace. Tema fuoco: si abbina a Nárië e Nárwen.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A61",
+   "cat": "lui/Cerimonia",
+   "name": "Úrion",
+   "gloss": "figlio del fuoco",
+   "photo": true,
+   "fabric": "Cotone nero lavorato, mantello di cotone rosso fuoco",
+   "colorName": "Nero e rosso fuoco",
+   "trimName": "fiamme ricamate d'oro sul mantello, spilla d'oro con pietra rossa, fascia di cotone nero",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#9a1f2a",
+   "price": 4200,
+   "desc": "Veste nera con un mantello rosso fuoco drappeggiato sulla spalla, fermato da una spilla con pietra rossa. Tema fuoco: si abbina a Nárië e Nárwen.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
     [
      4,
@@ -1962,7 +2117,7 @@
    "who": "lei",
    "name": "Cerimonia",
    "slug": "lei-cerimonia",
-   "desc": "abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente",
+   "desc": "abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco",
    "show": "Elenindis",
    "crop": [
     2,
@@ -2014,7 +2169,7 @@
    "who": "lui",
    "name": "Cerimonia",
    "slug": "lui-cerimonia",
-   "desc": "abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente",
+   "desc": "abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco",
    "show": "Tinwerína",
    "crop": [
     2.2,
