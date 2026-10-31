@@ -483,7 +483,7 @@
   },
   {
    "code": "A03",
-   "cat": "lei/Vesti",
+   "cat": "lei/Abiti",
    "name": "Elerrína",
    "gloss": "incoronata di stelle",
    "fabric": "Seta",
@@ -513,7 +513,7 @@
   },
   {
    "code": "A04",
-   "cat": "lei/Vesti",
+   "cat": "lei/Abiti",
    "name": "Lótë",
    "gloss": "fiore",
    "fabric": "Seta e organza di seta",
@@ -542,7 +542,7 @@
   },
   {
    "code": "A13",
-   "cat": "lei/Vesti",
+   "cat": "lei/Abiti",
    "name": "Tindómë",
    "gloss": "crepuscolo stellato",
    "photo": true,
@@ -1289,11 +1289,11 @@
     "45%"
    ]
   },
-  "lei/Vesti": {
+  "lei/Abiti": {
    "kind": "abiti",
    "who": "lei",
-   "name": "Vesti",
-   "slug": "lei-vesti",
+   "name": "Abiti",
+   "slug": "lei-abiti",
    "desc": "abiti lunghi per le sale e le feste",
    "show": "Tindómë",
    "crop": [
