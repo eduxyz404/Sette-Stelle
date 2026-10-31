@@ -536,7 +536,7 @@
   },
   {
    "code": "A41",
-   "cat": "lei/Sposa",
+   "cat": "lei/Cerimonia",
    "name": "Elenindis",
    "gloss": "sposa delle stelle",
    "photo": true,
@@ -547,7 +547,7 @@
    "color": "#e9e3dc",
    "trim": "#dfe6f4",
    "price": 5200,
-   "desc": "Abito da sposa di veli leggeri, dall'avorio al blu della notte, attraversato da raggi e stelle d'argento, con un lungo velo.",
+   "desc": "Abito da sposa di veli leggeri, dall'avorio al blu della notte, attraversato da raggi e stelle d'argento, con un lungo velo. Tema stelle: si abbina a Tinwerína e Menelmacar.",
    "excl": "Diadema, orecchini e bracciale non inclusi",
    "cls": "Tessuti · Abito da sposa con velo e strascico",
    "recipe": [
@@ -562,6 +562,253 @@
     [
      1,
      "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A46",
+   "cat": "lei/Cerimonia",
+   "name": "Falassë",
+   "gloss": "la riva",
+   "photo": true,
+   "fabric": "Velo e pizzo di cotone avorio sfumati nel blu mare",
+   "colorName": "Avorio e blu mare",
+   "trimName": "pizzo a onde, maniche lunghe a velo, conchiglia d'argento in vita",
+   "garment": "dress",
+   "color": "#dfe4ea",
+   "trim": "#dfe6f4",
+   "price": 5000,
+   "desc": "Abito a maniche lunghe di pizzo, con veli blu che si muovono come onde e una conchiglia d'argento in vita. Tema mare: si abbina a Eärendur e Airë.",
+   "excl": "Diadema e orecchini non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A48",
+   "cat": "lei/Cerimonia",
+   "name": "Eärwen",
+   "gloss": "fanciulla del mare",
+   "photo": true,
+   "fabric": "Velo di cotone avorio sfumato nel blu mare",
+   "colorName": "Avorio e blu mare",
+   "trimName": "onde ricamate d'argento, conchiglie d'argento alla spalla e in vita",
+   "garment": "dress",
+   "color": "#dfe4ea",
+   "trim": "#dfe6f4",
+   "price": 4800,
+   "desc": "Abito a spalle scoperte di veli leggeri, avvolto da onde azzurre e fermato da conchiglie d'argento. Tema mare: si abbina a Eärendur e Airë.",
+   "excl": "Diadema, orecchini e bracciale non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A49",
+   "cat": "lei/Cerimonia",
+   "name": "Aldarwen",
+   "gloss": "fanciulla degli alberi",
+   "photo": true,
+   "fabric": "Velo di cotone color sabbia",
+   "colorName": "Sabbia dorata",
+   "trimName": "rami ricamati d'oro e d'argento, fermaglio a rami in vita",
+   "garment": "dress",
+   "color": "#c9ad8a",
+   "trim": "#e4c47c",
+   "price": 4800,
+   "desc": "Abito di veli color sabbia ricamato a rami sottili, con maniche lunghe e ampie come foglie. Tema bosco: si abbina a Ornendil.",
+   "excl": "Diadema e orecchini non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A42",
+   "cat": "lui/Cerimonia",
+   "name": "Tinwerína",
+   "gloss": "incoronato di stelle",
+   "photo": true,
+   "fabric": "Cotone blu notte, camicia color avorio, mantella di velo di cotone",
+   "colorName": "Blu notte e avorio",
+   "trimName": "raggi e stelle ricamati d'argento, due stelle d'argento alla spalla e in vita",
+   "garment": "cloak",
+   "color": "#1b2034",
+   "trim": "#dfe6f4",
+   "price": 4200,
+   "desc": "Lunga veste blu notte attraversata da raggi d'argento, con una mantella di velo stellato sulla spalla. Tema stelle: si abbina a Elenindis.",
+   "excl": "Diadema non incluso",
+   "cls": "Tessuti · Abito da cerimonia con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A43",
+   "cat": "lui/Cerimonia",
+   "name": "Menelmacar",
+   "gloss": "lo spadaccino del cielo",
+   "photo": true,
+   "fabric": "Cotone blu notte, camicia color avorio",
+   "colorName": "Blu notte",
+   "trimName": "costellazioni ricamate d'argento, fascia con stella d'argento",
+   "garment": "cloak",
+   "color": "#1b2034",
+   "trim": "#dfe6f4",
+   "price": 3600,
+   "desc": "Veste blu notte con costellazioni d'argento che scendono dalla spalla, stretta da una fascia con la stella. Tema stelle: si abbina a Elenindis.",
+   "excl": "Diadema non incluso",
+   "cls": "Tessuti · Abito da cerimonia, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A44",
+   "cat": "lui/Cerimonia",
+   "name": "Eärendur",
+   "gloss": "il marinaio",
+   "photo": true,
+   "fabric": "Cotone blu mare, camicia e drappo di cotone color avorio",
+   "colorName": "Blu mare e avorio",
+   "trimName": "onde ricamate d'argento, fermaglio d'argento in vita",
+   "garment": "cloak",
+   "color": "#2b4766",
+   "trim": "#dfe6f4",
+   "price": 3800,
+   "desc": "Lunga giacca blu mare con onde d'argento sui risvolti e un drappo avorio annodato in vita. Tema mare: si abbina a Falassë ed Eärwen.",
+   "excl": "Diadema non incluso",
+   "cls": "Tessuti · Abito da cerimonia, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A45",
+   "cat": "lui/Cerimonia",
+   "name": "Airë",
+   "gloss": "il mare",
+   "photo": true,
+   "fabric": "Cotone avorio lavorato, drappo di cotone blu mare",
+   "colorName": "Avorio e blu mare",
+   "trimName": "onde ricamate d'argento, spilla a conchiglia e fermaglio d'argento",
+   "garment": "cloak",
+   "color": "#e6dccb",
+   "trim": "#dfe6f4",
+   "price": 4000,
+   "desc": "Veste avorio con un drappo blu mare che scende dalla spalla come un'onda, fermato da una conchiglia d'argento. Tema mare: si abbina a Falassë ed Eärwen.",
+   "excl": "Diadema non incluso",
+   "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A47",
+   "cat": "lui/Cerimonia",
+   "name": "Ornendil",
+   "gloss": "amico degli alberi",
+   "photo": true,
+   "fabric": "Cotone verde bosco lavorato, camicia color sabbia, pantaloni bruni, mantello verde",
+   "colorName": "Verde bosco e sabbia",
+   "trimName": "rami ricamati d'oro, spilla d'oro ad albero, cintura di cotone con fibbia d'oro",
+   "garment": "cloak",
+   "color": "#2f3a2a",
+   "trim": "#e4c47c",
+   "price": 3900,
+   "desc": "Lunga sopravveste verde bosco ricamata a rami d'oro, con il mantello fermato da una spilla ad albero. Tema bosco: si abbina ad Aldarwen.",
+   "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
     ]
    ]
   },
@@ -1464,13 +1711,12 @@
     "40%"
    ]
   },
-  "lei/Sposa": {
+  "lei/Cerimonia": {
    "kind": "abiti",
    "who": "lei",
-   "name": "Sposa",
-   "slug": "lei-sposa",
-   "title": "Abiti da sposa",
-   "desc": "abiti da sposa e veli",
+   "name": "Cerimonia",
+   "slug": "lei-cerimonia",
+   "desc": "abiti da sposa e da cerimonia, a temi: stelle, mare, bosco",
    "show": "Elenindis",
    "crop": [
     2,
@@ -1515,6 +1761,19 @@
     2.2,
     "35%",
     "25%"
+   ]
+  },
+  "lui/Cerimonia": {
+   "kind": "abiti",
+   "who": "lui",
+   "name": "Cerimonia",
+   "slug": "lui-cerimonia",
+   "desc": "abiti da cerimonia a temi: stelle, mare, bosco",
+   "show": "Tinwerína",
+   "crop": [
+    2.2,
+    "68%",
+    "45%"
    ]
   },
   "lui/Accessori": {
