@@ -471,8 +471,7 @@ details.recipe ul{justify-content:center}
       <a href="#stanze" data-quick="stanze">Stanze</a>
       <a href="#lei" data-quick="lei">Per lei</a>
       <a href="#lui" data-quick="lui">Per lui</a>
-      <a href="#coppie" data-quick="coppia">Coppie</a>
-    </nav>
+          </nav>
     <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu-panel">✦ Menu<span class="long">&nbsp;delle stanze</span> <span aria-hidden="true">▾</span></button>
     <nav class="menu-panel" id="menu-panel" aria-label="Tutte le stanze" hidden></nav>
   </header>
@@ -559,7 +558,7 @@ details.recipe ul{justify-content:center}
           <div class="hc-text">
             <span class="label">l'oreficeria</span>
             <h3>Monili</h3>
-            <p>Anelli, collane, orecchini, bracciali, diademi e gioielli per la coppia.</p>
+            <p>Anelli, collane e bracciali d'argento, lavorati a mano.</p>
             <span class="count" data-count="gioielli"></span>
             <span class="go">entra ›</span>
           </div>
@@ -583,7 +582,7 @@ details.recipe ul{justify-content:center}
         <div class="note">
           <svg class="star" data-star viewBox="0 0 120 120" aria-hidden="true"></svg>
           <h3>Su commissione</h3><span class="q">carmë · l'arte del fare</span>
-          <p>Porta in bottega la tua pietra grezza o il tuo metallo: verrà tagliata e incastonata nel gioiello che desideri. I diademi richiedono alcuni giorni al banco. Anche mantelli e vesti si cuciono su misura, con i ricami che preferisci.</p>
+          <p>Porta in bottega la tua pietra grezza o il tuo metallo: verrà tagliata e incastonata nel gioiello che desideri. Anche mantelli e vesti si cuciono su misura, con i ricami che preferisci.</p>
         </div>
         <div class="note">
           <svg class="star" data-star viewBox="0 0 120 120" aria-hidden="true"></svg>
@@ -708,28 +707,8 @@ const ITEMS = [
      1× Colori per ogni parte tinta; colori metallici = Colori + metallo; abiti di taglia media (1–2 m) = basica + 1× tessuto. */
 
   /* Oreficeria · per lei */
-  {code:"G01", cat:"lei/Anelli", name:"Isilmírë", gloss:"gemma di luna", metal:"Argento (telpë)", gem:"Opale lattiginoso", cut:"cabochon", ct:"2,0 ct", color:"#cdd7ea", shape:"cab", price:850, desc:"Riflessi azzurri che cambiano con la luce della luna.",
-    cls:"Monili · Anello", recipe:[[1,"Argento"],[1,"Opale"]]},
-  {code:"G02", cat:"lei/Anelli", name:"Náremírë", gloss:"gemma di fuoco", metal:"Oro rosa", gem:"Rubino rosso scuro", cut:"brillante", ct:"1,4 ct", color:"#a01c2e", shape:"round", price:1550, desc:"Un rosso profondo che trattiene il calore della forgia.",
-    cls:"Monili · Anello", recipe:[[1,"Oro"],[1,"Rubino Grezzo"]]},
-  {code:"G03", cat:"lei/Collane", name:"Elenmírë", gloss:"gemma di stelle", metal:"Argento (telpë)", gem:"Sette zaffiri", cut:"brillante", ct:"3,5 ct in tutto", color:"#2b50b3", shape:"round", price:4900, desc:"Sette zaffiri disposti come le stelle della Valacirca, che danno il nome alla bottega.", badge:"simbolo della bottega",
-    cls:"Monili · Collana", recipe:[[2,"Argento"],[3,"Zaffiro"]]},
-  {code:"G04", cat:"lei/Collane", name:"Nírë", gloss:"lacrima", metal:"Argento (telpë)", gem:"Smeraldo", cut:"a goccia", ct:"2,6 ct", color:"#1f8a5b", shape:"pear", price:3000, desc:"Una goccia verde come le foglie al primo mattino.", badge:"pezzo unico",
-    cls:"Monili · Collana", recipe:[[2,"Argento"],[1,"Smeraldo Grezzo"]]},
-  {code:"G05", cat:"lei/Orecchini", name:"Laurëa", gloss:"d'oro luminoso", metal:"Oro rosa", gem:"Due topazi dorati", cut:"a goccia", ct:"0,8 ct la coppia", color:"#e39a52", shape:"pear", price:950, desc:"Leggeri e caldi, del colore della luce dorata.",
-    cls:"Monili · Orecchini", recipe:[[2,"Oro"],[2,"Topazio Grezzo"]]},
-  {code:"G06", cat:"lei/Orecchini", name:"Telpëmírë", gloss:"gemme d'argento", metal:"Argento (telpë)", gem:"Due acquamarine", cut:"ovale", ct:"1,6 ct la coppia", color:"#79c3d4", shape:"oval", price:1100, desc:"Un azzurro freddo e limpido, come acqua di fonte.",
-    cls:"Monili · Orecchini", recipe:[[2,"Argento"],[2,"Acquamarina Grezza"]]},
-  {code:"G07", cat:"lei/Bracciali", name:"Taurëmírë", gloss:"gemma della foresta", metal:"Oro giallo", gem:"Cristallo color ambra", cut:"cabochon", ct:"5,0 ct", color:"#c9771c", shape:"cab", price:650, desc:"Rami d'oro intrecciati che stringono un cristallo caldo come l'ambra.",
-    cls:"Monili · Bracciale", recipe:[[2,"Oro"],[1,"Cristallo"]]},
-  {code:"G08", cat:"lei/Diademi", name:"Menelrië", gloss:"corona del cielo", metal:"Oro bianco", gem:"Ametista", cut:"ovale", ct:"6,0 ct", color:"#5a4fb8", shape:"oval", price:6500, desc:"Filigrana d'oro bianco sottile come rami d'argento, con un'ametista al centro.", badge:"su commissione",
-    cls:"Monili · Diadema", recipe:[[2,"Oro"],[1,"Ametista"]]},
 
   /* Oreficeria · per lui */
-  {code:"G09", cat:"lui/Anelli", name:"Tanna", gloss:"il segno", metal:"Oro giallo", gem:"Agata nera", cut:"a gradini", ct:"3,1 ct", color:"#2a2630", shape:"emerald", price:1200, desc:"Anello sigillo, con lo stemma della tua casata inciso in bottega.", badge:"incisione inclusa",
-    cls:"Monili · Anello", recipe:[[1,"Oro"],[1,"Agata"]]},
-  {code:"G10", cat:"lui/Anelli", name:"Arquen", gloss:"il nobile", metal:"Oro bianco", gem:"Zaffiro", cut:"a gradini", ct:"2,4 ct", color:"#24408f", shape:"emerald", price:1800, desc:"Anello massiccio con uno zaffiro scuro come il cielo a mezzanotte.",
-    cls:"Monili · Anello", recipe:[[1,"Oro"],[1,"Zaffiro"]]},
   {code:"G17", cat:"lui/Anelli", name:"Falma", gloss:"onda", photo:true, metal:"Argento satinato", finish:"onda lucida in rilievo", price:650, desc:"Fascia d'argento satinato attraversata da un'onda lucida, come il mare sotto la luna.",
     cls:"Monili · Anello", recipe:[[1,"Argento"]]},
   {code:"G18", cat:"lui/Anelli", name:"Tinco", gloss:"metallo", photo:true, metal:"Argento lucido e brunito", finish:"scaglie lucide su cuore brunito", price:800, desc:"Anello d'argento a scaglie lucide e tagli netti, con il cuore scuro e brunito.",
@@ -746,10 +725,6 @@ const ITEMS = [
     cls:"Monili · Collana", recipe:[[3,"Argento"]]},
   {code:"G35", cat:"lui/Collane", name:"Nuru", gloss:"la morte", photo:true, metal:"Argento lucido e brunito", finish:"teschio spaccato in rilievo, catena a maglia quadrata", price:900, desc:"Teschio d'argento massiccio, spaccato e segnato da crepe brunite, su una catena robusta.",
     cls:"Monili · Collana", recipe:[[3,"Argento"]]},
-  {code:"G11", cat:"lui/Bracciali", name:"Huinë", gloss:"ombra", metal:"Argento (telpë)", gem:"Cristallo nero", cut:"a gradini", ct:"4,2 ct", color:"#34293a", shape:"emerald", price:750, desc:"Bracciale rigido, scuro come il cielo prima delle stelle.",
-    cls:"Monili · Bracciale", recipe:[[2,"Argento"],[1,"Cristallo"]]},
-  {code:"G12", cat:"lui/Bracciali", name:"Tulca", gloss:"saldo", metal:"Argento battuto", gem:"Ematite", cut:"cabochon", ct:"6,0 ct", color:"#4a4d58", shape:"cab", price:700, desc:"Bracciale da polso in argento battuto a mano, forte e sobrio.",
-    cls:"Monili · Bracciale", recipe:[[2,"Argento"],[1,"Ematite"]]},
   {code:"G21", cat:"lui/Bracciali", name:"Vanda", gloss:"il giuramento", photo:true, metal:"Argento brunito", finish:"catena a maglia grossa, piastra con fili intrecciati", price:950, desc:"Bracciale a catena con una piastra scura su cui corrono fili d'argento intrecciati.",
     cls:"Monili · Bracciale", recipe:[[3,"Argento"]]},
   {code:"G22", cat:"lui/Bracciali", name:"Lómë", gloss:"notte", photo:true, metal:"Argento", gem:"Agata nera", cut:"a sfera", ct:"perle da 6 mm", color:"#151418", shape:"cab", price:850, desc:"Perle di agata nera, lucide come il cielo senza luna, scandite da anelli d'argento.",
@@ -774,22 +749,10 @@ const ITEMS = [
     cls:"Monili · Bracciale", recipe:[[2,"Rame"],[1,"Argento"],[1,"Cotone"],[1,"Colori"]]},
   {code:"G36", cat:"lui/Bracciali", name:"Axo", gloss:"osso", photo:true, metal:"Argento brunito", finish:"vertebre snodate, chiusura a barra", price:950, desc:"Bracciale a vertebre d'argento snodate una sull'altra, come la spina di un drago.",
     cls:"Monili · Bracciale", recipe:[[3,"Argento"]]},
-  {code:"G15", cat:"Coppie", name:"Isil ar Anar", gloss:"la luna e il sole", metal:"Argento e oro giallo", gem:"Opale e topazio", cut:"cabochon e brillante", ct:"1,2 ct ciascuna", color:"#cdd7ea", shape:"cab", metal1:"Argento", color2:"#e39a52", shape2:"round", metal2:"Oro giallo", price:2000, unit:"la coppia", desc:"Due fedi gemelle: una d'argento come la luna, una d'oro come il sole.",
-    cls:"Monili · 2 Anelli (accorpo)", recipe:[[1,"Argento"],[1,"Oro"],[1,"Opale"],[1,"Topazio Grezzo"]]},
-  {code:"G16", cat:"Coppie", name:"Atta", gloss:"due", metal:"Argento (telpë)", gem:"Due zaffiri", cut:"a goccia", ct:"0,9 ct ciascuno", color:"#2b50b3", shape:"pear", color2:"#2b50b3", shape2:"pear", price:2600, unit:"la coppia", desc:"Due pendenti che, accostati, formano la stella a otto raggi.", badge:"pezzo unico",
-    cls:"Monili · 2 Pendenti (accorpo)", recipe:[[2,"Argento"],[2,"Zaffiro"]]},
 
   /* Sartoria · per lei */
-  {code:"A01", cat:"lei/Mantelli", name:"Lómelindë", gloss:"usignolo", fabric:"Velluto di seta", colorName:"Blu notte", trimName:"stelle ricamate e fermaglio d'argento", garment:"cloak", color:"#1d2a5c", trim:"#dfe6f4", price:2250, desc:"Mantello da cerimonia: quando si muove, le stelle ricamate sembrano accendersi.", badge:"su misura",
-    cls:"Tessuti · Mantello, taglia media", recipe:[[3,"Seta"],[1,"Colori"],[2,"Argento"]]},
-  {code:"A02", cat:"lei/Mantelli", name:"Isilmë", gloss:"luce di luna", fabric:"Seta pesante", colorName:"Grigio perla", trimName:"bordo e fermaglio a stella d'oro", garment:"cloak", color:"#aeb8d0", trim:"#e4c47c", price:1400, desc:"Mantellina leggera che cattura la luce come la luna sull'acqua.",
-    cls:"Tessuti · Mantello, taglia media", recipe:[[3,"Seta"],[1,"Colori"],[2,"Oro"]]},
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Ampio mantello color castagna con cappuccio, dalla trama a foglie, chiuso sul petto da un fermaglio d'oro a stella.",
     cls:"Tessuti · Mantello, taglia media", recipe:[[3,"Cotone"],[1,"Colori"],[1,"Oro"]]},
-  {code:"A03", cat:"lei/Abiti", name:"Elerrína", gloss:"incoronata di stelle", fabric:"Seta", colorName:"Azzurro cielo", trimName:"ricami d'oro su corpetto e orli", garment:"dress", color:"#6f93c9", trim:"#e4c47c", price:2750, desc:"Veste lunga con maniche a campana, per le sale e le feste.", badge:"pezzo unico",
-    cls:"Tessuti · Abito, taglia media", recipe:[[2,"Seta"],[1,"Colori"],[1,"Oro"]]},
-  {code:"A04", cat:"lei/Abiti", name:"Lótë", gloss:"fiore", fabric:"Seta e organza di seta", colorName:"Bianco perla", trimName:"fiori ricamati d'argento", garment:"dress", color:"#e3e1ea", trim:"#9fb2d8", price:2100, desc:"Leggera come un petalo, con fiori ricamati che scendono lungo la gonna.",
-    cls:"Tessuti · Abito, taglia media", recipe:[[2,"Seta"],[1,"Colori"],[1,"Argento"]]},
   {code:"A13", cat:"lei/Abiti", name:"Tindómë", gloss:"crepuscolo stellato", photo:true, fabric:"Cotone color avorio, sopravveste in velluto di cotone blu notte", colorName:"Avorio e blu notte", trimName:"rami e stelle ricamati d'oro, cintura dorata con cristallo", garment:"dress", color:"#e9dcc4", trim:"#e4c47c", price:4250, desc:"Veste da cerimonia con strascico: l'avorio del giorno e il blu della notte, uniti da rami d'oro.", excl:"Diadema, orecchini e collana non inclusi",
     cls:"Tessuti · Abito, taglia media, con sopravveste e strascico", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"],[1,"Cristallo"]]},
   {code:"A29", cat:"lui/Toghe", name:"Istyar", gloss:"sapiente", photo:true, fabric:"Cotone blu notte e color sabbia", colorName:"Blu notte e sabbia", trimName:"bande ricamate d'oro, fermaglio d'oro, fascia annodata", garment:"cloak", color:"#1d2340", trim:"#e4c47c", price:3400, desc:"Toga blu notte con mantella e bande ricamate d'oro, sopra una sottoveste color sabbia: per studiosi e maestri.", excl:"Libro non incluso",
@@ -802,10 +765,6 @@ const ITEMS = [
     cls:"Tessuti · Abito con mantella, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
   {code:"A33", cat:"lui/Toghe", name:"Nolmë", gloss:"sapienza", photo:true, fabric:"Cotone viola e color sabbia", colorName:"Viola e sabbia", trimName:"cerchi e stelle ricamati d'oro, fermaglio d'oro, fascia annodata", garment:"cloak", color:"#3a1d4a", trim:"#e4c47c", price:3500, desc:"Toga viola con mantella color sabbia, ricamata d'oro con cerchi e costellazioni: la veste di un astronomo.", excl:"Portapergamene e pendente non inclusi",
     cls:"Tessuti · Abito con mantella, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
-  {code:"A05", cat:"lei/Accessori", name:"Lindë", gloss:"canto", fabric:"Seta leggera", colorName:"Grigio perla", trimName:"frange e greca d'oro", garment:"stole", color:"#b9c4dc", trim:"#e4c47c", price:400, desc:"Stola sottile come un velo, da posare sulle spalle nelle sere fresche.",
-    cls:"Tessuti · Scialle", recipe:[[2,"Seta"],[1,"Colori"],[1,"Oro"]]},
-  {code:"A06", cat:"lei/Accessori", name:"Silmë", gloss:"luce di stelle", fabric:"Seta intrecciata", colorName:"Lilla crepuscolo", trimName:"borchie e fibbia d'argento", garment:"belt", color:"#8a76b0", trim:"#dfe6f4", price:300, desc:"Cintura sottile da annodare in vita sopra le vesti.",
-    cls:"Tessuti · Fascia", recipe:[[1,"Seta"],[1,"Colori"],[1,"Argento"]]},
 
   /* Sartoria · per lui */
   {code:"A07", cat:"lui/Completi", name:"Súrë", gloss:"vento", photo:true, fabric:"Mantello con cappuccio di cotone bruno lavorato, tunica e pantaloni di cotone, fascia annodata, calzari di stoffa", colorName:"Bruno, sabbia e oliva", trimName:"bordi intessuti color rame, fermaglio d'oro a stella", garment:"cloak", color:"#5a4430", trim:"#e4c47c", price:2600, desc:"Tutto il necessario per la strada: mantello con cappuccio, tunica, fascia annodata, calzari, borsa e zaino di stoffa.",
@@ -855,33 +814,26 @@ const ITEMS = [
 ];
 const CAT_INFO = {
   /* kind: oreficeria o sartoria · who: per chi · show: il pezzo mostrato nella stanza · crop: [zoom, x, y] della foto nel banner */
-  "lei/Anelli":{kind:"gioielli", who:"lei", name:"Anelli", slug:"lei-anelli", desc:"anelli di gemma", show:"Náremírë", crop:[2.6,"15%","48%"]},
-  "lei/Collane":{kind:"gioielli", who:"lei", name:"Collane", slug:"lei-collane", desc:"pendenti e collari di stelle", show:"Elenmírë", crop:[2.4,"4%","42%"]},
-  "lei/Orecchini":{kind:"gioielli", who:"lei", name:"Orecchini", slug:"lei-orecchini", desc:"gocce di luce da portare al viso", show:"Laurëa", crop:[2.4,"88%","48%"]},
-  "lei/Bracciali":{kind:"gioielli", who:"lei", name:"Bracciali", slug:"lei-bracciali", desc:"bracciali intrecciati", show:"Taurëmírë", crop:[2.2,"45%","45%"]},
-  "lei/Diademi":{kind:"gioielli", who:"lei", name:"Diademi", slug:"lei-diademi", desc:"corone di filigrana sottile", show:"Menelrië", crop:[2.4,"10%","22%"]},
   "lui/Anelli":{kind:"gioielli", who:"lui", name:"Anelli", slug:"lui-anelli", desc:"sigilli e fasce d'argento lavorate a mano", show:"Yanta", crop:[1.6,"50%","55%"]},
   "lui/Collane":{kind:"gioielli", who:"lui", name:"Collane", slug:"lui-collane", desc:"piastrine, medaglie e pendenti d'argento", show:"Tië", crop:[1.8,"60%","50%"]},
-  "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Huinë", crop:[2.0,"32%","62%"]},
-  "Coppie":{kind:"gioielli", who:"coppia", name:"Coppie", slug:"coppie", desc:"fedi e pendenti gemelli, da portare in due", show:"Isil ar Anar", crop:[2.6,"28%","82%"]},
+  "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Vanda", crop:[2.0,"32%","62%"]},
   "lei/Mantelli":{kind:"abiti", who:"lei", name:"Mantelli", slug:"lei-mantelli", desc:"mantelli e mantelline", show:"Kemen", crop:[2.2,"50%","45%"]},
   "lei/Abiti":{kind:"abiti", who:"lei", name:"Abiti", slug:"lei-abiti", desc:"abiti lunghi per le sale e le feste", show:"Tindómë", crop:[2.0,"15%","40%"]},
-  "lei/Accessori":{kind:"abiti", who:"lei", name:"Accessori", slug:"lei-accessori", desc:"stole e cinture", show:"Lindë", crop:[2.4,"25%","72%"]},
   "lui/Mantelli":{kind:"abiti", who:"lui", name:"Mantelli", slug:"lui-mantelli", desc:"mantelli con cappuccio, anche da inverno", show:"Calma", crop:[2.2,"50%","82%"]},
   "lui/Completi":{kind:"abiti", who:"lui", name:"Completi", slug:"lui-completi", desc:"vesti da cerimonia, giacche, gilet e camicie", show:"Ornë", crop:[2.2,"68%","45%"]},
   "lui/Toghe":{kind:"abiti", who:"lui", name:"Toghe", slug:"lui-toghe", desc:"vesti lunghe da studioso, mago e astronomo", show:"Ilmen", crop:[2.2,"35%","25%"]},
   "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture intrecciate", show:"Menelya", crop:[2.4,"73%","42%"]}
 };
 const KINDS = {
-  gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, orecchini, bracciali e diademi dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
+  gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane e bracciali dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
   abiti:{label:"sartoria", title:"Tessuti", all:"Tessuti", allDesc:"abiti, mantelli, completi, toghe e accessori della sartoria", one:"capo", many:"capi", photo:"tailor", crop:[1.3,"50%","45%"]}
 };
 const WHOS = {
-  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"gioielli e abiti per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
+  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"abiti e mantelli per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
   coppia:{label:"per la coppia", head:"Per la coppia"}
 };
-const ALIASES = {"lui-fermagli":"lui-anelli", "lui-tuniche":"lui-completi", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lei-anelli", collane:"lei-collane", orecchini:"lei-orecchini", bracciali:"lei-bracciali", diademi:"lei-diademi"};
+const ALIASES = {"lui-fermagli":"lui-anelli", "lui-tuniche":"lui-completi", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"gioielli", diademi:"gioielli", "lei-anelli":"lei", "lei-collane":"lei", "lei-orecchini":"lei", "lei-bracciali":"lei", "lei-diademi":"lei", "lei-accessori":"lei", coppie:"gioielli", coppia:"gioielli"};
 const CATS = Object.keys(CAT_INFO);
 const kindOf = c => CAT_INFO[c].kind, whoOf = c => CAT_INFO[c].who;
 const slug = c => CAT_INFO[c].slug;
@@ -1128,7 +1080,7 @@ function renderCat(view){
   if(tabsFor){
     const jw = catsWhere("gioielli", tabsFor), ab = catsWhere("abiti", tabsFor);
     const tab = (href, name) => `<a class="tab" href="#${href}" ${href === view ? 'aria-current="page"' : ""}>${name}</a>`;
-    tabs.innerHTML = tab(tabsFor, "Tutto") + `<span class="tab-sep">✦</span>` + jw.map(c => tab(slug(c), nameOf(c))).join("")
+    tabs.innerHTML = tab(tabsFor, "Tutto") + (jw.length ? `<span class="tab-sep">✦</span>` : "") + jw.map(c => tab(slug(c), nameOf(c))).join("")
       + (ab.length ? `<span class="tab-sep">✦</span>` + ab.map(c => tab(slug(c), nameOf(c))).join("") : "");
     tabs.hidden = false;
   } else if(kindTabs){
@@ -1148,11 +1100,10 @@ function renderCat(view){
 const menuBtn = document.getElementById("menu-btn"), menuPanel = document.getElementById("menu-panel");
 const mLink = (href, name, n) => `<li><a href="#${href}">${name}<small>${n}</small></a></li>`;
 const whoCol = w => `<div class="menu-col"><h4><a href="#${w}">${WHOS[w].head}</a></h4>
-  ${Object.keys(KINDS).map(k => `<h5>${KINDS[k].title}</h5><ul>${catsWhere(k, w).map(c => mLink(slug(c), nameOf(c), ITEMS.filter(i => i.cat === c).length)).join("")}</ul>`).join("")}
+  ${Object.keys(KINDS).filter(k => catsWhere(k, w).length).map(k => `<h5>${KINDS[k].title}</h5><ul>${catsWhere(k, w).map(c => mLink(slug(c), nameOf(c), ITEMS.filter(i => i.cat === c).length)).join("")}</ul>`).join("")}
   <ul>${mLink(w, WHOS[w].all, itemsOf(catsWhere(null, w)).length)}</ul></div>`;
 menuPanel.innerHTML = whoCol("lei") + whoCol("lui")
-  + `<div class="menu-col"><h4><a href="#coppie">Per la coppia</a></h4><ul>${mLink("coppie", "Coppie", itemsOf(["Coppie"]).length)}</ul>
-     <h5>Tutto insieme</h5><ul>${mLink("gioielli", "Monili", itemsOf(catsWhere("gioielli")).length)}${mLink("abiti", "Tessuti", itemsOf(catsWhere("abiti")).length)}</ul></div>`
+  + `<div class="menu-col"><h4>Tutto insieme</h4><ul>${mLink("gioielli", "Monili", itemsOf(catsWhere("gioielli")).length)}${mLink("abiti", "Tessuti", itemsOf(catsWhere("abiti")).length)}</ul></div>`
   + `<div class="menu-foot"><a href="#ingresso">← Ingresso</a><a href="#stanze">Tutte le stanze</a></div>`;
 function setMenu(open){ menuBtn.setAttribute("aria-expanded", open); menuPanel.hidden = !open; }
 menuBtn.addEventListener("click", e => { e.stopPropagation(); setMenu(menuPanel.hidden); });

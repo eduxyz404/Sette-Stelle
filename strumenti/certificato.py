@@ -169,7 +169,7 @@ h1{{margin:4px 0 10px;font-family:"Cinzel Decorative",Georgia,serif;font-weight:
 .item .gl{{margin:0;font-style:italic;color:var(--muted)}}
 .item .cat{{display:inline-block;margin-top:6px;font-family:"Cinzel",Georgia,serif;font-size:.74rem;letter-spacing:.16em;color:var(--gold)}}
 dl{{margin:14px 0 0;display:flex;flex-direction:column;gap:6px}}
-dl div{{display:grid;grid-template-columns:86px 1fr;gap:10px}}
+dl div{{display:grid;grid-template-columns:auto 1fr;gap:12px}}
 dt{{font-family:"Cinzel",Georgia,serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:5px}}
 dd{{margin:0;font-size:1.08rem}}
 .desc{{margin:12px 0 0;font-style:italic;color:#c4cbe0}}
