@@ -255,6 +255,78 @@
    ]
   },
   {
+   "code": "G17",
+   "cat": "lui/Anelli",
+   "name": "Falma",
+   "gloss": "onda",
+   "photo": true,
+   "metal": "Argento satinato",
+   "finish": "onda lucida in rilievo",
+   "price": 450,
+   "desc": "Fascia d'argento satinato attraversata da un'onda lucida, come il mare sotto la luna.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G18",
+   "cat": "lui/Anelli",
+   "name": "Tinco",
+   "gloss": "metallo",
+   "photo": true,
+   "metal": "Argento lucido e brunito",
+   "finish": "scaglie lucide su cuore brunito",
+   "price": 550,
+   "desc": "Anello d'argento a scaglie lucide e tagli netti, con il cuore scuro e brunito.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G19",
+   "cat": "lui/Anelli",
+   "name": "Yanta",
+   "gloss": "il ponte",
+   "photo": true,
+   "metal": "Argento martellato",
+   "finish": "due fili lucidi intrecciati",
+   "price": 550,
+   "desc": "Due fili d'argento lucido si incrociano su un fondo martellato a mano.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G20",
+   "cat": "lui/Anelli",
+   "name": "Ondo",
+   "gloss": "pietra",
+   "photo": true,
+   "metal": "Argento brunito",
+   "finish": "martellato come la roccia",
+   "price": 500,
+   "desc": "Anello d'argento brunito, battuto a mano come la roccia di montagna.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "G11",
    "cat": "lui/Bracciali",
    "name": "Huinë",
@@ -1516,12 +1588,12 @@
    "who": "lui",
    "name": "Anelli",
    "slug": "lui-anelli",
-   "desc": "sigilli e anelli massicci",
-   "show": "Arquen",
+   "desc": "sigilli e fasce d'argento lavorate a mano",
+   "show": "Yanta",
    "crop": [
-    2.4,
-    "22%",
-    "75%"
+    1.6,
+    "50%",
+    "55%"
    ]
   },
   "lui/Bracciali": {

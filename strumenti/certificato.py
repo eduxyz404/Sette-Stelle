@@ -73,7 +73,7 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
     if abito:
         dettagli = [("Tessuto", pezzo['fabric']), ("Colore", pezzo['colorName']), ("Ricami", pezzo['trimName'])]
     else:
-        dettagli = [("Metallo", pezzo['metal']), ("Pietra", f"{pezzo['gem']}, taglio {pezzo['cut']}"), ("Peso", pezzo['ct'])]
+        dettagli = [("Metallo", pezzo['metal'])] + ([("Pietra", f"{pezzo['gem']}, taglio {pezzo['cut']}"), ("Peso", pezzo['ct'])] if pezzo.get('gem') else [("Lavorazione", pezzo['finish'])])
     righe = "".join(f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in dettagli)
     tokens = "".join(
         f'<li><span class="sw" style="background:{RAINBOW if m == "Colori" else SWATCH.get(m, "#9aa3b8")}"></span>'
