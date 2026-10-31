@@ -473,6 +473,209 @@
    ]
   },
   {
+   "code": "G25",
+   "cat": "lui/Bracciali",
+   "name": "Neldë",
+   "gloss": "tre",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Pietra lavica, agata bruna, ematite",
+   "cut": "a sfera e a disco",
+   "ct": "tre fili",
+   "color": "#2a2220",
+   "shape": "cab",
+   "price": 1500,
+   "unit": "il tris",
+   "desc": "Tre bracciali da portare insieme: pietra lavica, agata bruna venata d'oro ed ematite opaca, con inserti d'oro.",
+   "cls": "Monili · 3 Bracciali (accorpo)",
+   "recipe": [
+    [
+     3,
+     "Oro"
+    ],
+    [
+     1,
+     "Pietra"
+    ],
+    [
+     1,
+     "Agata"
+    ],
+    [
+     1,
+     "Ematite"
+    ]
+   ]
+  },
+  {
+   "code": "G26",
+   "cat": "lui/Bracciali",
+   "name": "Turma",
+   "gloss": "scudo",
+   "photo": true,
+   "metal": "Argento satinato",
+   "finish": "polsiera di cotone nero a due fasce, bottoni d'argento",
+   "price": 700,
+   "desc": "Polsiera alta di cotone nero pesante, cucita a doppio filo e chiusa da bottoni d'argento.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G27",
+   "cat": "lui/Bracciali",
+   "name": "Hendë",
+   "gloss": "occhio",
+   "photo": true,
+   "metal": "Argento cesellato",
+   "gem": "Agata nera",
+   "cut": "cabochon",
+   "ct": "8,0 ct",
+   "color": "#121114",
+   "shape": "cab",
+   "price": 1200,
+   "desc": "Doppia treccia di cotone nero e bruno, con un'agata nera tonda in una cornice d'argento a corda e passanti cesellati.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Agata"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G28",
+   "cat": "lui/Bracciali",
+   "name": "Tinwë",
+   "gloss": "scintilla",
+   "photo": true,
+   "metal": "Argento satinato",
+   "finish": "catena sottile a maglia quadrata",
+   "price": 550,
+   "desc": "Catenella sottile d'argento satinato a maglie quadrate, sobria da portare ogni giorno.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     3,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G29",
+   "cat": "lui/Bracciali",
+   "name": "Raima",
+   "gloss": "il legame",
+   "photo": true,
+   "metal": "Argento lucido",
+   "finish": "catena a maglia grossa con treccia di cotone bruno",
+   "price": 900,
+   "desc": "Catena d'argento a maglia grossa che si chiude su una treccia di cotone color castagna.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G30",
+   "cat": "lui/Bracciali",
+   "name": "Rá",
+   "gloss": "leone",
+   "photo": true,
+   "metal": "Argento martellato",
+   "gem": "Agata nera",
+   "cut": "cabochon",
+   "ct": "2 × 1,5 ct",
+   "color": "#121114",
+   "shape": "cab",
+   "price": 1600,
+   "desc": "Metà treccia di cotone nero, metà intreccio di fili d'argento, chiusi da una placca martellata con la testa di leone e due agate nere.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Cotone"
+    ],
+    [
+     1,
+     "Agata"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G31",
+   "cat": "lui/Bracciali",
+   "name": "Tuo",
+   "gloss": "forza",
+   "photo": true,
+   "metal": "Rame brunito e argento satinato",
+   "finish": "due barre di rame avvolte in cordino di cotone",
+   "price": 700,
+   "desc": "Due barre di rame brunito strette da giri di cordino color nocciola, con chiusura d'argento satinato.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Rame"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "G15",
    "cat": "Coppie",
    "name": "Isil ar Anar",
