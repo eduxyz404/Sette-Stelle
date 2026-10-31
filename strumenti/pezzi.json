@@ -886,6 +886,37 @@
    ]
   },
   {
+   "code": "A27",
+   "cat": "lui/Mantelli",
+   "name": "Narwa",
+   "gloss": "rosso fuoco",
+   "photo": true,
+   "fabric": "Mantello di cotone nero foderato di rosso, tunica nera, camicia cremisi",
+   "colorName": "Nero e cremisi",
+   "trimName": "fermaglio d'argento, cintura di cotone intrecciato con fibbia",
+   "garment": "cloak",
+   "color": "#151214",
+   "trim": "#9a1f2a",
+   "price": 2750,
+   "desc": "Ampio mantello nero foderato di cremisi, fermato sulla spalla da un disco d'argento, su tunica nera e camicia rossa.",
+   "excl": "Bracciali e stivali non inclusi",
+   "cls": "Tessuti · Mantello e completo (accorpo), taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A20",
    "cat": "lui/Completi",
    "name": "Morë",
