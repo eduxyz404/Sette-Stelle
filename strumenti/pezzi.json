@@ -262,7 +262,7 @@
    "photo": true,
    "metal": "Argento satinato",
    "finish": "onda lucida in rilievo",
-   "price": 450,
+   "price": 650,
    "desc": "Fascia d'argento satinato attraversata da un'onda lucida, come il mare sotto la luna.",
    "cls": "Monili · Anello",
    "recipe": [
@@ -280,7 +280,7 @@
    "photo": true,
    "metal": "Argento lucido e brunito",
    "finish": "scaglie lucide su cuore brunito",
-   "price": 550,
+   "price": 800,
    "desc": "Anello d'argento a scaglie lucide e tagli netti, con il cuore scuro e brunito.",
    "cls": "Monili · Anello",
    "recipe": [
@@ -298,7 +298,7 @@
    "photo": true,
    "metal": "Argento martellato",
    "finish": "due fili lucidi intrecciati",
-   "price": 550,
+   "price": 800,
    "desc": "Due fili d'argento lucido si incrociano su un fondo martellato a mano.",
    "cls": "Monili · Anello",
    "recipe": [
@@ -316,7 +316,7 @@
    "photo": true,
    "metal": "Argento brunito",
    "finish": "martellato come la roccia",
-   "price": 500,
+   "price": 700,
    "desc": "Anello d'argento brunito, battuto a mano come la roccia di montagna.",
    "cls": "Monili · Anello",
    "recipe": [
