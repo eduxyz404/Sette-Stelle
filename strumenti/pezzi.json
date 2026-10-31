@@ -597,6 +597,36 @@
    ]
   },
   {
+   "code": "A80",
+   "cat": "lei/Abiti",
+   "name": "Nessë",
+   "gloss": "giovinezza",
+   "photo": true,
+   "fabric": "Cotone verde petrolio aderente, inserti color oro, strascico",
+   "colorName": "Verde petrolio e oro",
+   "trimName": "rami ricamati d'oro, polsini ricamati, colletto alto",
+   "garment": "dress",
+   "color": "#1f4f5a",
+   "trim": "#e4c47c",
+   "price": 3200,
+   "desc": "Verde petrolio aderente, rami d'oro e strascico con inserti dorati.",
+   "cls": "Tessuti · Abito lungo con strascico, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
    "code": "A77",
    "cat": "lei/Completi",
    "name": "Luinil",
