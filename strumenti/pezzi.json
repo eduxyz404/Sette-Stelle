@@ -597,6 +597,33 @@
    ]
   },
   {
+   "code": "A77",
+   "cat": "lei/Completi",
+   "name": "Luinil",
+   "gloss": "la stella azzurra",
+   "photo": true,
+   "fabric": "Camicia di cotone azzurro morbido, pantaloni di cotone color nocciola",
+   "colorName": "Azzurro e nocciola",
+   "trimName": "colletto alla coreana, maniche ampie con polsini",
+   "garment": "cloak",
+   "color": "#5a78a8",
+   "trim": "#e4c47c",
+   "price": 1400,
+   "desc": "Camicia azzurra a maniche ampie, pantaloni nocciola a vita alta.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Completo, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A41",
    "cat": "lei/Cerimonia",
    "name": "Elenindis",
@@ -2561,6 +2588,19 @@
     2,
     "15%",
     "40%"
+   ]
+  },
+  "lei/Completi": {
+   "kind": "abiti",
+   "who": "lei",
+   "name": "Completi",
+   "slug": "lei-completi",
+   "desc": "camicie e pantaloni, per ogni giorno",
+   "show": "Luinil",
+   "crop": [
+    2,
+    "50%",
+    "35%"
    ]
   },
   "lei/Cerimonia": {

@@ -651,6 +651,7 @@ details.recipe ul{justify-content:center}
 <script>
 /* Foto vere dei pezzi, per codice */
 const PHOTOS = {
+  A77:"img/A77.jpg",
   A76:"img/A76.jpg",
   A75:"img/A75.jpg",
   A74:"img/A74.jpg",
@@ -795,6 +796,8 @@ const ITEMS = [
     cls:"Tessuti · Abito lungo, taglia media", recipe:[[3,"Cotone"],[1,"Colori"],[1,"Argento"],[1,"Cristallo"]]},
   {code:"A76", cat:"lei/Abiti", name:"Yávië", gloss:"autunno", photo:true, fabric:"Cotone bordeaux morbido, aderente, con spacco", colorName:"Bordeaux", trimName:"scollo a barchetta, maniche lunghe", garment:"dress", color:"#6e1424", trim:"#e4c47c", price:1800, desc:"Bordeaux aderente a maniche lunghe, scollo a barchetta e spacco.", excl:"Orecchini e sandali non inclusi",
     cls:"Tessuti · Abito lungo, taglia media", recipe:[[3,"Cotone"],[1,"Colori"]]},
+  {code:"A77", cat:"lei/Completi", name:"Luinil", gloss:"la stella azzurra", photo:true, fabric:"Camicia di cotone azzurro morbido, pantaloni di cotone color nocciola", colorName:"Azzurro e nocciola", trimName:"colletto alla coreana, maniche ampie con polsini", garment:"cloak", color:"#5a78a8", trim:"#e4c47c", price:1400, desc:"Camicia azzurra a maniche ampie, pantaloni nocciola a vita alta.", excl:"Stivali non inclusi",
+    cls:"Tessuti · Completo, taglia media", recipe:[[3,"Cotone"],[1,"Colori"]]},
   {code:"A41", cat:"lei/Cerimonia", name:"Elenindis", gloss:"sposa delle stelle", photo:true, fabric:"Velo di cotone avorio sfumato nel blu notte, con velo lungo", colorName:"Avorio e blu notte", trimName:"stelle e raggi ricamati d'argento, stella d'argento in vita", garment:"dress", color:"#e9e3dc", trim:"#dfe6f4", price:5200, desc:"Veli dall'avorio al blu notte, stelle d'argento e velo lungo.", tema:"stelle", excl:"Diadema, orecchini e bracciale non inclusi",
     cls:"Tessuti · Abito da sposa con velo e strascico", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Argento"]]},
   {code:"A71", cat:"lei/Cerimonia", name:"Elerrína", gloss:"incoronata di stelle", photo:true, fabric:"Velo di cotone blu notte, maniche lunghe a velo", colorName:"Blu notte e argento", trimName:"raggi e stelle ricamati d'argento", garment:"dress", color:"#1d2238", trim:"#dfe6f4", price:4900, desc:"Veli blu notte a raggi e stelle d'argento, maniche lunghe.", tema:"stelle", excl:"Orecchini e fermagli non inclusi",
@@ -925,6 +928,7 @@ const CAT_INFO = {
   "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Vanda", crop:[2.0,"32%","62%"]},
   "lei/Mantelli":{kind:"abiti", who:"lei", name:"Mantelli", slug:"lei-mantelli", desc:"mantelli e mantelline", show:"Kemen", crop:[2.2,"50%","45%"]},
   "lei/Abiti":{kind:"abiti", who:"lei", name:"Abiti", slug:"lei-abiti", desc:"abiti lunghi per le sale e le feste", show:"Tindómë", crop:[2.0,"15%","40%"]},
+  "lei/Completi":{kind:"abiti", who:"lei", name:"Completi", slug:"lei-completi", desc:"camicie e pantaloni, per ogni giorno", show:"Luinil", crop:[2.0,"50%","35%"]},
   "lei/Cerimonia":{kind:"abiti", who:"lei", name:"Cerimonia", slug:"lei-cerimonia", desc:"abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Elenindis", crop:[2.0,"15%","40%"]},
   "lui/Mantelli":{kind:"abiti", who:"lui", name:"Mantelli", slug:"lui-mantelli", desc:"mantelli con cappuccio, anche da inverno", show:"Calma", crop:[2.2,"50%","82%"]},
   "lui/Completi":{kind:"abiti", who:"lui", name:"Completi", slug:"lui-completi", desc:"vesti da cerimonia, giacche, gilet e camicie", show:"Ornë", crop:[2.2,"68%","45%"]},
@@ -937,7 +941,7 @@ const KINDS = {
   abiti:{label:"sartoria", title:"Tessuti", all:"Tessuti", allDesc:"abiti, mantelli, completi, toghe e accessori della sartoria", one:"capo", many:"capi", photo:"tailor", crop:[1.3,"50%","45%"]}
 };
 const WHOS = {
-  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"abiti, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
+  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
   coppia:{label:"per la coppia", head:"Per la coppia"}
 };
