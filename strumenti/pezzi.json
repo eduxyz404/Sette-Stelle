@@ -1048,12 +1048,12 @@
    "photo": true,
    "fabric": "Cotone nero",
    "colorName": "Nero",
-   "trimName": "intrecci ricamati d'argento, bottoni e fibbia a stella d'argento",
+   "trimName": "intrecci ricamati d'oro, bottoni e fibbia a stella",
    "garment": "cloak",
    "color": "#141214",
-   "trim": "#dfe6f4",
+   "trim": "#e4c47c",
    "price": 3100,
-   "desc": "Lunga giacca nera a doppia fila di bottoni, aperta sui fianchi e ricamata d'argento ai polsi.",
+   "desc": "Lunga giacca nera a doppia fila di bottoni, aperta sui fianchi e ricamata d'oro su colletto, spalle e polsi.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Completo con giacca lunga, taglia media",
    "recipe": [
@@ -1067,7 +1067,7 @@
     ],
     [
      1,
-     "Argento"
+     "Oro"
     ]
    ]
   },
