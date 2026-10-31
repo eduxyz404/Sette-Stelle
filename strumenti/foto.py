@@ -34,7 +34,7 @@ def neutral(im, k=0.7):
     lin = (np.asarray(im.convert('RGB'), float) / 255) ** 2.2
     m = lin.reshape(-1, 3).mean(0); g = (m.mean() / m) ** k
     return Image.fromarray((np.clip(lin * g, 0, 1) ** (1 / 2.2) * 255 + .5).astype('uint8'))
-def build(path, out_jpg, neutro=True):
+def build(path, out_jpg, neutro=False):  # neutro=True solo per i Completi per lui
     im = Image.open(path).convert('RGB')
     im = stamp(fit(neutral(im) if neutro else im))
     im.save(out_jpg, quality=86, optimize=True, progressive=True)
