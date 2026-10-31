@@ -570,6 +570,33 @@
    ]
   },
   {
+   "code": "A76",
+   "cat": "lei/Abiti",
+   "name": "Yávië",
+   "gloss": "autunno",
+   "photo": true,
+   "fabric": "Cotone bordeaux morbido, aderente, con spacco",
+   "colorName": "Bordeaux",
+   "trimName": "scollo a barchetta, maniche lunghe",
+   "garment": "dress",
+   "color": "#6e1424",
+   "trim": "#e4c47c",
+   "price": 1800,
+   "desc": "Bordeaux aderente a maniche lunghe, scollo a barchetta e spacco.",
+   "excl": "Orecchini e sandali non inclusi",
+   "cls": "Tessuti · Abito lungo, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A41",
    "cat": "lei/Cerimonia",
    "name": "Elenindis",
