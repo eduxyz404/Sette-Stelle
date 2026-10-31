@@ -305,57 +305,6 @@
    ]
   },
   {
-   "code": "G13",
-   "cat": "lui/Fermagli",
-   "name": "Lassë",
-   "gloss": "foglia",
-   "metal": "Argento (telpë)",
-   "gem": "Tormalina verde",
-   "cut": "a goccia",
-   "ct": "1,8 ct",
-   "color": "#7fae3e",
-   "shape": "pear",
-   "price": 600,
-   "desc": "Fermaglio da mantello a forma di foglia, con una goccia verde al centro.",
-   "cls": "Monili · Fermaglio",
-   "recipe": [
-    [
-     1,
-     "Argento"
-    ],
-    [
-     1,
-     "Tormalina"
-    ]
-   ]
-  },
-  {
-   "code": "G14",
-   "cat": "lui/Fermagli",
-   "name": "Tinwë",
-   "gloss": "scintilla",
-   "metal": "Oro giallo",
-   "gem": "Diamante",
-   "cut": "brillante",
-   "ct": "1,0 ct",
-   "color": "#e8eefc",
-   "shape": "round",
-   "price": 1600,
-   "desc": "Fermaglio a stella a otto raggi, con un diamante che cattura ogni luce.",
-   "badge": "pezzo unico",
-   "cls": "Monili · Fermaglio",
-   "recipe": [
-    [
-     1,
-     "Oro"
-    ],
-    [
-     1,
-     "Diamante Grezzo"
-    ]
-   ]
-  },
-  {
    "code": "G15",
    "cat": "Coppie",
    "name": "Isil ar Anar",
@@ -1524,19 +1473,6 @@
     2,
     "32%",
     "62%"
-   ]
-  },
-  "lui/Fermagli": {
-   "kind": "gioielli",
-   "who": "lui",
-   "name": "Fermagli",
-   "slug": "lui-fermagli",
-   "desc": "fermagli da mantello",
-   "show": "Tinwë",
-   "crop": [
-    2.2,
-    "27%",
-    "20%"
    ]
   },
   "Coppie": {
