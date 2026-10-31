@@ -599,6 +599,70 @@
    ]
   },
   {
+   "code": "A72",
+   "cat": "lei/Cerimonia",
+   "name": "Isilwen",
+   "gloss": "fanciulla della luna",
+   "photo": true,
+   "fabric": "Cotone blu notte aderente, a spalle scoperte, mantella di velo",
+   "colorName": "Blu notte e argento",
+   "trimName": "luna crescente e stelle ricamate d'argento",
+   "garment": "dress",
+   "color": "#1d2238",
+   "trim": "#dfe6f4",
+   "price": 4900,
+   "desc": "Blu notte a spalle scoperte, luna crescente e mantella di velo.",
+   "tema": "stelle",
+   "excl": "Orecchini e fermagli non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A73",
+   "cat": "lei/Cerimonia",
+   "name": "Rána",
+   "gloss": "la luna errante",
+   "photo": true,
+   "fabric": "Cotone blu notte aderente, maniche lunghe, mantella di velo",
+   "colorName": "Blu notte e argento",
+   "trimName": "luna crescente e stelle ricamate d'argento",
+   "garment": "dress",
+   "color": "#1d2238",
+   "trim": "#dfe6f4",
+   "price": 4900,
+   "desc": "Blu notte a maniche lunghe, luna crescente e mantella di velo.",
+   "tema": "stelle",
+   "excl": "Orecchini e fermagli non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A46",
    "cat": "lei/Cerimonia",
    "name": "Falassë",
