@@ -535,6 +535,37 @@
    ]
   },
   {
+   "code": "A41",
+   "cat": "lei/Sposa",
+   "name": "Elenindis",
+   "gloss": "sposa delle stelle",
+   "photo": true,
+   "fabric": "Velo di cotone avorio sfumato nel blu notte, con velo lungo",
+   "colorName": "Avorio e blu notte",
+   "trimName": "stelle e raggi ricamati d'argento, stella d'argento in vita",
+   "garment": "dress",
+   "color": "#e9e3dc",
+   "trim": "#dfe6f4",
+   "price": 5200,
+   "desc": "Abito da sposa di veli leggeri, dall'avorio al blu della notte, attraversato da raggi e stelle d'argento, con un lungo velo.",
+   "excl": "Diadema, orecchini e bracciale non inclusi",
+   "cls": "Tessuti · Abito da sposa con velo e strascico",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A29",
    "cat": "lui/Toghe",
    "name": "Istyar",
@@ -1427,6 +1458,20 @@
    "slug": "lei-abiti",
    "desc": "abiti lunghi per le sale e le feste",
    "show": "Tindómë",
+   "crop": [
+    2,
+    "15%",
+    "40%"
+   ]
+  },
+  "lei/Sposa": {
+   "kind": "abiti",
+   "who": "lei",
+   "name": "Sposa",
+   "slug": "lei-sposa",
+   "title": "Abiti da sposa",
+   "desc": "abiti da sposa e veli",
+   "show": "Elenindis",
    "crop": [
     2,
     "15%",
