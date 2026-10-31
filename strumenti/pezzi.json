@@ -535,6 +535,41 @@
    ]
   },
   {
+   "code": "A75",
+   "cat": "lei/Abiti",
+   "name": "Mistë",
+   "gloss": "pioggia sottile",
+   "photo": true,
+   "fabric": "Velo di cotone grigio fumo, drappeggiato, maniche lunghe a velo",
+   "colorName": "Grigio fumo",
+   "trimName": "cintura a catenella d'argento con gocce di cristallo",
+   "garment": "dress",
+   "color": "#6b6870",
+   "trim": "#dfe6f4",
+   "price": 2400,
+   "desc": "Grigio fumo drappeggiato, cintura a catenella con gocce di cristallo.",
+   "excl": "Orecchini e fermagli non inclusi",
+   "cls": "Tessuti · Abito lungo, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "A41",
    "cat": "lei/Cerimonia",
    "name": "Elenindis",
