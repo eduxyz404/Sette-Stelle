@@ -202,13 +202,13 @@ dd{{margin:0;font-size:1.08rem}}
 .giver b{{font-style:normal;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;color:var(--fg)}}
 
 /* Confezione e dedica */
-.extras{{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(20px,3.5vw,36px);align-items:center;
+.extras{{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);justify-content:center;gap:clamp(20px,3.5vw,36px);align-items:center;
   padding:0 clamp(22px,5vw,52px) clamp(26px,4vw,40px)}}
 .extras.one{{grid-template-columns:minmax(0,1fr)}}
 .extras.one .tag{{max-width:520px;justify-self:center}}
 @media (max-width:720px){{.extras{{grid-template-columns:1fr}}}}
-.box{{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}}
-.extras.one .box{{max-width:560px;justify-self:center;text-align:center}}
+.box{{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;width:100%;max-width:280px;justify-self:center;text-align:center}}
+.extras.one .box{{max-width:260px}}
 .box img{{display:block;width:100%;height:auto;border-radius:12px;border:1px solid rgba(230,194,122,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(230,194,122,.3),0 24px 40px -20px rgba(0,0,0,.9)}}
 .box p{{margin:4px 0 0;font-size:1.05rem;color:#c4cbe0}}
 .tag{{position:relative;container-type:inline-size;width:100%;aspect-ratio:1000/659;max-width:100%;
