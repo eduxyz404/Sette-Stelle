@@ -1079,17 +1079,17 @@
    "photo": true,
    "fabric": "Camicia di cotone damascato color sabbia, pantaloni di cotone bruno",
    "colorName": "Sabbia e bruno",
-   "trimName": "trama a foglie intessuta nella camicia",
+   "trimName": "trama a foglie intessuta nella camicia, cintura di cotone intrecciato con fibbia",
    "garment": "cloak",
    "color": "#b9a184",
    "trim": "#e4c47c",
    "price": 1650,
-   "desc": "Camicia color sabbia dalla trama a foglie, con le maniche arrotolate, e pantaloni bruni: per il viaggio e la bottega.",
-   "excl": "Cinghie, bracciali e stivali non inclusi",
-   "cls": "Tessuti · Completo, taglia media",
+   "desc": "Camicia color sabbia dalla trama a foglie, con le maniche arrotolate, pantaloni bruni e cintura intrecciata: per il viaggio e la bottega.",
+   "excl": "Tracolla, bracciali e stivali non inclusi",
+   "cls": "Tessuti · Completo con cintura, taglia media",
    "recipe": [
     [
-     3,
+     4,
      "Cotone"
     ],
     [
