@@ -327,6 +327,87 @@
    ]
   },
   {
+   "code": "G32",
+   "cat": "lui/Collane",
+   "name": "Tengwa",
+   "gloss": "il segno",
+   "photo": true,
+   "metal": "Argento lucido",
+   "gem": "Diamante",
+   "cut": "quadrato",
+   "ct": "0,1 ct",
+   "color": "#e8eef8",
+   "shape": "round",
+   "price": 1100,
+   "badge": "incisione inclusa",
+   "desc": "Due piastrine d'argento: una rigata con un piccolo diamante, una liscia per inciderci un nome o un motto.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Diamante Grezzo"
+    ]
+   ]
+  },
+  {
+   "code": "G33",
+   "cat": "lui/Collane",
+   "name": "Tië",
+   "gloss": "il sentiero",
+   "photo": true,
+   "metal": "Argento brunito",
+   "finish": "medaglia con la rosa dei venti a otto punte",
+   "price": 750,
+   "desc": "Piccola medaglia d'argento brunito con la rosa dei venti, per chi non perde mai la strada di casa.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     3,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G34",
+   "cat": "lui/Collane",
+   "name": "Fírë",
+   "gloss": "mortale",
+   "photo": true,
+   "metal": "Argento brunito",
+   "finish": "teschio in miniatura, cesellato a mano",
+   "price": 650,
+   "desc": "Un piccolo teschio d'argento su una catenina sottile, a ricordare che ogni giorno è un dono.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     3,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G35",
+   "cat": "lui/Collane",
+   "name": "Nuru",
+   "gloss": "la morte",
+   "photo": true,
+   "metal": "Argento lucido e brunito",
+   "finish": "teschio spaccato in rilievo, catena a maglia quadrata",
+   "price": 900,
+   "desc": "Teschio d'argento massiccio, spaccato e segnato da crepe brunite, su una catena robusta.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     3,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "G11",
    "cat": "lui/Bracciali",
    "name": "Huinë",
@@ -672,6 +753,24 @@
     [
      1,
      "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G36",
+   "cat": "lui/Bracciali",
+   "name": "Axo",
+   "gloss": "osso",
+   "photo": true,
+   "metal": "Argento brunito",
+   "finish": "vertebre snodate, chiusura a barra",
+   "price": 950,
+   "desc": "Bracciale a vertebre d'argento snodate una sull'altra, come la spina di un drago.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     3,
+     "Argento"
     ]
    ]
   },
@@ -1893,6 +1992,19 @@
     1.6,
     "50%",
     "55%"
+   ]
+  },
+  "lui/Collane": {
+   "kind": "gioielli",
+   "who": "lui",
+   "name": "Collane",
+   "slug": "lui-collane",
+   "desc": "piastrine, medaglie e pendenti d'argento",
+   "show": "Tië",
+   "crop": [
+    1.8,
+    "60%",
+    "50%"
    ]
   },
   "lui/Bracciali": {
