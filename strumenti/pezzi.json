@@ -547,7 +547,7 @@
    "color": "#e9e3dc",
    "trim": "#dfe6f4",
    "price": 5200,
-   "desc": "Abito da sposa di veli leggeri, dall'avorio al blu della notte, attraversato da raggi e stelle d'argento, con un lungo velo. Tema stelle: si abbina a Tinwerína e Menelmacar.",
+   "desc": "Abito da sposa di veli leggeri, dall'avorio al blu della notte, attraversato da raggi e stelle d'argento, con un lungo velo. Tema stelle: si abbina a Tinwerína e Menelmacar, o a uno degli abiti da sposo.",
    "excl": "Diadema, orecchini e bracciale non inclusi",
    "cls": "Tessuti · Abito da sposa con velo e strascico",
    "recipe": [
@@ -911,6 +911,130 @@
     [
      1,
      "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "A67",
+   "cat": "lui/Cerimonia",
+   "name": "Verno",
+   "gloss": "lo sposo",
+   "photo": true,
+   "fabric": "Giacca e pantaloni di cotone nero, gilet di cotone damascato, camicia e foulard color avorio",
+   "colorName": "Nero e avorio",
+   "trimName": "intrecci ricamati sul gilet e sui risvolti, spilla d'argento al foulard, catenella d'argento",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 3800,
+   "desc": "Abito da sposo nero a tre pezzi, con il gilet damascato, il foulard avorio fermato da una spilla e una catenella d'argento. Tema sposo: si abbina a Elenindis.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da sposo con gilet, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A68",
+   "cat": "lui/Cerimonia",
+   "name": "Vesta",
+   "gloss": "le nozze",
+   "photo": true,
+   "fabric": "Marsina di cotone blu notte, gilet di cotone damascato, camicia e foulard color avorio",
+   "colorName": "Blu notte e avorio",
+   "trimName": "cordoni e bottoni d'argento, polsi e orli ricamati d'argento, spilla al foulard",
+   "garment": "cloak",
+   "color": "#1b2238",
+   "trim": "#dfe6f4",
+   "price": 4200,
+   "desc": "Marsina lunga blu notte con cordoni e bottoni d'argento, gilet damascato e foulard avorio. Tema sposo: si abbina a Elenindis.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da sposo con gilet, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A69",
+   "cat": "lui/Cerimonia",
+   "name": "Calion",
+   "gloss": "figlio della luce",
+   "photo": true,
+   "fabric": "Giubba lunga e pantaloni di cotone avorio, mantello di cotone blu notte",
+   "colorName": "Avorio e blu notte",
+   "trimName": "alamari e cordoni d'argento, rami ricamati, spilla d'argento al mantello, cintura di cotone con fibbia",
+   "garment": "cloak",
+   "color": "#e6dfd2",
+   "trim": "#dfe6f4",
+   "price": 4300,
+   "desc": "Giubba lunga avorio con alamari d'argento e rami ricamati, con un mantello blu notte sulla spalla. Tema sposo: si abbina a Elenindis.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da sposo con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A70",
+   "cat": "lui/Cerimonia",
+   "name": "Lómendil",
+   "gloss": "amico della notte",
+   "photo": true,
+   "fabric": "Giubba lunga e pantaloni di cotone nero, mantello di cotone grigio perla",
+   "colorName": "Nero e grigio perla",
+   "trimName": "alamari e cordoni d'argento, intrecci ricamati d'argento, spilla d'argento al mantello, cintura di cotone con fibbia",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 4300,
+   "desc": "Giubba lunga nera ricamata d'argento, con alamari e cordoni, e un mantello grigio perla sulla spalla. Tema sposo: si abbina a Elenindis.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da sposo con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
     ]
    ]
   },
@@ -2309,7 +2433,7 @@
    "who": "lui",
    "name": "Cerimonia",
    "slug": "lui-cerimonia",
-   "desc": "abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra",
+   "desc": "abiti da sposo e da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra",
    "show": "Tinwerína",
    "crop": [
     2.2,
