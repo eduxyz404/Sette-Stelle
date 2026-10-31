@@ -624,6 +624,37 @@
    ]
   },
   {
+   "code": "A78",
+   "cat": "lei/Completi",
+   "name": "Lindë",
+   "gloss": "il canto",
+   "photo": true,
+   "fabric": "Sopravveste di cotone avorio senza maniche, pantaloni ampi di cotone blu notte, fascia blu",
+   "colorName": "Avorio e blu notte",
+   "trimName": "rami e volute ricamati d'argento, colletto alto",
+   "garment": "cloak",
+   "color": "#d9cdb8",
+   "trim": "#dfe6f4",
+   "price": 2200,
+   "desc": "Sopravveste avorio ricamata d'argento, pantaloni ampi blu notte.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Completo con fascia, taglia media",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A41",
    "cat": "lei/Cerimonia",
    "name": "Elenindis",
