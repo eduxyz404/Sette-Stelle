@@ -69,7 +69,8 @@ dd{margin:0;font-size:1.08rem}
 .recipe li b{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:.86rem;color:var(--gold-b)}
 .sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35),0 0 0 1px rgba(0,0,0,.4)}
 .sign{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
-.seal{width:118px;height:118px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.6));transform:rotate(-8deg)}
+.seal{width:150px;height:auto;filter:drop-shadow(0 8px 14px rgba(0,0,0,.7));transform:rotate(-6deg)}
+.seal-num{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:.82rem !important;letter-spacing:.2em;color:var(--gold-b) !important}
 .sign span{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .note{margin:0;padding:14px 20px 22px;text-align:center;font-style:italic;color:var(--gold-b)}
 </style>
@@ -112,16 +113,8 @@ dd{margin:0;font-size:1.08rem}
       <ul><li><span class="sw" style="background:#ece4f6"></span><b>3×</b>Seta</li><li><span class="sw" style="background:conic-gradient(#e04848,#e3a03a,#e6d24a,#5cb85c,#4a8fe0,#8c4fb3,#e04848)"></span><b>1×</b>Colori</li><li><span class="sw" style="background:#d3dae6"></span><b>2×</b>Argento</li><li><span class="sw" style="background:#b08a5a"></span><b>1×</b>Confezione</li></ul>
     </div>
     <div class="sign">
-      <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
-  <defs><path id="ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/>
-    <radialGradient id="wax" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#f6dc9c"/><stop offset=".55" stop-color="#d9b468"/><stop offset="1" stop-color="#8a6420"/></radialGradient></defs>
-  <circle cx="100" cy="100" r="96" fill="url(#wax)"/>
-  <circle cx="100" cy="100" r="88" fill="none" stroke="#7a5518" stroke-width="1.4"/>
-  <circle cx="100" cy="100" r="60" fill="none" stroke="#7a5518" stroke-width="1.2"/>
-  <text font-family="Cinzel, Georgia, serif" font-size="13.5" letter-spacing="3.2" fill="#5a3c0c"><textPath href="#ring">BOTTEGA DELLE SETTE STELLE · VALACIRCA ·</textPath></text>
-  <g transform="translate(55 47) scale(.75)"><polygon points="60,60 56.2,50.8 60.0,14.0 63.8,50.8" fill="#5a3c0c"/><polygon points="60,60 63.8,50.8 82.6,37.4 69.2,56.2" fill="#7a5518"/><polygon points="60,60 69.2,56.2 106.0,60.0 69.2,63.8" fill="#5a3c0c"/><polygon points="60,60 69.2,63.8 82.6,82.6 63.8,69.2" fill="#7a5518"/><polygon points="60,60 63.8,69.2 60.0,106.0 56.2,69.2" fill="#5a3c0c"/><polygon points="60,60 56.2,69.2 37.4,82.6 50.8,63.8" fill="#7a5518"/><polygon points="60,60 50.8,63.8 14.0,60.0 50.8,56.2" fill="#5a3c0c"/><polygon points="60,60 50.8,56.2 37.4,37.4 56.2,50.8" fill="#7a5518"/><circle cx="60" cy="60" r="5" fill="#7a5518"/></g>
-  <text x="100" y="152" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="600" font-size="12" letter-spacing="2" fill="#5a3c0c">ESEMPIO</text>
-</svg>
+      <img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle">
+      <span class="seal-num">esempio</span>
       <span>sigillo della bottega</span>
     </div>
   </footer>

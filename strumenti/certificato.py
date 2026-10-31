@@ -151,7 +151,8 @@ dd{{margin:0;font-size:1.08rem}}
 .recipe li b{{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:.86rem;color:var(--gold-b)}}
 .sw{{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35),0 0 0 1px rgba(0,0,0,.4)}}
 .sign{{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}}
-.seal{{width:118px;height:118px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.6));transform:rotate(-8deg)}}
+.seal{{width:150px;height:auto;filter:drop-shadow(0 8px 14px rgba(0,0,0,.7));transform:rotate(-6deg)}}
+.seal-num{{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:.82rem !important;letter-spacing:.2em;color:var(--gold-b) !important}}
 .sign span{{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}}
 .note{{margin:0;padding:14px 20px 22px;text-align:center;font-style:italic;color:var(--gold-b)}}
 </style>
@@ -194,7 +195,8 @@ dd{{margin:0;font-size:1.08rem}}
       <ul>{tokens}</ul>
     </div>
     <div class="sign">
-      {_seal(etichetta)}
+      <img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle">
+      <span class="seal-num">{e(etichetta)}</span>
       <span>sigillo della bottega</span>
     </div>
   </footer>
