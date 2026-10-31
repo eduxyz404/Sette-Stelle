@@ -638,19 +638,20 @@
    "cat": "lui/Mantelli",
    "name": "Súrë",
    "gloss": "vento",
-   "fabric": "Lana leggera",
-   "colorName": "Grigio-verde di bosco",
-   "trimName": "bordo intrecciato, fermaglio a foglia d'argento",
+   "photo": true,
+   "fabric": "Mantello con cappuccio di cotone bruno lavorato, tunica e pantaloni di cotone, fascia annodata, calzari di stoffa",
+   "colorName": "Bruno, sabbia e oliva",
+   "trimName": "bordi intessuti color rame, fermaglio d'oro a stella",
    "garment": "cloak",
-   "color": "#4f6457",
-   "trim": "#dfe6f4",
-   "price": 800,
-   "desc": "Mantello da viaggio con cappuccio: caldo, leggero e quasi invisibile tra gli alberi.",
-   "cls": "Tessuti · Mantello, taglia media",
+   "color": "#5a4430",
+   "trim": "#e4c47c",
+   "price": 2600,
+   "desc": "Tutto il necessario per la strada: mantello con cappuccio, tunica, fascia annodata, calzari, borsa e zaino di stoffa.",
+   "cls": "Tessuti · Mantello, completo e borse (accorpo), taglia media",
    "recipe": [
     [
-     3,
-     "Lana"
+     5,
+     "Cotone"
     ],
     [
      1,
@@ -658,7 +659,7 @@
     ],
     [
      1,
-     "Argento"
+     "Oro"
     ]
    ]
   },
