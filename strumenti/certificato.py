@@ -64,8 +64,10 @@ VALACIRCA = """<svg class="dipper" viewBox="-8 -8 176 106" aria-hidden="true">
 ) + "</g></svg>"
 
 
-def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False, dedica=None, firma=None):
+def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False, dedica=None, firma=None, dono=False):
     e = html.escape
+    if dono:
+        confezione = True  # il dono si consegna sempre nella confezione della bottega, che quindi va in ricetta
     per = {'lei': 'per lei', 'lui': 'per lui', 'coppia': 'per la coppia'}[info['who']]
     abito = 'fabric' in pezzo
     if abito:
@@ -80,22 +82,35 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
     titolo = f"Certificato di esempio · {pezzo['name']}" if esempio else f"Certificato {numero} · {pezzo['name']}"
     # Confezione e dedica: compaiono solo se richieste
     extra = []
-    if confezione:
+    if confezione and not dono:
         extra.append(f"""<div class="box">
       <img src="../img/confezione.jpg" alt="La confezione della bottega: scatola color pergamena con fregi d'oro, nastro di velluto blu e sigillo d'oro">
       <span class="lbl">Confezione</span>
     </div>""")
-    if dedica:
+    def cartellino(big=False):
         da = f'<span class="from">{e(firma)}</span>' if firma else ''
-        extra.append(f"""<div class="tag">
+        return f"""<div class="tag{' big' if big else ''}">
       <span class="hole" aria-hidden="true"></span>
       <svg class="tag-stars" viewBox="0 0 80 40" aria-hidden="true"><g fill="#c99a45">{''.join(f'<path d="M{x} {y-r} L{x+r*.3:.1f} {y-r*.3:.1f} L{x+r} {y} L{x+r*.3:.1f} {y+r*.3:.1f} L{x} {y+r} L{x-r*.3:.1f} {y+r*.3:.1f} L{x-r} {y} L{x-r*.3:.1f} {y-r*.3:.1f}Z"/>' for x, y, r in [(22,20,4),(32,12,4),(40,8,5),(48,12,4),(58,20,4),(40,28,7)])}</g></svg>
       <span class="lbl">Dedica</span>
       <p class="msg">«{e(dedica)}»</p>
       {da}
-    </div>""")
+    </div>"""
+    if dedica and not dono:
+        extra.append(cartellino())
     extras = f'<section class="extras{" one" if len(extra) == 1 else ""}">{"".join(extra)}</section>' if extra else ''
-    nota = ('<p class="note">Questo è un esempio: nome e data saranno quelli del personaggio che acquista.</p>' if esempio else '')
+    nota = ('<p class="note">Questo è un esempio: nomi, data e dedica saranno quelli del dono vero.</p>' if esempio and dono else
+            '<p class="note">Questo è un esempio: nome e data saranno quelli del personaggio che acquista.</p>' if esempio else '')
+    gift = f'<section class="gift">{cartellino(True)}</section>' if dono and dedica else ''
+    donatore = f'<span class="giver">donato da <b>{e(firma)}</b></span>' if dono and firma else ''
+    if dono:
+        head = '<div class="head gift-head" role="img" aria-label="La confezione della Bottega delle Sette Stelle: scatola color pergamena con fregi d\'oro, nastro di velluto blu, sigillo d\'oro e cartellino «Un dono per Voi»"></div>'
+        titolo_h1 = '<h1>Un dono per Voi</h1><span class="sub">Certificato di Proprietà</span>'
+        titolo = ("Dono di esempio" if esempio else f"Dono {numero}") + f" · {pezzo['name']}"
+    else:
+        head = '<div class="head" role="img" aria-label="La busta della Bottega delle Sette Stelle, chiusa da un nastro di velluto blu e dal sigillo d\'oro con la stella"></div>'
+        titolo_h1 = '<h1>Certificato di Proprietà</h1>'
+
     corners = "".join(f'<svg class="corner {k}" viewBox="0 0 80 80" aria-hidden="true">{CORNER}</svg>' for k in ("tl", "tr", "bl", "br"))
     return f"""<!doctype html>
 <html lang="it">
@@ -173,6 +188,16 @@ dd{{margin:0;font-size:1.08rem}}
 .sign span{{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}}
 .note{{margin:0;padding:14px 20px 22px;text-align:center;font-style:italic;color:var(--gold-b)}}
 
+/* Certificato di dono */
+.gift-head::before{{background-image:url(../img/confezione.jpg) !important;background-position:50% 45% !important}}
+.sub{{margin:-4px 0 12px;font-family:"Cinzel",Georgia,serif;font-size:.86rem;letter-spacing:.24em;text-transform:uppercase;color:var(--fg)}}
+.gift{{display:flex;justify-content:center;padding:clamp(26px,4vw,40px) clamp(22px,5vw,52px) 6px}}
+.tag.big{{width:min(100%,540px);padding:40px clamp(22px,5vw,44px) 30px;transform:rotate(-1deg)}}
+.tag.big .msg{{font-size:clamp(1.4rem,3.6vw,1.75rem)}}
+.tag.big .from{{font-size:1.15rem}}
+.giver{{font-size:1.1rem;font-style:italic;color:#c4cbe0;margin-top:2px}}
+.giver b{{font-style:normal;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;color:var(--fg)}}
+
 /* Confezione e dedica */
 .extras{{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(20px,3.5vw,36px);align-items:center;
   padding:0 clamp(22px,5vw,52px) clamp(26px,4vw,40px)}}
@@ -196,12 +221,13 @@ dd{{margin:0;font-size:1.08rem}}
 <body>
 <main class="cert">
   {corners}
-  <div class="head" role="img" aria-label="La busta della Bottega delle Sette Stelle, chiusa da un nastro di velluto blu e dal sigillo d'oro con la stella"></div>
+  {head}
   <header class="title">
     <p class="shop">Bottega delle Sette Stelle · Valacirca</p>
-    <h1>Certificato di Proprietà</h1>
+    {titolo_h1}
     <span class="pill">{e(etichetta)}</span>
   </header>
+  {gift}
 
   <section class="body">
     <figure class="niche">
@@ -212,6 +238,7 @@ dd{{margin:0;font-size:1.08rem}}
       <div class="who">
         <span class="lbl">Intestato a</span>
         <span class="name">{e(intestato)}</span>
+        {donatore}
         <span class="date">Anno {e(anno)} · Mese {e(str(mese))}° · Giorno {e(str(giorno))}°</span>
       </div>
       <div class="item">
@@ -263,6 +290,7 @@ def main():
     ap.add_argument('--dedica', help='testo della dedica, facoltativo')
     ap.add_argument('--firma', help='chi firma la dedica, facoltativo')
     ap.add_argument('--esempio', action='store_true')
+    ap.add_argument('--dono', action='store_true', help='certificato di dono: testata con la confezione e dedica in evidenza')
     ap.add_argument('--uscita')
     a = ap.parse_args()
     dati = json.loads((BASE / 'pezzi.json').read_text())
@@ -270,7 +298,7 @@ def main():
     info = dati['CAT_INFO'][pezzo['cat']]
     out = pathlib.Path(a.uscita) if a.uscita else REPO / 'certificati' / f"{a.numero}.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio, a.dedica, a.firma))
+    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio, a.dedica, a.firma, a.dono))
     print(out)
 
 

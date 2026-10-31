@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dono di esempio · Elenmírë</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+/* Certificato «Regale»: foto della facciata in testa, nicchia ad arco per il pezzo, sigillo dorato */
+:root{--bg:#070b17;--paper:#0f1731;--paper-2:#131d3b;--line:#5c4a26;--gold:#d9b468;--gold-b:#e6c27a;--fg:#ece6d6;--muted:#a9b2cc;--silver:#c9d2ea;
+  --gild:linear-gradient(180deg,#fff1c8 0%,#e6c27a 45%,#a77a2c 100%);color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.5;
+  padding-block:clamp(16px,4vw,48px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(110,140,220,.16),transparent 70%),
+    radial-gradient(1px 1px at 20% 30%,rgba(255,255,255,.25) 50%,transparent 51%),radial-gradient(1.5px 1.5px at 80% 70%,rgba(230,194,122,.35) 50%,transparent 51%),
+    radial-gradient(1px 1px at 55% 15%,rgba(255,255,255,.2) 50%,transparent 51%);
+  background-size:100% 100%,170px 170px,170px 170px,170px 170px}
+.cert{position:relative;max-width:920px;margin:0 auto;border-radius:20px;overflow:hidden;
+  background:linear-gradient(180deg,var(--paper-2),var(--paper));border:1px solid rgba(230,194,122,.55);
+  box-shadow:inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(230,194,122,.35),0 40px 80px -30px rgba(0,0,0,.95),0 0 60px -20px rgba(230,194,122,.25)}
+.corner{position:absolute;z-index:3;width:clamp(44px,8vw,72px);color:var(--gold);pointer-events:none}
+.tl{top:6px;left:6px}.tr{top:6px;right:6px;transform:scaleX(-1)}.bl{bottom:6px;left:6px;transform:scaleY(-1)}.br{bottom:6px;right:6px;transform:scale(-1,-1)}
+
+/* Testata con la foto */
+.head{position:relative;isolation:isolate;aspect-ratio:16/8;max-width:100%}
+.head::before{content:"";position:absolute;inset:0;z-index:-2;background:url(../img/sigillo.jpg) 50% 42%/cover}
+.head::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,11,23,.05) 0%,rgba(7,11,23,0) 55%,rgba(15,23,49,.85) 88%,rgba(15,23,49,1) 100%)}
+.title{display:flex;flex-direction:column;align-items:center;text-align:center;padding:4px 20px 22px;border-bottom:1px solid rgba(230,194,122,.45)}
+.dipper{position:absolute;top:22px;right:clamp(40px,10%,110px);width:clamp(90px,16vw,150px);filter:drop-shadow(0 0 6px rgba(255,220,150,.9))}
+.shop{margin:0;font-family:"Cinzel",Georgia,serif;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+h1{margin:6px 0 10px;font-family:"Cinzel Decorative",Georgia,serif;font-weight:700;font-size:clamp(1.8rem,5.6vw,3rem);line-height:1.05;
+  background:var(--gild);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 8px rgba(0,0,0,.8))}
+.pill{font-family:"Cinzel",Georgia,serif;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-b);
+  border:1px solid rgba(230,194,122,.7);border-radius:999px;padding:4px 16px;background:rgba(7,11,23,.55)}
+
+/* Corpo: nicchia a sinistra, dati a destra */
+.body{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(22px,4vw,44px);align-items:center;padding:clamp(26px,4.5vw,44px) clamp(22px,5vw,52px)}
+@media (max-width:720px){.body{grid-template-columns:1fr}}
+.niche{position:relative;margin:0;padding:10px;border-radius:999px 999px 8px 8px / 190px 190px 8px 8px;
+  border:1px solid rgba(230,194,122,.6);box-shadow:0 0 0 5px var(--paper-2),0 0 0 6px rgba(230,194,122,.3),0 30px 50px -25px rgba(0,0,0,.9)}
+.niche img{display:block;width:100%;height:auto;border-radius:999px 999px 4px 4px / 180px 180px 4px 4px}
+.niche figcaption{position:absolute;left:50%;bottom:-14px;transform:translateX(-50%);white-space:nowrap;font-family:"Cinzel",Georgia,serif;font-size:.74rem;letter-spacing:.2em;
+  color:var(--gold-b);background:var(--paper);border:1px solid rgba(230,194,122,.6);border-radius:999px;padding:3px 14px}
+.who{display:flex;flex-direction:column;gap:2px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(230,194,122,.3)}
+.lbl{font-family:"Cinzel",Georgia,serif;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.name{font-family:"Cinzel Decorative",Georgia,serif;font-size:clamp(1.5rem,3.8vw,2.1rem);line-height:1.15;color:var(--gold-b);overflow-wrap:anywhere}
+.date{font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:1rem;letter-spacing:.06em;color:var(--fg)}
+.item h2{margin:0;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;font-size:clamp(1.4rem,3.4vw,1.8rem);line-height:1.15;color:#f4ead0}
+.item .gl{margin:0;font-style:italic;color:var(--muted)}
+.item .cat{display:inline-block;margin-top:6px;font-family:"Cinzel",Georgia,serif;font-size:.74rem;letter-spacing:.16em;color:var(--gold)}
+dl{margin:14px 0 0;display:flex;flex-direction:column;gap:6px}
+dl div{display:grid;grid-template-columns:86px 1fr;gap:10px}
+dt{font-family:"Cinzel",Georgia,serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+dd{margin:0;font-size:1.08rem}
+.desc{margin:12px 0 0;font-style:italic;color:#c4cbe0}
+
+/* Ricetta e firma */
+.foot{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:24px clamp(22px,5vw,52px) clamp(28px,4vw,40px);
+  border-top:1px solid rgba(230,194,122,.3);background:rgba(7,11,23,.35)}
+@media (max-width:620px){.foot{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.recipe h3{margin:0 0 2px;font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.recipe small{display:block;margin-bottom:10px;font-style:italic;font-size:1rem;color:var(--muted)}
+.recipe ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:620px){.recipe ul{justify-content:center}}
+.recipe li{display:inline-flex;align-items:center;gap:8px;padding:5px 14px 5px 6px;border-radius:999px;border:1px solid rgba(230,194,122,.45);background:rgba(19,29,59,.9);font-size:1.05rem}
+.recipe li b{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:.86rem;color:var(--gold-b)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35),0 0 0 1px rgba(0,0,0,.4)}
+.sign{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.seal{width:150px;height:auto;filter:drop-shadow(0 8px 14px rgba(0,0,0,.7));transform:rotate(-6deg)}
+.seal-num{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:.82rem !important;letter-spacing:.2em;color:var(--gold-b) !important}
+.sign span{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.note{margin:0;padding:14px 20px 22px;text-align:center;font-style:italic;color:var(--gold-b)}
+
+/* Certificato di dono */
+.gift-head::before{background-image:url(../img/confezione.jpg) !important;background-position:50% 45% !important}
+.sub{margin:-4px 0 12px;font-family:"Cinzel",Georgia,serif;font-size:.86rem;letter-spacing:.24em;text-transform:uppercase;color:var(--fg)}
+.gift{display:flex;justify-content:center;padding:clamp(26px,4vw,40px) clamp(22px,5vw,52px) 6px}
+.tag.big{width:min(100%,540px);padding:40px clamp(22px,5vw,44px) 30px;transform:rotate(-1deg)}
+.tag.big .msg{font-size:clamp(1.4rem,3.6vw,1.75rem)}
+.tag.big .from{font-size:1.15rem}
+.giver{font-size:1.1rem;font-style:italic;color:#c4cbe0;margin-top:2px}
+.giver b{font-style:normal;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;color:var(--fg)}
+
+/* Confezione e dedica */
+.extras{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(20px,3.5vw,36px);align-items:center;
+  padding:0 clamp(22px,5vw,52px) clamp(26px,4vw,40px)}
+.extras.one{grid-template-columns:minmax(0,1fr)}
+.extras.one .tag{max-width:360px;justify-self:center}
+@media (max-width:720px){.extras{grid-template-columns:1fr}}
+.box{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.extras.one .box{max-width:560px;justify-self:center;text-align:center}
+.box img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid rgba(230,194,122,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(230,194,122,.3),0 24px 40px -20px rgba(0,0,0,.9)}
+.box p{margin:4px 0 0;font-size:1.05rem;color:#c4cbe0}
+.tag{position:relative;text-align:center;color:#3b2a10;padding:34px 24px 26px;
+  background:linear-gradient(160deg,#f6ecd2,#ead9b0);border-radius:6px;clip-path:polygon(18% 0,82% 0,100% 12%,100% 100%,0 100%,0 12%);
+  box-shadow:inset 0 0 0 6px #f3e6c4,inset 0 0 0 7px #c99a45;transform:rotate(1.5deg)}
+.tag .hole{position:absolute;top:12px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1.5px #c99a45}
+.tag-stars{display:block;width:84px;height:42px;margin:6px auto 2px}
+.tag .lbl{color:#8a6420}
+.tag .msg{margin:6px 0 10px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.3rem;line-height:1.35;color:#3b2a10;overflow-wrap:anywhere}
+.tag .from{display:block;font-family:"Cinzel Decorative",Georgia,serif;font-size:1rem;color:#7a5518}
+</style>
+</head>
+<body>
+<main class="cert">
+  <svg class="corner tl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner tr" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner bl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner br" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg>
+  <div class="head gift-head" role="img" aria-label="La confezione della Bottega delle Sette Stelle: scatola color pergamena con fregi d'oro, nastro di velluto blu, sigillo d'oro e cartellino «Un dono per Voi»"></div>
+  <header class="title">
+    <p class="shop">Bottega delle Sette Stelle · Valacirca</p>
+    <h1>Un dono per Voi</h1><span class="sub">Certificato di Proprietà</span>
+    <span class="pill">esempio</span>
+  </header>
+  <section class="gift"><div class="tag big">
+      <span class="hole" aria-hidden="true"></span>
+      <svg class="tag-stars" viewBox="0 0 80 40" aria-hidden="true"><g fill="#c99a45"><path d="M22 16 L23.2 18.8 L26 20 L23.2 21.2 L22 24 L20.8 21.2 L18 20 L20.8 18.8Z"/><path d="M32 8 L33.2 10.8 L36 12 L33.2 13.2 L32 16 L30.8 13.2 L28 12 L30.8 10.8Z"/><path d="M40 3 L41.5 6.5 L45 8 L41.5 9.5 L40 13 L38.5 9.5 L35 8 L38.5 6.5Z"/><path d="M48 8 L49.2 10.8 L52 12 L49.2 13.2 L48 16 L46.8 13.2 L44 12 L46.8 10.8Z"/><path d="M58 16 L59.2 18.8 L62 20 L59.2 21.2 L58 24 L56.8 21.2 L54 20 L56.8 18.8Z"/><path d="M40 21 L42.1 25.9 L47 28 L42.1 30.1 L40 35 L37.9 30.1 L33 28 L37.9 25.9Z"/></g></svg>
+      <span class="lbl">Dedica</span>
+      <p class="msg">«Perché la luce delle sette stelle ti accompagni in ogni viaggio, e ti riporti sempre a casa.»</p>
+      <span class="from">Nome di chi dona</span>
+    </div></section>
+
+  <section class="body">
+    <figure class="niche">
+      <img src="../img/G03.png" alt="Elenmírë, collane per lei">
+      <figcaption>Cod. G03</figcaption>
+    </figure>
+    <div>
+      <div class="who">
+        <span class="lbl">Intestato a</span>
+        <span class="name">Nome di chi riceve</span>
+        <span class="giver">donato da <b>Nome di chi dona</b></span>
+        <span class="date">Anno XXV · Mese 2° · Giorno 10°</span>
+      </div>
+      <div class="item">
+        <h2>Elenmírë</h2>
+        <p class="gl">«gemma di stelle»</p>
+        <span class="cat">Collane per lei</span>
+        <dl><div><dt>Metallo</dt><dd>Argento (telpë)</dd></div><div><dt>Pietra</dt><dd>Sette zaffiri, taglio brillante</dd></div><div><dt>Peso</dt><dd>3,5 ct in tutto</dd></div></dl>
+        <p class="desc">Sette zaffiri disposti come le stelle della Valacirca, che danno il nome alla bottega.</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="foot">
+    <div class="recipe">
+      <h3>Ricetta di creazione</h3>
+      <small>Monili · Collana</small>
+      <ul><li><span class="sw" style="background:#d3dae6"></span><b>2×</b>Argento</li><li><span class="sw" style="background:#2b50b3"></span><b>3×</b>Zaffiro</li><li><span class="sw" style="background:#b08a5a"></span><b>1×</b>Confezione</li></ul>
+    </div>
+    <div class="sign">
+      <img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle">
+      <span class="seal-num">esempio</span>
+      <span>sigillo della bottega</span>
+    </div>
+  </footer>
+  <p class="note">Questo è un esempio: nomi, data e dedica saranno quelli del dono vero.</p>
+</main>
+</body>
+</html>
