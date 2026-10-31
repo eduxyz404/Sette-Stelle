@@ -546,7 +546,7 @@
    "name": "Tindómë",
    "gloss": "crepuscolo stellato",
    "photo": true,
-   "fabric": "Seta color avorio, sopravveste in velluto di seta blu notte",
+   "fabric": "Cotone color avorio, sopravveste in velluto di cotone blu notte",
    "colorName": "Avorio e blu notte",
    "trimName": "rami e stelle ricamati d'oro, cintura dorata con cristallo",
    "garment": "dress",
@@ -559,7 +559,7 @@
    "recipe": [
     [
      4,
-     "Seta"
+     "Cotone"
     ],
     [
      1,
@@ -697,7 +697,7 @@
    "name": "Ornë",
    "gloss": "albero",
    "photo": true,
-   "fabric": "Velluto di seta blu notte, tunica di seta color crema",
+   "fabric": "Velluto di cotone blu notte, tunica di cotone color crema",
    "colorName": "Blu notte e crema",
    "trimName": "albero e stelle ricamati d'oro, cintura di lana bruna con fibbia d'oro a stella",
    "garment": "cloak",
@@ -710,7 +710,7 @@
    "recipe": [
     [
      4,
-     "Seta"
+     "Cotone"
     ],
     [
      1,
