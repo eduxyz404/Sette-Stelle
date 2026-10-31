@@ -9,7 +9,7 @@
    "metal": "Argento satinato",
    "finish": "onda lucida in rilievo",
    "price": 650,
-   "desc": "Fascia d'argento satinato attraversata da un'onda lucida, come il mare sotto la luna.",
+   "desc": "Fascia d'argento satinato con un'onda lucida.",
    "cls": "Monili · Anello",
    "recipe": [
     [
@@ -27,7 +27,7 @@
    "metal": "Argento lucido e brunito",
    "finish": "scaglie lucide su cuore brunito",
    "price": 800,
-   "desc": "Anello d'argento a scaglie lucide e tagli netti, con il cuore scuro e brunito.",
+   "desc": "Argento a scaglie lucide, cuore brunito.",
    "cls": "Monili · Anello",
    "recipe": [
     [
@@ -45,7 +45,7 @@
    "metal": "Argento martellato",
    "finish": "due fili lucidi intrecciati",
    "price": 800,
-   "desc": "Due fili d'argento lucido si incrociano su un fondo martellato a mano.",
+   "desc": "Due fili lucidi incrociati su argento martellato.",
    "cls": "Monili · Anello",
    "recipe": [
     [
@@ -63,7 +63,7 @@
    "metal": "Argento brunito",
    "finish": "martellato come la roccia",
    "price": 700,
-   "desc": "Anello d'argento brunito, battuto a mano come la roccia di montagna.",
+   "desc": "Argento brunito, battuto come la roccia.",
    "cls": "Monili · Anello",
    "recipe": [
     [
@@ -85,7 +85,7 @@
    "color": "#e8eef8",
    "shape": "round",
    "price": 1100,
-   "desc": "Due piastrine d'argento: una rigata con un piccolo cristallo, l'altra liscia e lucida.",
+   "desc": "Due piastrine: una rigata con un cristallo, una liscia.",
    "cls": "Monili · Collana",
    "recipe": [
     [
@@ -107,7 +107,7 @@
    "metal": "Argento brunito",
    "finish": "medaglia con la rosa dei venti a otto punte",
    "price": 750,
-   "desc": "Piccola medaglia d'argento brunito con la rosa dei venti, per chi non perde mai la strada di casa.",
+   "desc": "Medaglia brunita con la rosa dei venti.",
    "cls": "Monili · Collana",
    "recipe": [
     [
@@ -125,7 +125,7 @@
    "metal": "Argento brunito",
    "finish": "teschio in miniatura, cesellato a mano",
    "price": 650,
-   "desc": "Un piccolo teschio d'argento su una catenina sottile, a ricordare che ogni giorno è un dono.",
+   "desc": "Piccolo teschio d'argento su catenina sottile.",
    "cls": "Monili · Collana",
    "recipe": [
     [
@@ -143,7 +143,7 @@
    "metal": "Argento lucido e brunito",
    "finish": "teschio spaccato in rilievo, catena a maglia quadrata",
    "price": 900,
-   "desc": "Teschio d'argento massiccio, spaccato e segnato da crepe brunite, su una catena robusta.",
+   "desc": "Teschio d'argento spaccato, su catena robusta.",
    "cls": "Monili · Collana",
    "recipe": [
     [
@@ -161,7 +161,7 @@
    "metal": "Argento brunito",
    "finish": "catena a maglia grossa, piastra con fili intrecciati",
    "price": 950,
-   "desc": "Bracciale a catena con una piastra scura su cui corrono fili d'argento intrecciati.",
+   "desc": "Catena grossa con piastra a fili intrecciati.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -183,7 +183,7 @@
    "color": "#151418",
    "shape": "cab",
    "price": 850,
-   "desc": "Perle di cristallo nero, lucide come il cielo senza luna, scandite da anelli d'argento.",
+   "desc": "Perle di cristallo nero e anelli d'argento.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -209,7 +209,7 @@
    "metal": "Argento brunito",
    "finish": "cotone nero intrecciato, chiusura cesellata con l'albero",
    "price": 800,
-   "desc": "Treccia di cotone nero chiusa da un cilindro d'argento cesellato, con un albero inciso al centro.",
+   "desc": "Treccia nera, chiusura cesellata con l'albero.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -235,7 +235,7 @@
    "metal": "Argento satinato",
    "finish": "cotone bruno intrecciato, chiusura liscia",
    "price": 600,
-   "desc": "Treccia piatta di cotone color castagna, chiusa da due placche d'argento satinato.",
+   "desc": "Treccia piatta castagna, chiusura satinata.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -266,7 +266,7 @@
    "shape": "cab",
    "price": 1500,
    "unit": "il tris",
-   "desc": "Tre bracciali da portare insieme: cristalli tinti di nero, di bruno venato d'oro e di grigio opaco, con inserti d'oro.",
+   "desc": "Tre bracciali di cristalli tinti, con inserti d'oro.",
    "cls": "Monili · 3 Bracciali (accorpo)",
    "recipe": [
     [
@@ -292,7 +292,7 @@
    "metal": "Argento satinato",
    "finish": "polsiera di cotone nero a due fasce, bottoni d'argento",
    "price": 700,
-   "desc": "Polsiera alta di cotone nero pesante, cucita a doppio filo e chiusa da bottoni d'argento.",
+   "desc": "Polsiera alta di cotone nero, bottoni d'argento.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -322,7 +322,7 @@
    "color": "#121114",
    "shape": "cab",
    "price": 1200,
-   "desc": "Doppia treccia di cotone nero e bruno, con un cristallo nero tondo in una cornice d'argento a corda e passanti cesellati.",
+   "desc": "Doppia treccia con cristallo nero in cornice d'argento.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -352,7 +352,7 @@
    "metal": "Argento satinato",
    "finish": "catena sottile a maglia quadrata",
    "price": 550,
-   "desc": "Catenella sottile d'argento satinato a maglie quadrate, sobria da portare ogni giorno.",
+   "desc": "Catenella sottile a maglie quadrate.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -370,7 +370,7 @@
    "metal": "Argento lucido",
    "finish": "catena a maglia grossa con treccia di cotone bruno",
    "price": 900,
-   "desc": "Catena d'argento a maglia grossa che si chiude su una treccia di cotone color castagna.",
+   "desc": "Catena grossa d'argento con treccia castagna.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -400,7 +400,7 @@
    "color": "#121114",
    "shape": "cab",
    "price": 1600,
-   "desc": "Metà treccia di cotone nero, metà intreccio di fili d'argento, chiusi da una placca martellata con la testa di leone e due cristalli neri.",
+   "desc": "Cotone e fili d'argento, placca con testa di leone.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -430,7 +430,7 @@
    "metal": "Rame brunito e argento satinato",
    "finish": "due barre di rame avvolte in cordino di cotone",
    "price": 700,
-   "desc": "Due barre di rame brunito strette da giri di cordino color nocciola, con chiusura d'argento satinato.",
+   "desc": "Due barre di rame avvolte in cordino nocciola.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -460,7 +460,7 @@
    "metal": "Argento brunito",
    "finish": "vertebre snodate, chiusura a barra",
    "price": 950,
-   "desc": "Bracciale a vertebre d'argento snodate una sull'altra, come la spina di un drago.",
+   "desc": "Vertebre d'argento snodate, come la spina di un drago.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
@@ -482,7 +482,7 @@
    "color": "#4a2c1e",
    "trim": "#e4c47c",
    "price": 2000,
-   "desc": "Ampio mantello color castagna con cappuccio, dalla trama a foglie, chiuso sul petto da un fermaglio d'oro a stella.",
+   "desc": "Mantello castagna con cappuccio e fermaglio a stella.",
    "cls": "Tessuti · Mantello, taglia media",
    "recipe": [
     [
@@ -512,7 +512,7 @@
    "color": "#e9dcc4",
    "trim": "#e4c47c",
    "price": 4250,
-   "desc": "Veste da cerimonia con strascico: l'avorio del giorno e il blu della notte, uniti da rami d'oro.",
+   "desc": "Avorio e blu notte uniti da rami d'oro, con strascico.",
    "excl": "Diadema, orecchini e collana non inclusi",
    "cls": "Tessuti · Abito, taglia media, con sopravveste e strascico",
    "recipe": [
@@ -547,7 +547,8 @@
    "color": "#e9e3dc",
    "trim": "#dfe6f4",
    "price": 5200,
-   "desc": "Abito da sposa di veli leggeri, dall'avorio al blu della notte, attraversato da raggi e stelle d'argento, con un lungo velo. Tema stelle: si abbina a Tinwerína e Menelmacar, o a uno degli abiti da sposo.",
+   "desc": "Veli dall'avorio al blu notte, stelle d'argento e velo lungo.",
+   "tema": "stelle",
    "excl": "Diadema, orecchini e bracciale non inclusi",
    "cls": "Tessuti · Abito da sposa con velo e strascico",
    "recipe": [
@@ -578,7 +579,8 @@
    "color": "#dfe4ea",
    "trim": "#dfe6f4",
    "price": 5000,
-   "desc": "Abito a maniche lunghe di pizzo, con veli blu che si muovono come onde e una conchiglia d'argento in vita. Tema mare: si abbina a Eärendur e Airë.",
+   "desc": "Pizzo a maniche lunghe, veli come onde, conchiglia in vita.",
+   "tema": "mare",
    "excl": "Diadema e orecchini non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -609,7 +611,8 @@
    "color": "#dfe4ea",
    "trim": "#dfe6f4",
    "price": 4800,
-   "desc": "Abito a spalle scoperte di veli leggeri, avvolto da onde azzurre e fermato da conchiglie d'argento. Tema mare: si abbina a Eärendur e Airë.",
+   "desc": "Spalle scoperte, onde azzurre e conchiglie d'argento.",
+   "tema": "mare",
    "excl": "Diadema, orecchini e bracciale non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -640,7 +643,8 @@
    "color": "#c9ad8a",
    "trim": "#e4c47c",
    "price": 4800,
-   "desc": "Abito di veli color sabbia ricamato a rami sottili, con maniche lunghe e ampie come foglie. Tema bosco: si abbina a Ornendil e Taurion.",
+   "desc": "Veli color sabbia ricamati a rami sottili.",
+   "tema": "bosco",
    "excl": "Diadema e orecchini non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -671,7 +675,8 @@
    "color": "#2c3a26",
    "trim": "#e4c47c",
    "price": 4800,
-   "desc": "Abito verde bosco intrecciato d'oro, con fiori d'avorio sulla spalla e maniche di velo lunghe come fronde. Tema bosco: si abbina a Ornendil e Taurion.",
+   "desc": "Verde bosco intrecciato d'oro, fiori sulla spalla.",
+   "tema": "bosco",
    "excl": "Diadema e orecchini non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -702,7 +707,8 @@
    "color": "#c9d0e0",
    "trim": "#dfe6f4",
    "price": 4900,
-   "desc": "Abito di veli d'argento e d'azzurro che si muovono nell'aria, ricamato a volute come la luce della luna sull'acqua. Tema aria: si abbina a Vilya e Oiolossë.",
+   "desc": "Veli d'argento e d'azzurro ricamati a volute.",
+   "tema": "aria",
    "excl": "Diadema, orecchini e bracciali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -733,7 +739,8 @@
    "color": "#eef0f4",
    "trim": "#dfe6f4",
    "price": 4900,
-   "desc": "Abito bianco a spalle scoperte, con volute grigio perla e lunghi veli che il vento solleva come ali. Tema aria: si abbina a Vilya e Oiolossë.",
+   "desc": "Bianco a spalle scoperte, veli lunghi come ali.",
+   "tema": "aria",
    "excl": "Diadema, orecchini e bracciali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -764,7 +771,8 @@
    "color": "#d2b48c",
    "trim": "#e4c47c",
    "price": 5000,
-   "desc": "Abito di veli color sabbia coperto da una rete d'oro, con un drappo rubino che scende dalle spalle come sotto le stelle del deserto. Tema notte d'oriente: si abbina a Rómestámo e Rómendil.",
+   "desc": "Veli sabbia a rete d'oro, drappo rubino.",
+   "tema": "notte d'oriente",
    "excl": "Diadema, orecchini e bracciali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
    "recipe": [
@@ -795,7 +803,8 @@
    "color": "#ece0cf",
    "trim": "#e4c47c",
    "price": 4900,
-   "desc": "Abito avorio a spalle scoperte, attraversato da lingue rosse e d'oro come fiamme che salgono, con veli rossi alle maniche. Tema fuoco: si abbina a Ruinë e Úrion.",
+   "desc": "Avorio con lingue di fuoco rosse e d'oro.",
+   "tema": "fuoco",
    "excl": "Collana e orecchini non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -826,7 +835,8 @@
    "color": "#8e1c1c",
    "trim": "#e4c47c",
    "price": 4800,
-   "desc": "Abito rosso fuoco incrociato sul petto, aperto su un velo avorio, con fiamme d'oro e una fascia con pietra rossa. Tema fuoco: si abbina a Ruinë e Úrion.",
+   "desc": "Rosso fuoco su velo avorio, fascia con pietra rossa.",
+   "tema": "fuoco",
    "excl": "Collana, orecchini e bracciali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
    "recipe": [
@@ -857,7 +867,8 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 5000,
-   "desc": "Abito nero dal colletto alto, con una mantella di velo ricamata a intrecci d'argento e catenelle che scendono dalla vita. Tema tenebra: si abbina a Morion e Fuinur.",
+   "desc": "Nero a colletto alto, mantella di velo e catenelle.",
+   "tema": "tenebra",
    "excl": "Orecchini non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantella, taglia media",
    "recipe": [
@@ -892,7 +903,8 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 4900,
-   "desc": "Abito nero aderente a spalle scoperte, percorso da rami d'argento, con cristalli viola sul corpetto e lunghi veli alle braccia. Tema tenebra: si abbina a Morion e Fuinur.",
+   "desc": "Nero aderente, rami d'argento e cristalli viola.",
+   "tema": "tenebra",
    "excl": "Collana, orecchini e anello non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
    "recipe": [
@@ -927,7 +939,8 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 3800,
-   "desc": "Abito da sposo nero a tre pezzi, con il gilet damascato, il foulard avorio fermato da una spilla e una catenella d'argento. Tema sposo: si abbina a Elenindis.",
+   "desc": "Nero a tre pezzi, gilet damascato e foulard avorio.",
+   "tema": "sposo",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da sposo con gilet, taglia media",
    "recipe": [
@@ -958,7 +971,8 @@
    "color": "#1b2238",
    "trim": "#dfe6f4",
    "price": 4200,
-   "desc": "Marsina lunga blu notte con cordoni e bottoni d'argento, gilet damascato e foulard avorio. Tema sposo: si abbina a Elenindis.",
+   "desc": "Marsina blu notte con cordoni d'argento.",
+   "tema": "sposo",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da sposo con gilet, taglia media",
    "recipe": [
@@ -989,7 +1003,8 @@
    "color": "#e6dfd2",
    "trim": "#dfe6f4",
    "price": 4300,
-   "desc": "Giubba lunga avorio con alamari d'argento e rami ricamati, con un mantello blu notte sulla spalla. Tema sposo: si abbina a Elenindis.",
+   "desc": "Giubba avorio con alamari, mantello blu notte.",
+   "tema": "sposo",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da sposo con mantello, taglia media",
    "recipe": [
@@ -1020,7 +1035,8 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 4300,
-   "desc": "Giubba lunga nera ricamata d'argento, con alamari e cordoni, e un mantello grigio perla sulla spalla. Tema sposo: si abbina a Elenindis.",
+   "desc": "Giubba nera ricamata d'argento, mantello grigio perla.",
+   "tema": "sposo",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da sposo con mantello, taglia media",
    "recipe": [
@@ -1051,7 +1067,8 @@
    "color": "#1b2034",
    "trim": "#dfe6f4",
    "price": 4200,
-   "desc": "Lunga veste blu notte attraversata da raggi d'argento, con una mantella di velo stellato sulla spalla. Tema stelle: si abbina a Elenindis.",
+   "desc": "Blu notte a raggi d'argento, mantella di velo stellato.",
+   "tema": "stelle",
    "excl": "Diadema non incluso",
    "cls": "Tessuti · Abito da cerimonia con mantella, taglia media",
    "recipe": [
@@ -1082,7 +1099,8 @@
    "color": "#1b2034",
    "trim": "#dfe6f4",
    "price": 3600,
-   "desc": "Veste blu notte con costellazioni d'argento che scendono dalla spalla, stretta da una fascia con la stella. Tema stelle: si abbina a Elenindis.",
+   "desc": "Blu notte con costellazioni d'argento e fascia a stella.",
+   "tema": "stelle",
    "excl": "Diadema non incluso",
    "cls": "Tessuti · Abito da cerimonia, taglia media",
    "recipe": [
@@ -1113,7 +1131,8 @@
    "color": "#2b4766",
    "trim": "#dfe6f4",
    "price": 3800,
-   "desc": "Lunga giacca blu mare con onde d'argento sui risvolti e un drappo avorio annodato in vita. Tema mare: si abbina a Falassë ed Eärwen.",
+   "desc": "Giacca blu mare a onde d'argento, drappo avorio.",
+   "tema": "mare",
    "excl": "Diadema non incluso",
    "cls": "Tessuti · Abito da cerimonia, taglia media",
    "recipe": [
@@ -1144,7 +1163,8 @@
    "color": "#e6dccb",
    "trim": "#dfe6f4",
    "price": 4000,
-   "desc": "Veste avorio con un drappo blu mare che scende dalla spalla come un'onda, fermato da una conchiglia d'argento. Tema mare: si abbina a Falassë ed Eärwen.",
+   "desc": "Avorio con drappo blu mare e conchiglia d'argento.",
+   "tema": "mare",
    "excl": "Diadema non incluso",
    "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
    "recipe": [
@@ -1175,7 +1195,8 @@
    "color": "#2f3a2a",
    "trim": "#e4c47c",
    "price": 3900,
-   "desc": "Lunga sopravveste verde bosco ricamata a rami d'oro, con il mantello fermato da una spilla ad albero. Tema bosco: si abbina ad Aldarwen e Malinornë.",
+   "desc": "Verde bosco a rami d'oro, mantello con spilla ad albero.",
+   "tema": "bosco",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
     [
@@ -1205,7 +1226,8 @@
    "color": "#2b3326",
    "trim": "#e4c47c",
    "price": 4000,
-   "desc": "Lunga veste verde bosco con mantello e cappuccio, percorsa da rami ricamati che salgono fino alle spalle. Tema bosco: si abbina a Malinornë e Aldarwen.",
+   "desc": "Verde bosco con mantello e cappuccio, rami ricamati.",
+   "tema": "bosco",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
@@ -1236,7 +1258,8 @@
    "color": "#b8bcc8",
    "trim": "#dfe6f4",
    "price": 4200,
-   "desc": "Soprabito lungo grigio perla ricamato d'argento, con un mantello di veli che si muove come il vento sui monti. Tema aria: si abbina a Isilmë e Wilwarin.",
+   "desc": "Grigio perla ricamato d'argento, mantello di veli.",
+   "tema": "aria",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
@@ -1267,7 +1290,8 @@
    "color": "#e8e4dc",
    "trim": "#dfe6f4",
    "price": 3800,
-   "desc": "Lunga giacca avorio dal colletto alto, ricamata d'argento come la neve sui rami. Tema aria: si abbina a Isilmë e Wilwarin.",
+   "desc": "Giacca avorio a colletto alto, ricami d'argento.",
+   "tema": "aria",
    "cls": "Tessuti · Abito da cerimonia, taglia media",
    "recipe": [
     [
@@ -1297,7 +1321,8 @@
    "color": "#6d1420",
    "trim": "#e4c47c",
    "price": 3900,
-   "desc": "Veste rosso rubino con bordi d'oro a rete e un ampio drappo avorio sulla spalla. Tema notte d'oriente: si abbina a Rómelótë.",
+   "desc": "Rubino con bordi d'oro a rete, drappo avorio.",
+   "tema": "notte d'oriente",
    "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
    "recipe": [
     [
@@ -1327,7 +1352,8 @@
    "color": "#3a1d4a",
    "trim": "#e4c47c",
    "price": 4200,
-   "desc": "Veste viola profondo coperta da una rete d'oro, con un ampio mantello su cui brilla una luna crescente. Tema notte d'oriente: si abbina a Rómelótë.",
+   "desc": "Viola a rete d'oro, mantello con luna crescente.",
+   "tema": "notte d'oriente",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
@@ -1358,7 +1384,8 @@
    "color": "#141214",
    "trim": "#9a1f2a",
    "price": 4000,
-   "desc": "Lunga veste nera dal colletto alto, percorsa da fiamme rosse che salgono dall'orlo, con la fodera color brace. Tema fuoco: si abbina a Nárië e Nárwen.",
+   "desc": "Nera a colletto alto con fiamme rosse.",
+   "tema": "fuoco",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da cerimonia, taglia media",
    "recipe": [
@@ -1389,7 +1416,8 @@
    "color": "#141214",
    "trim": "#9a1f2a",
    "price": 4200,
-   "desc": "Veste nera con un mantello rosso fuoco drappeggiato sulla spalla, fermato da una spilla con pietra rossa. Tema fuoco: si abbina a Nárië e Nárwen.",
+   "desc": "Nera con mantello rosso fuoco e spilla.",
+   "tema": "fuoco",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
@@ -1420,7 +1448,8 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 4300,
-   "desc": "Lunga veste nera ricamata a intrecci d'argento, con un ampio mantello fermato sulle spalle da due spille con cristallo viola. Tema tenebra: si abbina a Lómëwen e Tindómiel.",
+   "desc": "Nera a intrecci d'argento, mantello con due spille.",
+   "tema": "tenebra",
    "excl": "Stivali e collana non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
@@ -1455,7 +1484,8 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 4200,
-   "desc": "Veste nera con un mantello di veli sfrangiati che sembra fatto d'ombra, attraversata da sottili rami d'argento. Tema tenebra: si abbina a Lómëwen e Tindómiel.",
+   "desc": "Nera con mantello di veli sfrangiati, come ombra.",
+   "tema": "tenebra",
    "excl": "Stivali e collana non inclusi",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
    "recipe": [
@@ -1490,7 +1520,7 @@
    "color": "#1d2340",
    "trim": "#e4c47c",
    "price": 3400,
-   "desc": "Toga blu notte con mantella e bande ricamate d'oro, sopra una sottoveste color sabbia: per studiosi e maestri.",
+   "desc": "Toga blu notte con bande d'oro, per studiosi.",
    "excl": "Libro non incluso",
    "cls": "Tessuti · Abito con mantella, taglia media",
    "recipe": [
@@ -1521,7 +1551,7 @@
    "color": "#1a1517",
    "trim": "#dfe6f4",
    "price": 3200,
-   "desc": "Toga nera con cappuccio e mantella, dalla trama scura e fitta: per chi cammina la notte.",
+   "desc": "Toga nera con cappuccio e mantella.",
    "cls": "Tessuti · Abito con mantella, taglia media",
    "recipe": [
     [
@@ -1551,7 +1581,7 @@
    "color": "#3c1a1e",
    "trim": "#e4c47c",
    "price": 3400,
-   "desc": "Toga color vino con cappuccio e mantella, ricamata d'oro lungo le bande e gli orli.",
+   "desc": "Toga color vino ricamata d'oro.",
    "excl": "Pendente a stella non incluso",
    "cls": "Tessuti · Abito con mantella, taglia media",
    "recipe": [
@@ -1582,7 +1612,7 @@
    "color": "#e5dccb",
    "trim": "#e4c47c",
    "price": 3600,
-   "desc": "Toga avorio con mantella grigio-azzurra, ricamata di stelle d'oro, con la stella della bottega sul petto.",
+   "desc": "Toga avorio con mantella grigio-azzurra e stelle d'oro.",
    "cls": "Tessuti · Abito con mantella, taglia media",
    "recipe": [
     [
@@ -1612,7 +1642,7 @@
    "color": "#3a1d4a",
    "trim": "#e4c47c",
    "price": 3500,
-   "desc": "Toga viola con mantella color sabbia, ricamata d'oro con cerchi e costellazioni: la veste di un astronomo.",
+   "desc": "Toga viola a costellazioni d'oro, per astronomi.",
    "excl": "Portapergamene e pendente non inclusi",
    "cls": "Tessuti · Abito con mantella, taglia media",
    "recipe": [
@@ -1643,7 +1673,7 @@
    "color": "#5a4430",
    "trim": "#e4c47c",
    "price": 2600,
-   "desc": "Tutto il necessario per la strada: mantello con cappuccio, tunica, fascia annodata, calzari, borsa e zaino di stoffa.",
+   "desc": "Completo da viaggio: mantello, tunica, fascia e borse.",
    "cls": "Tessuti · Mantello, completo e borse (accorpo), taglia media",
    "recipe": [
     [
@@ -1673,7 +1703,7 @@
    "color": "#1d2a5c",
    "trim": "#e4c47c",
    "price": 3600,
-   "desc": "Lunga veste da cerimonia: sulla schiena un albero d'oro sale fino alle spalle, tra le stelle.",
+   "desc": "Veste blu notte con un albero d'oro sulla schiena.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito, taglia media, con tunica e veste lunga",
    "recipe": [
@@ -1704,7 +1734,7 @@
    "color": "#ece2cf",
    "trim": "#dfe6f4",
    "price": 3900,
-   "desc": "Veste da cerimonia color avorio con mantello lungo: sulla schiena una stella d'argento a otto raggi.",
+   "desc": "Avorio con mantello lungo e stella d'argento.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito, taglia media, con veste e mantello lungo",
    "recipe": [
@@ -1739,7 +1769,7 @@
    "color": "#e9dcc4",
    "trim": "#e4c47c",
    "price": 1750,
-   "desc": "Camicia ampia dalle maniche morbide e pantaloni scuri: semplice ed elegante, per ogni giorno.",
+   "desc": "Camicia ampia e pantaloni scuri, per ogni giorno.",
    "excl": "Stivali e bracciali non inclusi",
    "cls": "Tessuti · Completo, taglia media",
    "recipe": [
@@ -1770,7 +1800,7 @@
    "color": "#1d2338",
    "trim": "#dfe6f4",
    "price": 3250,
-   "desc": "Lunga giacca blu notte su gilet e pantaloni, percorsa da intrecci d'argento come linee tra le stelle.",
+   "desc": "Giacca blu notte a intrecci d'argento, su gilet.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Completo con giacca lunga, taglia media",
    "recipe": [
@@ -1801,7 +1831,7 @@
    "color": "#6a1f2b",
    "trim": "#e4c47c",
    "price": 2100,
-   "desc": "Gilet color vino con alamari d'oro sopra una camicia ampia: da festa e da taverna.",
+   "desc": "Gilet color vino con alamari d'oro.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Completo, taglia media",
    "recipe": [
@@ -1832,7 +1862,7 @@
    "color": "#2f3a2a",
    "trim": "#e4c47c",
    "price": 2750,
-   "desc": "Mantello con cappuccio e tunica in tinta: il verde dei boschi, bordato d'oro.",
+   "desc": "Mantello e tunica verde bosco, bordati d'oro.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Mantello e tunica (accorpo), taglia media",
    "recipe": [
@@ -1867,7 +1897,7 @@
    "color": "#151214",
    "trim": "#9a1f2a",
    "price": 2750,
-   "desc": "Ampio mantello nero foderato di cremisi, fermato sulla spalla da un disco d'argento, su tunica nera e camicia rossa.",
+   "desc": "Mantello nero foderato di cremisi, disco d'argento.",
    "excl": "Bracciali e stivali non inclusi",
    "cls": "Tessuti · Mantello e completo (accorpo), taglia media",
    "recipe": [
@@ -1898,7 +1928,7 @@
    "color": "#2f3d27",
    "trim": "#e4c47c",
    "price": 2700,
-   "desc": "Mantello e giacca lunga verde bosco, con una trama di rami intessuta e il fermaglio d'oro a stella sulla spalla.",
+   "desc": "Mantello e giacca verde bosco a trama di rami.",
    "excl": "Bracciali, gambali e stivali non inclusi",
    "cls": "Tessuti · Mantello e completo (accorpo), taglia media",
    "recipe": [
@@ -1929,7 +1959,7 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 2000,
-   "desc": "Ampio mantello nero con cappuccio, dalla trama sottile, chiuso sul petto da un fermaglio d'argento a stella.",
+   "desc": "Mantello nero con cappuccio e fermaglio a stella.",
    "cls": "Tessuti · Mantello, taglia media",
    "recipe": [
     [
@@ -1959,7 +1989,7 @@
    "color": "#141214",
    "trim": "#e4c47c",
    "price": 2800,
-   "desc": "Mantello invernale nero, pesante e foderato, con cappuccio e mantellina, percorso da bande di rami ricamate d'oro: una luce nelle notti d'inverno.",
+   "desc": "Mantello invernale nero, foderato, a rami d'oro.",
    "cls": "Tessuti · Mantello invernale foderato con mantellina, taglia media",
    "recipe": [
     [
@@ -1989,7 +2019,7 @@
    "color": "#1a1715",
    "trim": "#c99a45",
    "price": 2500,
-   "desc": "Veste lunga e severa, stretta in vita da una fascia annodata: per le sere senza luna.",
+   "desc": "Veste nera stretta da una fascia annodata.",
    "excl": "Stivali e bracciali non inclusi",
    "cls": "Tessuti · Abito, taglia media",
    "recipe": [
@@ -2020,7 +2050,7 @@
    "color": "#ece2cf",
    "trim": "#e4c47c",
    "price": 3400,
-   "desc": "Lunga giacca avorio con lo strascico, aperta su pannelli scuri ricamati: luminosa come il mezzogiorno.",
+   "desc": "Giacca avorio con strascico e pannelli scuri ricamati.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Abito con giacca lunga, taglia media",
    "recipe": [
@@ -2051,7 +2081,7 @@
    "color": "#1f2a4a",
    "trim": "#dfe6f4",
    "price": 2100,
-   "desc": "Gilet blu ricamato d'argento sopra una camicia ampia, con cintura a fibbia.",
+   "desc": "Gilet blu ricamato d'argento su camicia ampia.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Completo, taglia media",
    "recipe": [
@@ -2082,7 +2112,7 @@
    "color": "#b8b4ae",
    "trim": "#dfe6f4",
    "price": 3500,
-   "desc": "Lunga giacca grigio perla dai riflessi d'argento, su gilet in tinta: come nebbia al chiaro di luna.",
+   "desc": "Giacca grigio perla su gilet in tinta.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Completo con giacca lunga, taglia media",
    "recipe": [
@@ -2113,7 +2143,7 @@
    "color": "#3d1f3a",
    "trim": "#e4c47c",
    "price": 3250,
-   "desc": "Ampia veste drappeggiata color prugna, con bande d'oro che scendono fino all'orlo.",
+   "desc": "Veste color prugna drappeggiata, bande d'oro.",
    "excl": "Stivali e bracciali non inclusi",
    "cls": "Tessuti · Abito drappeggiato, taglia media",
    "recipe": [
@@ -2144,7 +2174,7 @@
    "color": "#141214",
    "trim": "#e4c47c",
    "price": 3100,
-   "desc": "Lunga giacca nera a doppia fila di bottoni, aperta sui fianchi e ricamata d'oro su colletto, spalle e polsi.",
+   "desc": "Giacca nera a doppio petto ricamata d'oro.",
    "excl": "Stivali non inclusi",
    "cls": "Tessuti · Completo con giacca lunga, taglia media",
    "recipe": [
@@ -2175,7 +2205,7 @@
    "color": "#b9a184",
    "trim": "#e4c47c",
    "price": 1650,
-   "desc": "Camicia color sabbia dalla trama a foglie, con le maniche arrotolate, pantaloni bruni e cintura intrecciata: per il viaggio e la bottega.",
+   "desc": "Camicia sabbia a foglie, pantaloni bruni.",
    "excl": "Tracolla, bracciali e stivali non inclusi",
    "cls": "Tessuti · Completo con cintura, taglia media",
    "recipe": [
@@ -2202,7 +2232,7 @@
    "color": "#1d2340",
    "trim": "#e4c47c",
    "price": 650,
-   "desc": "Fascia alta blu notte, ricamata d'oro a intrecci, chiusa da una fibbia rotonda con tre stelle.",
+   "desc": "Fascia blu notte ricamata d'oro, fibbia a stelle.",
    "cls": "Tessuti · Fascia",
    "recipe": [
     [
@@ -2232,7 +2262,7 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 450,
-   "desc": "Fascia alta nera, annodata in vita, con fibbia d'argento e i lembi bordati d'argento.",
+   "desc": "Fascia nera annodata, fibbia d'argento.",
    "cls": "Tessuti · Fascia",
    "recipe": [
     [
@@ -2262,7 +2292,7 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 400,
-   "desc": "Cintura di cotone intrecciato nero, con fibbia d'argento incisa e un puntale con la stella.",
+   "desc": "Cotone intrecciato nero, puntale con la stella.",
    "cls": "Tessuti · Fascia",
    "recipe": [
     [
@@ -2292,7 +2322,7 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 400,
-   "desc": "Cintura sottile di cotone intrecciato nero, con fibbia d'argento a forma di foglia e una stella incisa.",
+   "desc": "Cintura sottile intrecciata, fibbia a foglia.",
    "cls": "Tessuti · Fascia",
    "recipe": [
     [
