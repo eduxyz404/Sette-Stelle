@@ -446,6 +446,18 @@ footer .ludic b{font-style:normal;font-weight:500;color:var(--fg)}
 
 /* Foto protette: niente trascinamento o salvataggio rapido */
 img{-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
+
+/* Schede più essenziali: ricetta richiudibile */
+details.recipe{padding:0;background:transparent;border:0;text-align:center}
+details.recipe summary{white-space:nowrap;flex-direction:row;list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;margin:2px auto 0;padding:4px 12px;border:1px solid var(--line);border-radius:999px}
+details.recipe summary::-webkit-details-marker{display:none}
+details.recipe summary::after{content:"▾";font-size:.7rem;color:var(--gold);transition:transform .2s}
+details.recipe[open] summary::after{transform:rotate(180deg)}
+details.recipe summary span{font-size:.68rem}
+details.recipe summary:focus-visible{outline:2px solid var(--silver);outline-offset:2px}
+details.recipe > small{display:block;margin:8px 0 6px;font-size:.88rem;color:var(--muted);font-style:italic}
+details.recipe ul{justify-content:center}
+.desc .excl{display:inline;font-size:.92rem;color:var(--gold)}
 </style>
 
 </head>
@@ -977,18 +989,15 @@ function card(it){
         <h3>${it.name}</h3>
         <p class="gloss">«${it.gloss}»</p>
         <p class="code">Cod. ${it.code}</p>
-        <dl class="specs">${isCloth(it) ? `
-          <dt>tessuto</dt><dd>${it.fabric}</dd>
-          <dt>colore</dt><dd>${it.colorName}</dd>
-          <dt>ricami</dt><dd>${it.trimName}</dd>` : `
+        ${isCloth(it) ? "" : `<dl class="specs">
           <dt>metallo</dt><dd>${it.metal}</dd>
           <dt>pietra</dt><dd>${it.gem}, taglio ${it.cut}</dd>
-          <dt>peso</dt><dd>${it.ct}</dd>`}
-        </dl>
-        <p class="desc">${it.desc}</p>
-        ${it.excl ? `<p class="excl">${it.excl}</p>` : ""}
-        <div class="recipe"><div class="recipe-head"><span>Ricetta di creazione</span><small>${it.cls}</small></div>
-          <ul>${it.recipe.map(([q, m]) => `<li><b>${q}×</b> ${m}</li>`).join("")}</ul></div>
+          <dt>peso</dt><dd>${it.ct}</dd>
+        </dl>`}
+        <p class="desc">${it.desc}${it.excl ? ` <span class="excl">${it.excl}.</span>` : ""}</p>
+        <details class="recipe"><summary class="recipe-head"><span>Ricetta</span></summary>
+          <small>${it.cls}</small>
+          <ul>${it.recipe.map(([q, m]) => `<li><b>${q}×</b> ${m}</li>`).join("")}</ul></details>
         <div class="price">${ORN}<strong>${COIN}${fmt(it.price)} monete${it.unit ? " " + it.unit : ""}</strong></div>
         <button type="button" class="note-btn" data-note="${it.code}" aria-pressed="${inNote(it.code)}">${inNote(it.code) ? "✓ Nello scrigno" : "✦ Metti nello scrigno"}</button>
       </div>
