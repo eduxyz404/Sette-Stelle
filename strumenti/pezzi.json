@@ -640,9 +640,133 @@
    "color": "#c9ad8a",
    "trim": "#e4c47c",
    "price": 4800,
-   "desc": "Abito di veli color sabbia ricamato a rami sottili, con maniche lunghe e ampie come foglie. Tema bosco: si abbina a Ornendil.",
+   "desc": "Abito di veli color sabbia ricamato a rami sottili, con maniche lunghe e ampie come foglie. Tema bosco: si abbina a Ornendil e Taurion.",
    "excl": "Diadema e orecchini non inclusi",
    "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A50",
+   "cat": "lei/Cerimonia",
+   "name": "Malinornë",
+   "gloss": "albero d'oro",
+   "photo": true,
+   "fabric": "Cotone verde bosco lavorato, maniche lunghe a velo",
+   "colorName": "Verde bosco",
+   "trimName": "intrecci e rami ricamati d'oro, fiori d'avorio, fermaglio d'oro con pietra verde",
+   "garment": "dress",
+   "color": "#2c3a26",
+   "trim": "#e4c47c",
+   "price": 4800,
+   "desc": "Abito verde bosco intrecciato d'oro, con fiori d'avorio sulla spalla e maniche di velo lunghe come fronde. Tema bosco: si abbina a Ornendil e Taurion.",
+   "excl": "Diadema e orecchini non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A53",
+   "cat": "lei/Cerimonia",
+   "name": "Isilmë",
+   "gloss": "luce di luna",
+   "photo": true,
+   "fabric": "Velo di cotone argento e azzurro",
+   "colorName": "Argento e azzurro",
+   "trimName": "volute ricamate d'argento, veli leggeri alle braccia",
+   "garment": "dress",
+   "color": "#c9d0e0",
+   "trim": "#dfe6f4",
+   "price": 4900,
+   "desc": "Abito di veli d'argento e d'azzurro che si muovono nell'aria, ricamato a volute come la luce della luna sull'acqua. Tema aria: si abbina a Vilya e Oiolossë.",
+   "excl": "Diadema, orecchini e bracciali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A54",
+   "cat": "lei/Cerimonia",
+   "name": "Wilwarin",
+   "gloss": "farfalla",
+   "photo": true,
+   "fabric": "Cotone bianco e velo di cotone, a spalle scoperte",
+   "colorName": "Bianco e grigio perla",
+   "trimName": "volute ricamate grigio perla e d'argento, veli lunghi alle braccia",
+   "garment": "dress",
+   "color": "#eef0f4",
+   "trim": "#dfe6f4",
+   "price": 4900,
+   "desc": "Abito bianco a spalle scoperte, con volute grigio perla e lunghi veli che il vento solleva come ali. Tema aria: si abbina a Vilya e Oiolossë.",
+   "excl": "Diadema, orecchini e bracciali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con veli, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A51",
+   "cat": "lei/Cerimonia",
+   "name": "Rómelótë",
+   "gloss": "fiore d'oriente",
+   "photo": true,
+   "fabric": "Velo di cotone color sabbia, drappo di cotone rosso rubino",
+   "colorName": "Sabbia e rubino",
+   "trimName": "rete ricamata d'oro, fascia in vita con fermaglio d'oro e pietra rossa",
+   "garment": "dress",
+   "color": "#d2b48c",
+   "trim": "#e4c47c",
+   "price": 5000,
+   "desc": "Abito di veli color sabbia coperto da una rete d'oro, con un drappo rubino che scende dalle spalle come sotto le stelle del deserto. Tema notte d'oriente: si abbina a Rómestámo.",
+   "excl": "Diadema, orecchini e bracciali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
    "recipe": [
     [
      4,
@@ -795,8 +919,130 @@
    "color": "#2f3a2a",
    "trim": "#e4c47c",
    "price": 3900,
-   "desc": "Lunga sopravveste verde bosco ricamata a rami d'oro, con il mantello fermato da una spilla ad albero. Tema bosco: si abbina ad Aldarwen.",
+   "desc": "Lunga sopravveste verde bosco ricamata a rami d'oro, con il mantello fermato da una spilla ad albero. Tema bosco: si abbina ad Aldarwen e Malinornë.",
    "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A56",
+   "cat": "lui/Cerimonia",
+   "name": "Taurion",
+   "gloss": "figlio della foresta",
+   "photo": true,
+   "fabric": "Cotone verde bosco lavorato, tunica color avorio, mantello con cappuccio",
+   "colorName": "Verde bosco e avorio",
+   "trimName": "rami ricamati color avorio e d'oro",
+   "garment": "cloak",
+   "color": "#2b3326",
+   "trim": "#e4c47c",
+   "price": 4000,
+   "desc": "Lunga veste verde bosco con mantello e cappuccio, percorsa da rami ricamati che salgono fino alle spalle. Tema bosco: si abbina a Malinornë e Aldarwen.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A55",
+   "cat": "lui/Cerimonia",
+   "name": "Vilya",
+   "gloss": "l'aria",
+   "photo": true,
+   "fabric": "Cotone grigio perla, soprabito e mantello di velo di cotone",
+   "colorName": "Grigio perla e bianco",
+   "trimName": "volute e rami ricamati d'argento, fermagli d'argento con pietra azzurra",
+   "garment": "cloak",
+   "color": "#b8bcc8",
+   "trim": "#dfe6f4",
+   "price": 4200,
+   "desc": "Soprabito lungo grigio perla ricamato d'argento, con un mantello di veli che si muove come il vento sui monti. Tema aria: si abbina a Isilmë e Wilwarin.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da cerimonia con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A57",
+   "cat": "lui/Cerimonia",
+   "name": "Oiolossë",
+   "gloss": "sempre bianco di neve",
+   "photo": true,
+   "fabric": "Cotone avorio lavorato, pantaloni di cotone avorio",
+   "colorName": "Avorio e argento",
+   "trimName": "rami e volute ricamati d'argento, fascia d'argento con cristallo",
+   "garment": "cloak",
+   "color": "#e8e4dc",
+   "trim": "#dfe6f4",
+   "price": 3800,
+   "desc": "Lunga giacca avorio dal colletto alto, ricamata d'argento come la neve sui rami. Tema aria: si abbina a Isilmë e Wilwarin.",
+   "cls": "Tessuti · Abito da cerimonia, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "A52",
+   "cat": "lui/Cerimonia",
+   "name": "Rómestámo",
+   "gloss": "aiuto dell'oriente",
+   "photo": true,
+   "fabric": "Cotone rosso rubino, drappo di cotone avorio",
+   "colorName": "Rubino e avorio",
+   "trimName": "bordi a rete ricamati d'oro, fascia con fermaglio d'oro e pietra rossa, nappe d'oro",
+   "garment": "cloak",
+   "color": "#6d1420",
+   "trim": "#e4c47c",
+   "price": 3900,
+   "desc": "Veste rosso rubino con bordi d'oro a rete e un ampio drappo avorio sulla spalla. Tema notte d'oriente: si abbina a Rómelótë.",
+   "cls": "Tessuti · Abito da cerimonia con drappo, taglia media",
    "recipe": [
     [
      4,
@@ -1716,7 +1962,7 @@
    "who": "lei",
    "name": "Cerimonia",
    "slug": "lei-cerimonia",
-   "desc": "abiti da sposa e da cerimonia, a temi: stelle, mare, bosco",
+   "desc": "abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente",
    "show": "Elenindis",
    "crop": [
     2,
@@ -1768,7 +2014,7 @@
    "who": "lui",
    "name": "Cerimonia",
    "slug": "lui-cerimonia",
-   "desc": "abiti da cerimonia a temi: stelle, mare, bosco",
+   "desc": "abiti da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente",
    "show": "Tinwerína",
    "crop": [
     2.2,
