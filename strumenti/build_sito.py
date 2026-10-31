@@ -1,8 +1,9 @@
 """Costruisce sito/index.html dal file principale: sul sito le foto dei pezzi si caricano da img/CODICE.jpg (qualità piena)."""
-import re, pathlib
+import re, pathlib, time
+V = time.strftime('%Y%m%d%H%M')
 s = open('/home/claude/bottega-lunargento.html').read()
 i = s.index('const PHOTOS = {'); j = s.index('\n};', i)
-body = re.sub(r'(\n\s*(\w+):)"data:image/jpeg;base64,[^"]*"', lambda m: f'{m.group(1)}"img/{m.group(2)}.jpg"', s[i:j])
+body = re.sub(r'(\n\s*(\w+):)"data:image/jpeg;base64,[^"]*"', lambda m: f'{m.group(1)}"img/{m.group(2)}.jpg?v={V}"', s[i:j])
 for code in re.findall(r'img/(\w+)\.jpg', body):
     assert pathlib.Path(f'/home/claude/sette-stelle/img/{code}.jpg').exists(), code
 s = s[:i] + body + s[j:]
