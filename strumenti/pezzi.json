@@ -632,16 +632,16 @@
    "name": "Luinil",
    "gloss": "la stella azzurra",
    "photo": true,
-   "fabric": "Camicia di cotone azzurro morbido, pantaloni di cotone color nocciola",
+   "fabric": "Camicia di cotone azzurro velato, fascia alta di cotone bruno, pantaloni aderenti di cotone nocciola",
    "colorName": "Azzurro e nocciola",
-   "trimName": "colletto alla coreana, maniche ampie con polsini",
+   "trimName": "ricami d'oro sullo scollo e sui polsini, fascia alta ricamata",
    "garment": "cloak",
-   "color": "#5a78a8",
+   "color": "#7d9cc8",
    "trim": "#e4c47c",
-   "price": 1400,
-   "desc": "Camicia azzurra a maniche ampie, pantaloni nocciola a vita alta.",
+   "price": 1600,
+   "desc": "Camicia azzurra ricamata, fascia alta bruna, pantaloni nocciola.",
    "excl": "Stivali non inclusi",
-   "cls": "Tessuti · Completo, taglia media",
+   "cls": "Tessuti · Completo con fascia, taglia media",
    "recipe": [
     [
      3,
@@ -650,6 +650,10 @@
     [
      1,
      "Colori"
+    ],
+    [
+     1,
+     "Oro"
     ]
    ]
   },
