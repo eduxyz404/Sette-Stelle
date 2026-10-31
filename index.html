@@ -456,7 +456,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
             <li>Telpë: argento noldorin</li>
             <li>Malta: oro giallo, bianco e rosa</li>
             <li>Gemme: zaffiro, smeraldo, rubino, diamante, topazio, acquamarina, ametista, opale, agata, tormalina e cristallo</li>
-            <li>Seta, lana, cotone e pelle per la sartoria</li>
+            <li>Seta, lana e cotone per la sartoria</li>
           </ul>
         </div>
       </div>
@@ -564,10 +564,10 @@ const ITEMS = [
     cls:"Tessuti · Abito, taglia media", recipe:[[2,"Cotone"],[1,"Colori"],[1,"Oro"]]},
   {code:"A10", cat:"lui/Tuniche", name:"Telumë", gloss:"la volta del cielo", fabric:"Velluto di seta", colorName:"Blu notte", trimName:"stella a otto raggi ricamata in oro", garment:"tunic", motif:"star", color:"#1f2c5e", trim:"#e4c47c", price:780, desc:"Casacca elegante con la stella della bottega ricamata in oro.",
     cls:"Tessuti · Giacca, taglia media", recipe:[[3,"Seta"],[1,"Colori"],[1,"Oro"]]},
-  {code:"A11", cat:"lui/Accessori", name:"Lanya", gloss:"filo", fabric:"Cuoio morbido", colorName:"Blu profondo", trimName:"fibbia a stella e borchie d'argento", garment:"belt", color:"#25366b", trim:"#dfe6f4", price:260, desc:"Cintura sottile con borchie d'argento, da portare su tuniche e casacche.",
-    cls:"Articoli in Pelle · Cintola", recipe:[[1,"Pelle"],[1,"Colori"],[1,"Argento"]]},
-  {code:"A12", cat:"lui/Accessori", name:"Ondo", gloss:"pietra", fabric:"Cuoio naturale", colorName:"Bruno di quercia", trimName:"fibbia e borchie d'oro", garment:"belt", color:"#5a3a24", trim:"#e4c47c", price:310, desc:"Cintura larga e robusta, compagna di ogni viaggio.",
-    cls:"Articoli in Pelle · Cintola", recipe:[[1,"Pelle"],[1,"Oro"]]}
+  {code:"A11", cat:"lui/Accessori", name:"Lanya", gloss:"filo", fabric:"Seta intrecciata", colorName:"Blu profondo", trimName:"fibbia a stella e borchie d'argento", garment:"belt", color:"#25366b", trim:"#dfe6f4", price:260, desc:"Cintura sottile con borchie d'argento, da portare su tuniche e casacche.",
+    cls:"Tessuti · Fascia", recipe:[[1,"Seta"],[1,"Colori"],[1,"Argento"]]},
+  {code:"A12", cat:"lui/Accessori", name:"Ondo", gloss:"pietra", fabric:"Lana intrecciata", colorName:"Bruno di quercia", trimName:"fibbia e borchie d'oro", garment:"belt", color:"#5a3a24", trim:"#e4c47c", price:310, desc:"Cintura larga e robusta di lana intrecciata, compagna di ogni viaggio.",
+    cls:"Tessuti · Fascia", recipe:[[1,"Lana"],[1,"Colori"],[1,"Oro"]]}
 ];
 const CAT_INFO = {
   /* kind: oreficeria o sartoria · who: per chi · show: il pezzo mostrato nella stanza · crop: [zoom, x, y] della foto nel banner */
@@ -585,7 +585,7 @@ const CAT_INFO = {
   "lei/Accessori":{kind:"abiti", who:"lei", name:"Accessori", slug:"lei-accessori", desc:"stole e cinture", show:"Lindë", crop:[2.4,"25%","72%"]},
   "lui/Mantelli":{kind:"abiti", who:"lui", name:"Mantelli", slug:"lui-mantelli", desc:"da viaggio e da inverno", show:"Súrë", crop:[2.2,"50%","82%"]},
   "lui/Tuniche":{kind:"abiti", who:"lui", name:"Tuniche", slug:"lui-tuniche", desc:"tuniche e casacche", show:"Telumë", crop:[2.2,"33%","30%"]},
-  "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture di cuoio", show:"Lanya", crop:[2.4,"73%","42%"]}
+  "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture intrecciate", show:"Lanya", crop:[2.4,"73%","42%"]}
 };
 const KINDS = {
   gioielli:{label:"oreficeria", title:"Gioielli", all:"Tutti i gioielli", allDesc:"anelli, collane, bracciali e fermagli dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},

@@ -720,7 +720,7 @@
    "cat": "lui/Accessori",
    "name": "Lanya",
    "gloss": "filo",
-   "fabric": "Cuoio morbido",
+   "fabric": "Seta intrecciata",
    "colorName": "Blu profondo",
    "trimName": "fibbia a stella e borchie d'argento",
    "garment": "belt",
@@ -728,11 +728,11 @@
    "trim": "#dfe6f4",
    "price": 260,
    "desc": "Cintura sottile con borchie d'argento, da portare su tuniche e casacche.",
-   "cls": "Articoli in Pelle · Cintola",
+   "cls": "Tessuti · Fascia",
    "recipe": [
     [
      1,
-     "Pelle"
+     "Seta"
     ],
     [
      1,
@@ -749,19 +749,23 @@
    "cat": "lui/Accessori",
    "name": "Ondo",
    "gloss": "pietra",
-   "fabric": "Cuoio naturale",
+   "fabric": "Lana intrecciata",
    "colorName": "Bruno di quercia",
    "trimName": "fibbia e borchie d'oro",
    "garment": "belt",
    "color": "#5a3a24",
    "trim": "#e4c47c",
    "price": 310,
-   "desc": "Cintura larga e robusta, compagna di ogni viaggio.",
-   "cls": "Articoli in Pelle · Cintola",
+   "desc": "Cintura larga e robusta di lana intrecciata, compagna di ogni viaggio.",
+   "cls": "Tessuti · Fascia",
    "recipe": [
     [
      1,
-     "Pelle"
+     "Lana"
+    ],
+    [
+     1,
+     "Colori"
     ],
     [
      1,
@@ -958,7 +962,7 @@
    "who": "lui",
    "name": "Accessori",
    "slug": "lui-accessori",
-   "desc": "cinture di cuoio",
+   "desc": "cinture intrecciate",
    "show": "Lanya",
    "crop": [
     2.4,
