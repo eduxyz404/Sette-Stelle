@@ -6,6 +6,7 @@ body = re.sub(r'(\n\s*(\w+):)"data:image/jpeg;base64,[^"]*"', lambda m: f'{m.gro
 for code in re.findall(r'img/(\w+)\.jpg', body):
     assert pathlib.Path(f'/home/claude/sette-stelle/img/{code}.jpg').exists(), code
 s = s[:i] + body + s[j:]
+s = __import__('re').sub(r'<link rel="icon"[^>]*>', '<link rel="icon" type="image/svg+xml" href="img/stella.svg">\n<link rel="apple-touch-icon" href="img/stella-180.png">', s, count=1)
 head = '''<!doctype html>\n<html lang="it">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<style>html{color-scheme:dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n'''
 k = s.index('<div class="wrap">')
 open('/home/claude/sito/index.html', 'w').write(head + s[:k] + '</head>\n<body>\n' + s[k:] + '\n</body>\n</html>\n')
