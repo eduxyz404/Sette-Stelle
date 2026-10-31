@@ -395,11 +395,16 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .note-btn:hover{border-color:var(--gold);background:rgba(230,194,122,.08)}
 .note-btn[aria-pressed="true"]{border-color:var(--gold);background:rgba(230,194,122,.16);color:#fff3cf}
 .note-btn:focus-visible,.note-fab:focus-visible,.np-close:focus-visible,.np-copy:focus-visible,.np-clear:focus-visible,.np-del:focus-visible{outline:2px solid var(--silver);outline-offset:2px}
-.note-fab{position:fixed;z-index:40;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));
-  display:inline-flex;align-items:center;gap:8px;font:inherit;font-family:"Cinzel",Georgia,serif;font-size:.86rem;letter-spacing:.12em;color:#fff3cf;cursor:pointer;
-  background:linear-gradient(180deg,#1a2550,#0f1734);border:1px solid var(--gold);border-radius:999px;padding:10px 18px;
-  box-shadow:inset 0 0 0 3px #0f1734,inset 0 0 0 4px rgba(230,194,122,.4),0 14px 30px rgba(0,0,0,.6)}
-.note-fab b{min-width:24px;height:24px;display:inline-grid;place-items:center;border-radius:999px;background:var(--gold);color:#1a1205;font-family:"Cinzel",Georgia,serif;font-size:.8rem;padding:0 6px}
+.note-fab{position:fixed;z-index:40;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  width:52px;height:52px;display:grid;place-items:center;padding:0;cursor:pointer;color:var(--gold-bright);
+  background:radial-gradient(circle at 40% 35%,#1f2c5c,#0c1430 75%);border:1px solid var(--gold);border-radius:50%;
+  box-shadow:inset 0 0 0 3px #0c1430,inset 0 0 0 4px rgba(230,194,122,.35),0 10px 24px rgba(0,0,0,.6);transition:transform .2s}
+.note-fab:hover{transform:translateY(-2px)}
+.note-fab .nf-ico{width:28px;height:28px}
+.note-fab b{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;display:grid;place-items:center;border-radius:999px;background:var(--gold);color:#1a1205;
+  font-family:"Cinzel",Georgia,serif;font-size:.7rem;padding:0 5px;box-shadow:0 0 0 2px var(--bg)}
+.note-fab.empty b{display:none}
+.note-fab.empty{opacity:.75}
 .note-fab.pulse{animation:np-pulse .5s ease}
 @keyframes np-pulse{50%{transform:scale(1.08)}}
 .note-panel{position:fixed;z-index:45;top:0;right:0;bottom:0;width:min(420px,100%);overflow:auto;display:flex;flex-direction:column;gap:14px;
@@ -624,12 +629,12 @@ footer .ludic b{font-style:normal;font-weight:500;color:var(--fg)}
   </footer>
 </div>
 
-<button type="button" class="note-fab" id="note-fab" hidden aria-controls="note-panel" aria-expanded="false"><span class="nf-ico" aria-hidden="true">✎</span> Taccuino <b id="note-count">0</b></button>
+<button type="button" class="note-fab" id="note-fab" hidden aria-controls="note-panel" aria-expanded="false" aria-label="Apri lo scrigno" title="Lo scrigno"><svg class="nf-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 13 C5 8 9 6 16 6 C23 6 27 8 27 13 Z" fill="currentColor" opacity=".9"/><rect x="5" y="13" width="22" height="13" rx="2" fill="currentColor" opacity=".65"/><rect x="5" y="12" width="22" height="2.4" fill="#1a1205" opacity=".55"/><rect x="13.5" y="11" width="5" height="6.5" rx="1.2" fill="#1a1205" opacity=".7"/><path d="M16 12.2 l.9 1.9 2 .2 -1.5 1.3 .4 2 -1.8 -1 -1.8 1 .4 -2 -1.5 -1.3 2 -.2z" fill="currentColor"/></svg><b id="note-count">0</b></button>
 <aside class="note-panel" id="note-panel" hidden aria-labelledby="note-title">
-  <header class="np-head"><div><span class="label">il tuo</span><h2 id="note-title">Taccuino</h2></div><button type="button" class="np-close" id="note-close" aria-label="Chiudi il taccuino">✕</button></header>
-  <p class="np-intro">Annota i pezzi che ti piacciono, poi copia l'elenco e invialo a Elrohir, il bottegaio, con una missiva in gioco.</p>
+  <header class="np-head"><div><span class="label">il tuo</span><h2 id="note-title">Scrigno</h2></div><button type="button" class="np-close" id="note-close" aria-label="Chiudi lo scrigno">✕</button></header>
+  <p class="np-intro">Riponi qui i pezzi che ti piacciono, poi copia l'elenco e invialo a Elrohir, il bottegaio, con una missiva in gioco.</p>
   <ul class="np-list" id="note-list"></ul>
-  <p class="np-empty" id="note-empty">Il taccuino è vuoto. Tocca «Annota nel taccuino» sotto un pezzo per aggiungerlo.</p>
+  <p class="np-empty" id="note-empty">Lo scrigno è vuoto. Tocca «Metti nello scrigno» sotto un pezzo per aggiungerlo.</p>
   <div class="np-total" id="note-total"></div>
   <label class="np-field" for="note-extra"><span>Note per il bottegaio</span><textarea id="note-extra" rows="3" placeholder="confezione, dedica, taglia, colori…"></textarea></label>
   <div class="np-actions"><button type="button" class="np-copy" id="note-copy">Copia l'elenco</button><button type="button" class="np-clear" id="note-clear">Svuota</button></div>
@@ -982,7 +987,7 @@ function card(it){
         <div class="recipe"><div class="recipe-head"><span>Ricetta di creazione</span><small>${it.cls}</small></div>
           <ul>${it.recipe.map(([q, m]) => `<li><b>${q}×</b> ${m}</li>`).join("")}</ul></div>
         <div class="price">${ORN}<strong>${COIN}${fmt(it.price)} monete${it.unit ? " " + it.unit : ""}</strong></div>
-        <button type="button" class="note-btn" data-note="${it.code}" aria-pressed="${inNote(it.code)}">${inNote(it.code) ? "✓ Nel taccuino" : "✦ Annota nel taccuino"}</button>
+        <button type="button" class="note-btn" data-note="${it.code}" aria-pressed="${inNote(it.code)}">${inNote(it.code) ? "✓ Nello scrigno" : "✦ Metti nello scrigno"}</button>
       </div>
     </article>`;
 }
@@ -1090,7 +1095,7 @@ function route(){
 document.getElementById("ordina").addEventListener("change", e => { order = e.target.value; route(); });
 window.addEventListener("hashchange", route);
 
-/* Taccuino: i codici annotati restano nel browser di chi visita */
+/* Scrigno: i codici scelti restano nel browser di chi visita */
 const NOTE_KEY = "sette-stelle-taccuino";
 let note = { codes: [], name: "", extra: "" };
 try { const v = JSON.parse(localStorage.getItem(NOTE_KEY)); if(v && Array.isArray(v.codes)) note = Object.assign(note, v); } catch(e) {}
@@ -1110,11 +1115,13 @@ function noteText(){
 function renderNote(){
   const list = note.codes.map(c => ITEMS.find(i => i.code === c));
   document.getElementById("note-count").textContent = list.length;
+  fab.setAttribute("aria-label", `Apri lo scrigno: ${list.length} ${list.length === 1 ? "pezzo" : "pezzi"}`);
+  fab.classList.toggle("empty", !list.length);
   document.getElementById("note-list").innerHTML = list.map(it => `<li><span class="np-code">${it.code}</span><span class="np-name">${it.name}<small>${nameOf(it.cat)}${whoOf(it.cat) === "coppia" ? "" : " per " + whoOf(it.cat)}</small></span><span class="np-price">${fmt(it.price)}</span><button type="button" class="np-del" data-del="${it.code}" aria-label="Togli ${it.name}">✕</button></li>`).join("");
   document.getElementById("note-empty").hidden = list.length > 0;
   const tot = list.reduce((n, it) => n + it.price, 0);
   document.getElementById("note-total").innerHTML = list.length ? `<span>Totale</span><b>${COIN}${fmt(tot)} monete</b>` : "";
-  document.querySelectorAll(".note-btn").forEach(b => { const on = inNote(b.dataset.note); b.setAttribute("aria-pressed", on); b.textContent = on ? "✓ Nel taccuino" : "✦ Annota nel taccuino"; });
+  document.querySelectorAll(".note-btn").forEach(b => { const on = inNote(b.dataset.note); b.setAttribute("aria-pressed", on); b.textContent = on ? "✓ Nello scrigno" : "✦ Metti nello scrigno"; });
   nOut.hidden = true; nMsg.textContent = "";
 }
 function setPanel(open){ panel.hidden = !open; fab.setAttribute("aria-expanded", open); if(open) document.getElementById("note-close").focus(); }
