@@ -1,1 +1,5 @@
-# Stella-d-Argento
+# Bottega della Stella d'Argento
+
+Vetrina della bottega di gioielli e abiti in stile elfico noldor, per il gioco di ruolo Extremelot.
+
+Il sito è tutto in `index.html`, con le immagini già incluse.
