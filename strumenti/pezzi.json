@@ -377,6 +377,24 @@
    ]
   },
   {
+   "code": "G21",
+   "cat": "lui/Bracciali",
+   "name": "Vanda",
+   "gloss": "il giuramento",
+   "photo": true,
+   "metal": "Argento brunito",
+   "finish": "catena a maglia grossa, piastra con fili intrecciati",
+   "price": 950,
+   "desc": "Bracciale a catena con una piastra scura su cui corrono fili d'argento intrecciati.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     3,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "G15",
    "cat": "Coppie",
    "name": "Isil ar Anar",
@@ -1601,7 +1619,7 @@
    "who": "lui",
    "name": "Bracciali",
    "slug": "lui-bracciali",
-   "desc": "bracciali rigidi e battuti a mano",
+   "desc": "bracciali rigidi, battuti a mano e a catena",
    "show": "Huinë",
    "crop": [
     2,
