@@ -88,13 +88,16 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
       <span class="lbl">Confezione</span>
     </div>""")
     def cartellino(big=False):
+        # Testo scritto sul cartoncino della bottega; più è lunga la dedica, più piccolo il carattere
         da = f'<span class="from">{e(firma)}</span>' if firma else ''
-        return f"""<div class="tag{' big' if big else ''}">
-      <span class="hole" aria-hidden="true"></span>
-      <svg class="tag-stars" viewBox="0 0 80 40" aria-hidden="true"><g fill="#c99a45">{''.join(f'<path d="M{x} {y-r} L{x+r*.3:.1f} {y-r*.3:.1f} L{x+r} {y} L{x+r*.3:.1f} {y+r*.3:.1f} L{x} {y+r} L{x-r*.3:.1f} {y+r*.3:.1f} L{x-r} {y} L{x-r*.3:.1f} {y-r*.3:.1f}Z"/>' for x, y, r in [(22,20,4),(32,12,4),(40,8,5),(48,12,4),(58,20,4),(40,28,7)])}</g></svg>
-      <span class="lbl">Dedica</span>
-      <p class="msg">«{e(dedica)}»</p>
-      {da}
+        n = len(dedica or '')
+        fs = 5.6 if n <= 60 else 4.7 if n <= 110 else 3.9 if n <= 170 else 3.3
+        return f"""<div class="tag{' big' if big else ''}" role="img" aria-label="Cartoncino della dedica">
+      <div class="tag-text" style="--fs:{fs}cqw">
+        <span class="lbl">Dedica</span>
+        <p class="msg">«{e(dedica)}»</p>
+        {da}
+      </div>
     </div>"""
     if dedica and not dono:
         extra.append(cartellino())
@@ -199,23 +202,22 @@ dd{{margin:0;font-size:1.08rem}}
 .giver b{{font-style:normal;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;color:var(--fg)}}
 
 /* Confezione e dedica */
-.extras{{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(20px,3.5vw,36px);align-items:center;
+.extras{{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(20px,3.5vw,36px);align-items:center;
   padding:0 clamp(22px,5vw,52px) clamp(26px,4vw,40px)}}
 .extras.one{{grid-template-columns:minmax(0,1fr)}}
-.extras.one .tag{{max-width:360px;justify-self:center}}
+.extras.one .tag{{max-width:520px;justify-self:center}}
 @media (max-width:720px){{.extras{{grid-template-columns:1fr}}}}
 .box{{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}}
 .extras.one .box{{max-width:560px;justify-self:center;text-align:center}}
 .box img{{display:block;width:100%;height:auto;border-radius:12px;border:1px solid rgba(230,194,122,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(230,194,122,.3),0 24px 40px -20px rgba(0,0,0,.9)}}
 .box p{{margin:4px 0 0;font-size:1.05rem;color:#c4cbe0}}
-.tag{{position:relative;text-align:center;color:#3b2a10;padding:34px 24px 26px;
-  background:linear-gradient(160deg,#f6ecd2,#ead9b0);border-radius:6px;clip-path:polygon(18% 0,82% 0,100% 12%,100% 100%,0 100%,0 12%);
-  box-shadow:inset 0 0 0 6px #f3e6c4,inset 0 0 0 7px #c99a45;transform:rotate(1.5deg)}}
-.tag .hole{{position:absolute;top:12px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1.5px #c99a45}}
-.tag-stars{{display:block;width:84px;height:42px;margin:6px auto 2px}}
-.tag .lbl{{color:#8a6420}}
-.tag .msg{{margin:6px 0 10px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.3rem;line-height:1.35;color:#3b2a10;overflow-wrap:anywhere}}
-.tag .from{{display:block;font-family:"Cinzel Decorative",Georgia,serif;font-size:1rem;color:#7a5518}}
+.tag{{position:relative;container-type:inline-size;width:100%;aspect-ratio:1000/659;max-width:100%;
+  background:url(../img/cartellino.png) center/contain no-repeat;color:#3b2a10;transform:rotate(-2deg);filter:drop-shadow(0 18px 22px rgba(0,0,0,.6))}}
+.tag-text{{position:absolute;left:21%;right:7%;top:32%;bottom:23%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1cqw;text-align:center}}
+.tag .lbl{{font-size:2.5cqw;letter-spacing:.3em;color:#8a6420}}
+.tag .msg{{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:500;font-size:var(--fs);line-height:1.22;color:#3b2a10;overflow-wrap:anywhere}}
+.tag .from{{font-family:"Cinzel Decorative",Georgia,serif;font-size:3.4cqw;color:#7a5518}}
+.tag.big{{width:min(100%,620px)}}
 </style>
 </head>
 <body>
