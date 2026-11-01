@@ -1,9 +1,10 @@
+import pathlib
 """Finitura «fotografica» delle foto dei pezzi: levigatura leggera della grana a scaglie,
 un filo di nitidezza e una grana fine da fotografia, così pelle e volti sembrano meno di plastica.
 Il sigillo resta identico. Si applica sulle foto già preparate da foto.py (900x1200 con sigillo)."""
 import sys, cv2, numpy as np
 from PIL import Image
-SEAL = Image.open('/home/claude/sette-stelle/img/sigillo-bottega.png').convert('RGBA')
+SEAL = Image.open(str(pathlib.Path(__file__).resolve().parent.parent / 'img' / 'sigillo-bottega.png')).convert('RGBA')
 W, H, SW = 900, 1200, 144
 sl = SEAL.resize((SW, round(SW * SEAL.height / SEAL.width)), Image.LANCZOS)
 mask = np.zeros((H, W), np.float32)

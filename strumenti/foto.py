@@ -1,8 +1,9 @@
+import pathlib
 """Prepara le foto dei pezzi: 900x1200 (3:4, come la cornice), figura intera, sigillo sempre nello stesso punto."""
 import io, base64
 from PIL import Image, ImageFilter, ImageDraw, ImageEnhance
 import numpy as np
-SEAL = Image.open('/home/claude/sette-stelle/img/sigillo-bottega.png').convert('RGBA')
+SEAL = Image.open(str(pathlib.Path(__file__).resolve().parent.parent / 'img' / 'sigillo-bottega.png')).convert('RGBA')
 W, H = 900, 1200
 SW = 144                      # larghezza sigillo, fissa
 SX, SY = W - SW - 45, H - 0   # angolo: 45 px da destra; il fondo viene calcolato sotto
