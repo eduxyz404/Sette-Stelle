@@ -1142,7 +1142,7 @@
    "photo": true,
    "fabric": "Cotone nero lavorato, mantella di velo nero con colletto alto",
    "colorName": "Nero",
-   "trimName": "intrecci ricamati d'argento, catenelle d'argento, pendenti di cristallo viola",
+   "trimName": "intrecci ricamati d'argento e catenelle d'argento",
    "garment": "dress",
    "color": "#141214",
    "trim": "#dfe6f4",
@@ -1163,10 +1163,6 @@
     [
      1,
      "Argento"
-    ],
-    [
-     1,
-     "Cristallo"
     ]
    ]
   },
