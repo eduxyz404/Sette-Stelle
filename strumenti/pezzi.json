@@ -2520,6 +2520,33 @@
    ]
   },
   {
+   "code": "A85",
+   "cat": "lui/Tuniche",
+   "name": "Yávë",
+   "gloss": "raccolto",
+   "photo": true,
+   "fabric": "Tunica di cotone grezzo color sabbia a maniche corte, scollo allacciato; pantaloni di cotone scuro",
+   "colorName": "Sabbia e grigio scuro",
+   "trimName": "laccio allo scollo, fascia di cotone bruno annodata in vita",
+   "garment": "cloak",
+   "color": "#cbbba4",
+   "trim": "#8a6a4a",
+   "price": 800,
+   "desc": "Tunica sabbia a maniche corte, scollo allacciato, fascia bruna.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Tunica con fascia, taglia media",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A24",
    "cat": "lui/Completi",
    "name": "Helin",
