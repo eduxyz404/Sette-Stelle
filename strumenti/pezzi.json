@@ -2466,6 +2466,37 @@
    ]
   },
   {
+   "code": "A83",
+   "cat": "lui/Completi",
+   "name": "Telpë",
+   "gloss": "argento",
+   "photo": true,
+   "fabric": "Cotone damascato color argento: giacca lunga a colletto alto e gilet; pantaloni di cotone grigio",
+   "colorName": "Argento e grigio",
+   "trimName": "damasco a volute, bottoni d'argento, colletto alla coreana",
+   "garment": "cloak",
+   "color": "#a9adb3",
+   "trim": "#dfe6f4",
+   "price": 3000,
+   "desc": "Giacca lunga damascata color argento, gilet in tinta, pantaloni grigi.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Completo con giacca lunga, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A24",
    "cat": "lui/Completi",
    "name": "Helin",
