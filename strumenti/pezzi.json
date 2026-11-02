@@ -2439,6 +2439,33 @@
    ]
   },
   {
+   "code": "A82",
+   "cat": "lui/Completi",
+   "name": "Hithlas",
+   "gloss": "foglia di nebbia",
+   "photo": true,
+   "fabric": "Cotone grigio perla: giacca lunga a colletto alto, gilet e pantaloni in tinta",
+   "colorName": "Grigio perla",
+   "trimName": "bottoni ricoperti, colletto alla coreana",
+   "garment": "cloak",
+   "color": "#9ea2a8",
+   "trim": "#dfe6f4",
+   "price": 2600,
+   "desc": "Giacca lunga grigio perla a colletto alto, gilet e pantaloni in tinta.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Completo con giacca lunga, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A24",
    "cat": "lui/Completi",
    "name": "Helin",
