@@ -1331,6 +1331,38 @@
    ]
   },
   {
+   "code": "A81",
+   "cat": "lui/Cerimonia",
+   "name": "Lómion",
+   "gloss": "figlio del crepuscolo",
+   "photo": true,
+   "fabric": "Giubba di cotone nero a doppio petto, pantaloni neri, mantello di velluto di cotone nero",
+   "colorName": "Nero e argento",
+   "trimName": "cordoni, bottoni e ricami d'argento, spilla d'argento al mantello, cintura di cotone con fibbia",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 4300,
+   "desc": "Giubba nera con cordoni d'argento, mantello ricamato e spilla.",
+   "tema": "sposo",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Abito da sposo con mantello, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A42",
    "cat": "lui/Cerimonia",
    "name": "Tinwerína",
