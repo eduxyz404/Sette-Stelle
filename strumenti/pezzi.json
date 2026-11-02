@@ -2441,8 +2441,35 @@
   {
    "code": "A82",
    "cat": "lui/Completi",
-   "name": "Hithlas",
-   "gloss": "foglia di nebbia",
+   "name": "Morna",
+   "gloss": "scuro",
+   "photo": true,
+   "fabric": "Cappotto lungo di cotone grigio antracite, camicia color avorio, pantaloni di cotone blu notte",
+   "colorName": "Antracite, avorio e blu notte",
+   "trimName": "colletto alto, bottoni ricoperti",
+   "garment": "cloak",
+   "color": "#2e3033",
+   "trim": "#dfe6f4",
+   "price": 2200,
+   "desc": "Cappotto antracite, camicia avorio aperta, pantaloni blu notte.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Completo con cappotto, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "A83",
+   "cat": "lui/Completi",
+   "name": "Fanya",
+   "gloss": "nuvola",
    "photo": true,
    "fabric": "Cotone grigio perla: giacca lunga a colletto alto, gilet e pantaloni in tinta",
    "colorName": "Grigio perla",
@@ -2462,37 +2489,6 @@
     [
      1,
      "Colori"
-    ]
-   ]
-  },
-  {
-   "code": "A83",
-   "cat": "lui/Completi",
-   "name": "Telpë",
-   "gloss": "argento",
-   "photo": true,
-   "fabric": "Cotone damascato color argento: giacca lunga a colletto alto e gilet; pantaloni di cotone grigio",
-   "colorName": "Argento e grigio",
-   "trimName": "damasco a volute, bottoni d'argento, colletto alla coreana",
-   "garment": "cloak",
-   "color": "#a9adb3",
-   "trim": "#dfe6f4",
-   "price": 3000,
-   "desc": "Giacca lunga damascata color argento, gilet in tinta, pantaloni grigi.",
-   "excl": "Stivali non inclusi",
-   "cls": "Tessuti · Completo con giacca lunga, taglia media",
-   "recipe": [
-    [
-     4,
-     "Cotone"
-    ],
-    [
-     1,
-     "Colori"
-    ],
-    [
-     1,
-     "Argento"
     ]
    ]
   },
