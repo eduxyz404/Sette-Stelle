@@ -2493,6 +2493,33 @@
    ]
   },
   {
+   "code": "A84",
+   "cat": "lui/Tuniche",
+   "name": "Fána",
+   "gloss": "candido",
+   "photo": true,
+   "fabric": "Tunica di cotone grezzo color avorio, senza maniche, incrociata sul petto; pantaloni di cotone scuro",
+   "colorName": "Avorio e grigio scuro",
+   "trimName": "chiusura a bottone di stoffa, fascia di cotone bruno annodata in vita",
+   "garment": "cloak",
+   "color": "#e4dccb",
+   "trim": "#8a6a4a",
+   "price": 900,
+   "desc": "Tunica avorio senza maniche, incrociata, con fascia bruna annodata.",
+   "excl": "Stivali non inclusi",
+   "cls": "Tessuti · Tunica con fascia, taglia media",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A24",
    "cat": "lui/Completi",
    "name": "Helin",
@@ -2831,6 +2858,19 @@
     2.2,
     "35%",
     "25%"
+   ]
+  },
+  "lui/Tuniche": {
+   "kind": "abiti",
+   "who": "lui",
+   "name": "Tuniche",
+   "slug": "lui-tuniche",
+   "desc": "tuniche di cotone, semplici e da lavoro",
+   "show": "Fána",
+   "crop": [
+    2,
+    "50%",
+    "35%"
    ]
   },
   "lui/Cerimonia": {

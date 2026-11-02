@@ -653,6 +653,7 @@ details.recipe ul{justify-content:center}
 <script>
 /* Foto vere dei pezzi, per codice */
 const PHOTOS = {
+  A84:"img/A84.jpg?v=20261102150129",
   A83:"img/A83.jpg?v=20261102143149",
   A82:"img/A82.jpg?v=20261102143110",
   A81:"img/A81.jpg?v=20261102091514",
@@ -926,6 +927,8 @@ const ITEMS = [
     cls:"Tessuti · Completo con cappotto, taglia media", recipe:[[4,"Cotone"],[1,"Colori"]]},
   {code:"A83", cat:"lui/Completi", name:"Fanya", gloss:"nuvola", photo:true, fabric:"Cotone grigio perla: giacca lunga a colletto alto, gilet e pantaloni in tinta", colorName:"Grigio perla", trimName:"bottoni ricoperti, colletto alla coreana", garment:"cloak", color:"#9ea2a8", trim:"#dfe6f4", price:2600, desc:"Giacca lunga grigio perla a colletto alto, gilet e pantaloni in tinta.", excl:"Stivali non inclusi",
     cls:"Tessuti · Completo con giacca lunga, taglia media", recipe:[[4,"Cotone"],[1,"Colori"]]},
+  {code:"A84", cat:"lui/Tuniche", name:"Fána", gloss:"candido", photo:true, fabric:"Tunica di cotone grezzo color avorio, senza maniche, incrociata sul petto; pantaloni di cotone scuro", colorName:"Avorio e grigio scuro", trimName:"chiusura a bottone di stoffa, fascia di cotone bruno annodata in vita", garment:"cloak", color:"#e4dccb", trim:"#8a6a4a", price:900, desc:"Tunica avorio senza maniche, incrociata, con fascia bruna annodata.", excl:"Stivali non inclusi",
+    cls:"Tessuti · Tunica con fascia, taglia media", recipe:[[2,"Cotone"],[1,"Colori"]]},
   {code:"A24", cat:"lui/Completi", name:"Helin", gloss:"viola", photo:true, fabric:"Cotone viola scuro", colorName:"Viola prugna", trimName:"bordi intrecciati d'oro, cintura con fibbia d'oro", garment:"cloak", color:"#3d1f3a", trim:"#e4c47c", price:3250, desc:"Veste color prugna drappeggiata, bande d'oro.", excl:"Stivali e bracciali non inclusi",
     cls:"Tessuti · Abito drappeggiato, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
   {code:"A25", cat:"lui/Completi", name:"Fuinë", gloss:"ombra profonda", photo:true, fabric:"Cotone nero", colorName:"Nero", trimName:"intrecci ricamati d'oro, bottoni e fibbia a stella", garment:"cloak", color:"#141214", trim:"#e4c47c", price:3100, desc:"Giacca nera a doppio petto ricamata d'oro.", excl:"Stivali non inclusi",
@@ -953,6 +956,7 @@ const CAT_INFO = {
   "lui/Mantelli":{kind:"abiti", who:"lui", name:"Mantelli", slug:"lui-mantelli", desc:"mantelli con cappuccio, anche da inverno", show:"Calma", crop:[2.2,"50%","82%"]},
   "lui/Completi":{kind:"abiti", who:"lui", name:"Completi", slug:"lui-completi", desc:"vesti da cerimonia, giacche, gilet e camicie", show:"Ornë", crop:[2.2,"68%","45%"]},
   "lui/Toghe":{kind:"abiti", who:"lui", name:"Toghe", slug:"lui-toghe", desc:"vesti lunghe da studioso, mago e astronomo", show:"Ilmen", crop:[2.2,"35%","25%"]},
+  "lui/Tuniche":{kind:"abiti", who:"lui", name:"Tuniche", slug:"lui-tuniche", desc:"tuniche di cotone, semplici e da lavoro", show:"Fána", crop:[2.0,"50%","35%"]},
   "lui/Cerimonia":{kind:"abiti", who:"lui", name:"Cerimonia", slug:"lui-cerimonia", desc:"abiti da sposo e da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Tinwerína", crop:[2.2,"68%","45%"]},
   "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture intrecciate", show:"Menelya", crop:[2.4,"73%","42%"]}
 };
@@ -965,7 +969,7 @@ const WHOS = {
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
   coppia:{label:"per la coppia", head:"Per la coppia"}
 };
-const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lui-tuniche":"lui-completi", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"gioielli", diademi:"gioielli", "lei-anelli":"lei", "lei-collane":"lei", "lei-orecchini":"lei", "lei-bracciali":"lei", "lei-diademi":"lei", "lei-accessori":"lei", coppie:"gioielli", coppia:"gioielli"};
+const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"gioielli", diademi:"gioielli", "lei-anelli":"lei", "lei-collane":"lei", "lei-orecchini":"lei", "lei-bracciali":"lei", "lei-diademi":"lei", "lei-accessori":"lei", coppie:"gioielli", coppia:"gioielli"};
 const CATS = Object.keys(CAT_INFO);
 const kindOf = c => CAT_INFO[c].kind, whoOf = c => CAT_INFO[c].who;
 const slug = c => CAT_INFO[c].slug;
