@@ -2988,6 +2988,36 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A93",
+   "cat": "lui/Accessori",
+   "name": "Ettelë",
+   "gloss": "terre lontane",
+   "photo": true,
+   "fabric": "Tela di cotone verde oliva lavata, fondo di cotone marrone, tasche e spallacci imbottiti",
+   "colorName": "Verde oliva e marrone",
+   "trimName": "cinghie di cotone marrone, chiusura a coulisse con cordino di cotone, fibbie di rame brunito",
+   "garment": "cloak",
+   "color": "#5f6045",
+   "trim": "#b0894e",
+   "price": 900,
+   "desc": "Zaino da viaggio verde oliva, fondo marrone, fibbie di rame.",
+   "cls": "Tessuti · Borsa a sacchetta con spallacci",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
