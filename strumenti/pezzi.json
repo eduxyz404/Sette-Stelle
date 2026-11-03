@@ -806,6 +806,130 @@
    ]
   },
   {
+   "code": "G49",
+   "cat": "lei/Diademi",
+   "name": "Uryë",
+   "gloss": "il calore",
+   "photo": true,
+   "metal": "Oro cesellato",
+   "gem": "Cristallo rosso, due cristalli arancio",
+   "cut": "a goccia",
+   "color": "#9b1420",
+   "shape": "cab",
+   "price": 1200,
+   "tema": "fuoco",
+   "parure": "cerchietti",
+   "desc": "Cerchietto d'oro a fiammelle, goccia di cristallo rosso.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G50",
+   "cat": "lei/Diademi",
+   "name": "Sírë",
+   "gloss": "il ruscello",
+   "photo": true,
+   "metal": "Argento",
+   "gem": "Goccia di cristallo azzurro, cristalli azzurri e bianchi",
+   "cut": "a goccia pendente",
+   "color": "#7cc0d8",
+   "shape": "cab",
+   "price": 1200,
+   "tema": "mare",
+   "parure": "cerchietti",
+   "desc": "Cerchietto d'argento a onda, goccia azzurra pendente.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     5,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G51",
+   "cat": "lei/Diademi",
+   "name": "Hwesta",
+   "gloss": "la brezza",
+   "photo": true,
+   "metal": "Argento",
+   "gem": "Cristallo opalino, piccoli cristalli limpidi",
+   "cut": "ovale, tra due piume",
+   "color": "#e8e6f0",
+   "shape": "cab",
+   "price": 1200,
+   "tema": "aria",
+   "parure": "cerchietti",
+   "desc": "Cerchietto d'argento con due piume e cristallo opalino.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G52",
+   "cat": "lei/Diademi",
+   "name": "Tasarë",
+   "gloss": "il salice",
+   "photo": true,
+   "metal": "Oro antico",
+   "gem": "Cristallo verde bosco, due cristalli verdi",
+   "cut": "ovale",
+   "color": "#3f6b1c",
+   "shape": "cab",
+   "price": 1200,
+   "tema": "bosco",
+   "parure": "cerchietti",
+   "desc": "Cerchietto d'oro a rami e foglie, cristallo verde.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",

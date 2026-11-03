@@ -782,6 +782,10 @@ const PHOTOS = {
   G46:"img/G46.jpg?v=20261103145200",
   G47:"img/G47.jpg?v=20261103145200",
   G48:"img/G48.jpg?v=20261103145200",
+  G49:"img/G49.jpg?v=20261103145800",
+  G50:"img/G50.jpg?v=20261103145800",
+  G51:"img/G51.jpg?v=20261103145800",
+  G52:"img/G52.jpg?v=20261103145800",
   G25:"img/G25.jpg?v=202611010016",
   G26:"img/G26.jpg?v=202611010016",
   G27:"img/G27.jpg?v=202611010016",
@@ -900,6 +904,14 @@ const ITEMS = [
     cls:"Monili · Diadema", recipe:[[2,"Argento"],[6,"Cristallo"],[1,"Colori"]]},
   {code:"G48", cat:"lei/Diademi", name:"Arda", gloss:"la terra", photo:true, metal:"Oro antico", gem:"Cristallo verde bosco, bacche di cristallo verde", cut:"ovale, in un nido di rami", color:"#3f6b1c", shape:"cab", price:4000, tema:"bosco", parure:"elementi", desc:"Diadema d'oro a rami e foglie, cristallo verde bosco.",
     cls:"Monili · Diadema", recipe:[[2,"Oro"],[7,"Cristallo"],[1,"Colori"]]},
+  {code:"G49", cat:"lei/Diademi", name:"Uryë", gloss:"il calore", photo:true, metal:"Oro cesellato", gem:"Cristallo rosso, due cristalli arancio", cut:"a goccia", color:"#9b1420", shape:"cab", price:1200, tema:"fuoco", parure:"cerchietti", desc:"Cerchietto d'oro a fiammelle, goccia di cristallo rosso.",
+    cls:"Monili · Diadema", recipe:[[1,"Oro"],[3,"Cristallo"],[1,"Colori"]]},
+  {code:"G50", cat:"lei/Diademi", name:"Sírë", gloss:"il ruscello", photo:true, metal:"Argento", gem:"Goccia di cristallo azzurro, cristalli azzurri e bianchi", cut:"a goccia pendente", color:"#7cc0d8", shape:"cab", price:1200, tema:"mare", parure:"cerchietti", desc:"Cerchietto d'argento a onda, goccia azzurra pendente.",
+    cls:"Monili · Diadema", recipe:[[1,"Argento"],[5,"Cristallo"],[1,"Colori"]]},
+  {code:"G51", cat:"lei/Diademi", name:"Hwesta", gloss:"la brezza", photo:true, metal:"Argento", gem:"Cristallo opalino, piccoli cristalli limpidi", cut:"ovale, tra due piume", color:"#e8e6f0", shape:"cab", price:1200, tema:"aria", parure:"cerchietti", desc:"Cerchietto d'argento con due piume e cristallo opalino.",
+    cls:"Monili · Diadema", recipe:[[1,"Argento"],[4,"Cristallo"],[1,"Colori"]]},
+  {code:"G52", cat:"lei/Diademi", name:"Tasarë", gloss:"il salice", photo:true, metal:"Oro antico", gem:"Cristallo verde bosco, due cristalli verdi", cut:"ovale", color:"#3f6b1c", shape:"cab", price:1200, tema:"bosco", parure:"cerchietti", desc:"Cerchietto d'oro a rami e foglie, cristallo verde.",
+    cls:"Monili · Diadema", recipe:[[1,"Oro"],[3,"Cristallo"],[1,"Colori"]]},
 
   /* Sartoria · per lei */
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
@@ -1113,7 +1125,8 @@ const CAT_INFO = {
 const PARURE = {
   /* gioielli pensati insieme: ogni pezzo con parure:"chiave" mostra il rimando al trio */
   silme:{name:"Parure Silmë", desc:"diadema, ciondolo, orecchini e bracciale alla maniera dei Silmarilli: cristalli dal cuore d'oro tra rami d'argento", who:"lei", prezzo:5400},
-  elementi:{name:"Diademi degli Elementi", di:"dei Diademi degli Elementi", tipo:"collezione", desc:"fuoco, acqua, aria e terra: quattro diademi preziosi, uno per elemento", who:"lei", prezzo:14000}
+  elementi:{name:"Diademi degli Elementi", di:"dei Diademi degli Elementi", tipo:"collezione", desc:"fuoco, acqua, aria e terra: quattro diademi preziosi, uno per elemento", who:"lei", prezzo:14000},
+  cerchietti:{name:"Cerchietti degli Elementi", di:"dei Cerchietti degli Elementi", tipo:"collezione", desc:"fuoco, acqua, aria e terra in versione sottile, da portare ogni giorno", who:"lei", prezzo:4200}
 };
 const KINDS = {
   gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, bracciali, orecchini e diademi dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
