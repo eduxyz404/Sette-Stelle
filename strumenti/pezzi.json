@@ -930,6 +930,32 @@
    ]
   },
   {
+   "code": "G53",
+   "cat": "lei/Diademi",
+   "name": "Tingilya",
+   "gloss": "stella che brilla",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Sette stelline di cristallo limpido",
+   "cut": "a stella a otto raggi",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1500,
+   "tema": "stelle",
+   "desc": "Doppio filo d'oro sottile con sette stelline di cristallo.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     7,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
