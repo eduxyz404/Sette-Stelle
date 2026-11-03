@@ -32,7 +32,7 @@
 
 ## Foto di vetrina (pezzi piccoli)
 - Per i gioielli piccoli la scheda mostra una foto **ingrandita sul pezzo** (`img/CODICE-v.jpg`), con il sigillo nel solito punto; l'ingrandimento (clic sulla foto) mostra sempre la foto intera.
-- Si regola con il campo `zoom:[scala, x%, y%]` del pezzo in `index.html` (x,y = punto su cui si ingrandisce), poi `node strumenti/estrai_pezzi.js && python3 strumenti/vetrina.py CODICE` e aggiornare `?v=` in `VETRINA`. Ora: G17–G36, G41–G43, fedi e fedine G55–G69.
+- Si regola con il campo `zoom:[scala, x%, y%]` del pezzo in `index.html` (cx,cy = centro del riquadro; regola: il gioiello occupa ~85% della larghezza, max 65% dell'altezza, scala fra 1 e 2,4), poi `node strumenti/estrai_pezzi.js && python3 strumenti/vetrina.py CODICE` e aggiornare `?v=` in `VETRINA`. Ora: G17–G36, G41–G43, fedi e fedine G55–G69.
 - Attenzione: l'anteprima claude.ai ora pesa ~23 MB (limite 16): va alleggerita prima di ripubblicarla.
 
 ## Foto «indossato»

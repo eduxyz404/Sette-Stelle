@@ -1,6 +1,6 @@
 """Foto di vetrina per i pezzi piccoli: la stessa foto, ingrandita sul gioiello per la scheda,
 con il sigillo sempre nello stesso punto. La foto intera resta in img/CODICE.jpg (ingrandimento).
-Lo zoom si legge dal campo `zoom:[scala, x%, y%]` del pezzo in index.html (via strumenti/pezzi.json).
+Lo zoom si legge dal campo `zoom:[scala, cx%, cy%]` (centro del riquadro) del pezzo in index.html (via strumenti/pezzi.json).
 Uso: node strumenti/estrai_pezzi.js && python3 strumenti/vetrina.py [CODICI...]   ->  img/CODICE-v.jpg"""
 import sys, json, pathlib
 from PIL import Image
@@ -16,7 +16,8 @@ for c in codes:
         w, h = im.size; cw = min(w, int(h * 1.05)); x0 = (w - cw) // 2; im = im.crop((x0, 0, x0 + cw, h))
     big = foto.fit_specchio(im) if abs(im.width / im.height - .75) > .005 else im
     w, h = big.size
-    box = ((ox - ox / s) * w, (oy - oy / s) * h, (ox + (1 - ox) / s) * w, (oy + (1 - oy) / s) * h)
+    half = .5 / s  # zoom:[scala, cx%, cy%] = centro del riquadro mostrato
+    box = ((ox - half) * w, (oy - half) * h, (ox + half) * w, (oy + half) * h)
     v = big.crop(tuple(round(b) for b in box)).resize((foto.W, foto.H), Image.LANCZOS)
     P = R / 'img' / f'{c}-v.jpg'
     foto.stamp(v).save(P, quality=95)
