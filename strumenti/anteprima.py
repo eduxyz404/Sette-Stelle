@@ -6,8 +6,8 @@ from PIL import Image
 R = pathlib.Path(__file__).resolve().parent.parent
 s = (R / 'index.html').read_text()
 def emb(m):
-    im = Image.open(R / 'img' / f'{m.group(2)}.jpg').convert('RGB').resize((600, 800), Image.LANCZOS)
-    b = io.BytesIO(); im.save(b, 'JPEG', quality=82, optimize=True, progressive=True)
+    im = Image.open(R / 'img' / f'{m.group(2)}.jpg').convert('RGB').resize((540, 720), Image.LANCZOS)
+    b = io.BytesIO(); im.save(b, 'JPEG', quality=80, optimize=True, progressive=True)
     return f'{m.group(1)}"data:image/jpeg;base64,{base64.b64encode(b.getvalue()).decode()}"'
 i = s.index('const PHOTOS = {'); j = s.index('\n};', i)
 s = s[:i] + re.sub(r'(\n\s*(\w+):)"img/(?:\w+)\.jpg[^"]*"', lambda m: emb(m), s[i:j]) + s[j:]
