@@ -9,7 +9,7 @@ def emb(m):
     im = Image.open(R / 'img' / f'{m.group(2)}.jpg').convert('RGB').resize((540, 720), Image.LANCZOS)
     b = io.BytesIO(); im.save(b, 'JPEG', quality=80, optimize=True, progressive=True)
     return f'{m.group(1)}"data:image/jpeg;base64,{base64.b64encode(b.getvalue()).decode()}"'
-for blocco in ('const PHOTOS = {', 'const WORN = {'):
+for blocco in ('const PHOTOS = {', 'const WORN = {', 'const VETRINA = {'):
     if blocco not in s: continue
     i = s.index(blocco); j = s.index('\n};', i)
     s = s[:i] + re.sub(r'(\n\s*\w+:)"img/([\w-]+)\.jpg[^"]*"', lambda m: emb(m), s[i:j]) + s[j:]

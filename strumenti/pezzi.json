@@ -6,6 +6,11 @@
    "name": "Falma",
    "gloss": "onda",
    "photo": true,
+   "zoom": [
+    1.6,
+    48,
+    60
+   ],
    "metal": "Argento satinato",
    "finish": "onda lucida in rilievo",
    "price": 650,
@@ -24,6 +29,11 @@
    "name": "Tinco",
    "gloss": "metallo",
    "photo": true,
+   "zoom": [
+    1.6,
+    50,
+    58
+   ],
    "metal": "Argento lucido e brunito",
    "finish": "scaglie lucide su cuore brunito",
    "price": 800,
@@ -42,6 +52,11 @@
    "name": "Yanta",
    "gloss": "il ponte",
    "photo": true,
+   "zoom": [
+    1.6,
+    50,
+    58
+   ],
    "metal": "Argento martellato",
    "finish": "due fili lucidi intrecciati",
    "price": 800,
@@ -60,6 +75,11 @@
    "name": "Ondo",
    "gloss": "pietra",
    "photo": true,
+   "zoom": [
+    1.6,
+    50,
+    58
+   ],
    "metal": "Argento brunito",
    "finish": "martellato come la roccia",
    "price": 700,
@@ -78,6 +98,11 @@
    "name": "Tengwa",
    "gloss": "il segno",
    "photo": true,
+   "zoom": [
+    1.6,
+    50,
+    48
+   ],
    "metal": "Argento lucido",
    "gem": "Cristallo",
    "cut": "quadrato",
@@ -104,6 +129,11 @@
    "name": "Tië",
    "gloss": "il sentiero",
    "photo": true,
+   "zoom": [
+    1.9,
+    46,
+    48
+   ],
    "metal": "Argento brunito",
    "finish": "medaglia con la rosa dei venti a otto punte",
    "price": 750,
@@ -122,6 +152,11 @@
    "name": "Fírë",
    "gloss": "mortale",
    "photo": true,
+   "zoom": [
+    1.9,
+    46,
+    48
+   ],
    "metal": "Argento brunito",
    "finish": "teschio in miniatura, cesellato a mano",
    "price": 650,
@@ -140,6 +175,11 @@
    "name": "Nuru",
    "gloss": "la morte",
    "photo": true,
+   "zoom": [
+    1.6,
+    47,
+    45
+   ],
    "metal": "Argento lucido e brunito",
    "finish": "teschio spaccato in rilievo, catena a maglia quadrata",
    "price": 900,
@@ -158,6 +198,11 @@
    "name": "Vanda",
    "gloss": "il giuramento",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    57
+   ],
    "metal": "Argento brunito",
    "finish": "catena a maglia grossa, piastra con fili intrecciati",
    "price": 950,
@@ -176,6 +221,11 @@
    "name": "Lómë",
    "gloss": "notte",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    55
+   ],
    "metal": "Argento",
    "gem": "Cristallo tinto di nero",
    "cut": "a sfera",
@@ -206,6 +256,11 @@
    "name": "Alda",
    "gloss": "albero",
    "photo": true,
+   "zoom": [
+    1.35,
+    50,
+    57
+   ],
    "metal": "Argento brunito",
    "finish": "cotone nero intrecciato, chiusura cesellata con l'albero",
    "price": 800,
@@ -232,6 +287,11 @@
    "name": "Varnë",
    "gloss": "bruno",
    "photo": true,
+   "zoom": [
+    1.35,
+    48,
+    55
+   ],
    "metal": "Argento satinato",
    "finish": "cotone bruno intrecciato, chiusura liscia",
    "price": 600,
@@ -258,6 +318,11 @@
    "name": "Neldë",
    "gloss": "tre",
    "photo": true,
+   "zoom": [
+    1.3,
+    45,
+    55
+   ],
    "metal": "Oro",
    "gem": "Cristalli tinti di nero, bruno e grigio",
    "cut": "a sfera e a disco",
@@ -289,6 +354,11 @@
    "name": "Turma",
    "gloss": "scudo",
    "photo": true,
+   "zoom": [
+    1.4,
+    50,
+    55
+   ],
    "metal": "Argento satinato",
    "finish": "polsiera di cotone nero a due fasce, bottoni d'argento",
    "price": 700,
@@ -315,6 +385,11 @@
    "name": "Hendë",
    "gloss": "occhio",
    "photo": true,
+   "zoom": [
+    1.4,
+    50,
+    55
+   ],
    "metal": "Argento cesellato",
    "gem": "Cristallo tinto di nero",
    "cut": "cabochon",
@@ -349,6 +424,11 @@
    "name": "Tinwë",
    "gloss": "scintilla",
    "photo": true,
+   "zoom": [
+    1.25,
+    45,
+    55
+   ],
    "metal": "Argento satinato",
    "finish": "catena sottile a maglia quadrata",
    "price": 550,
@@ -367,6 +447,11 @@
    "name": "Raima",
    "gloss": "il legame",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    55
+   ],
    "metal": "Argento lucido",
    "finish": "catena a maglia grossa con treccia di cotone bruno",
    "price": 900,
@@ -393,6 +478,11 @@
    "name": "Rá",
    "gloss": "leone",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    55
+   ],
    "metal": "Argento martellato",
    "gem": "Cristalli tinti di nero",
    "cut": "cabochon",
@@ -427,6 +517,11 @@
    "name": "Tuo",
    "gloss": "forza",
    "photo": true,
+   "zoom": [
+    1.35,
+    50,
+    55
+   ],
    "metal": "Rame brunito e argento satinato",
    "finish": "due barre di rame avvolte in cordino di cotone",
    "price": 700,
@@ -457,6 +552,11 @@
    "name": "Axo",
    "gloss": "osso",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    55
+   ],
    "metal": "Argento brunito",
    "finish": "vertebre snodate, chiusura a barra",
    "price": 950,
@@ -570,6 +670,11 @@
    "name": "Tintallë",
    "gloss": "colei che accende le stelle",
    "photo": true,
+   "zoom": [
+    1.45,
+    50,
+    45
+   ],
    "metal": "Argento",
    "gem": "Cristallo dal cuore d'oro, alla maniera dei Silmarilli",
    "cut": "a goccia",
@@ -600,6 +705,11 @@
    "name": "Rossë",
    "gloss": "la rugiada",
    "photo": true,
+   "zoom": [
+    1.45,
+    50,
+    42
+   ],
    "metal": "Argento",
    "gem": "Cristalli dal cuore d'oro, alla maniera dei Silmarilli",
    "cut": "a goccia",
@@ -631,6 +741,11 @@
    "name": "Laurë",
    "gloss": "luce dorata",
    "photo": true,
+   "zoom": [
+    1.2,
+    50,
+    45
+   ],
    "metal": "Argento",
    "gem": "Cristallo dal cuore d'oro, alla maniera dei Silmarilli",
    "cut": "a goccia",
@@ -979,6 +1094,11 @@
    "name": "Veru",
    "gloss": "gli sposi",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Oro satinato",
    "finish": "onda incisa tra bordi lucidi, più sottile quella di lei",
    "price": 1600,
@@ -998,6 +1118,11 @@
    "name": "Melmë",
    "gloss": "l'amore",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Oro",
    "gem": "Tre cristalli limpidi nella fede di lei",
    "cut": "a punta, tra intrecci a V",
@@ -1024,6 +1149,11 @@
    "name": "Vanimelda",
    "gloss": "bella e amata",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Argento lucido",
    "gem": "Cinque cristalli limpidi nella fede di lei",
    "cut": "tondi, tra intrecci a V",
@@ -1050,6 +1180,11 @@
    "name": "Yúyo",
    "gloss": "entrambi",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Oro lucido",
    "finish": "treccia d'oro intrecciata a mano al centro",
    "price": 1700,
@@ -1069,6 +1204,11 @@
    "name": "Oialë",
    "gloss": "per sempre",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Argento lucido",
    "finish": "intreccio infinito inciso al centro",
    "price": 1100,
@@ -1088,6 +1228,11 @@
    "name": "Melda",
    "gloss": "amata",
    "photo": true,
+   "zoom": [
+    1.35,
+    52,
+    52
+   ],
    "metal": "Oro lucido",
    "gem": "Un piccolo cristallo limpido nella fede di lei",
    "cut": "tondo, incassato nel metallo",
@@ -1114,6 +1259,11 @@
    "name": "Anarya",
    "gloss": "del sole",
    "photo": true,
+   "zoom": [
+    1.35,
+    52,
+    52
+   ],
    "metal": "Oro chiaro lucido",
    "gem": "Tre cristalli limpidi nella fede di lei",
    "cut": "tondi, incassati nel metallo",
@@ -1140,6 +1290,11 @@
    "name": "Anga",
    "gloss": "il ferro",
    "photo": true,
+   "zoom": [
+    1.25,
+    52,
+    50
+   ],
    "metal": "Ferro brunito con inserto d'oro",
    "gem": "Nove cristalli limpidi nella fede di lei",
    "cut": "tondi, in fila nell'inserto d'oro",
@@ -1170,6 +1325,11 @@
    "name": "Órë",
    "gloss": "il cuore",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Argento lucido",
    "finish": "bordi a granuli",
    "price": 900,
@@ -1189,6 +1349,11 @@
    "name": "Indis",
    "gloss": "la promessa sposa",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Oro dal riflesso rosato",
    "finish": "liscia e lucida, con due sottili linee incise ai bordi",
    "price": 1200,
@@ -1208,6 +1373,11 @@
    "name": "Olassië",
    "gloss": "il fogliame",
    "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    42
+   ],
    "metal": "Argento lucido",
    "finish": "due file di foglioline incise a punta di diamante",
    "price": 950,
@@ -1227,6 +1397,11 @@
    "name": "Rilya",
    "gloss": "lo scintillio",
    "photo": true,
+   "zoom": [
+    1.35,
+    52,
+    52
+   ],
    "metal": "Argento lucido",
    "finish": "sfaccettature oblique che catturano la luce",
    "price": 950,
@@ -1246,6 +1421,11 @@
    "name": "Tintila",
    "gloss": "stelle che brillano",
    "photo": true,
+   "zoom": [
+    1.35,
+    52,
+    52
+   ],
    "metal": "Argento lucido",
    "finish": "piccole punte di diamante incise come un cielo stellato",
    "price": 950,
@@ -1265,6 +1445,11 @@
    "name": "Angaina",
    "gloss": "di ferro",
    "photo": true,
+   "zoom": [
+    1.25,
+    52,
+    52
+   ],
    "metal": "Ferro brunito",
    "finish": "inserto d'argento lucido sagomato",
    "price": 900,

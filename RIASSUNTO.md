@@ -30,6 +30,11 @@
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
+## Foto di vetrina (pezzi piccoli)
+- Per i gioielli piccoli la scheda mostra una foto **ingrandita sul pezzo** (`img/CODICE-v.jpg`), con il sigillo nel solito punto; l'ingrandimento (clic sulla foto) mostra sempre la foto intera.
+- Si regola con il campo `zoom:[scala, x%, y%]` del pezzo in `index.html` (x,y = punto su cui si ingrandisce), poi `node strumenti/estrai_pezzi.js && python3 strumenti/vetrina.py CODICE` e aggiornare `?v=` in `VETRINA`. Ora: G17–G36, G41–G43, fedi e fedine G55–G69.
+- Attenzione: l'anteprima claude.ai ora pesa ~23 MB (limite 16): va alleggerita prima di ripubblicarla.
+
 ## Foto «indossato»
 - Facoltativa, per ogni pezzo: salvare l'originale in `originali/CODICE-indossato.jpg`, `python3 strumenti/rifai_foto.py CODICE-indossato`, poi aggiungere `CODICE:"img/CODICE-indossato.jpg?v=…"` in `WORN` (subito sotto `PHOTOS`) dentro `index.html`. Nella scheda compare il pulsante «✦ indossato» che scambia la foto; l'ingrandimento mostra quella che si sta guardando.
 - Attenzione: l'anteprima claude.ai ora supera i 16 MB (16,7): va ridotta (foto più piccole o qualità più bassa in `anteprima.py`) prima di ripubblicarla.
