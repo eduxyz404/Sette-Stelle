@@ -3231,6 +3231,37 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A101",
+   "cat": "lui/Accessori",
+   "name": "Tecil",
+   "gloss": "la penna",
+   "photo": true,
+   "fabric": "Tela di cotone marrone, tre scomparti per rotoli, patta ampia, bordi di cotone bruno scuro, tracolla in tinta",
+   "colorName": "Marrone",
+   "trimName": "due cinturini con fibbie di rame brunito",
+   "garment": "cloak",
+   "color": "#5a3320",
+   "trim": "#b0894e",
+   "price": 600,
+   "desc": "Borsa portapergamene marrone, tre scomparti, fibbie di rame.",
+   "excl": "Pergamene non incluse",
+   "cls": "Tessuti · Portapergamene con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
