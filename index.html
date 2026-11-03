@@ -791,6 +791,9 @@ const PHOTOS = {
   G52:"img/G52.jpg?v=20261103145800",
   G53:"img/G53.jpg?v=20261103150200",
   G54:"img/G54.jpg?v=20261103153200",
+  G55:"img/G55.jpg?v=20261103175500",
+  G56:"img/G56.jpg?v=20261103175500",
+  G57:"img/G57.jpg?v=20261103175500",
   G25:"img/G25.jpg?v=202611010016",
   G26:"img/G26.jpg?v=202611010016",
   G27:"img/G27.jpg?v=202611010016",
@@ -936,6 +939,12 @@ const ITEMS = [
     cls:"Monili · Diadema", recipe:[[1,"Oro"],[7,"Cristallo"]]},
   {code:"G54", cat:"lui/Cerchi", name:"Aran", gloss:"il re", photo:true, metal:"Argento brunito", finish:"fili incisi che scendono a punta sulla fronte", price:1100, desc:"Cerchio d'argento brunito a punta, linee incise.",
     cls:"Monili · Diadema", recipe:[[2,"Argento"]]},
+  {code:"G55", cat:"coppia/Fedi", name:"Veru", gloss:"gli sposi", photo:true, metal:"Oro satinato", finish:"onda incisa tra bordi lucidi, più sottile quella di lei", price:1600, unit:"la coppia", desc:"Fedi d'oro satinato con un'onda incisa e bordi lucidi.",
+    cls:"Monili · Anello (coppia)", recipe:[[2,"Oro"]]},
+  {code:"G56", cat:"coppia/Fedi", name:"Melmë", gloss:"l'amore", photo:true, metal:"Oro", gem:"Tre cristalli limpidi nella fede di lei", cut:"a punta, tra intrecci a V", color:"#f4f2ea", shape:"cab", price:2000, unit:"la coppia", desc:"Fedi d'oro a intrecci elfici: quella di lei a V con tre cristalli.",
+    cls:"Monili · Anello (coppia)", recipe:[[2,"Oro"],[3,"Cristallo"]]},
+  {code:"G57", cat:"coppia/Fedine", name:"Órë", gloss:"il cuore", photo:true, metal:"Argento lucido", finish:"bordi a granuli", price:900, unit:"la coppia", desc:"Fedine d'argento lucido con bordi a granuli.",
+    cls:"Monili · Anello (coppia)", recipe:[[2,"Argento"]]},
 
   /* Sartoria · per lei */
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
@@ -1131,6 +1140,8 @@ const CAT_INFO = {
   "lui/Collane":{kind:"gioielli", who:"lui", name:"Collane", slug:"lui-collane", desc:"piastrine, medaglie e pendenti d'argento", show:"Tië", crop:[1.8,"60%","50%"]},
   "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Vanda", crop:[2.0,"32%","62%"]},
   "lui/Cerchi":{kind:"gioielli", who:"lui", name:"Cerchi", slug:"lui-cerchi", desc:"cerchi d'argento per la fronte, da signore elfico", show:"Aran", crop:[1.6,"50%","55%"]},
+  "coppia/Fedi":{kind:"gioielli", who:"coppia", name:"Fedi", slug:"coppia-fedi", desc:"fedi nuziali d'oro per gli sposi", show:"Veru", crop:[1.6,"50%","55%"]},
+  "coppia/Fedine":{kind:"gioielli", who:"coppia", name:"Fedine", slug:"coppia-fedine", desc:"fedine di fidanzamento d'argento", show:"Órë", crop:[1.6,"50%","55%"]},
   "lei/Diademi":{kind:"gioielli", who:"lei", name:"Diademi", slug:"lei-diademi", desc:"diademi d'argento e d'oro, con cristalli", show:"Silmë", crop:[1.6,"50%","55%"]},
   "lei/Collane":{kind:"gioielli", who:"lei", name:"Collane", slug:"lei-collane", desc:"ciondoli di cristallo su catenine d'argento", show:"Tintallë", crop:[1.6,"50%","55%"]},
   "lei/Orecchini":{kind:"gioielli", who:"lei", name:"Orecchini", slug:"lei-orecchini", desc:"orecchini pendenti d'argento e cristallo", show:"Rossë", crop:[1.6,"50%","55%"]},
@@ -1154,15 +1165,15 @@ const PARURE = {
   cerchietti:{name:"Cerchietti degli Elementi", di:"dei Cerchietti degli Elementi", tipo:"collezione", desc:"fuoco, acqua, aria e terra in versione sottile, da portare ogni giorno", who:"lei", prezzo:4200}
 };
 const KINDS = {
-  gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, bracciali, orecchini, diademi e cerchi dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
+  gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, bracciali, orecchini, diademi, cerchi, fedi e fedine dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
   abiti:{label:"sartoria", title:"Tessuti", all:"Tessuti", allDesc:"abiti, mantelli, completi, toghe e accessori della sartoria", one:"capo", many:"capi", photo:"tailor", crop:[1.3,"50%","45%"]}
 };
 const WHOS = {
   lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"diademi, collane, orecchini, bracciali, abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
-  coppia:{label:"per la coppia", head:"Per la coppia"}
+  coppia:{label:"per la coppia", head:"Per la coppia", all:"Tutto per la coppia", allDesc:"fedi e fedine, da portare in due", photo:"interior", crop:[1.5,"30%","62%"]}
 };
-const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"lei-orecchini", diademi:"lei-diademi", "lei-anelli":"lei", coppie:"gioielli", coppia:"gioielli"};
+const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"lei-orecchini", diademi:"lei-diademi", "lei-anelli":"lei", coppie:"coppia", fedi:"coppia-fedi", fedine:"coppia-fedine"};
 const CATS = Object.keys(CAT_INFO);
 const kindOf = c => CAT_INFO[c].kind, whoOf = c => CAT_INFO[c].who;
 const slug = c => CAT_INFO[c].slug;
@@ -1439,7 +1450,7 @@ const mLink = (href, name, n) => `<li><a href="#${href}">${name}<small>${n}</sma
 const whoCol = w => `<div class="menu-col"><h4><a href="#${w}">${WHOS[w].head}</a></h4>
   ${Object.keys(KINDS).filter(k => catsWhere(k, w).length).map(k => `<h5>${KINDS[k].title}</h5><ul>${catsWhere(k, w).map(c => mLink(slug(c), nameOf(c), ITEMS.filter(i => i.cat === c).length)).join("")}</ul>`).join("")}
   <ul>${mLink(w, WHOS[w].all, itemsOf(catsWhere(null, w)).length)}</ul></div>`;
-menuPanel.innerHTML = whoCol("lei") + whoCol("lui")
+menuPanel.innerHTML = whoCol("lei") + whoCol("lui") + whoCol("coppia")
   + `<div class="menu-col"><h4>Tutto insieme</h4><ul>${mLink("gioielli", "Monili", itemsOf(catsWhere("gioielli")).length)}${mLink("abiti", "Tessuti", itemsOf(catsWhere("abiti")).length)}</ul></div>`
   + `<div class="menu-foot"><a href="#ingresso">← Ingresso</a><a href="#stanze">Tutte le stanze</a></div>`;
 function setMenu(open){ menuBtn.setAttribute("aria-expanded", open); menuPanel.hidden = !open; }
@@ -1498,7 +1509,7 @@ let currentView = null;
 function route(){
   let h = location.hash.slice(1);
   if(ALIASES[h]) h = ALIASES[h];
-  const isCat = Boolean(KINDS[h] || WHOS[h] && h !== "coppia" || CATS.some(c => slug(c) === h) || h.startsWith("parure-") && PARURE[h.slice(7)]);
+  const isCat = Boolean(KINDS[h] || WHOS[h] || CATS.some(c => slug(c) === h) || h.startsWith("parure-") && PARURE[h.slice(7)]);
   const view = isCat ? h : (h === "stanze" ? "stanze" : "ingresso");
   document.getElementById("view-home").hidden = view !== "ingresso";
   document.getElementById("view-rooms").hidden = view !== "stanze";
