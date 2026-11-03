@@ -470,6 +470,53 @@
    ]
   },
   {
+   "code": "G37",
+   "cat": "lui/Anelli",
+   "name": "Oron",
+   "gloss": "il monte",
+   "photo": true,
+   "metal": "Argento forgiato e brunito",
+   "finish": "fascia larga a triangoli in rilievo, interno lucido",
+   "price": 900,
+   "desc": "Fascia d'argento forgiato, triangoli in rilievo come vette.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G38",
+   "cat": "lui/Anelli",
+   "name": "Ambar",
+   "gloss": "il mondo",
+   "photo": true,
+   "metal": "Argento satinato",
+   "gem": "Cristallo tinto di nero",
+   "cut": "ovale piatto, a sigillo",
+   "color": "#151418",
+   "shape": "cab",
+   "price": 900,
+   "desc": "Anello a sigillo d'argento satinato con cristallo nero.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
