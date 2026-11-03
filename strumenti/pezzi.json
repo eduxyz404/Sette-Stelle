@@ -1045,6 +1045,44 @@
    ]
   },
   {
+   "code": "G59",
+   "cat": "coppia/Fedi",
+   "name": "Yúyo",
+   "gloss": "entrambi",
+   "photo": true,
+   "metal": "Oro lucido",
+   "finish": "treccia d'oro intrecciata a mano al centro",
+   "price": 1700,
+   "unit": "la coppia",
+   "desc": "Fedi d'oro lucido con una treccia d'oro al centro.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "G60",
+   "cat": "coppia/Fedi",
+   "name": "Oialë",
+   "gloss": "per sempre",
+   "photo": true,
+   "metal": "Argento lucido",
+   "finish": "intreccio infinito inciso al centro",
+   "price": 1100,
+   "unit": "la coppia",
+   "desc": "Fedi d'argento lucido con un intreccio infinito inciso.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "G57",
    "cat": "coppia/Fedine",
    "name": "Órë",
@@ -1060,6 +1098,25 @@
     [
      2,
      "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G61",
+   "cat": "coppia/Fedine",
+   "name": "Indis",
+   "gloss": "la promessa sposa",
+   "photo": true,
+   "metal": "Oro dal riflesso rosato",
+   "finish": "liscia e lucida, con due sottili linee incise ai bordi",
+   "price": 1200,
+   "unit": "la coppia",
+   "desc": "Fedine d'oro rosato, lisce, con due linee incise.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
     ]
    ]
   },
@@ -4002,7 +4059,7 @@
    "who": "coppia",
    "name": "Fedi",
    "slug": "coppia-fedi",
-   "desc": "fedi nuziali d'oro per gli sposi",
+   "desc": "fedi nuziali d'oro e d'argento per gli sposi",
    "show": "Veru",
    "crop": [
     1.6,
@@ -4015,7 +4072,7 @@
    "who": "coppia",
    "name": "Fedine",
    "slug": "coppia-fedine",
-   "desc": "fedine di fidanzamento d'argento",
+   "desc": "fedine di fidanzamento d'argento e d'oro",
    "show": "Órë",
    "crop": [
     1.6,
