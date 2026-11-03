@@ -25,7 +25,7 @@
 - **Per lei** · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia. (Per lei non ci sono ancora gioielli.)
 - Le stanze vuote non compaiono. «Fermagli per lui» e «Coppie» sono stati tolti. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A91), G = monili (ultimo G36). A72 non esiste più.
+- Codici: A = tessuti (ultimo A92), G = monili (ultimo G36). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
@@ -39,7 +39,7 @@
 
 ## Effetti del sito
 - Pulsante dello **scrigno** (in basso a destra): due scie di stella che girano intorno; etichetta «Lo scrigno — metti da parte i pezzi che ti piacciono e copia l'ordine» che sparisce dopo il primo uso.
-- **Ingresso**: due scie di stella che percorrono la cornice dell'arco (mosse da JavaScript, non solo CSS: in Brave l'animazione CSS non partiva) e «polvere di stelle» che attraversa il titolo ogni ~9 s.
+- **Ingresso**: due scie di stella che percorrono la cornice dell'arco (mosse da JavaScript, non solo CSS: in Brave l'animazione CSS non partiva). La «polvere di stelle» sul titolo è stata tolta (3/11): il titolo resta fermo.
 - Icona della scheda: `img/icona-stella.svg` (stella senza cerchio).
 - Anteprima claude.ai: `python3 strumenti/anteprima.py anteprima.html` (foto 540×720 per stare sotto 16 MB).
 - Se GitHub Pages fallisce la pubblicazione (errore «Failed to get ID Token»), basta un nuovo commit/push.

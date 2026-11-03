@@ -2958,6 +2958,36 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A92",
+   "cat": "lui/Accessori",
+   "name": "Parma",
+   "gloss": "il libro",
+   "photo": true,
+   "fabric": "Tela di cotone verde oliva lavata, tasche a soffietto, tracolla di cotone color cammello",
+   "colorName": "Verde oliva e marrone",
+   "trimName": "cinghie e patta rinforzata di cotone marrone, fibbie e borchie di rame brunito",
+   "garment": "cloak",
+   "color": "#6f6c4c",
+   "trim": "#b0894e",
+   "price": 700,
+   "desc": "Borsa a tracolla verde oliva, cinghie marroni, fibbie di rame.",
+   "cls": "Tessuti · Borsa a sacchetta con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
