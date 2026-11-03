@@ -595,7 +595,7 @@ details.recipe ul{justify-content:center}
           <div class="hc-text">
             <span class="label">l'oreficeria</span>
             <h3>Monili</h3>
-            <p>Anelli, collane e bracciali d'argento, lavorati a mano.</p>
+            <p>Anelli, collane, bracciali e diademi d'argento, lavorati a mano.</p>
             <span class="count" data-count="gioielli"></span>
             <span class="go">entra ›</span>
           </div>
@@ -758,6 +758,7 @@ const PHOTOS = {
   G37:"img/G37.jpg?v=20261103135900",
   G38:"img/G38.jpg?v=20261103135900",
   G39:"img/G39.jpg?v=20261103135900",
+  G40:"img/G40.jpg?v=20261103140500",
   G25:"img/G25.jpg?v=202611010016",
   G26:"img/G26.jpg?v=202611010016",
   G27:"img/G27.jpg?v=202611010016",
@@ -858,6 +859,8 @@ const ITEMS = [
     cls:"Monili · Anello", recipe:[[1,"Argento"],[1,"Cristallo"],[1,"Colori"]]},
   {code:"G39", cat:"lui/Anelli", name:"Elentir", gloss:"chi guarda le stelle", photo:true, metal:"Argento lucido", finish:"sigillo brunito a nero con stella a otto raggi in rilievo e cornice di granuli", price:950, desc:"Sigillo d'argento con stella a otto raggi su fondo brunito.",
     cls:"Monili · Anello", recipe:[[1,"Argento"]]},
+  {code:"G40", cat:"lei/Diademi", name:"Silmë", gloss:"luce di stelle", photo:true, metal:"Argento lucido", gem:"Cristalli limpidi dal cuore d'oro pallido, alla maniera dei Silmarilli", cut:"a goccia sfaccettata, uno grande e due piccoli", color:"#eef0f6", shape:"cab", price:2400, desc:"Diadema d'argento a rami, tre cristalli dal cuore d'oro.",
+    cls:"Monili · Diadema", recipe:[[1,"Argento"],[3,"Cristallo"],[1,"Colori"]]},
 
   /* Sartoria · per lei */
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
@@ -1052,6 +1055,7 @@ const CAT_INFO = {
   "lui/Anelli":{kind:"gioielli", who:"lui", name:"Anelli", slug:"lui-anelli", desc:"sigilli e fasce d'argento lavorate a mano", show:"Yanta", crop:[1.6,"50%","55%"]},
   "lui/Collane":{kind:"gioielli", who:"lui", name:"Collane", slug:"lui-collane", desc:"piastrine, medaglie e pendenti d'argento", show:"Tië", crop:[1.8,"60%","50%"]},
   "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Vanda", crop:[2.0,"32%","62%"]},
+  "lei/Diademi":{kind:"gioielli", who:"lei", name:"Diademi", slug:"lei-diademi", desc:"diademi d'argento a rami, con cristalli", show:"Silmë", crop:[1.6,"50%","55%"]},
   "lei/Mantelli":{kind:"abiti", who:"lei", name:"Mantelli", slug:"lei-mantelli", desc:"mantelli e mantelline", show:"Kemen", crop:[2.2,"50%","45%"]},
   "lei/Abiti":{kind:"abiti", who:"lei", name:"Abiti", slug:"lei-abiti", desc:"abiti lunghi per le sale e le feste", show:"Tindómë", crop:[2.0,"15%","40%"]},
   "lei/Completi":{kind:"abiti", who:"lei", name:"Completi", slug:"lei-completi", desc:"camicie e pantaloni, per ogni giorno", show:"Luinil", crop:[2.0,"50%","35%"]},
@@ -1065,15 +1069,15 @@ const CAT_INFO = {
   "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture e borse di stoffa", show:"Menelya", crop:[2.4,"73%","42%"]}
 };
 const KINDS = {
-  gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane e bracciali dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
+  gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, bracciali e diademi dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
   abiti:{label:"sartoria", title:"Tessuti", all:"Tessuti", allDesc:"abiti, mantelli, completi, toghe e accessori della sartoria", one:"capo", many:"capi", photo:"tailor", crop:[1.3,"50%","45%"]}
 };
 const WHOS = {
-  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
+  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"diademi, abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
   coppia:{label:"per la coppia", head:"Per la coppia"}
 };
-const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"gioielli", diademi:"gioielli", "lei-anelli":"lei", "lei-collane":"lei", "lei-orecchini":"lei", "lei-bracciali":"lei", "lei-diademi":"lei", coppie:"gioielli", coppia:"gioielli"};
+const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"gioielli", diademi:"lei-diademi", "lei-anelli":"lei", "lei-collane":"lei", "lei-orecchini":"lei", "lei-bracciali":"lei", coppie:"gioielli", coppia:"gioielli"};
 const CATS = Object.keys(CAT_INFO);
 const kindOf = c => CAT_INFO[c].kind, whoOf = c => CAT_INFO[c].who;
 const slug = c => CAT_INFO[c].slug;

@@ -22,10 +22,10 @@
 
 ## Stanze (cat → stanza)
 - **Per lui** · Monili: Anelli, Collane, Bracciali · Tessuti: Mantelli, Completi, Toghe, Tuniche, Cerimonia, Accessori (cinture e borse di stoffa).
-- **Per lei** · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia. (Per lei non ci sono ancora gioielli.)
+- **Per lei** · Monili: Diademi · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia.
 - Le stanze vuote non compaiono. «Fermagli per lui» e «Coppie» sono stati tolti. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A104), G = monili (ultimo G39). A72 non esiste più.
+- Codici: A = tessuti (ultimo A104), G = monili (ultimo G40). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
@@ -48,7 +48,7 @@
 - `python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" --anno XXV --mese 2 --giorno 10 [--confezione] [--dedica "…" --firma "…"]` (legge `strumenti/pezzi.json`, che si rigenera con `node strumenti/estrai_pezzi.js`). Registro in `certificati/registro.md`. I certificati li gestisce Erika tramite Claude.
 
 ## Da fare, quando lo chiede lei
-- Gioielli per lei e coppie (servono foto).
+- Gioielli per lei: c'è la stanza Diademi (Silmë, G40, «alla maniera dei Silmarilli»: idea di parure con ciondolo e orecchini). Mancano orecchini, collane, anelli per lei; coppie.
 - **Pelletteria**: Erika la vorrebbe. Su Lot esiste la classe «Articoli in Pelle» (borse, scarsella, sacca, otre, stivali, scarpe, guanti, cappello, cappuccio, gilet, coprispalle, manto, completi, cintola, falconeria); potrebbe sostituire «Oggettistica» (oggi vuota). Problema: Elrohir è vegetariano. Idee proposte: un **aiutante pellettiere** che lavora la pelle al posto suo; pelli solo «recuperate»; oppure «tela cerata» (cotone + Cera + Colori, da far approvare all'Universitas). Decisione ancora aperta.
 - Classi: massimo 3 per bottega (ora Monili, Tessuti, Oggettistica).
 - Eventuale ritaratura dei prezzi (ora 400–5200 monete).

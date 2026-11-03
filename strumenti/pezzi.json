@@ -535,6 +535,35 @@
    ]
   },
   {
+   "code": "G40",
+   "cat": "lei/Diademi",
+   "name": "Silmë",
+   "gloss": "luce di stelle",
+   "photo": true,
+   "metal": "Argento lucido",
+   "gem": "Cristalli limpidi dal cuore d'oro pallido, alla maniera dei Silmarilli",
+   "cut": "a goccia sfaccettata, uno grande e due piccoli",
+   "color": "#eef0f6",
+   "shape": "cab",
+   "price": 2400,
+   "desc": "Diadema d'argento a rami, tre cristalli dal cuore d'oro.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
@@ -3453,6 +3482,19 @@
     2,
     "32%",
     "62%"
+   ]
+  },
+  "lei/Diademi": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Diademi",
+   "slug": "lei-diademi",
+   "desc": "diademi d'argento a rami, con cristalli",
+   "show": "Silmë",
+   "crop": [
+    1.6,
+    "50%",
+    "55%"
    ]
   },
   "lei/Mantelli": {
