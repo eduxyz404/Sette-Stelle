@@ -517,6 +517,24 @@
    ]
   },
   {
+   "code": "G39",
+   "cat": "lui/Anelli",
+   "name": "Elentir",
+   "gloss": "chi guarda le stelle",
+   "photo": true,
+   "metal": "Argento lucido",
+   "finish": "sigillo brunito a nero con stella a otto raggi in rilievo e cornice di granuli",
+   "price": 950,
+   "desc": "Sigillo d'argento con stella a otto raggi su fondo brunito.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",

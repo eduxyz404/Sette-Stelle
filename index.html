@@ -755,8 +755,9 @@ const PHOTOS = {
   G34:"img/G34.jpg?v=202611010016",
   G35:"img/G35.jpg?v=202611010016",
   G36:"img/G36.jpg?v=202611010016",
-  G37:"img/G37.jpg?v=20261103131200",
-  G38:"img/G38.jpg?v=20261103131200",
+  G37:"img/G37.jpg?v=20261103135900",
+  G38:"img/G38.jpg?v=20261103135900",
+  G39:"img/G39.jpg?v=20261103135900",
   G25:"img/G25.jpg?v=202611010016",
   G26:"img/G26.jpg?v=202611010016",
   G27:"img/G27.jpg?v=202611010016",
@@ -855,6 +856,8 @@ const ITEMS = [
     cls:"Monili · Anello", recipe:[[1,"Argento"]]},
   {code:"G38", cat:"lui/Anelli", name:"Ambar", gloss:"il mondo", photo:true, metal:"Argento satinato", gem:"Cristallo tinto di nero", cut:"ovale piatto, a sigillo", color:"#151418", shape:"cab", price:900, desc:"Anello a sigillo d'argento satinato con cristallo nero.",
     cls:"Monili · Anello", recipe:[[1,"Argento"],[1,"Cristallo"],[1,"Colori"]]},
+  {code:"G39", cat:"lui/Anelli", name:"Elentir", gloss:"chi guarda le stelle", photo:true, metal:"Argento lucido", finish:"sigillo brunito a nero con stella a otto raggi in rilievo e cornice di granuli", price:950, desc:"Sigillo d'argento con stella a otto raggi su fondo brunito.",
+    cls:"Monili · Anello", recipe:[[1,"Argento"]]},
 
   /* Sartoria · per lei */
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
@@ -1265,7 +1268,7 @@ function card(it){
         ${isCloth(it) ? "" : `<dl class="specs">
           <dt>metallo</dt><dd>${it.metal}</dd>
           ${it.gem ? `<dt>pietra</dt><dd>${it.gem}, taglio ${it.cut}</dd>
-          <dt>peso</dt><dd>${it.ct}</dd>` : `<dt>lavorazione</dt><dd>${it.finish}</dd>`}
+          ${it.ct ? `<dt>peso</dt><dd>${it.ct}</dd>` : ""}` : `<dt>lavorazione</dt><dd>${it.finish}</dd>`}
         </dl>`}
         <p class="desc">${it.desc}${it.excl ? ` <span class="excl">${it.excl}.</span>` : ""}</p>${it.tema ? `<p class="tema">✦ tema ${it.tema}</p>` : ""}
         <details class="recipe"><summary class="recipe-head"><span>Ricetta</span></summary>
