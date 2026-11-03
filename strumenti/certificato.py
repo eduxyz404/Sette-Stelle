@@ -187,7 +187,7 @@ dd{{margin:0;font-size:1.08rem}}
 .niche.photo img{{aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;border-radius:999px 999px 4px 4px / 160px 160px 4px 4px}}
 
 /* Ricetta e firma */
-.foot{{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:24px clamp(22px,5vw,52px) clamp(28px,4vw,40px);
+.foot{{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;padding:24px clamp(22px,5vw,52px) clamp(28px,4vw,40px);
   border-top:1px solid rgba(230,194,122,.3);background:rgba(7,11,23,.35)}}
 @media (max-width:620px){{.foot{{grid-template-columns:1fr;justify-items:center;text-align:center}}}}
 .recipe h3{{margin:0 0 2px;font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}}
@@ -225,6 +225,13 @@ dd{{margin:0;font-size:1.08rem}}
 .avorio .box img{{border-color:rgba(184,137,47,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(184,137,47,.35),0 24px 40px -20px rgba(80,50,10,.45)}}
 .avorio .seal{{filter:drop-shadow(0 8px 12px rgba(80,50,10,.45))}}
 .avorio .note{{color:var(--gold-b)}}
+
+/* Firma del bottegaio (font Heleny) */
+.firma{{display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}}
+.firma img{{width:150px;height:auto;transform:rotate(-4deg);filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}}
+.avorio .firma img{{filter:none}}
+.firma span{{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);border-top:1px solid rgba(230,194,122,.4);padding-top:6px;margin-top:-6px}}
+.avorio .firma span{{border-top-color:rgba(184,137,47,.45)}}
 
 /* Certificato di dono */
 .gift-head::before{{background-image:url(../img/confezione.jpg) !important;background-position:50% 45% !important}}
@@ -293,6 +300,10 @@ dd{{margin:0;font-size:1.08rem}}
       <h3>Ricetta di creazione</h3>
       <small>{e(pezzo['cls'])}</small>
       <ul>{tokens}</ul>
+    </div>
+    <div class="firma">
+      <img src="../img/{'firma-elrohir-scura.png' if nozze else 'firma-elrohir-oro.png'}" alt="Firma di Elrohir">
+      <span>Elrohir · il bottegaio</span>
     </div>
     <div class="sign">
       <img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle">
