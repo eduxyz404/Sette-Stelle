@@ -956,6 +956,24 @@
    ]
   },
   {
+   "code": "G54",
+   "cat": "lui/Cerchi",
+   "name": "Aran",
+   "gloss": "il re",
+   "photo": true,
+   "metal": "Argento brunito",
+   "finish": "fili incisi che scendono a punta sulla fronte",
+   "price": 1100,
+   "desc": "Cerchio d'argento brunito a punta, linee incise.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
@@ -3874,6 +3892,19 @@
     2,
     "32%",
     "62%"
+   ]
+  },
+  "lui/Cerchi": {
+   "kind": "gioielli",
+   "who": "lui",
+   "name": "Cerchi",
+   "slug": "lui-cerchi",
+   "desc": "cerchi d'argento per la fronte, da signore elfico",
+   "show": "Aran",
+   "crop": [
+    1.6,
+    "50%",
+    "55%"
    ]
   },
   "lei/Diademi": {
