@@ -3200,6 +3200,37 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A100",
+   "cat": "lui/Accessori",
+   "name": "Quentalë",
+   "gloss": "la storia",
+   "photo": true,
+   "fabric": "Tela di cotone verde bosco su tubo rigido, fasce e bordi di cotone grigio antracite, tracolla di cotone in tinta",
+   "colorName": "Verde bosco e antracite",
+   "trimName": "tappo con cinturino e fibbia di rame brunito, anelli di rame",
+   "garment": "cloak",
+   "color": "#2f4a32",
+   "trim": "#b0894e",
+   "price": 600,
+   "desc": "Portapergamene di tela verde bosco, tappo con fibbia, tracolla.",
+   "excl": "Pergamene non incluse",
+   "cls": "Tessuti · Portapergamene con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
