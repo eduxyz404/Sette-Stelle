@@ -3078,6 +3078,66 @@
      "Argento"
     ]
    ]
+  },
+  {
+   "code": "A96",
+   "cat": "lui/Accessori",
+   "name": "Hrívë",
+   "gloss": "l'inverno",
+   "photo": true,
+   "fabric": "Cotone marrone scuro spazzolato, pesante e caldo, polsino svasato",
+   "colorName": "Marrone scuro",
+   "trimName": "impunture sul dorso, cinturino al polso con fibbia di rame brunito",
+   "garment": "cloak",
+   "color": "#3b2219",
+   "trim": "#b0894e",
+   "price": 400,
+   "desc": "Guanti di cotone marrone scuro, cinturino con fibbia di rame.",
+   "cls": "Tessuti · Guanti",
+   "recipe": [
+    [
+     1,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
+  },
+  {
+   "code": "A97",
+   "cat": "lui/Accessori",
+   "name": "Huinë",
+   "gloss": "l'ombra",
+   "photo": true,
+   "fabric": "Tela di cotone nero, polsino alto",
+   "colorName": "Nero",
+   "trimName": "impunture a raggiera sul dorso, due bottoni d'argento a stella sul polso",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#dfe6f4",
+   "price": 450,
+   "desc": "Guanti di tela nera, impunture a raggiera, bottoni d'argento a stella.",
+   "cls": "Tessuti · Guanti",
+   "recipe": [
+    [
+     1,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
