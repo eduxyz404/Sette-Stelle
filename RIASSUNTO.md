@@ -23,7 +23,7 @@
 ## Stanze (cat → stanza)
 - **Per lui** · Monili: Anelli, Collane, Bracciali, Cerchi (diademi maschili: linee dritte, metallo brunito, niente pendenti; primo: Aran G54) · Tessuti: Mantelli, Completi, Toghe, Tuniche, Cerimonia, Accessori (cinture e borse di stoffa).
 - **Per lei** · Monili: Diademi, Collane, Orecchini, Bracciali · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia.
-- **Per la coppia** · Monili: Fedi (avorio: Veru G55, Melmë G56, Vanimelda G58 argento, Yúyo G59, Oialë G60 argento, Melda G65, Anarya G67, Anga G68 ferro brunito + oro; tolta Elenya G66, gemella d'argento di Anarya, foto ancora in originali/), Fedine (verde: Órë G57, Indis G61, Olassië G62, Rilya G63, Tintila G64, Angaina G69 ferro + argento); prezzi «la coppia». Nel sito si chiama **«Lui e lei»**: voce nel menu in alto, colonna nel menu delle stanze e terza sala nell'elenco delle stanze (foto di Melmë). Indirizzi #coppia, #coppia-fedi, #coppia-fedine.
+- **Per la coppia** · Monili: Fedi (avorio: Veru G55, Melmë G56, Vanimelda G58 argento, Yúyo G59, Oialë G60 argento, Melda G65, Anarya G67, Anga G68 ferro brunito + oro; tolta Elenya G66, gemella d'argento di Anarya, foto ancora in originali/), Fedine (verde: Órë G57, Indis G61, Olassië G62, Rilya G63, Tintila G64, Angaina G69 ferro + argento); prezzi «la coppia». Nel sito si chiama **«Coppia»** (non «lui e lei»: vale per ogni coppia): voce nel menu in alto, colonna nel menu delle stanze e terza sala nell'elenco delle stanze (foto di Melmë). Indirizzi #coppia, #coppia-fedi, #coppia-fedine.
 - Le stanze vuote non compaiono. «Fermagli per lui» è stato tolto. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
 - Codici: A = tessuti (ultimo A104), G = monili (ultimo G69). A72 non esiste più.
@@ -54,6 +54,7 @@
 - Se GitHub Pages fallisce la pubblicazione (errore «Failed to get ID Token»), basta un nuovo commit/push.
 
 ## Certificati
+- **Certificato nuziale** (uno solo per gli sposi, per fedi e abiti nuziali): `python3 strumenti/certificato_nozze.py --numero N001 --sposi "Nome" "Nome" --codici G56 A41 A69 --anno XXV --mese 6 --giorno 21 [--luogo "…"] [--testimoni "…" "…"] [--dedica "…" --firma "…"]`. Pergamena avorio e oro, due stelle intrecciate, frase «Elen síla lúmenn' omentielvo». Esempio: `certificati/esempio-nozze.html` (proposta, in attesa di approvazione di Erika).
 - `python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" --anno XXV --mese 2 --giorno 10 [--confezione] [--dedica "…" --firma "…"]` (legge `strumenti/pezzi.json`, che si rigenera con `node strumenti/estrai_pezzi.js`). Registro in `certificati/registro.md`. I certificati li gestisce Erika tramite Claude.
 
 ## Da fare, quando lo chiede lei

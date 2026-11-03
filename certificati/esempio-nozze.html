@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Certificato nuziale di esempio · Nome del personaggio e Nome del personaggio</title>
+<link rel="icon" type="image/svg+xml" href="../img/icona-stella.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+/* Certificato nuziale: pergamena avorio con fregi d'oro, due stelle intrecciate */
+:root{--bg:#070b17;--paper:#f7f1e4;--paper-2:#efe5cf;--ink:#3b2a10;--muted:#7d6a4c;--gold:#b8892f;--gold-b:#9a6f1e;
+  --gild:linear-gradient(180deg,#d9b468 0%,#b8892f 55%,#7a5518 100%);color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.5;
+  padding-block:clamp(16px,4vw,48px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(230,194,122,.14),transparent 70%),
+    radial-gradient(1px 1px at 20% 30%,rgba(255,255,255,.25) 50%,transparent 51%),radial-gradient(1.5px 1.5px at 80% 70%,rgba(230,194,122,.35) 50%,transparent 51%);
+  background-size:100% 100%,170px 170px,170px 170px}
+.cert{position:relative;max-width:920px;margin:0 auto;border-radius:20px;overflow:hidden;
+  background:radial-gradient(ellipse 90% 60% at 50% 0%,#fffaf0,var(--paper) 60%,var(--paper-2));border:1px solid var(--gold);
+  box-shadow:inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(184,137,47,.45),0 40px 80px -30px rgba(0,0,0,.95),0 0 60px -20px rgba(230,194,122,.35)}
+.corner{position:absolute;z-index:3;width:clamp(44px,8vw,72px);color:var(--gold);pointer-events:none}
+.tl{top:6px;left:6px}.tr{top:6px;right:6px;transform:scaleX(-1)}.bl{bottom:6px;left:6px;transform:scaleY(-1)}.br{bottom:6px;right:6px;transform:scale(-1,-1)}
+.head{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(34px,6vw,56px) 24px 18px}
+.stars{width:clamp(130px,24vw,190px);height:auto;filter:drop-shadow(0 2px 4px rgba(122,85,24,.25))}
+.shop{margin:10px 0 0;font-family:"Cinzel",Georgia,serif;font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+h1{margin:4px 0 2px;font-family:"Cinzel Decorative",Georgia,serif;font-weight:700;font-size:clamp(1.5rem,4.4vw,2.2rem);line-height:1.15;
+  background:var(--gild);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quenya{margin:6px 0 0;font-style:italic;font-size:1.25rem;color:var(--gold-b)}
+.quenya small{display:block;font-size:1rem;color:var(--muted)}
+.pill{margin-top:14px;font-family:"Cinzel",Georgia,serif;font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-b);
+  border:1px solid rgba(184,137,47,.7);border-radius:999px;padding:4px 16px}
+.couple{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;padding:22px clamp(22px,5vw,52px) 26px;
+  border-top:1px solid rgba(184,137,47,.45);border-bottom:1px solid rgba(184,137,47,.45);margin:0 clamp(22px,5vw,52px)}
+.lbl{font-family:"Cinzel",Georgia,serif;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.names{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:.2em .5em;font-family:"Cinzel Decorative",Georgia,serif;
+  font-size:clamp(1.6rem,4.6vw,2.4rem);line-height:1.15;color:var(--ink)}
+.names .e{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:.8em;color:var(--gold)}
+.date{font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:1rem;letter-spacing:.06em}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 28px;margin-top:8px}
+.facts div{display:flex;flex-direction:column;align-items:center}
+.pieces{padding:26px clamp(22px,5vw,52px) 8px}
+.pieces h2{margin:0 0 14px;text-align:center;font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:.82rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-b)}
+.pieces ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.piece{display:grid;grid-template-columns:110px minmax(0,1fr);gap:18px;align-items:center;padding:14px;border-radius:14px;
+  background:rgba(255,255,255,.45);border:1px solid rgba(184,137,47,.35)}
+@media (max-width:520px){.piece{grid-template-columns:84px minmax(0,1fr);gap:12px}}
+.piece img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px 6px 6px / 70px 70px 6px 6px;border:1px solid rgba(184,137,47,.6)}
+.piece .cat{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-b)}
+.piece h3{margin:2px 0 0;font-family:"Cinzel Decorative",Georgia,serif;font-weight:400;font-size:1.3rem;line-height:1.2}
+.piece h3 i{font-family:"Cormorant Garamond",Georgia,serif;font-size:.85em;color:var(--muted)}
+.piece p{margin:4px 0 0;font-style:italic}
+.piece small{display:block;margin-top:6px;color:var(--muted)}
+.chips{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.chips li{display:inline-flex;align-items:center;gap:6px;padding:2px 10px 2px 4px;border-radius:999px;border:1px solid rgba(184,137,47,.45);background:#fffaf0;font-size:.95rem}
+.chips b{font-family:"Cinzel",Georgia,serif;font-size:.78rem;color:var(--gold-b)}
+.sw{width:16px;height:16px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.dedica{margin:22px clamp(22px,5vw,52px) 0;padding:18px 22px;text-align:center;border:1px dashed rgba(184,137,47,.6);border-radius:14px;background:rgba(255,255,255,.4)}
+.dedica p{margin:4px 0;font-style:italic;font-size:1.3rem}
+.dedica .from{font-family:"Cinzel Decorative",Georgia,serif;color:var(--gold-b)}
+.foot{display:flex;flex-direction:column;align-items:center;gap:6px;padding:26px 24px clamp(30px,5vw,44px)}
+.seal{width:140px;height:auto;filter:drop-shadow(0 8px 12px rgba(80,50,10,.45));transform:rotate(-6deg)}
+.foot span{font-family:"Cinzel",Georgia,serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.foot .num{font-weight:600;font-size:.84rem;color:var(--gold-b)}
+.note{margin:0;padding:0 20px 24px;text-align:center;font-style:italic;color:var(--gold-b)}
+</style>
+</head>
+<body>
+<main class="cert">
+  <svg class="corner tl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner tr" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner bl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner br" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg>
+  <header class="head">
+    <svg class="stars" viewBox="0 0 200 110" aria-hidden="true"><circle cx="78" cy="55" r="44" fill="none" stroke="#b8892f" stroke-width="1.4"/><circle cx="122" cy="55" r="44" fill="none" stroke="#8d95a6" stroke-width="1.4"/><polygon points="78.0,25.0 81.1,47.6 91.2,41.8 85.4,51.9 108.0,55.0 85.4,58.1 91.2,68.2 81.1,62.4 78.0,85.0 74.9,62.4 64.8,68.2 70.6,58.1 48.0,55.0 70.6,51.9 64.8,41.8 74.9,47.6" fill="#c9a04a"/><polygon points="133.5,27.3 127.7,49.3 139.2,47.9 130.0,55.0 149.7,66.5 127.7,60.7 129.1,72.2 122.0,63.0 110.5,82.7 116.3,60.7 104.8,62.1 114.0,55.0 94.3,43.5 116.3,49.3 114.9,37.8 122.0,47.0" fill="#a9b1c2"/><circle cx="78" cy="55" r="3.2" fill="#fff8e6"/><circle cx="122" cy="55" r="3.2" fill="#fff8e6"/></svg>
+    <p class="shop">Bottega delle Sette Stelle</p>
+    <h1>Certificato Nuziale</h1>
+    <p class="quenya">«Elen síla lúmenn&#x27; omentielvo»<small>una stella brilla sull&#x27;ora del nostro incontro</small></p>
+    <span class="pill">esempio</span>
+  </header>
+  <section class="couple">
+    <span class="lbl">Uniti in nozze</span>
+    <div class="names"><span>Nome del personaggio</span><span class="e">e</span><span>Nome del personaggio</span></div>
+    <span class="date">Anno XXV · Mese 6° · Giorno 21°</span>
+    <div class="facts"><div><span class="lbl">Luogo</span><span>Giardino della Bottega</span></div><div><span class="lbl">Testimoni</span><span>Nome e Nome</span></div></div>
+  </section>
+  <section class="pieces">
+    <h2>I doni delle nozze</h2>
+    <ol><li class="piece">
+        <img src="../img/G56.jpg" alt="Melmë">
+        <div>
+          <span class="cat">Fedi per la coppia · Cod. G56</span>
+          <h3>Melmë <i>«l&#x27;amore»</i></h3>
+          <p>Fedi d&#x27;oro a intrecci elfici: quella di lei a V con tre cristalli.</p>
+          <small>Monili · Anello (coppia)</small>
+          <ul class="chips"><li><span class="sw" style="background:#d9b468"></span><b>2×</b>Oro</li><li><span class="sw" style="background:#d6ecff"></span><b>3×</b>Cristallo</li></ul>
+        </div>
+      </li><li class="piece">
+        <img src="../img/A41.jpg" alt="Elenindis">
+        <div>
+          <span class="cat">Cerimonia per lei · Cod. A41</span>
+          <h3>Elenindis <i>«sposa delle stelle»</i></h3>
+          <p>Veli dall&#x27;avorio al blu notte, stelle d&#x27;argento e velo lungo.</p>
+          <small>Tessuti · Abito da sposa con velo e strascico</small>
+          <ul class="chips"><li><span class="sw" style="background:#efe8da"></span><b>4×</b>Cotone</li><li><span class="sw" style="background:conic-gradient(#e04848,#e3a03a,#e6d24a,#5cb85c,#4a8fe0,#8c4fb3,#e04848)"></span><b>1×</b>Colori</li><li><span class="sw" style="background:#c9cfda"></span><b>1×</b>Argento</li></ul>
+        </div>
+      </li><li class="piece">
+        <img src="../img/A69.jpg" alt="Calion">
+        <div>
+          <span class="cat">Cerimonia per lui · Cod. A69</span>
+          <h3>Calion <i>«figlio della luce»</i></h3>
+          <p>Giubba avorio con alamari, mantello blu notte.</p>
+          <small>Tessuti · Abito da sposo con mantello, taglia media</small>
+          <ul class="chips"><li><span class="sw" style="background:#efe8da"></span><b>4×</b>Cotone</li><li><span class="sw" style="background:conic-gradient(#e04848,#e3a03a,#e6d24a,#5cb85c,#4a8fe0,#8c4fb3,#e04848)"></span><b>1×</b>Colori</li><li><span class="sw" style="background:#c9cfda"></span><b>1×</b>Argento</li></ul>
+        </div>
+      </li></ol>
+  </section>
+  <section class="dedica"><span class="lbl">Dedica</span><p>«Che la luce delle stelle custodisca il vostro cammino insieme.»</p><span class="from">Elrohir, bottegaio</span></section>
+  <footer class="foot">
+    <img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle">
+    <span class="num">esempio</span>
+    <span>sigillo della bottega</span>
+  </footer>
+  <p class="note">Questo è un esempio: nomi, data e pezzi saranno quelli delle nozze vere.</p>
+</main>
+</body>
+</html>
