@@ -383,7 +383,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
   filter:drop-shadow(0 1px 0 rgba(40,24,6,.8)) drop-shadow(0 3px 12px rgba(0,0,0,.8))}
 
 /* Due grandi sale: Monili e Tessuti */
-.halls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,4vw,40px)}
+.halls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,4vw,40px)}
+@media (max-width:980px) and (min-width:721px){.halls{grid-template-columns:repeat(2,minmax(0,1fr))}.halls .hall-card:last-child{grid-column:1/-1;max-width:calc(50% - clamp(11px,2vw,20px));justify-self:center;width:100%}}
 @media (max-width:720px){.halls{grid-template-columns:1fr}}
 .hall-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--line);
   border-radius:999px 999px 8px 8px / 200px 200px 8px 8px;padding:12px 12px 26px;
@@ -525,6 +526,7 @@ details.recipe ul{justify-content:center}
       <a href="#stanze" data-quick="stanze">Stanze</a>
       <a href="#lei" data-quick="lei">Per lei</a>
       <a href="#lui" data-quick="lui">Per lui</a>
+      <a href="#coppia" data-quick="coppia">Lui e lei</a>
           </nav>
     <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu-panel">✦ Menu<span class="long">&nbsp;delle stanze</span> <span aria-hidden="true">▾</span></button>
     <nav class="menu-panel" id="menu-panel" aria-label="Tutte le stanze" hidden></nav>
@@ -625,6 +627,16 @@ details.recipe ul{justify-content:center}
             <h3>Tessuti</h3>
             <p>Abiti, mantelli, completi, toghe e accessori, ricamati d'oro e d'argento.</p>
             <span class="count" data-count="abiti"></span>
+            <span class="go">entra ›</span>
+          </div>
+        </a>
+        <a class="hall-card" href="#coppia">
+          <figure class="hc-img"><img data-photo-code="G56" alt="Fedi d'oro su un drappo avorio, con una rosa bianca e candele"></figure>
+          <div class="hc-text">
+            <span class="label">per lui e lei</span>
+            <h3>Lui e lei</h3>
+            <p>Fedi nuziali e fedine di fidanzamento, da portare in due.</p>
+            <span class="count" data-count-who="coppia"></span>
             <span class="go">entra ›</span>
           </div>
         </a>
@@ -1192,7 +1204,7 @@ const KINDS = {
 const WHOS = {
   lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"diademi, collane, orecchini, bracciali, abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
-  coppia:{label:"per la coppia", head:"Per la coppia", all:"Tutto per la coppia", allDesc:"fedi e fedine, da portare in due", photo:"interior", crop:[1.5,"30%","62%"]}
+  coppia:{label:"per lui e lei", head:"Lui e lei", all:"Tutto per lui e lei", allDesc:"fedi e fedine, da portare in due", photo:"interior", crop:[1.5,"30%","62%"]}
 };
 const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"lei-orecchini", diademi:"lei-diademi", "lei-anelli":"lei", coppie:"coppia", fedi:"coppia-fedi", fedine:"coppia-fedine"};
 const CATS = Object.keys(CAT_INFO);
@@ -1359,6 +1371,7 @@ const fmt = n => n.toLocaleString("it-IT");
 const PHOTO = document.getElementById("interior").src;
 const TAILOR = document.getElementById("tailor").src;
 document.querySelectorAll("[data-photo]").forEach(img => img.src = PHOTO);
+document.querySelectorAll("[data-photo-code]").forEach(img => img.src = PHOTOS[img.dataset.photoCode]);
 /* La pagina delle stanze si apre con la soglia, così le due miniature mostrano ciascuna la propria sala */
 { const soglia = document.querySelector(".scene-img img"); if(soglia) document.getElementById("interior").src = soglia.src; }
 
@@ -1373,6 +1386,7 @@ for(const kind of Object.keys(KINDS)) for(const who of Object.keys(WHOS)){
   if(el) el.innerHTML = catsWhere(kind, who).map(roomCard).join("");
 }
 
+document.querySelectorAll("[data-count-who]").forEach(el => { el.textContent = count(itemsOf(catsWhere(null, el.dataset.countWho)).length, "coppia di anelli", "coppie di anelli"); });
 document.querySelectorAll("[data-count]").forEach(el => { const k = el.dataset.count; el.textContent = count(itemsOf(catsWhere(k)).length, KINDS[k].one, KINDS[k].many); });
 
 /* Vetrine: una stanza, «tutto per lei/lui», oppure tutti i gioielli o tutti gli abiti */
