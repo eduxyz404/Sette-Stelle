@@ -1019,32 +1019,6 @@
    ]
   },
   {
-   "code": "G58",
-   "cat": "coppia/Fedi",
-   "name": "Vanimelda",
-   "gloss": "bella e amata",
-   "photo": true,
-   "metal": "Argento lucido",
-   "gem": "Cinque cristalli limpidi nella fede di lei",
-   "cut": "tondi, tra intrecci a V",
-   "color": "#f4f2ea",
-   "shape": "cab",
-   "price": 1600,
-   "unit": "la coppia",
-   "desc": "Fedi d'argento a intrecci elfici: quella di lei a V con cinque cristalli.",
-   "cls": "Monili · Anello (coppia)",
-   "recipe": [
-    [
-     2,
-     "Argento"
-    ],
-    [
-     5,
-     "Cristallo"
-    ]
-   ]
-  },
-  {
    "code": "G59",
    "cat": "coppia/Fedi",
    "name": "Yúyo",
@@ -1060,25 +1034,6 @@
     [
      2,
      "Oro"
-    ]
-   ]
-  },
-  {
-   "code": "G60",
-   "cat": "coppia/Fedi",
-   "name": "Oialë",
-   "gloss": "per sempre",
-   "photo": true,
-   "metal": "Argento lucido",
-   "finish": "intreccio infinito inciso al centro",
-   "price": 1100,
-   "unit": "la coppia",
-   "desc": "Fedi d'argento lucido con un intreccio infinito inciso.",
-   "cls": "Monili · Anello (coppia)",
-   "recipe": [
-    [
-     2,
-     "Argento"
     ]
    ]
   },
@@ -1104,32 +1059,6 @@
     ],
     [
      1,
-     "Cristallo"
-    ]
-   ]
-  },
-  {
-   "code": "G66",
-   "cat": "coppia/Fedi",
-   "name": "Elenya",
-   "gloss": "delle stelle",
-   "photo": true,
-   "metal": "Argento lucido",
-   "gem": "Tre cristalli limpidi nella fede di lei",
-   "cut": "tondi, incassati nel metallo",
-   "color": "#f4f2ea",
-   "shape": "cab",
-   "price": 1300,
-   "unit": "la coppia",
-   "desc": "Fedi classiche d'argento lucido; quella di lei con tre cristalli.",
-   "cls": "Monili · Anello (coppia)",
-   "recipe": [
-    [
-     2,
-     "Argento"
-    ],
-    [
-     3,
      "Cristallo"
     ]
    ]
@@ -4194,7 +4123,7 @@
    "who": "coppia",
    "name": "Fedi",
    "slug": "coppia-fedi",
-   "desc": "fedi nuziali d'oro e d'argento per gli sposi",
+   "desc": "fedi nuziali d'oro per gli sposi",
    "show": "Veru",
    "crop": [
     1.6,
