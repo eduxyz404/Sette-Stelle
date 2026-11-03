@@ -30,7 +30,7 @@
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
 ## Parure
-- Oggetto `PARURE` in `index.html` (chiave → nome, descrizione, per chi). I pezzi con `parure:"chiave"` mostrano «✦ fa parte di un trio · vedi la Parure …» che porta a `#parure-chiave` (vista con i pezzi insieme e il prezzo totale).
+- Oggetto `PARURE` in `index.html` (chiave → nome, descrizione, per chi). I pezzi con `parure:"chiave"` mostrano «✦ fa parte della Parure … · vedi tutti i pezzi» che porta a `#parure-chiave` (vista con i pezzi insieme e il prezzo totale; con `prezzo:` nella parure compare lo sconto, Silmë 4500 invece di 5000).
 
 ## Foto
 - Formato 900×1200 (3:4), bordi riempiti **a specchio** (mai stirati), **sigillo** sempre nello stesso punto, poi un po' di **nitidezza**. **Nessuna levigatura**: a Erika le foto levigate sembrano rovinate/di cera.

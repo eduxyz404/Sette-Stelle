@@ -1081,7 +1081,7 @@ const CAT_INFO = {
 };
 const PARURE = {
   /* gioielli pensati insieme: ogni pezzo con parure:"chiave" mostra il rimando al trio */
-  silme:{name:"Parure Silmë", desc:"diadema, ciondolo e orecchini alla maniera dei Silmarilli: cristalli dal cuore d'oro tra rami d'argento", who:"lei"}
+  silme:{name:"Parure Silmë", desc:"diadema, ciondolo e orecchini alla maniera dei Silmarilli: cristalli dal cuore d'oro tra rami d'argento", who:"lei", prezzo:4500}
 };
 const KINDS = {
   gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, bracciali, orecchini e diademi dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
@@ -1289,7 +1289,7 @@ function card(it){
           ${it.gem ? `<dt>pietra</dt><dd>${it.gem}, taglio ${it.cut}</dd>
           ${it.ct ? `<dt>peso</dt><dd>${it.ct}</dd>` : ""}` : `<dt>lavorazione</dt><dd>${it.finish}</dd>`}
         </dl>`}
-        <p class="desc">${it.desc}${it.excl ? ` <span class="excl">${it.excl}.</span>` : ""}</p>${it.tema ? `<p class="tema">✦ tema ${it.tema}</p>` : ""}${it.parure && PARURE[it.parure] ? `<p class="parure"><a href="#parure-${it.parure}">✦ fa parte di un trio · vedi la ${PARURE[it.parure].name}</a></p>` : ""}
+        <p class="desc">${it.desc}${it.excl ? ` <span class="excl">${it.excl}.</span>` : ""}</p>${it.tema ? `<p class="tema">✦ tema ${it.tema}</p>` : ""}${it.parure && PARURE[it.parure] ? `<p class="parure"><a href="#parure-${it.parure}">✦ fa parte della ${PARURE[it.parure].name} · vedi tutti i pezzi${PARURE[it.parure].prezzo ? " · insieme costano meno" : ""}</a></p>` : ""}
         <details class="recipe"><summary class="recipe-head"><span>Ricetta</span></summary>
           <small>${it.cls}</small>
           <ul>${it.recipe.map(([q, m]) => `<li><b>${q}×</b> ${m}</li>`).join("")}</ul></details>
@@ -1318,7 +1318,7 @@ function renderCat(view){
     label = `${K.label} · parure`; title = P.name; desc = P.desc; photo = K.photo; crop = K.crop;
     groups = [[null, list]];
     const tot = list.reduce((n, i) => n + i.price, 0);
-    desc += ` · insieme ${fmt(tot)} monete`;
+    desc += P.prezzo && P.prezzo < tot ? ` · tutti insieme ${fmt(P.prezzo)} monete invece di ${fmt(tot)}` : ` · insieme ${fmt(tot)} monete`;
     nav = `<a href="#${P.who}"><small>‹ torna a</small><span>${WHOS[P.who].all}</span></a><a href="#gioielli"><small>vai a ›</small><span>Monili</span></a>`;
   } else if(WHOS[view]){
     const W = WHOS[view], other = view === "lei" ? "lui" : "lei";
