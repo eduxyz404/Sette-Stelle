@@ -3048,6 +3048,36 @@
      "Argento"
     ]
    ]
+  },
+  {
+   "code": "A95",
+   "cat": "lui/Accessori",
+   "name": "Ringë",
+   "gloss": "il freddo",
+   "photo": true,
+   "fabric": "Cotone grigio antracite spazzolato, pesante e caldo",
+   "colorName": "Grigio antracite",
+   "trimName": "tre impunture sul dorso, cinturino al polso con bottone d'argento brunito",
+   "garment": "cloak",
+   "color": "#3a3a3d",
+   "trim": "#dfe6f4",
+   "price": 400,
+   "desc": "Guanti di cotone grigio antracite, cinturino con bottone d'argento.",
+   "cls": "Tessuti · Guanti",
+   "recipe": [
+    [
+     1,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
