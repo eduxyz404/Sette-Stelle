@@ -3169,6 +3169,37 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A99",
+   "cat": "lui/Accessori",
+   "name": "Ingolë",
+   "gloss": "la sapienza",
+   "photo": true,
+   "fabric": "Tela di cotone verde bosco, bordi e interno di cotone color sabbia, interno a scomparti per libri, pergamene, strumenti e fiale, tasca frontale",
+   "colorName": "Verde bosco e sabbia",
+   "trimName": "manico e tracolla in tinta, fibbie di rame brunito",
+   "garment": "cloak",
+   "color": "#2f4a32",
+   "trim": "#b0894e",
+   "price": 1000,
+   "desc": "Borsa dello studioso verde bosco, bordi sabbia, scomparti interni.",
+   "excl": "Libro, pergamena, lente, strumenti e fiale non inclusi",
+   "cls": "Tessuti · Borsa a sacchetta con manico e tracolla",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
