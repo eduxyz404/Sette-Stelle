@@ -3262,6 +3262,36 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A102",
+   "cat": "lui/Accessori",
+   "name": "Cirya",
+   "gloss": "la nave",
+   "photo": true,
+   "fabric": "Tela di cotone grezzo color sabbia, fondo di cotone blu mare, tracolla di cotone blu",
+   "colorName": "Sabbia e blu mare",
+   "trimName": "chiusura a coulisse con cima di cotone intrecciato, occhielli di rame brunito",
+   "garment": "cloak",
+   "color": "#d6cbb3",
+   "trim": "#1f2c4a",
+   "price": 700,
+   "desc": "Sacca del marinaio color sabbia, fondo blu, chiusa da una cima.",
+   "cls": "Tessuti · Sacca con tracolla",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
