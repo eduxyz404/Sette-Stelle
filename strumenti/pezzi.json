@@ -3018,6 +3018,36 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A94",
+   "cat": "lui/Accessori",
+   "name": "Fanyarë",
+   "gloss": "i cieli",
+   "photo": true,
+   "fabric": "Tela di cotone blu notte, fondo di cotone grigio antracite, tasca frontale e tasche laterali, spallacci imbottiti",
+   "colorName": "Blu notte e antracite",
+   "trimName": "cinghie di cotone grigio antracite, fibbie d'argento brunito",
+   "garment": "cloak",
+   "color": "#1b2238",
+   "trim": "#dfe6f4",
+   "price": 900,
+   "desc": "Zaino da viaggio blu notte, cinghie antracite, fibbie d'argento.",
+   "cls": "Tessuti · Borsa a sacchetta con spallacci",
+   "recipe": [
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {

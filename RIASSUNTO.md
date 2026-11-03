@@ -25,7 +25,7 @@
 - **Per lei** · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia. (Per lei non ci sono ancora gioielli.)
 - Le stanze vuote non compaiono. «Fermagli per lui» e «Coppie» sono stati tolti. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A93), G = monili (ultimo G36). A72 non esiste più.
+- Codici: A = tessuti (ultimo A94), G = monili (ultimo G36). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
