@@ -41,6 +41,7 @@
 - Trucchi per Gemini: una foto per richiesta, conversazione nuova ogni 4–5 immagini; chiedere «fotografia vera di un servizio di moda, reflex 85mm, niente effetti cinematografici, proporzioni corrette»; se ricopia l'originale senza cambiare, **cambiare ambientazione** (castello/chiostro di pietra con luce naturale, torre con telescopio…).
 
 ## Effetti del sito
+- Quando si mette un pezzo nello scrigno parte una **stella cadente** con scia di polvere di stelle dal pulsante allo scrigno (funzione `stellaCadente`; disattivata con «riduci movimento»).
 - Pulsante dello **scrigno** (in basso a destra): due scie di stella che girano intorno; etichetta «Lo scrigno — metti da parte i pezzi che ti piacciono e copia l'ordine» che sparisce dopo il primo uso.
 - **Ingresso**: due scie di stella che percorrono la cornice dell'arco (mosse da JavaScript, non solo CSS: in Brave l'animazione CSS non partiva). La «polvere di stelle» sul titolo è stata tolta (3/11): il titolo resta fermo.
 - Icona della scheda: `img/icona-stella.svg` (stella senza cerchio).
