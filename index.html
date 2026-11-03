@@ -778,6 +778,10 @@ const PHOTOS = {
   G42:"img/G42.jpg?v=20261103141100",
   G43:"img/G43.jpg?v=20261103142100",
   G44:"img/G44.jpg?v=20261103144400",
+  G45:"img/G45.jpg?v=20261103145200",
+  G46:"img/G46.jpg?v=20261103145200",
+  G47:"img/G47.jpg?v=20261103145200",
+  G48:"img/G48.jpg?v=20261103145200",
   G25:"img/G25.jpg?v=202611010016",
   G26:"img/G26.jpg?v=202611010016",
   G27:"img/G27.jpg?v=202611010016",
@@ -888,6 +892,14 @@ const ITEMS = [
     cls:"Monili · Bracciale", recipe:[[2,"Argento"],[1,"Cristallo"],[1,"Colori"]]},
   {code:"G44", cat:"lei/Diademi", name:"Elentári", gloss:"regina delle stelle", photo:true, metal:"Oro", gem:"Sette stelle di cristallo limpido", cut:"a stella a otto raggi", color:"#f4f2ea", shape:"cab", price:4500, tema:"stelle", desc:"Corona d'oro a raggi con sette stelle di cristallo.",
     cls:"Monili · Diadema", recipe:[[2,"Oro"],[7,"Cristallo"]]},
+  {code:"G45", cat:"lei/Diademi", name:"Nár", gloss:"il fuoco", photo:true, metal:"Oro cesellato", gem:"Cristallo rosso fuoco, cristalli rossi e arancio", cut:"a goccia, tra le fiamme", color:"#9b1420", shape:"cab", price:4000, tema:"fuoco", parure:"elementi", desc:"Diadema d'oro a fiamme, cristalli rossi e arancio.",
+    cls:"Monili · Diadema", recipe:[[2,"Oro"],[7,"Cristallo"],[1,"Colori"]]},
+  {code:"G46", cat:"lei/Diademi", name:"Nén", gloss:"l'acqua", photo:true, metal:"Argento in filigrana", gem:"Goccia di cristallo azzurro, cristalli azzurri e bianchi", cut:"a goccia pendente", color:"#7cc0d8", shape:"cab", price:4000, tema:"mare", parure:"elementi", desc:"Diadema d'argento a onde, goccia di cristallo azzurro.",
+    cls:"Monili · Diadema", recipe:[[2,"Argento"],[7,"Cristallo"],[1,"Colori"]]},
+  {code:"G47", cat:"lei/Diademi", name:"Súlë", gloss:"il soffio", photo:true, metal:"Argento chiaro", gem:"Cristallo bianco opalescente, piccoli cristalli limpidi", cut:"ovale, tra piume d'argento", color:"#e8e6f0", shape:"cab", price:4000, tema:"aria", parure:"elementi", desc:"Diadema d'argento a piume mosse dal vento, cristallo opalino.",
+    cls:"Monili · Diadema", recipe:[[2,"Argento"],[6,"Cristallo"],[1,"Colori"]]},
+  {code:"G48", cat:"lei/Diademi", name:"Arda", gloss:"la terra", photo:true, metal:"Oro antico", gem:"Cristallo verde bosco, bacche di cristallo verde", cut:"ovale, in un nido di rami", color:"#3f6b1c", shape:"cab", price:4000, tema:"bosco", parure:"elementi", desc:"Diadema d'oro a rami e foglie, cristallo verde bosco.",
+    cls:"Monili · Diadema", recipe:[[2,"Oro"],[7,"Cristallo"],[1,"Colori"]]},
 
   /* Sartoria · per lei */
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
@@ -1100,7 +1112,8 @@ const CAT_INFO = {
 };
 const PARURE = {
   /* gioielli pensati insieme: ogni pezzo con parure:"chiave" mostra il rimando al trio */
-  silme:{name:"Parure Silmë", desc:"diadema, ciondolo, orecchini e bracciale alla maniera dei Silmarilli: cristalli dal cuore d'oro tra rami d'argento", who:"lei", prezzo:5400}
+  silme:{name:"Parure Silmë", desc:"diadema, ciondolo, orecchini e bracciale alla maniera dei Silmarilli: cristalli dal cuore d'oro tra rami d'argento", who:"lei", prezzo:5400},
+  elementi:{name:"Diademi degli Elementi", di:"dei Diademi degli Elementi", tipo:"collezione", desc:"fuoco, acqua, aria e terra: quattro diademi preziosi, uno per elemento", who:"lei", prezzo:14000}
 };
 const KINDS = {
   gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, bracciali, orecchini e diademi dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
@@ -1308,7 +1321,7 @@ function card(it){
           ${it.gem ? `<dt>pietra</dt><dd>${it.gem}, taglio ${it.cut}</dd>
           ${it.ct ? `<dt>peso</dt><dd>${it.ct}</dd>` : ""}` : `<dt>lavorazione</dt><dd>${it.finish}</dd>`}
         </dl>`}
-        <p class="desc">${it.desc}${it.excl ? ` <span class="excl">${it.excl}.</span>` : ""}</p>${it.tema ? `<p class="tema">✦ tema ${it.tema}</p>` : ""}${it.parure && PARURE[it.parure] ? `<p class="parure"><a href="#parure-${it.parure}">✦ fa parte della ${PARURE[it.parure].name} · vedi tutti i pezzi${PARURE[it.parure].prezzo ? " · insieme costano meno" : ""}</a></p>` : ""}
+        <p class="desc">${it.desc}${it.excl ? ` <span class="excl">${it.excl}.</span>` : ""}</p>${it.tema ? `<p class="tema">✦ tema ${it.tema}</p>` : ""}${it.parure && PARURE[it.parure] ? `<p class="parure"><a href="#parure-${it.parure}">✦ fa parte ${PARURE[it.parure].di || "della " + PARURE[it.parure].name} · vedi tutti i pezzi${PARURE[it.parure].prezzo ? " · insieme costano meno" : ""}</a></p>` : ""}
         <details class="recipe"><summary class="recipe-head"><span>Ricetta</span></summary>
           <small>${it.cls}</small>
           <ul>${it.recipe.map(([q, m]) => `<li><b>${q}×</b> ${m}</li>`).join("")}</ul></details>
@@ -1334,7 +1347,7 @@ function renderCat(view){
     } else nav = `<a href="#stanze"><small>‹ torna alle</small><span>Stanze della bottega</span></a><a href="#gioielli"><small>vai a ›</small><span>Monili</span></a>`;
   } else if(view.startsWith("parure-")){
     const key = view.slice(7), P = PARURE[key], K = KINDS.gioielli, list = ITEMS.filter(i => i.parure === key);
-    label = `${K.label} · parure`; title = P.name; desc = P.desc; photo = K.photo; crop = K.crop;
+    label = `${K.label} · ${P.tipo || "parure"}`; title = P.name; desc = P.desc; photo = K.photo; crop = K.crop;
     groups = [[null, list]];
     const tot = list.reduce((n, i) => n + i.price, 0);
     desc += P.prezzo && P.prezzo < tot ? ` · tutti insieme ${fmt(P.prezzo)} monete invece di ${fmt(tot)}` : ` · insieme ${fmt(tot)} monete`;

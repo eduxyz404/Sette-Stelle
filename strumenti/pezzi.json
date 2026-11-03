@@ -682,6 +682,130 @@
    ]
   },
   {
+   "code": "G45",
+   "cat": "lei/Diademi",
+   "name": "Nár",
+   "gloss": "il fuoco",
+   "photo": true,
+   "metal": "Oro cesellato",
+   "gem": "Cristallo rosso fuoco, cristalli rossi e arancio",
+   "cut": "a goccia, tra le fiamme",
+   "color": "#9b1420",
+   "shape": "cab",
+   "price": 4000,
+   "tema": "fuoco",
+   "parure": "elementi",
+   "desc": "Diadema d'oro a fiamme, cristalli rossi e arancio.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     7,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G46",
+   "cat": "lei/Diademi",
+   "name": "Nén",
+   "gloss": "l'acqua",
+   "photo": true,
+   "metal": "Argento in filigrana",
+   "gem": "Goccia di cristallo azzurro, cristalli azzurri e bianchi",
+   "cut": "a goccia pendente",
+   "color": "#7cc0d8",
+   "shape": "cab",
+   "price": 4000,
+   "tema": "mare",
+   "parure": "elementi",
+   "desc": "Diadema d'argento a onde, goccia di cristallo azzurro.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     7,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G47",
+   "cat": "lei/Diademi",
+   "name": "Súlë",
+   "gloss": "il soffio",
+   "photo": true,
+   "metal": "Argento chiaro",
+   "gem": "Cristallo bianco opalescente, piccoli cristalli limpidi",
+   "cut": "ovale, tra piume d'argento",
+   "color": "#e8e6f0",
+   "shape": "cab",
+   "price": 4000,
+   "tema": "aria",
+   "parure": "elementi",
+   "desc": "Diadema d'argento a piume mosse dal vento, cristallo opalino.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G48",
+   "cat": "lei/Diademi",
+   "name": "Arda",
+   "gloss": "la terra",
+   "photo": true,
+   "metal": "Oro antico",
+   "gem": "Cristallo verde bosco, bacche di cristallo verde",
+   "cut": "ovale, in un nido di rami",
+   "color": "#3f6b1c",
+   "shape": "cab",
+   "price": 4000,
+   "tema": "bosco",
+   "parure": "elementi",
+   "desc": "Diadema d'oro a rami e foglie, cristallo verde bosco.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     7,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",

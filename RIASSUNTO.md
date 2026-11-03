@@ -25,12 +25,12 @@
 - **Per lei** · Monili: Diademi, Collane, Orecchini, Bracciali · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia.
 - Le stanze vuote non compaiono. «Fermagli per lui» e «Coppie» sono stati tolti. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A104), G = monili (ultimo G44). A72 non esiste più.
+- Codici: A = tessuti (ultimo A104), G = monili (ultimo G48). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
 ## Parure
-- Oggetto `PARURE` in `index.html` (chiave → nome, descrizione, per chi). I pezzi con `parure:"chiave"` mostrano «✦ fa parte della Parure … · vedi tutti i pezzi» che porta a `#parure-chiave` (vista con i pezzi insieme e il prezzo totale; con `prezzo:` nella parure compare lo sconto, Silmë 5400 invece di 6000).
+- Oggetto `PARURE` in `index.html` (chiave → nome, descrizione, per chi). I pezzi con `parure:"chiave"` mostrano «✦ fa parte della Parure … · vedi tutti i pezzi» che porta a `#parure-chiave` (vista con i pezzi insieme e il prezzo totale; campi facoltativi `di:` per la frase «fa parte dei …» e `tipo:"collezione"` per l'etichetta; con `prezzo:` nella parure compare lo sconto, Silmë 5400 invece di 6000).
 
 ## Foto
 - Formato 900×1200 (3:4), bordi riempiti **a specchio** (mai stirati), **sigillo** sempre nello stesso punto, poi un po' di **nitidezza**. **Nessuna levigatura**: a Erika le foto levigate sembrano rovinate/di cera.
@@ -52,7 +52,7 @@
 - `python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" --anno XXV --mese 2 --giorno 10 [--confezione] [--dedica "…" --firma "…"]` (legge `strumenti/pezzi.json`, che si rigenera con `node strumenti/estrai_pezzi.js`). Registro in `certificati/registro.md`. I certificati li gestisce Erika tramite Claude.
 
 ## Da fare, quando lo chiede lei
-- Gioielli per lei: Diademi, Collane, Orecchini. Prima parure: **Silmë** (G40 diadema, G41 Tintallë ciondolo, G42 Rossë orecchini, G43 Laurë bracciale), «alla maniera dei Silmarilli», foto su velluto blu al banco dell'orafo. Mancano anelli per lei; coppie. Diademi preziosi: Elentári (G44, oro, sette stelle di cristallo, tema stelle). Idea in corso: quattro diademi preziosi, uno per elemento (fuoco, acqua, aria, terra), da legare come la parure.
+- Gioielli per lei: Diademi, Collane, Orecchini. Prima parure: **Silmë** (G40 diadema, G41 Tintallë ciondolo, G42 Rossë orecchini, G43 Laurë bracciale), «alla maniera dei Silmarilli», foto su velluto blu al banco dell'orafo. Mancano anelli per lei; coppie. Diademi preziosi: Elentári (G44, oro, sette stelle di cristallo, tema stelle). Collezione **Diademi degli Elementi**: Nár G45 fuoco, Nén G46 acqua, Súlë G47 aria, Arda G48 terra (4000 l'uno, tutti insieme 14000 invece di 16000; ognuno ha il tema della Cerimonia abbinato).
 - **Pelletteria**: Erika la vorrebbe. Su Lot esiste la classe «Articoli in Pelle» (borse, scarsella, sacca, otre, stivali, scarpe, guanti, cappello, cappuccio, gilet, coprispalle, manto, completi, cintola, falconeria); potrebbe sostituire «Oggettistica» (oggi vuota). Problema: Elrohir è vegetariano. Idee proposte: un **aiutante pellettiere** che lavora la pelle al posto suo; pelli solo «recuperate»; oppure «tela cerata» (cotone + Cera + Colori, da far approvare all'Universitas). Decisione ancora aperta.
 - Classi: massimo 3 per bottega (ora Monili, Tessuti, Oggettistica).
 - Eventuale ritaratura dei prezzi (ora 400–5200 monete).
