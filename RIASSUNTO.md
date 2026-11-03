@@ -25,7 +25,7 @@
 - **Per lei** · Monili: Diademi, Collane, Orecchini, Bracciali · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia.
 - Le stanze vuote non compaiono. «Fermagli per lui» e «Coppie» sono stati tolti. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A104), G = monili (ultimo G43). A72 non esiste più.
+- Codici: A = tessuti (ultimo A104), G = monili (ultimo G44). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
@@ -42,7 +42,7 @@
 
 ## Effetti del sito
 - Quando si mette un pezzo nello scrigno parte una **stella cadente** con scia di polvere di stelle dal pulsante allo scrigno (funzione `stellaCadente`; disattivata con «riduci movimento»).
-- Pulsante dello **scrigno** (in basso a destra): due scie di stella che girano intorno; etichetta «Lo scrigno — metti da parte i pezzi che ti piacciono e copia l'ordine» che sparisce dopo il primo uso.
+- Pulsante dello **scrigno** (in basso a destra): due scie di stella che girano intorno **solo a scrigno vuoto** e per ~2,6 s quando si aggiunge un pezzo (classe `gira`); con pezzi dentro restano ferme e invisibili, con un alone dorato; etichetta «Lo scrigno — metti da parte i pezzi che ti piacciono e copia l'ordine» che sparisce dopo il primo uso.
 - **Ingresso**: due scie di stella che percorrono la cornice dell'arco (mosse da JavaScript, non solo CSS: in Brave l'animazione CSS non partiva). La «polvere di stelle» sul titolo è stata tolta (3/11): il titolo resta fermo.
 - Icona della scheda: `img/icona-stella.svg` (stella senza cerchio).
 - Anteprima claude.ai: `python3 strumenti/anteprima.py anteprima.html` (foto 540×720 per stare sotto 16 MB).
@@ -52,7 +52,7 @@
 - `python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" --anno XXV --mese 2 --giorno 10 [--confezione] [--dedica "…" --firma "…"]` (legge `strumenti/pezzi.json`, che si rigenera con `node strumenti/estrai_pezzi.js`). Registro in `certificati/registro.md`. I certificati li gestisce Erika tramite Claude.
 
 ## Da fare, quando lo chiede lei
-- Gioielli per lei: Diademi, Collane, Orecchini. Prima parure: **Silmë** (G40 diadema, G41 Tintallë ciondolo, G42 Rossë orecchini, G43 Laurë bracciale), «alla maniera dei Silmarilli», foto su velluto blu al banco dell'orafo. Mancano anelli per lei; coppie. Idea in corso: quattro diademi preziosi, uno per elemento (fuoco, acqua, aria, terra), da legare come la parure.
+- Gioielli per lei: Diademi, Collane, Orecchini. Prima parure: **Silmë** (G40 diadema, G41 Tintallë ciondolo, G42 Rossë orecchini, G43 Laurë bracciale), «alla maniera dei Silmarilli», foto su velluto blu al banco dell'orafo. Mancano anelli per lei; coppie. Diademi preziosi: Elentári (G44, oro, sette stelle di cristallo, tema stelle). Idea in corso: quattro diademi preziosi, uno per elemento (fuoco, acqua, aria, terra), da legare come la parure.
 - **Pelletteria**: Erika la vorrebbe. Su Lot esiste la classe «Articoli in Pelle» (borse, scarsella, sacca, otre, stivali, scarpe, guanti, cappello, cappuccio, gilet, coprispalle, manto, completi, cintola, falconeria); potrebbe sostituire «Oggettistica» (oggi vuota). Problema: Elrohir è vegetariano. Idee proposte: un **aiutante pellettiere** che lavora la pelle al posto suo; pelli solo «recuperate»; oppure «tela cerata» (cotone + Cera + Colori, da far approvare all'Universitas). Decisione ancora aperta.
 - Classi: massimo 3 per bottega (ora Monili, Tessuti, Oggettistica).
 - Eventuale ritaratura dei prezzi (ora 400–5200 monete).

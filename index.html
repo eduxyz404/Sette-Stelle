@@ -431,6 +431,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .note-fab.empty b{display:none}
 .note-fab.empty{opacity:.75}
 .note-fab.pulse{animation:np-pulse .5s ease}
+/* Le scie girano solo a scrigno vuoto (per farlo notare) e per un attimo quando si aggiunge un pezzo; poi resta un alone dorato */
+.note-fab::before,.note-fab::after,.note-fab .nf-s{transition:opacity .9s ease}
+.note-fab:not(.empty):not(.gira)::before,.note-fab:not(.empty):not(.gira)::after,.note-fab:not(.empty):not(.gira) .nf-s{opacity:0}
+.note-fab:not(.empty){box-shadow:inset 0 0 0 3px #0c1430,inset 0 0 0 4px rgba(230,194,122,.35),0 10px 24px rgba(0,0,0,.6),0 0 16px 3px rgba(230,194,122,.32)}
 .note-fab .nf-tip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);width:max-content;max-width:min(230px,calc(100vw - 110px));
   padding:7px 12px 8px;border:1px solid var(--gold);border-radius:12px;background:#0c1430;color:var(--fg);text-align:left;pointer-events:none;
   font-family:var(--display);font-style:italic;font-size:.88rem;line-height:1.25;box-shadow:0 8px 20px rgba(0,0,0,.5)}
@@ -773,6 +777,7 @@ const PHOTOS = {
   G41:"img/G41.jpg?v=20261103141100",
   G42:"img/G42.jpg?v=20261103141100",
   G43:"img/G43.jpg?v=20261103142100",
+  G44:"img/G44.jpg?v=20261103144400",
   G25:"img/G25.jpg?v=202611010016",
   G26:"img/G26.jpg?v=202611010016",
   G27:"img/G27.jpg?v=202611010016",
@@ -881,6 +886,8 @@ const ITEMS = [
     cls:"Monili · Orecchini", recipe:[[1,"Argento"],[2,"Cristallo"],[1,"Colori"]]},
   {code:"G43", cat:"lei/Bracciali", name:"Laurë", gloss:"luce dorata", photo:true, metal:"Argento", gem:"Cristallo dal cuore d'oro, alla maniera dei Silmarilli", cut:"a goccia", color:"#eef0f6", shape:"cab", price:1000, parure:"silme", desc:"Bracciale di rami d'argento con foglie e goccia di cristallo.",
     cls:"Monili · Bracciale", recipe:[[2,"Argento"],[1,"Cristallo"],[1,"Colori"]]},
+  {code:"G44", cat:"lei/Diademi", name:"Elentári", gloss:"regina delle stelle", photo:true, metal:"Oro", gem:"Sette stelle di cristallo limpido", cut:"a stella a otto raggi", color:"#f4f2ea", shape:"cab", price:4500, tema:"stelle", desc:"Corona d'oro a raggi con sette stelle di cristallo.",
+    cls:"Monili · Diadema", recipe:[[2,"Oro"],[7,"Cristallo"]]},
 
   /* Sartoria · per lei */
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
@@ -1075,7 +1082,7 @@ const CAT_INFO = {
   "lui/Anelli":{kind:"gioielli", who:"lui", name:"Anelli", slug:"lui-anelli", desc:"sigilli e fasce d'argento lavorate a mano", show:"Yanta", crop:[1.6,"50%","55%"]},
   "lui/Collane":{kind:"gioielli", who:"lui", name:"Collane", slug:"lui-collane", desc:"piastrine, medaglie e pendenti d'argento", show:"Tië", crop:[1.8,"60%","50%"]},
   "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Vanda", crop:[2.0,"32%","62%"]},
-  "lei/Diademi":{kind:"gioielli", who:"lei", name:"Diademi", slug:"lei-diademi", desc:"diademi d'argento a rami, con cristalli", show:"Silmë", crop:[1.6,"50%","55%"]},
+  "lei/Diademi":{kind:"gioielli", who:"lei", name:"Diademi", slug:"lei-diademi", desc:"diademi d'argento e d'oro, con cristalli", show:"Silmë", crop:[1.6,"50%","55%"]},
   "lei/Collane":{kind:"gioielli", who:"lei", name:"Collane", slug:"lei-collane", desc:"ciondoli di cristallo su catenine d'argento", show:"Tintallë", crop:[1.6,"50%","55%"]},
   "lei/Orecchini":{kind:"gioielli", who:"lei", name:"Orecchini", slug:"lei-orecchini", desc:"orecchini pendenti d'argento e cristallo", show:"Rossë", crop:[1.6,"50%","55%"]},
   "lei/Bracciali":{kind:"gioielli", who:"lei", name:"Bracciali", slug:"lei-bracciali", desc:"bracciali d'argento a rami, con cristalli", show:"Laurë", crop:[1.6,"50%","55%"]},
@@ -1479,7 +1486,9 @@ function renderNote(){
 }
 /* Stella cadente: dal pulsante del pezzo allo scrigno, con una scia di polvere di stelle */
 const stellaLayer = document.createElement("div"); stellaLayer.className = "stella-layer"; stellaLayer.setAttribute("aria-hidden", "true"); document.body.appendChild(stellaLayer);
+let giraTimer = 0;
 function stellaCadente(from, done){
+  clearTimeout(giraTimer); fab.classList.add("gira");
   const a = from.getBoundingClientRect(), z = fab.getBoundingClientRect();
   if(fab.hidden || !z.width || matchMedia("(prefers-reduced-motion: reduce)").matches || !Element.prototype.animate){ done(); return; }
   const x0 = a.left + a.width / 2, y0 = a.top + a.height / 2, x1 = z.left + z.width / 2, y1 = z.top + z.height / 2;
@@ -1506,7 +1515,8 @@ function setPanel(open){ panel.hidden = !open; fab.setAttribute("aria-expanded",
 document.addEventListener("click", e => {
   const b = e.target.closest(".note-btn");
   if(b){ const c = b.dataset.note, adding = !inNote(c); note.codes = adding ? [...note.codes, c] : note.codes.filter(x => x !== c); saveNote(); renderNote();
-    const pulse = () => { fab.classList.remove("pulse"); void fab.offsetWidth; fab.classList.add("pulse"); };
+    const pulse = () => { fab.classList.remove("pulse"); void fab.offsetWidth; fab.classList.add("pulse");
+      if(adding){ fab.classList.add("gira"); clearTimeout(giraTimer); giraTimer = setTimeout(() => fab.classList.remove("gira"), 2600); } };
     if(adding) stellaCadente(b, pulse); else pulse(); return; }
   const d = e.target.closest("[data-del]");
   if(d){ note.codes = note.codes.filter(x => x !== d.dataset.del); saveNote(); renderNote(); return; }

@@ -656,6 +656,32 @@
    ]
   },
   {
+   "code": "G44",
+   "cat": "lei/Diademi",
+   "name": "Elentári",
+   "gloss": "regina delle stelle",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Sette stelle di cristallo limpido",
+   "cut": "a stella a otto raggi",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 4500,
+   "tema": "stelle",
+   "desc": "Corona d'oro a raggi con sette stelle di cristallo.",
+   "cls": "Monili · Diadema",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     7,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
@@ -3581,7 +3607,7 @@
    "who": "lei",
    "name": "Diademi",
    "slug": "lei-diademi",
-   "desc": "diademi d'argento a rami, con cristalli",
+   "desc": "diademi d'argento e d'oro, con cristalli",
    "show": "Silmë",
    "crop": [
     1.6,
