@@ -4,7 +4,7 @@
 Uso:
   node strumenti/estrai_pezzi.js
   python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" \
-      --anno XXV --mese 2 --giorno 10 [--confezione] [--uscita percorso.html]
+      --anno XXV --mese 2 --giorno 10 [--confezione | --nozze] [--uscita percorso.html]
 
 Il certificato riprende il modello di Lot: data nel calendario di Lot,
 «Intestato a», immagine del pezzo, nome e codice, ricetta di creazione.
@@ -64,8 +64,10 @@ VALACIRCA = """<svg class="dipper" viewBox="-8 -8 176 106" aria-hidden="true">
 ) + "</g></svg>"
 
 
-def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False, dedica=None, firma=None, dono=False):
+def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False, dedica=None, firma=None, dono=False, nozze=False):
     e = html.escape
+    if nozze:
+        confezione = True  # la confezione degli sposi va in ricetta come quella normale
     if dono:
         confezione = True  # il dono si consegna sempre nella confezione della bottega, che quindi va in ricetta
     per = {'lei': 'per lei', 'lui': 'per lui', 'coppia': 'per la coppia'}[info['who']]
@@ -73,7 +75,7 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
     if abito:
         dettagli = [("Tessuto", pezzo['fabric']), ("Colore", pezzo['colorName']), ("Ricami", pezzo['trimName'])]
     else:
-        dettagli = [("Metallo", pezzo['metal'])] + ([("Pietra", f"{pezzo['gem']}, taglio {pezzo['cut']}"), ("Peso", pezzo['ct'])] if pezzo.get('gem') else [("Lavorazione", pezzo['finish'])])
+        dettagli = [("Metallo", pezzo['metal'])] + ([("Pietra", f"{pezzo['gem']}, taglio {pezzo['cut']}")] + ([("Peso", pezzo['ct'])] if pezzo.get('ct') else []) if pezzo.get('gem') else [("Lavorazione", pezzo['finish'])])
     righe = "".join(f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in dettagli)
     tokens = "".join(
         f'<li><span class="sw" style="background:{RAINBOW if m == "Colori" else SWATCH.get(m, "#9aa3b8")}"></span>'
@@ -82,7 +84,12 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
     titolo = f"Certificato di esempio · {pezzo['name']}" if esempio else f"Certificato {numero} · {pezzo['name']}"
     # Confezione e dedica: compaiono solo se richieste
     extra = []
-    if confezione and not dono:
+    if confezione and not dono and nozze:
+        extra.append("""<div class="box">
+      <img src="../img/confezione-nozze.jpg" alt="La confezione degli sposi: scrigno avorio con fregi e stelle d'oro, interno di velluto blu notte, nastro avorio e blu con sigillo d'oro e cartellino «Agli Sposi · Due cammini, una stessa luce»">
+      <span class="lbl">Confezione degli sposi</span>
+    </div>""")
+    elif confezione and not dono:
         extra.append(f"""<div class="box">
       <img src="../img/{'confezione.jpg' if dedica else 'confezione-semplice.jpg'}" alt="La confezione della bottega: scatola color pergamena con fregi d'oro, nastro di velluto blu e sigillo d'oro{', con il cartellino «Un dono per Voi»' if dedica else ''}">
       <span class="lbl">Confezione</span>
@@ -295,6 +302,7 @@ def main():
     ap.add_argument('--dedica', help='testo della dedica, facoltativo')
     ap.add_argument('--firma', help='chi firma la dedica, facoltativo')
     ap.add_argument('--esempio', action='store_true')
+    ap.add_argument('--nozze', action='store_true', help='confezione degli sposi (fedi e abiti nuziali)')
     ap.add_argument('--dono', action='store_true', help='certificato di dono: testata con la confezione e dedica in evidenza')
     ap.add_argument('--uscita')
     a = ap.parse_args()
@@ -303,7 +311,7 @@ def main():
     info = dati['CAT_INFO'][pezzo['cat']]
     out = pathlib.Path(a.uscita) if a.uscita else REPO / 'certificati' / f"{a.numero}.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio, a.dedica, a.firma, a.dono))
+    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio, a.dedica, a.firma, a.dono, a.nozze))
     print(out)
 
 
