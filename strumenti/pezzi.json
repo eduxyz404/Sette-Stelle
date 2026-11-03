@@ -1121,6 +1121,63 @@
    ]
   },
   {
+   "code": "G62",
+   "cat": "coppia/Fedine",
+   "name": "Olassië",
+   "gloss": "il fogliame",
+   "photo": true,
+   "metal": "Argento lucido",
+   "finish": "due file di foglioline incise a punta di diamante",
+   "price": 950,
+   "unit": "la coppia",
+   "desc": "Fedine d'argento con due file di foglioline incise.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G63",
+   "cat": "coppia/Fedine",
+   "name": "Rilya",
+   "gloss": "lo scintillio",
+   "photo": true,
+   "metal": "Argento lucido",
+   "finish": "sfaccettature oblique che catturano la luce",
+   "price": 950,
+   "unit": "la coppia",
+   "desc": "Fedine d'argento a sfaccettature oblique, che brillano alla luce.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ]
+   ]
+  },
+  {
+   "code": "G64",
+   "cat": "coppia/Fedine",
+   "name": "Tintila",
+   "gloss": "stelle che brillano",
+   "photo": true,
+   "metal": "Argento lucido",
+   "finish": "piccole punte di diamante incise come un cielo stellato",
+   "price": 950,
+   "unit": "la coppia",
+   "desc": "Fedine d'argento a punta di diamante, come un cielo di stelle.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
