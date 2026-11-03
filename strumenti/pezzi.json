@@ -482,7 +482,7 @@
    "color": "#4a2c1e",
    "trim": "#e4c47c",
    "price": 2000,
-   "desc": "Mantello castagna con cappuccio e fermaglio a stella.",
+   "desc": "Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
    "cls": "Tessuti · Mantello, taglia media",
    "recipe": [
     [
@@ -492,6 +492,10 @@
     [
      1,
      "Colori"
+    ],
+    [
+     1,
+     "Cera"
     ],
     [
      1,
@@ -2267,7 +2271,7 @@
    "color": "#141214",
    "trim": "#dfe6f4",
    "price": 2000,
-   "desc": "Mantello nero con cappuccio e fermaglio a stella.",
+   "desc": "Mantello nero con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
    "cls": "Tessuti · Mantello, taglia media",
    "recipe": [
     [
@@ -2277,6 +2281,10 @@
     [
      1,
      "Colori"
+    ],
+    [
+     1,
+     "Cera"
     ],
     [
      1,
@@ -2297,7 +2305,7 @@
    "color": "#141214",
    "trim": "#e4c47c",
    "price": 2800,
-   "desc": "Mantello invernale nero, foderato, a rami d'oro.",
+   "desc": "Mantello invernale nero, foderato, a rami d'oro. Trattato a cera: respinge l'acqua.",
    "cls": "Tessuti · Mantello invernale foderato con mantellina, taglia media",
    "recipe": [
     [
@@ -2307,6 +2315,10 @@
     [
      1,
      "Colori"
+    ],
+    [
+     1,
+     "Cera"
     ],
     [
      1,
