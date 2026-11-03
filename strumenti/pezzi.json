@@ -626,6 +626,36 @@
    ]
   },
   {
+   "code": "G43",
+   "cat": "lei/Bracciali",
+   "name": "Laurë",
+   "gloss": "luce dorata",
+   "photo": true,
+   "metal": "Argento",
+   "gem": "Cristallo dal cuore d'oro, alla maniera dei Silmarilli",
+   "cut": "a goccia",
+   "color": "#eef0f6",
+   "shape": "cab",
+   "price": 1000,
+   "parure": "silme",
+   "desc": "Bracciale di rami d'argento con foglie e goccia di cristallo.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
@@ -3579,6 +3609,19 @@
    "slug": "lei-orecchini",
    "desc": "orecchini pendenti d'argento e cristallo",
    "show": "Rossë",
+   "crop": [
+    1.6,
+    "50%",
+    "55%"
+   ]
+  },
+  "lei/Bracciali": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Bracciali",
+   "slug": "lei-bracciali",
+   "desc": "bracciali d'argento a rami, con cristalli",
+   "show": "Laurë",
    "crop": [
     1.6,
     "50%",
