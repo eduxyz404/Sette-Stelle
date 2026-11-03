@@ -541,11 +541,12 @@
    "gloss": "luce di stelle",
    "photo": true,
    "metal": "Argento lucido",
-   "gem": "Cristalli limpidi dal cuore d'oro pallido, alla maniera dei Silmarilli",
-   "cut": "a goccia sfaccettata, uno grande e due piccoli",
+   "gem": "Cristalli dal cuore d'oro, alla maniera dei Silmarilli",
+   "cut": "a goccia, uno grande e due piccoli",
    "color": "#eef0f6",
    "shape": "cab",
    "price": 2400,
+   "parure": "silme",
    "desc": "Diadema d'argento a rami, tre cristalli dal cuore d'oro.",
    "cls": "Monili · Diadema",
    "recipe": [
@@ -555,6 +556,67 @@
     ],
     [
      3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G41",
+   "cat": "lei/Collane",
+   "name": "Tintallë",
+   "gloss": "colei che accende le stelle",
+   "photo": true,
+   "metal": "Argento",
+   "gem": "Cristallo dal cuore d'oro, alla maniera dei Silmarilli",
+   "cut": "a goccia",
+   "color": "#eef0f6",
+   "shape": "cab",
+   "price": 1400,
+   "parure": "silme",
+   "desc": "Ciondolo a goccia di cristallo tra rami d'argento, su catenina.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G42",
+   "cat": "lei/Orecchini",
+   "name": "Rossë",
+   "gloss": "la rugiada",
+   "photo": true,
+   "metal": "Argento",
+   "gem": "Cristalli dal cuore d'oro, alla maniera dei Silmarilli",
+   "cut": "a goccia",
+   "color": "#eef0f6",
+   "shape": "cab",
+   "price": 1200,
+   "unit": "il paio",
+   "parure": "silme",
+   "desc": "Orecchini pendenti a goccia di cristallo tra rami d'argento.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Argento"
+    ],
+    [
+     2,
      "Cristallo"
     ],
     [
@@ -3491,6 +3553,32 @@
    "slug": "lei-diademi",
    "desc": "diademi d'argento a rami, con cristalli",
    "show": "Silmë",
+   "crop": [
+    1.6,
+    "50%",
+    "55%"
+   ]
+  },
+  "lei/Collane": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Collane",
+   "slug": "lei-collane",
+   "desc": "ciondoli di cristallo su catenine d'argento",
+   "show": "Tintallë",
+   "crop": [
+    1.6,
+    "50%",
+    "55%"
+   ]
+  },
+  "lei/Orecchini": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Orecchini",
+   "slug": "lei-orecchini",
+   "desc": "orecchini pendenti d'argento e cristallo",
+   "show": "Rossë",
    "crop": [
     1.6,
     "50%",
