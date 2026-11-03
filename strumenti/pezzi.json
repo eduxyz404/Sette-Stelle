@@ -1260,6 +1260,29 @@
    ]
   },
   {
+   "code": "G69",
+   "cat": "coppia/Fedine",
+   "name": "Angaina",
+   "gloss": "di ferro",
+   "photo": true,
+   "metal": "Ferro brunito",
+   "finish": "inserto d'argento lucido sagomato",
+   "price": 900,
+   "unit": "la coppia",
+   "desc": "Fedine di ferro brunito con un inserto d'argento lucido.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Ferro"
+    ],
+    [
+     1,
+     "Argento"
+    ]
+   ]
+  },
+  {
    "code": "A34",
    "cat": "lei/Mantelli",
    "name": "Kemen",
@@ -4211,7 +4234,7 @@
    "who": "coppia",
    "name": "Fedine",
    "slug": "coppia-fedine",
-   "desc": "fedine di fidanzamento d'argento e d'oro",
+   "desc": "fedine di fidanzamento d'argento, d'oro e di ferro",
    "show": "Órë",
    "crop": [
     1.6,

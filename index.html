@@ -816,6 +816,7 @@ const PHOTOS = {
   G65:"img/G65.jpg?v=20261103184100",
   G67:"img/G67.jpg?v=20261103185300",
   G68:"img/G68.jpg?v=20261103192100",
+  G69:"img/G69.jpg?v=20261103192500",
   G25:"img/G25.jpg?v=202611010016",
   G26:"img/G26.jpg?v=202611010016",
   G27:"img/G27.jpg?v=202611010016",
@@ -987,6 +988,8 @@ const ITEMS = [
     cls:"Monili · Anello (coppia)", recipe:[[2,"Argento"]]},
   {code:"G64", cat:"coppia/Fedine", name:"Tintila", gloss:"stelle che brillano", photo:true, metal:"Argento lucido", finish:"piccole punte di diamante incise come un cielo stellato", price:950, unit:"la coppia", desc:"Fedine d'argento a punta di diamante, come un cielo di stelle.",
     cls:"Monili · Anello (coppia)", recipe:[[2,"Argento"]]},
+  {code:"G69", cat:"coppia/Fedine", name:"Angaina", gloss:"di ferro", photo:true, metal:"Ferro brunito", finish:"inserto d'argento lucido sagomato", price:900, unit:"la coppia", desc:"Fedine di ferro brunito con un inserto d'argento lucido.",
+    cls:"Monili · Anello (coppia)", recipe:[[2,"Ferro"],[1,"Argento"]]},
 
   /* Sartoria · per lei */
   {code:"A34", cat:"lei/Mantelli", name:"Kemen", gloss:"terra", photo:true, fabric:"Cotone bruno lavorato", colorName:"Bruno castagna", trimName:"fermaglio d'oro a stella", garment:"cloak", color:"#4a2c1e", trim:"#e4c47c", price:2000, desc:"Mantello castagna con cappuccio e fermaglio a stella. Trattato a cera: respinge l'acqua.",
@@ -1183,7 +1186,7 @@ const CAT_INFO = {
   "lui/Bracciali":{kind:"gioielli", who:"lui", name:"Bracciali", slug:"lui-bracciali", desc:"bracciali d'argento, di perle e di cotone intrecciato", show:"Vanda", crop:[2.0,"32%","62%"]},
   "lui/Cerchi":{kind:"gioielli", who:"lui", name:"Cerchi", slug:"lui-cerchi", desc:"cerchi d'argento per la fronte, da signore elfico", show:"Aran", crop:[1.6,"50%","55%"]},
   "coppia/Fedi":{kind:"gioielli", who:"coppia", name:"Fedi", slug:"coppia-fedi", desc:"fedi nuziali d'oro, d'argento e di ferro per gli sposi", show:"Veru", crop:[1.6,"50%","55%"]},
-  "coppia/Fedine":{kind:"gioielli", who:"coppia", name:"Fedine", slug:"coppia-fedine", desc:"fedine di fidanzamento d'argento e d'oro", show:"Órë", crop:[1.6,"50%","55%"]},
+  "coppia/Fedine":{kind:"gioielli", who:"coppia", name:"Fedine", slug:"coppia-fedine", desc:"fedine di fidanzamento d'argento, d'oro e di ferro", show:"Órë", crop:[1.6,"50%","55%"]},
   "lei/Diademi":{kind:"gioielli", who:"lei", name:"Diademi", slug:"lei-diademi", desc:"diademi d'argento e d'oro, con cristalli", show:"Silmë", crop:[1.6,"50%","55%"]},
   "lei/Collane":{kind:"gioielli", who:"lei", name:"Collane", slug:"lei-collane", desc:"ciondoli di cristallo su catenine d'argento", show:"Tintallë", crop:[1.6,"50%","55%"]},
   "lei/Orecchini":{kind:"gioielli", who:"lei", name:"Orecchini", slug:"lei-orecchini", desc:"orecchini pendenti d'argento e cristallo", show:"Rossë", crop:[1.6,"50%","55%"]},
