@@ -696,6 +696,7 @@ details.recipe ul{justify-content:center}
 <script>
 /* Foto vere dei pezzi, per codice */
 const PHOTOS = {
+  A86:"img/A86.jpg?v=20261103111406",
   A85:"img/A85.jpg?v=20261102160512",
   A84:"img/A84.jpg?v=20261102150129",
   A83:"img/A83.jpg?v=20261102143149",
@@ -989,6 +990,8 @@ const ITEMS = [
     cls:"Tessuti · Fascia", recipe:[[1,"Cotone"],[1,"Colori"],[1,"Argento"]]},
   {code:"A40", cat:"lui/Accessori", name:"Lassë", gloss:"foglia", photo:true, fabric:"Cotone nero intrecciato", colorName:"Nero", trimName:"fibbia d'argento a foglia con stella, passante inciso", garment:"belt", color:"#141214", trim:"#dfe6f4", price:400, desc:"Cintura sottile intrecciata, fibbia a foglia.",
     cls:"Tessuti · Fascia", recipe:[[1,"Cotone"],[1,"Colori"],[1,"Argento"]]},
+  {code:"A86", cat:"lui/Accessori", name:"Lendë", gloss:"il viaggio", photo:true, fabric:"Tela di cotone nero pesante, tracolla di cotone intrecciato", colorName:"Nero", trimName:"stella a otto raggi impressa sulla patta, fibbie di rame brunito", garment:"cloak", color:"#141214", trim:"#b0894e", price:700, desc:"Borsa a tracolla di tela nera, stella sulla patta, fibbie di rame.",
+    cls:"Tessuti · Borsa a sacchetta con tracolla", recipe:[[2,"Cotone"],[1,"Colori"],[1,"Rame"]]},
 ];
 const CAT_INFO = {
   /* kind: oreficeria o sartoria · who: per chi · show: il pezzo mostrato nella stanza · crop: [zoom, x, y] della foto nel banner */
@@ -1004,7 +1007,7 @@ const CAT_INFO = {
   "lui/Toghe":{kind:"abiti", who:"lui", name:"Toghe", slug:"lui-toghe", desc:"vesti lunghe da studioso, mago e astronomo", show:"Ilmen", crop:[2.2,"35%","25%"]},
   "lui/Tuniche":{kind:"abiti", who:"lui", name:"Tuniche", slug:"lui-tuniche", desc:"tuniche di cotone, semplici e da lavoro", show:"Fána", crop:[2.0,"50%","35%"]},
   "lui/Cerimonia":{kind:"abiti", who:"lui", name:"Cerimonia", slug:"lui-cerimonia", desc:"abiti da sposo e da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Tinwerína", crop:[2.2,"68%","45%"]},
-  "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture intrecciate", show:"Menelya", crop:[2.4,"73%","42%"]}
+  "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture e borse di stoffa", show:"Menelya", crop:[2.4,"73%","42%"]}
 };
 const KINDS = {
   gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane e bracciali dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},

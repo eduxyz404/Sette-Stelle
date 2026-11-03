@@ -2766,6 +2766,36 @@
      "Argento"
     ]
    ]
+  },
+  {
+   "code": "A86",
+   "cat": "lui/Accessori",
+   "name": "Lendë",
+   "gloss": "il viaggio",
+   "photo": true,
+   "fabric": "Tela di cotone nero pesante, tracolla di cotone intrecciato",
+   "colorName": "Nero",
+   "trimName": "stella a otto raggi impressa sulla patta, fibbie di rame brunito",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#b0894e",
+   "price": 700,
+   "desc": "Borsa a tracolla di tela nera, stella sulla patta, fibbie di rame.",
+   "cls": "Tessuti · Borsa a sacchetta con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
@@ -2930,7 +2960,7 @@
    "who": "lui",
    "name": "Accessori",
    "slug": "lui-accessori",
-   "desc": "cinture intrecciate",
+   "desc": "cinture e borse di stoffa",
    "show": "Menelya",
    "crop": [
     2.4,
