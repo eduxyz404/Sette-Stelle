@@ -122,7 +122,7 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
         titolo_h1 = '<h1>Certificato di Proprietà</h1>'
 
     if nozze and not dono:
-        head = '<div class="head nozze-head" role="img" aria-label="Lo scrigno degli sposi della Bottega delle Sette Stelle, avorio con stelle d\'oro"></div>'
+        head = '<div class="head nozze-head" role="img" aria-label="Le fedi sulla seta avorio, il sigillo d\'oro sul nastro blu e il cartoncino della Bottega delle Sette Stelle"></div>'
     corners = "".join(f'<svg class="corner {k}" viewBox="0 0 80 80" aria-hidden="true">{CORNER}</svg>' for k in ("tl", "tr", "bl", "br"))
     return f"""<!doctype html>
 <html lang="it">
@@ -208,7 +208,7 @@ dd{{margin:0;font-size:1.08rem}}
   --gild:linear-gradient(180deg,#d9b468 0%,#b8892f 55%,#7a5518 100%);color:var(--fg);
   background:radial-gradient(ellipse 90% 60% at 50% 0%,#fffaf0,var(--paper) 60%,var(--paper-2));border-color:var(--gold);
   box-shadow:inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(184,137,47,.45),0 40px 80px -30px rgba(0,0,0,.95),0 0 60px -20px rgba(230,194,122,.35)}}
-.avorio .nozze-head::before{{background:url(../img/confezione-nozze.jpg) 50% 20%/cover}}
+.avorio .nozze-head::before{{background:url(../img/testata-sposi.jpg) 50% 50%/cover}}
 .avorio .head::after{{background:linear-gradient(180deg,rgba(247,241,228,0) 0%,rgba(247,241,228,0) 50%,rgba(247,241,228,.85) 86%,var(--paper) 100%)}}
 .avorio .title{{border-bottom-color:rgba(184,137,47,.45)}}
 .avorio h1{{filter:none}}
