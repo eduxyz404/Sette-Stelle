@@ -61,7 +61,7 @@ dd{margin:0;font-size:1.08rem}
 .niche.photo img{aspect-ratio:3/4;object-fit:cover;object-position:50% 25%;border-radius:999px 999px 4px 4px / 160px 160px 4px 4px}
 
 /* Ricetta e firma */
-.foot{display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;padding:24px clamp(22px,5vw,52px) clamp(28px,4vw,40px);
+.foot{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:24px clamp(22px,5vw,52px) clamp(28px,4vw,40px);
   border-top:1px solid rgba(230,194,122,.3);background:rgba(7,11,23,.35)}
 @media (max-width:620px){.foot{grid-template-columns:1fr;justify-items:center;text-align:center}}
 .recipe h3{margin:0 0 2px;font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
@@ -101,8 +101,8 @@ dd{margin:0;font-size:1.08rem}
 .avorio .note{color:var(--gold-b)}
 
 /* Firma del bottegaio (font Heleny) */
-.firma{display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
-.firma img{width:150px;height:auto;transform:rotate(-4deg);filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
+.firma{display:flex;flex-direction:column;align-items:center;gap:0;margin-top:2px;text-align:center}
+.firma img{width:96px;height:auto;transform:rotate(-4deg);filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
 .avorio .firma img{filter:none}
 .firma span{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);border-top:1px solid rgba(230,194,122,.4);padding-top:6px;margin-top:-6px}
 .avorio .firma span{border-top-color:rgba(184,137,47,.45)}
@@ -175,14 +175,13 @@ dd{margin:0;font-size:1.08rem}
       <small>Tessuti · Abito, taglia media, con tunica e veste lunga</small>
       <ul><li><span class="sw" style="background:#f3efe6"></span><b>4×</b>Cotone</li><li><span class="sw" style="background:conic-gradient(#e04848,#e3a03a,#e6d24a,#5cb85c,#4a8fe0,#8c4fb3,#e04848)"></span><b>1×</b>Colori</li><li><span class="sw" style="background:#e6c27a"></span><b>1×</b>Oro</li></ul>
     </div>
-    <div class="firma">
-      <img src="../img/firma-elrohir-oro.png" alt="Firma di Elrohir">
-      <span>Elrohir · il bottegaio</span>
-    </div>
     <div class="sign">
       <img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle">
       <span class="seal-num">esempio</span>
-      <span>sigillo della bottega</span>
+      <div class="firma">
+        <img src="../img/firma-elrohir-oro.png" alt="Firma di Elrohir">
+        <span>Elrohir · il bottegaio</span>
+      </div>
     </div>
   </footer>
   <p class="note">Questo è un esempio: nome e data saranno quelli del personaggio che acquista.</p>
