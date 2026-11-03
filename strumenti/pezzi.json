@@ -2928,6 +2928,36 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A91",
+   "cat": "lui/Accessori",
+   "name": "Ranta",
+   "gloss": "il percorso",
+   "photo": true,
+   "fabric": "Tela di cotone nero pesante, chiusura arrotolata, tracolla di cotone intrecciato",
+   "colorName": "Nero",
+   "trimName": "cinghie in tinta, fibbie e moschettoni di rame brunito",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#b0894e",
+   "price": 600,
+   "desc": "Borsa a tracolla di tela nera, chiusura arrotolata, fibbie di rame.",
+   "cls": "Tessuti · Borsa a sacchetta con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
