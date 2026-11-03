@@ -1019,6 +1019,32 @@
    ]
   },
   {
+   "code": "G58",
+   "cat": "coppia/Fedi",
+   "name": "Vanimelda",
+   "gloss": "bella e amata",
+   "photo": true,
+   "metal": "Argento lucido",
+   "gem": "Cinque cristalli limpidi nella fede di lei",
+   "cut": "tondi, tra intrecci a V",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1600,
+   "unit": "la coppia",
+   "desc": "Fedi d'argento a intrecci elfici: quella di lei a V con cinque cristalli.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     5,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "G57",
    "cat": "coppia/Fedine",
    "name": "Órë",

@@ -23,10 +23,10 @@
 ## Stanze (cat → stanza)
 - **Per lui** · Monili: Anelli, Collane, Bracciali, Cerchi (diademi maschili: linee dritte, metallo brunito, niente pendenti; primo: Aran G54) · Tessuti: Mantelli, Completi, Toghe, Tuniche, Cerimonia, Accessori (cinture e borse di stoffa).
 - **Per lei** · Monili: Diademi, Collane, Orecchini, Bracciali · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia.
-- **Per la coppia** · Monili: Fedi (avorio: Veru G55, Melmë G56), Fedine (verde: Órë G57); prezzi «la coppia». Colonna anche nel menu, indirizzi #coppia, #coppia-fedi, #coppia-fedine.
+- **Per la coppia** · Monili: Fedi (avorio: Veru G55, Melmë G56, Vanimelda G58 in argento), Fedine (verde: Órë G57); prezzi «la coppia». Colonna anche nel menu, indirizzi #coppia, #coppia-fedi, #coppia-fedine.
 - Le stanze vuote non compaiono. «Fermagli per lui» è stato tolto. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A104), G = monili (ultimo G57). A72 non esiste più.
+- Codici: A = tessuti (ultimo A104), G = monili (ultimo G58). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
