@@ -54,7 +54,7 @@
 - Se GitHub Pages fallisce la pubblicazione (errore «Failed to get ID Token»), basta un nuovo commit/push.
 
 ## Certificati
-- **Certificato nuziale** (uno solo per gli sposi, per fedi e abiti nuziali): `python3 strumenti/certificato_nozze.py --numero N001 --sposi "Nome" "Nome" --codici G56 A41 A69 --anno XXV --mese 6 --giorno 21 [--luogo "…"] [--testimoni "…" "…"] [--dedica "…" --firma "…"]`. Pergamena avorio e oro, due stelle intrecciate, frase «Elen síla lúmenn' omentielvo». Esempio: `certificati/esempio-nozze.html` (proposta, in attesa di approvazione di Erika).
+- Niente certificati nuziali: la bottega non celebra nozze, rilascia solo certificati di proprietà. Idea al loro posto: una **confezione nuziale** per fedi e abiti da sposi (da fare).
 - `python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" --anno XXV --mese 2 --giorno 10 [--confezione] [--dedica "…" --firma "…"]` (legge `strumenti/pezzi.json`, che si rigenera con `node strumenti/estrai_pezzi.js`). Registro in `certificati/registro.md`. I certificati li gestisce Erika tramite Claude.
 
 ## Da fare, quando lo chiede lei
