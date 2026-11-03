@@ -724,6 +724,104 @@
    ]
   },
   {
+   "code": "A88",
+   "cat": "lei/Accessori",
+   "name": "Rómen",
+   "gloss": "l'oriente",
+   "photo": true,
+   "fabric": "Tela di cotone blu notte, manici e tracolla in tinta",
+   "colorName": "Blu notte",
+   "trimName": "banda di stelle ricamate d'oro, fibbie di rame brunito",
+   "garment": "dress",
+   "color": "#1d2a40",
+   "trim": "#e4c47c",
+   "price": 800,
+   "desc": "Borsa da viaggio blu notte con una banda di stelle d'oro.",
+   "cls": "Tessuti · Borsa a sacchetta con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
+  },
+  {
+   "code": "A90",
+   "cat": "lei/Accessori",
+   "name": "Nenya",
+   "gloss": "dell'acqua",
+   "photo": true,
+   "fabric": "Tela di cotone verde salvia, manici e tracolla in tinta",
+   "colorName": "Verde salvia",
+   "trimName": "banda di stelle ricamate d'oro, fibbie di rame brunito",
+   "garment": "dress",
+   "color": "#6b7a5a",
+   "trim": "#e4c47c",
+   "price": 800,
+   "desc": "Borsa da viaggio verde salvia con una banda di stelle d'oro.",
+   "cls": "Tessuti · Borsa a sacchetta con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
+  },
+  {
+   "code": "A89",
+   "cat": "lei/Accessori",
+   "name": "Vanta",
+   "gloss": "il cammino",
+   "photo": true,
+   "fabric": "Tela di cotone color sabbia e cotone bruno, manici e tracolla bruni",
+   "colorName": "Sabbia e bruno",
+   "trimName": "stella ricamata sulla patta, fibbie e borchie di rame",
+   "garment": "dress",
+   "color": "#b9a184",
+   "trim": "#8a6a4a",
+   "price": 750,
+   "desc": "Borsa da viandante sabbia e bruna, con la stella sulla patta.",
+   "cls": "Tessuti · Borsa a sacchetta con tracolla",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
+  },
+  {
    "code": "A41",
    "cat": "lei/Cerimonia",
    "name": "Elenindis",
@@ -2796,6 +2894,40 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A87",
+   "cat": "lui/Accessori",
+   "name": "Hísta",
+   "gloss": "grigio",
+   "photo": true,
+   "fabric": "Tela di cotone grigio antracite, manico e cinghie in tinta",
+   "colorName": "Grigio antracite",
+   "trimName": "linee e stelle ricamate d'argento, fibbie di rame brunito",
+   "garment": "cloak",
+   "color": "#3b3c40",
+   "trim": "#dfe6f4",
+   "price": 800,
+   "desc": "Borsa da studioso grigio antracite, ricami d'argento, fibbie di rame.",
+   "cls": "Tessuti · Borsa a sacchetta con manico",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
@@ -2875,6 +3007,19 @@
     2,
     "50%",
     "35%"
+   ]
+  },
+  "lei/Accessori": {
+   "kind": "abiti",
+   "who": "lei",
+   "name": "Accessori",
+   "slug": "lei-accessori",
+   "desc": "borse di stoffa da viaggio",
+   "show": "Rómen",
+   "crop": [
+    2,
+    "50%",
+    "55%"
    ]
   },
   "lei/Cerimonia": {

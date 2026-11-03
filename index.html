@@ -696,6 +696,10 @@ details.recipe ul{justify-content:center}
 <script>
 /* Foto vere dei pezzi, per codice */
 const PHOTOS = {
+  A87:"img/A87.jpg?v=20261103112333",
+  A88:"img/A88.jpg?v=20261103112333",
+  A89:"img/A89.jpg?v=20261103112333",
+  A90:"img/A90.jpg?v=20261103112333",
   A86:"img/A86.jpg?v=20261103111406",
   A85:"img/A85.jpg?v=20261102160512",
   A84:"img/A84.jpg?v=20261102150129",
@@ -858,6 +862,12 @@ const ITEMS = [
     cls:"Tessuti · Completo con fascia, taglia media", recipe:[[3,"Cotone"],[1,"Colori"],[1,"Argento"]]},
   {code:"A79", cat:"lei/Completi", name:"Ailin", gloss:"il lago", photo:true, fabric:"Sopravveste di cotone color oro, camicia e pantaloni ampi di cotone verde petrolio, fascia verde petrolio", colorName:"Verde petrolio e oro", trimName:"volute ricamate verde petrolio, polsini ricamati, colletto alto", garment:"cloak", color:"#1f4f5a", trim:"#e4c47c", price:2400, desc:"Sopravveste dorata a volute, camicia e pantaloni ampi verde petrolio.", excl:"Stivali non inclusi",
     cls:"Tessuti · Completo con fascia, taglia media", recipe:[[3,"Cotone"],[1,"Colori"],[1,"Oro"]]},
+  {code:"A88", cat:"lei/Accessori", name:"Rómen", gloss:"l'oriente", photo:true, fabric:"Tela di cotone blu notte, manici e tracolla in tinta", colorName:"Blu notte", trimName:"banda di stelle ricamate d'oro, fibbie di rame brunito", garment:"dress", color:"#1d2a40", trim:"#e4c47c", price:800, desc:"Borsa da viaggio blu notte con una banda di stelle d'oro.",
+    cls:"Tessuti · Borsa a sacchetta con tracolla", recipe:[[2,"Cotone"],[1,"Colori"],[1,"Oro"],[1,"Rame"]]},
+  {code:"A90", cat:"lei/Accessori", name:"Nenya", gloss:"dell'acqua", photo:true, fabric:"Tela di cotone verde salvia, manici e tracolla in tinta", colorName:"Verde salvia", trimName:"banda di stelle ricamate d'oro, fibbie di rame brunito", garment:"dress", color:"#6b7a5a", trim:"#e4c47c", price:800, desc:"Borsa da viaggio verde salvia con una banda di stelle d'oro.",
+    cls:"Tessuti · Borsa a sacchetta con tracolla", recipe:[[2,"Cotone"],[1,"Colori"],[1,"Oro"],[1,"Rame"]]},
+  {code:"A89", cat:"lei/Accessori", name:"Vanta", gloss:"il cammino", photo:true, fabric:"Tela di cotone color sabbia e cotone bruno, manici e tracolla bruni", colorName:"Sabbia e bruno", trimName:"stella ricamata sulla patta, fibbie e borchie di rame", garment:"dress", color:"#b9a184", trim:"#8a6a4a", price:750, desc:"Borsa da viandante sabbia e bruna, con la stella sulla patta.",
+    cls:"Tessuti · Borsa a sacchetta con tracolla", recipe:[[2,"Cotone"],[1,"Colori"],[1,"Rame"]]},
   {code:"A41", cat:"lei/Cerimonia", name:"Elenindis", gloss:"sposa delle stelle", photo:true, fabric:"Velo di cotone avorio sfumato nel blu notte, con velo lungo", colorName:"Avorio e blu notte", trimName:"stelle e raggi ricamati d'argento, stella d'argento in vita", garment:"dress", color:"#e9e3dc", trim:"#dfe6f4", price:5200, desc:"Veli dall'avorio al blu notte, stelle d'argento e velo lungo.", tema:"stelle", excl:"Diadema, orecchini e bracciale non inclusi",
     cls:"Tessuti · Abito da sposa con velo e strascico", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Argento"]]},
   {code:"A71", cat:"lei/Cerimonia", name:"Elerrína", gloss:"incoronata di stelle", photo:true, fabric:"Velo di cotone blu notte, maniche lunghe a velo", colorName:"Blu notte e argento", trimName:"raggi e stelle ricamati d'argento", garment:"dress", color:"#1d2238", trim:"#dfe6f4", price:4900, desc:"Veli blu notte a raggi e stelle d'argento, maniche lunghe.", tema:"stelle", excl:"Orecchini e fermagli non inclusi",
@@ -992,6 +1002,8 @@ const ITEMS = [
     cls:"Tessuti · Fascia", recipe:[[1,"Cotone"],[1,"Colori"],[1,"Argento"]]},
   {code:"A86", cat:"lui/Accessori", name:"Lendë", gloss:"il viaggio", photo:true, fabric:"Tela di cotone nero pesante, tracolla di cotone intrecciato", colorName:"Nero", trimName:"stella a otto raggi impressa sulla patta, fibbie di rame brunito", garment:"cloak", color:"#141214", trim:"#b0894e", price:700, desc:"Borsa a tracolla di tela nera, stella sulla patta, fibbie di rame.",
     cls:"Tessuti · Borsa a sacchetta con tracolla", recipe:[[2,"Cotone"],[1,"Colori"],[1,"Rame"]]},
+  {code:"A87", cat:"lui/Accessori", name:"Hísta", gloss:"grigio", photo:true, fabric:"Tela di cotone grigio antracite, manico e cinghie in tinta", colorName:"Grigio antracite", trimName:"linee e stelle ricamate d'argento, fibbie di rame brunito", garment:"cloak", color:"#3b3c40", trim:"#dfe6f4", price:800, desc:"Borsa da studioso grigio antracite, ricami d'argento, fibbie di rame.",
+    cls:"Tessuti · Borsa a sacchetta con manico", recipe:[[2,"Cotone"],[1,"Colori"],[1,"Argento"],[1,"Rame"]]},
 ];
 const CAT_INFO = {
   /* kind: oreficeria o sartoria · who: per chi · show: il pezzo mostrato nella stanza · crop: [zoom, x, y] della foto nel banner */
@@ -1001,6 +1013,7 @@ const CAT_INFO = {
   "lei/Mantelli":{kind:"abiti", who:"lei", name:"Mantelli", slug:"lei-mantelli", desc:"mantelli e mantelline", show:"Kemen", crop:[2.2,"50%","45%"]},
   "lei/Abiti":{kind:"abiti", who:"lei", name:"Abiti", slug:"lei-abiti", desc:"abiti lunghi per le sale e le feste", show:"Tindómë", crop:[2.0,"15%","40%"]},
   "lei/Completi":{kind:"abiti", who:"lei", name:"Completi", slug:"lei-completi", desc:"camicie e pantaloni, per ogni giorno", show:"Luinil", crop:[2.0,"50%","35%"]},
+  "lei/Accessori":{kind:"abiti", who:"lei", name:"Accessori", slug:"lei-accessori", desc:"borse di stoffa da viaggio", show:"Rómen", crop:[2.0,"50%","55%"]},
   "lei/Cerimonia":{kind:"abiti", who:"lei", name:"Cerimonia", slug:"lei-cerimonia", desc:"abiti da sposa e da cerimonia, a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Elenindis", crop:[2.0,"15%","40%"]},
   "lui/Mantelli":{kind:"abiti", who:"lui", name:"Mantelli", slug:"lui-mantelli", desc:"mantelli con cappuccio, anche da inverno", show:"Calma", crop:[2.2,"50%","82%"]},
   "lui/Completi":{kind:"abiti", who:"lui", name:"Completi", slug:"lui-completi", desc:"vesti da cerimonia, giacche, gilet e camicie", show:"Ornë", crop:[2.2,"68%","45%"]},
@@ -1018,7 +1031,7 @@ const WHOS = {
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
   coppia:{label:"per la coppia", head:"Per la coppia"}
 };
-const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"gioielli", diademi:"gioielli", "lei-anelli":"lei", "lei-collane":"lei", "lei-orecchini":"lei", "lei-bracciali":"lei", "lei-diademi":"lei", "lei-accessori":"lei", coppie:"gioielli", coppia:"gioielli"};
+const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"gioielli", diademi:"gioielli", "lei-anelli":"lei", "lei-collane":"lei", "lei-orecchini":"lei", "lei-bracciali":"lei", "lei-diademi":"lei", coppie:"gioielli", coppia:"gioielli"};
 const CATS = Object.keys(CAT_INFO);
 const kindOf = c => CAT_INFO[c].kind, whoOf = c => CAT_INFO[c].who;
 const slug = c => CAT_INFO[c].slug;
