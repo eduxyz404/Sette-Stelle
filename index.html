@@ -359,6 +359,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .window.photo::after{z-index:2}
 .window.photo img.ph{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transition:transform .8s ease}
 .item .window.photo{cursor:zoom-in}
+.worn-btn{position:absolute;z-index:3;left:50%;bottom:12px;transform:translateX(-50%);padding:5px 12px;cursor:pointer;white-space:nowrap;font:inherit;font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.12em;color:var(--gold-bright);background:rgba(8,12,30,.72);border:1px solid var(--gold);border-radius:999px;backdrop-filter:blur(2px)}
+.worn-btn:hover,.worn-btn[aria-pressed="true"]{background:rgba(30,24,8,.8);color:#fff3cf}
+.worn-btn:focus-visible{outline:2px solid var(--silver);outline-offset:2px}
 .item:hover .window.photo img.ph{transform:scale(1.03)}
 .window.photo .badge{z-index:3}
 .info .excl{margin:0;font-size:.95rem;color:var(--gold);font-style:italic}
@@ -833,6 +836,9 @@ const PHOTOS = {
   A32:"img/A32.jpg?v=202611010016",
   A33:"img/A33.jpg?v=20261102191645"
 };
+/* Seconda foto «indossato» (facoltativa): CODICE:"img/CODICE-indossato.jpg?v=…" */
+const WORN = {
+};
 const NICHE = `<span class="cushion"></span><span class="spark s1">✦</span><span class="spark s2">✦</span>`;
 const ITEMS = [
   /* recipe: [quantità, ingrediente] · cls: classe merceologica e prodotto del ricettario
@@ -1298,6 +1304,7 @@ function garmentSVG(it){
 const isCloth = it => kindOf(it.cat) === "abiti";
 const visualFor = it => it.photo ? `<img class="ph" src="${PHOTOS[it.code]}" alt="${it.name}">` : isCloth(it) ? SPARKS + garmentSVG(it) : NICHE + gemsFor(it);
 const winClass = it => "window" + (it.photo ? " photo" : "");
+const wornBtn = it => WORN[it.code] ? `<button type="button" class="worn-btn" data-worn="${it.code}" aria-pressed="false" aria-label="Mostra ${it.name} indossato">✦ indossato</button>` : "";
 
 const APEX = `<svg class="apex" viewBox="0 0 120 120" aria-hidden="true">${star8("currentColor","var(--gold)",false)}</svg>`;
 const COIN = `<svg class="coin" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="currentColor"/><path d="M8 3.6 9 7 12.4 8 9 9 8 12.4 7 9 3.6 8 7 7z" fill="var(--surface)"/></svg>`;
@@ -1330,7 +1337,7 @@ function card(it){
   const c = it.cat, who = whoOf(c);
   return `<article class="item">
       ${APEX}
-      <div class="${winClass(it)}"${it.photo ? ` role="button" tabindex="0" data-zoom="${it.code}" aria-label="Ingrandisci ${it.name}"` : ""}>${it.badge?`<span class="badge">${it.badge}</span>`:""}${visualFor(it)}</div>
+      <div class="${winClass(it)}"${it.photo ? ` role="button" tabindex="0" data-zoom="${it.code}" aria-label="Ingrandisci ${it.name}"` : ""}>${it.badge?`<span class="badge">${it.badge}</span>`:""}${visualFor(it)}${wornBtn(it)}</div>
       <div class="info">
         <div class="cat">${nameOf(c)}${who === "coppia" ? "" : " · per " + who}</div>
         <h3>${it.name}</h3>
@@ -1435,11 +1442,20 @@ function markMenu(view){
   document.querySelectorAll("[data-quick]").forEach(a => a.setAttribute("aria-current", a.dataset.quick === quick ? "true" : "false"));
 }
 
+/* Foto «indossato»: il pulsante scambia la foto del pezzo con quella indossata (senza aprire l'ingrandimento) */
+document.addEventListener("click", e => {
+  const b = e.target.closest(".worn-btn"); if(!b) return;
+  e.stopPropagation(); e.preventDefault();
+  const on = b.getAttribute("aria-pressed") !== "true", img = b.parentElement.querySelector("img.ph");
+  img.src = on ? WORN[b.dataset.worn] : PHOTOS[b.dataset.worn];
+  b.setAttribute("aria-pressed", on); b.textContent = on ? "✦ il gioiello" : "✦ indossato";
+}, true);
+
 /* Ingrandimento delle foto vere */
 const zoom = document.getElementById("zoom"), zoomImg = document.getElementById("zoom-img");
-function openZoom(code){ const it = ITEMS.find(i => i.code === code); zoomImg.src = PHOTOS[code]; zoomImg.alt = it.name; zoom.hidden = false; document.getElementById("zoom-close").focus(); }
-document.addEventListener("click", e => { const w = e.target.closest("[data-zoom]"); if(w) openZoom(w.dataset.zoom); else if(e.target === zoom || e.target.id === "zoom-close") zoom.hidden = true; });
-document.addEventListener("keydown", e => { const w = e.target.closest && e.target.closest("[data-zoom]"); if(w && (e.key === "Enter" || e.key === " ")){ e.preventDefault(); openZoom(w.dataset.zoom); } if(e.key === "Escape") zoom.hidden = true; });
+function openZoom(code, el){ const it = ITEMS.find(i => i.code === code), cur = el && el.querySelector("img.ph"); zoomImg.src = cur ? cur.src : PHOTOS[code]; zoomImg.alt = it.name; zoom.hidden = false; document.getElementById("zoom-close").focus(); }
+document.addEventListener("click", e => { const w = e.target.closest("[data-zoom]"); if(w) openZoom(w.dataset.zoom, w); else if(e.target === zoom || e.target.id === "zoom-close") zoom.hidden = true; });
+document.addEventListener("keydown", e => { const w = e.target.closest && e.target.closest("[data-zoom]"); if(w && !e.target.closest(".worn-btn") && (e.key === "Enter" || e.key === " ")){ e.preventDefault(); openZoom(w.dataset.zoom, w); } if(e.key === "Escape") zoom.hidden = true; });
 
 document.addEventListener("contextmenu", e => { if(e.target.tagName === "IMG") e.preventDefault(); });
 document.addEventListener("dragstart", e => { if(e.target.tagName === "IMG") e.preventDefault(); });

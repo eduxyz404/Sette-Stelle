@@ -29,6 +29,10 @@
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
+## Foto «indossato»
+- Facoltativa, per ogni pezzo: salvare l'originale in `originali/CODICE-indossato.jpg`, `python3 strumenti/rifai_foto.py CODICE-indossato`, poi aggiungere `CODICE:"img/CODICE-indossato.jpg?v=…"` in `WORN` (subito sotto `PHOTOS`) dentro `index.html`. Nella scheda compare il pulsante «✦ indossato» che scambia la foto; l'ingrandimento mostra quella che si sta guardando.
+- Attenzione: l'anteprima claude.ai ora supera i 16 MB (16,7): va ridotta (foto più piccole o qualità più bassa in `anteprima.py`) prima di ripubblicarla.
+
 ## Parure
 - Oggetto `PARURE` in `index.html` (chiave → nome, descrizione, per chi). I pezzi con `parure:"chiave"` mostrano «✦ fa parte della Parure … · vedi tutti i pezzi» che porta a `#parure-chiave` (vista con i pezzi insieme e il prezzo totale; campi facoltativi `di:` per la frase «fa parte dei …» e `tipo:"collezione"` per l'etichetta; con `prezzo:` nella parure compare lo sconto, Silmë 5400 invece di 6000).
 
