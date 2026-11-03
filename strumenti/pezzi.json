@@ -1135,6 +1135,36 @@
    ]
   },
   {
+   "code": "G68",
+   "cat": "coppia/Fedi",
+   "name": "Anga",
+   "gloss": "il ferro",
+   "photo": true,
+   "metal": "Ferro brunito con inserto d'oro",
+   "gem": "Nove cristalli limpidi nella fede di lei",
+   "cut": "tondi, in fila nell'inserto d'oro",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 2000,
+   "unit": "la coppia",
+   "desc": "Fedi di ferro brunito con inserto d'oro; quella di lei con nove cristalli.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Ferro"
+    ],
+    [
+     1,
+     "Oro"
+    ],
+    [
+     9,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "G57",
    "cat": "coppia/Fedine",
    "name": "Órë",
@@ -4168,7 +4198,7 @@
    "who": "coppia",
    "name": "Fedi",
    "slug": "coppia-fedi",
-   "desc": "fedi nuziali d'oro e d'argento per gli sposi",
+   "desc": "fedi nuziali d'oro, d'argento e di ferro per gli sposi",
    "show": "Veru",
    "crop": [
     1.6,
