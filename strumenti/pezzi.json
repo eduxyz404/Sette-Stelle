@@ -1109,6 +1109,32 @@
    ]
   },
   {
+   "code": "G66",
+   "cat": "coppia/Fedi",
+   "name": "Elenya",
+   "gloss": "delle stelle",
+   "photo": true,
+   "metal": "Argento lucido",
+   "gem": "Tre cristalli limpidi nella fede di lei",
+   "cut": "tondi, incassati nel metallo",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1300,
+   "unit": "la coppia",
+   "desc": "Fedi classiche d'argento lucido; quella di lei con tre cristalli.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     3,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "G57",
    "cat": "coppia/Fedine",
    "name": "Órë",
