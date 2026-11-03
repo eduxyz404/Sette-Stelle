@@ -3292,6 +3292,62 @@
      "Rame"
     ]
    ]
+  },
+  {
+   "code": "A103",
+   "cat": "lui/Accessori",
+   "name": "Harma",
+   "gloss": "il tesoro",
+   "photo": true,
+   "fabric": "Tela di cotone marrone, bordi di cotone bruno scuro, due passanti per la cintura",
+   "colorName": "Marrone",
+   "trimName": "patta con cinturino e fibbia di rame brunito",
+   "garment": "cloak",
+   "color": "#7a4a2a",
+   "trim": "#b0894e",
+   "price": 450,
+   "desc": "Scarsella da cintura marrone, patta con fibbia di rame.",
+   "cls": "Tessuti · Scarsella da cintura",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Rame"
+    ]
+   ]
+  },
+  {
+   "code": "A104",
+   "cat": "lui/Accessori",
+   "name": "Telpë",
+   "gloss": "l'argento",
+   "photo": true,
+   "fabric": "Tela di cotone nero, due passanti per la cintura",
+   "colorName": "Nero",
+   "trimName": "chiusura a coulisse con cordone di cotone intrecciato",
+   "garment": "cloak",
+   "color": "#141214",
+   "trim": "#3a3a3d",
+   "price": 400,
+   "desc": "Borsello da cintura nero, chiuso da un cordone intrecciato.",
+   "cls": "Tessuti · Scarsella da cintura",
+   "recipe": [
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
