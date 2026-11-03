@@ -77,6 +77,29 @@ dd{margin:0;font-size:1.08rem}
 .sign span{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .note{margin:0;padding:14px 20px 22px;text-align:center;font-style:italic;color:var(--gold-b)}
 
+/* Versione avorio per fedi e abiti nuziali: pergamena chiara con fregi d'oro */
+.cert.avorio{--paper:#f7f1e4;--paper-2:#efe5cf;--fg:#3b2a10;--muted:#7d6a4c;--gold:#b8892f;--gold-b:#9a6f1e;--silver:#8d95a6;
+  --gild:linear-gradient(180deg,#d9b468 0%,#b8892f 55%,#7a5518 100%);color:var(--fg);
+  background:radial-gradient(ellipse 90% 60% at 50% 0%,#fffaf0,var(--paper) 60%,var(--paper-2));border-color:var(--gold);
+  box-shadow:inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(184,137,47,.45),0 40px 80px -30px rgba(0,0,0,.95),0 0 60px -20px rgba(230,194,122,.35)}
+.avorio .nozze-head::before{background:url(../img/confezione-nozze.jpg) 50% 20%/cover}
+.avorio .head::after{background:linear-gradient(180deg,rgba(247,241,228,0) 0%,rgba(247,241,228,0) 50%,rgba(247,241,228,.85) 86%,var(--paper) 100%)}
+.avorio .title{border-bottom-color:rgba(184,137,47,.45)}
+.avorio h1{filter:none}
+.avorio .pill{background:rgba(255,250,240,.8);border-color:rgba(184,137,47,.7)}
+.avorio .niche{border-color:rgba(184,137,47,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(184,137,47,.35),0 30px 50px -25px rgba(80,50,10,.45)}
+.avorio .niche figcaption{background:var(--paper);border-color:rgba(184,137,47,.6)}
+.avorio .who{border-bottom-color:rgba(184,137,47,.35)}
+.avorio .name{color:var(--fg)}
+.avorio .item h2{color:var(--fg)}
+.avorio .desc{color:#5a4628}
+.avorio .foot{background:rgba(255,255,255,.35);border-top-color:rgba(184,137,47,.35)}
+.avorio .recipe li{background:#fffaf0;border-color:rgba(184,137,47,.45)}
+.avorio .sw{box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.avorio .box img{border-color:rgba(184,137,47,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(184,137,47,.35),0 24px 40px -20px rgba(80,50,10,.45)}
+.avorio .seal{filter:drop-shadow(0 8px 12px rgba(80,50,10,.45))}
+.avorio .note{color:var(--gold-b)}
+
 /* Certificato di dono */
 .gift-head::before{background-image:url(../img/confezione.jpg) !important;background-position:50% 45% !important}
 .sub{margin:-4px 0 12px;font-family:"Cinzel",Georgia,serif;font-size:.86rem;letter-spacing:.24em;text-transform:uppercase;color:var(--fg)}
@@ -107,9 +130,9 @@ dd{margin:0;font-size:1.08rem}
 </style>
 </head>
 <body>
-<main class="cert">
+<main class="cert avorio">
   <svg class="corner tl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner tr" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner bl" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg><svg class="corner br" viewBox="0 0 80 80" aria-hidden="true"><path d="M4 4 H70 M4 4 V70" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10 10 H46 M10 10 V46" stroke="currentColor" stroke-width=".9" fill="none" opacity=".7"/><path d="M10 10 C30 12 40 22 38 34 C36 44 24 44 24 36 C24 30 31 29 32 34" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M10 10 C12 30 22 40 34 38" stroke="currentColor" stroke-width="1.1" fill="none" opacity=".8"/><path d="M54 4 C58 9 64 9 68 4 C64 -1 58 -1 54 4Z M4 54 C9 58 9 64 4 68 C-1 64 -1 58 4 54Z" fill="currentColor" opacity=".8"/><path d="M10 2 L12.5 7.5 L18 10 L12.5 12.5 L10 18 L7.5 12.5 L2 10 L7.5 7.5Z" fill="currentColor"/></svg>
-  <div class="head" role="img" aria-label="La busta della Bottega delle Sette Stelle, chiusa da un nastro di velluto blu e dal sigillo d'oro con la stella"></div>
+  <div class="head nozze-head" role="img" aria-label="Lo scrigno degli sposi della Bottega delle Sette Stelle, avorio con stelle d'oro"></div>
   <header class="title">
     <h1>Certificato di Proprietà</h1>
     <span class="pill">esempio</span>
@@ -118,20 +141,20 @@ dd{margin:0;font-size:1.08rem}
 
   <section class="body">
     <figure class="niche photo">
-      <img src="../img/G56.jpg" alt="Melmë, fedi per la coppia">
+      <img src="../img/G56.jpg" alt="Melmë, fedi · unioni">
       <figcaption>Cod. G56</figcaption>
     </figure>
     <div>
       <div class="who">
         <span class="lbl">Intestato a</span>
-        <span class="name">Nome del personaggio</span>
+        <span class="name">Nome e Nome</span>
         
         <span class="date">Anno XXV · Mese 6° · Giorno 21°</span>
       </div>
       <div class="item">
         <h2>Melmë</h2>
         <p class="gl">«l&#x27;amore»</p>
-        <span class="cat">Fedi per la coppia</span>
+        <span class="cat">Fedi · unioni</span>
         <dl><div><dt>Metallo</dt><dd>Oro</dd></div><div><dt>Pietra</dt><dd>Tre cristalli limpidi nella fede di lei, taglio a punta, tra intrecci a V</dd></div></dl>
         <p class="desc">Fedi d&#x27;oro a intrecci elfici: quella di lei a V con tre cristalli.</p>
         

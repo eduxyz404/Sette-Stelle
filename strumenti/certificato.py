@@ -70,7 +70,7 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
         confezione = True  # la confezione degli sposi va in ricetta come quella normale
     if dono:
         confezione = True  # il dono si consegna sempre nella confezione della bottega, che quindi va in ricetta
-    per = {'lei': 'per lei', 'lui': 'per lui', 'coppia': 'per la coppia'}[info['who']]
+    per = {'lei': 'per lei', 'lui': 'per lui', 'coppia': '· unioni'}[info['who']]
     abito = 'fabric' in pezzo
     if abito:
         dettagli = [("Tessuto", pezzo['fabric']), ("Colore", pezzo['colorName']), ("Ricami", pezzo['trimName'])]
@@ -121,6 +121,8 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
         head = '<div class="head" role="img" aria-label="La busta della Bottega delle Sette Stelle, chiusa da un nastro di velluto blu e dal sigillo d\'oro con la stella"></div>'
         titolo_h1 = '<h1>Certificato di Proprietà</h1>'
 
+    if nozze and not dono:
+        head = '<div class="head nozze-head" role="img" aria-label="Lo scrigno degli sposi della Bottega delle Sette Stelle, avorio con stelle d\'oro"></div>'
     corners = "".join(f'<svg class="corner {k}" viewBox="0 0 80 80" aria-hidden="true">{CORNER}</svg>' for k in ("tl", "tr", "bl", "br"))
     return f"""<!doctype html>
 <html lang="it">
@@ -201,6 +203,29 @@ dd{{margin:0;font-size:1.08rem}}
 .sign span{{font-family:"Cinzel",Georgia,serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}}
 .note{{margin:0;padding:14px 20px 22px;text-align:center;font-style:italic;color:var(--gold-b)}}
 
+/* Versione avorio per fedi e abiti nuziali: pergamena chiara con fregi d'oro */
+.cert.avorio{{--paper:#f7f1e4;--paper-2:#efe5cf;--fg:#3b2a10;--muted:#7d6a4c;--gold:#b8892f;--gold-b:#9a6f1e;--silver:#8d95a6;
+  --gild:linear-gradient(180deg,#d9b468 0%,#b8892f 55%,#7a5518 100%);color:var(--fg);
+  background:radial-gradient(ellipse 90% 60% at 50% 0%,#fffaf0,var(--paper) 60%,var(--paper-2));border-color:var(--gold);
+  box-shadow:inset 0 0 0 6px var(--paper),inset 0 0 0 7px rgba(184,137,47,.45),0 40px 80px -30px rgba(0,0,0,.95),0 0 60px -20px rgba(230,194,122,.35)}}
+.avorio .nozze-head::before{{background:url(../img/confezione-nozze.jpg) 50% 20%/cover}}
+.avorio .head::after{{background:linear-gradient(180deg,rgba(247,241,228,0) 0%,rgba(247,241,228,0) 50%,rgba(247,241,228,.85) 86%,var(--paper) 100%)}}
+.avorio .title{{border-bottom-color:rgba(184,137,47,.45)}}
+.avorio h1{{filter:none}}
+.avorio .pill{{background:rgba(255,250,240,.8);border-color:rgba(184,137,47,.7)}}
+.avorio .niche{{border-color:rgba(184,137,47,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(184,137,47,.35),0 30px 50px -25px rgba(80,50,10,.45)}}
+.avorio .niche figcaption{{background:var(--paper);border-color:rgba(184,137,47,.6)}}
+.avorio .who{{border-bottom-color:rgba(184,137,47,.35)}}
+.avorio .name{{color:var(--fg)}}
+.avorio .item h2{{color:var(--fg)}}
+.avorio .desc{{color:#5a4628}}
+.avorio .foot{{background:rgba(255,255,255,.35);border-top-color:rgba(184,137,47,.35)}}
+.avorio .recipe li{{background:#fffaf0;border-color:rgba(184,137,47,.45)}}
+.avorio .sw{{box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}}
+.avorio .box img{{border-color:rgba(184,137,47,.6);box-shadow:0 0 0 5px var(--paper),0 0 0 6px rgba(184,137,47,.35),0 24px 40px -20px rgba(80,50,10,.45)}}
+.avorio .seal{{filter:drop-shadow(0 8px 12px rgba(80,50,10,.45))}}
+.avorio .note{{color:var(--gold-b)}}
+
 /* Certificato di dono */
 .gift-head::before{{background-image:url(../img/confezione.jpg) !important;background-position:50% 45% !important}}
 .sub{{margin:-4px 0 12px;font-family:"Cinzel",Georgia,serif;font-size:.86rem;letter-spacing:.24em;text-transform:uppercase;color:var(--fg)}}
@@ -231,7 +256,7 @@ dd{{margin:0;font-size:1.08rem}}
 </style>
 </head>
 <body>
-<main class="cert">
+<main class="cert{' avorio' if nozze else ''}">
   {corners}
   {head}
   <header class="title">

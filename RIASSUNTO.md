@@ -54,7 +54,7 @@
 - Se GitHub Pages fallisce la pubblicazione (errore «Failed to get ID Token»), basta un nuovo commit/push.
 
 ## Certificati
-- Niente certificati nuziali: la bottega non celebra nozze, rilascia solo certificati di proprietà. Al loro posto c'è la **confezione degli sposi** (`img/confezione-nozze.jpg`): opzione `--nozze` di `certificato.py` (mette 1× Confezione in ricetta e mostra lo scrigno avorio «Agli Sposi»). Esempio: `certificati/esempio-sposi.html`.
+- Niente certificati nuziali: la bottega non celebra nozze, rilascia solo certificati di proprietà. Al loro posto c'è la **confezione degli sposi** (`img/confezione-nozze.jpg`): opzione `--nozze` di `certificato.py` (mette 1× Confezione in ricetta e mostra lo scrigno avorio «Agli Sposi»). Con --nozze il certificato è in versione avorio (colori chiari) con lo scrigno degli sposi in testa. Esempio: `certificati/esempio-sposi.html`. Nel sito la sezione Coppia ha l'etichetta «unioni».
 - `python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" --anno XXV --mese 2 --giorno 10 [--confezione] [--dedica "…" --firma "…"]` (legge `strumenti/pezzi.json`, che si rigenera con `node strumenti/estrai_pezzi.js`). Registro in `certificati/registro.md`. I certificati li gestisce Erika tramite Claude.
 
 ## Da fare, quando lo chiede lei
