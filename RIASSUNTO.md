@@ -52,6 +52,7 @@
 
 ## Effetti del sito
 - Quando si mette un pezzo nello scrigno parte una **stella cadente** con scia di polvere di stelle dal pulsante allo scrigno (funzione `stellaCadente`; disattivata con «riduci movimento»).
+- **Scrigno**: oltre ai pezzi chiede nome in gioco, confezione (nessuna/bottega/sposi), dedica sì/no (con testo e firma) e altre note; tutto finisce nel testo copiato (`noteText`) e resta salvato nel browser di chi visita.
 - Pulsante dello **scrigno** (in basso a destra): due scie di stella che girano intorno **solo a scrigno vuoto** e per ~2,6 s quando si aggiunge un pezzo (classe `gira`); con pezzi dentro restano ferme e invisibili, con un alone dorato; etichetta «Lo scrigno — metti da parte i pezzi che ti piacciono e copia l'ordine» che sparisce dopo il primo uso.
 - **Ingresso**: due scie di stella che percorrono la cornice dell'arco (mosse da JavaScript, non solo CSS: in Brave l'animazione CSS non partiva). La «polvere di stelle» sul titolo è stata tolta (3/11): il titolo resta fermo.
 - Icona della scheda: `img/icona-stella.svg` (stella senza cerchio).

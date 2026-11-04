@@ -480,6 +480,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .np-total span{font-family:"Cinzel",Georgia,serif;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .np-total b{display:flex;align-items:center;gap:6px;font-family:"Cinzel",Georgia,serif;font-size:1.15rem;color:var(--gold)}
 .np-field{display:flex;flex-direction:column;gap:4px}
+.np-scelte{margin:0;padding:0;border:0;gap:6px}
+.np-scelte legend{padding:0;margin-bottom:4px;font-family:"Cinzel",Georgia,serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.np-scelte label{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;font-size:1.02rem;cursor:pointer}
+.np-scelte label input{flex:none;width:18px;height:18px;margin:0;padding:0;accent-color:var(--gold)}
+.np-dedica{display:flex;flex-direction:column;gap:10px}
+.np-dedica[hidden]{display:none}
 .np-field span{font-family:"Cinzel",Georgia,serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .np-field input,.np-field textarea,.np-out{font:inherit;font-size:1.05rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;width:100%}
 .np-field input:focus,.np-field textarea:focus,.np-out:focus{outline:2px solid var(--silver);outline-offset:1px}
@@ -708,7 +714,21 @@ details.recipe ul{justify-content:center}
   <ul class="np-list" id="note-list"></ul>
   <p class="np-empty" id="note-empty">Lo scrigno è vuoto. Tocca «Metti nello scrigno» sotto un pezzo per aggiungerlo.</p>
   <div class="np-total" id="note-total"></div>
-  <label class="np-field" for="note-extra"><span>Note per il bottegaio</span><textarea id="note-extra" rows="3" placeholder="confezione, dedica, taglia, colori…"></textarea></label>
+  <label class="np-field" for="note-name"><span>Il tuo nome in gioco</span><input id="note-name" autocomplete="off" placeholder="a chi intestare il certificato"></label>
+  <fieldset class="np-field np-scelte"><legend>Confezione</legend>
+    <label><input type="radio" name="note-conf" value=""> Nessuna</label>
+    <label><input type="radio" name="note-conf" value="bottega"> Confezione della bottega</label>
+    <label><input type="radio" name="note-conf" value="sposi"> Confezione degli sposi (fedi e abiti nuziali)</label>
+  </fieldset>
+  <fieldset class="np-field np-scelte"><legend>Dedica sul certificato</legend>
+    <label><input type="radio" name="note-ded" value=""> No</label>
+    <label><input type="radio" name="note-ded" value="si"> Sì</label>
+  </fieldset>
+  <div class="np-dedica" id="note-dedica" hidden>
+    <label class="np-field" for="note-dtext"><span>Testo della dedica</span><textarea id="note-dtext" rows="2" placeholder="«Perché la luce delle stelle ti accompagni…»"></textarea></label>
+    <label class="np-field" for="note-dfirma"><span>Firma della dedica</span><input id="note-dfirma" autocomplete="off" placeholder="chi regala"></label>
+  </div>
+  <label class="np-field" for="note-extra"><span>Altre note</span><textarea id="note-extra" rows="2" placeholder="taglia, colori, consegna…"></textarea></label>
   <div class="np-actions"><button type="button" class="np-copy" id="note-copy">Copia l'elenco</button><button type="button" class="np-clear" id="note-clear">Svuota</button></div>
   <p class="np-msg" id="note-msg" role="status"></p>
   <textarea class="np-out" id="note-out" readonly hidden aria-label="Elenco da copiare"></textarea>
@@ -1767,7 +1787,7 @@ window.addEventListener("hashchange", route);
 
 /* Scrigno: i codici scelti restano nel browser di chi visita */
 const NOTE_KEY = "sette-stelle-taccuino";
-let note = { codes: [], name: "", extra: "" };
+let note = { codes: [], name: "", extra: "", conf: "", ded: "", dtext: "", dfirma: "" };
 try { const v = JSON.parse(localStorage.getItem(NOTE_KEY)); if(v && Array.isArray(v.codes)) note = Object.assign(note, v); } catch(e) {}
 note.codes = note.codes.filter(c => ITEMS.some(i => i.code === c));
 function inNote(code){ return note.codes.includes(code); }
@@ -1778,12 +1798,27 @@ let tipSeen = false; try { tipSeen = localStorage.getItem(TIP_KEY) === "1"; } ca
 function hideTip(){ tipSeen = true; fab.classList.add("tip-off"); try { localStorage.setItem(TIP_KEY, "1"); } catch(e) {} }
 const nExtra = document.getElementById("note-extra"), nMsg = document.getElementById("note-msg"), nOut = document.getElementById("note-out");
 nExtra.value = note.extra;
+const nName = document.getElementById("note-name"), nDed = document.getElementById("note-dedica"),
+      nDtext = document.getElementById("note-dtext"), nDfirma = document.getElementById("note-dfirma");
+nName.value = note.name; nDtext.value = note.dtext; nDfirma.value = note.dfirma;
+document.querySelector(`input[name=note-conf][value="${note.conf}"]`).checked = true;
+document.querySelector(`input[name=note-ded][value="${note.ded}"]`).checked = true;
+nDed.hidden = note.ded !== "si";
+nName.addEventListener("input", () => { note.name = nName.value; saveNote(); });
+nDtext.addEventListener("input", () => { note.dtext = nDtext.value; saveNote(); });
+nDfirma.addEventListener("input", () => { note.dfirma = nDfirma.value; saveNote(); });
+document.querySelectorAll("input[name=note-conf]").forEach(r => r.addEventListener("change", () => { note.conf = r.value; saveNote(); }));
+document.querySelectorAll("input[name=note-ded]").forEach(r => r.addEventListener("change", () => { note.ded = r.value; nDed.hidden = r.value !== "si"; saveNote(); if(r.value === "si") nDtext.focus(); }));
 function noteText(){
   const list = note.codes.map(c => ITEMS.find(i => i.code === c));
   const tot = list.reduce((n, it) => n + it.price, 0);
   return ["Ordine per la Bottega delle Sette Stelle (bottegai: Elrohir e Nériva / Madelyn)", "",
     ...list.map(it => `• ${it.code} · ${it.name} (${nameOf(it.cat)}${whoOf(it.cat) === "coppia" ? "" : " per " + whoOf(it.cat)}) · ${fmt(it.price)} monete`),
-    "", "Totale: " + fmt(tot) + " monete", note.extra ? "Note: " + note.extra : ""].filter((l, i, a) => l !== "" || (a[i-1] !== "" && i > 0)).join("\n").trim();
+    "", "Totale: " + fmt(tot) + " monete",
+    note.name ? "Intestato a: " + note.name : "",
+    "Confezione: " + ({ bottega: "della bottega", sposi: "degli sposi" }[note.conf] || "nessuna"),
+    "Dedica: " + (note.ded === "si" ? (note.dtext ? "«" + note.dtext + "»" + (note.dfirma ? " — " + note.dfirma : "") : "sì") : "no"),
+    note.extra ? "Note: " + note.extra : ""].filter((l, i, a) => l !== "" || (a[i-1] !== "" && i > 0)).join("\n").trim();
 }
 function renderNote(){
   const list = note.codes.map(c => ITEMS.find(i => i.code === c));
