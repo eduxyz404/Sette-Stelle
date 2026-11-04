@@ -1266,6 +1266,271 @@
    ]
   },
   {
+   "code": "G102",
+   "cat": "lei/Bracciali",
+   "name": "Lócë",
+   "gloss": "il serpente",
+   "photo": true,
+   "zoom": [
+    1.06,
+    50,
+    53
+   ],
+   "metal": "Oro inciso a scaglie",
+   "gem": "Cristallo rosso granato",
+   "cut": "ovale, nella testa del serpente",
+   "color": "#7a1430",
+   "shape": "cab",
+   "price": 1200,
+   "desc": "Serpente d'oro inciso a scaglie, aperto, con occhio di cristallo granato.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     1,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G103",
+   "cat": "lei/Bracciali",
+   "name": "Lossë",
+   "gloss": "fiori bianchi",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Fiorellini di quattro cristalli limpidi",
+   "cut": "tondi, a quadrifoglio",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1100,
+   "desc": "Doppia catenella d'oro con cinque fiorellini di cristallo.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     5,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G104",
+   "cat": "lei/Bracciali",
+   "name": "Angulócë",
+   "gloss": "il drago",
+   "photo": true,
+   "zoom": [
+    1.18,
+    47,
+    58
+   ],
+   "metal": "Oro cesellato a scaglie",
+   "gem": "Cristallo bianco perlato e due piccoli cristalli",
+   "cut": "tondo, sulla fronte del serpente",
+   "color": "#f2efe8",
+   "shape": "cab",
+   "price": 1500,
+   "desc": "Serpente d'oro massiccio a scaglie, cristallo perlato sulla fronte e catenella.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     3,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G105",
+   "cat": "lei/Bracciali",
+   "name": "Coirë",
+   "gloss": "il risveglio",
+   "photo": true,
+   "metal": "Oro traforato a rami",
+   "gem": "Fiori di cristallo rosa e file di cristalli limpidi",
+   "cut": "fiori a cinque petali",
+   "color": "#f0a0a8",
+   "shape": "cab",
+   "price": 2000,
+   "desc": "Rami d'oro traforati con fiori di cristallo rosa e bordi di cristalli.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G106",
+   "cat": "lei/Bracciali",
+   "name": "Mírëa",
+   "gloss": "ingioiellata",
+   "photo": true,
+   "metal": "Oro lucido",
+   "gem": "Cristalli rosa, fucsia e limpidi",
+   "cut": "tondi, a grappolo",
+   "color": "#e86aa0",
+   "shape": "cab",
+   "price": 1400,
+   "desc": "Bracciale rigido d'oro con un grappolo di cristalli rosa e limpidi.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     5,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G107",
+   "cat": "lei/Bracciali",
+   "name": "Ëarë",
+   "gloss": "il mare",
+   "photo": true,
+   "metal": "Oro martellato a granuli",
+   "gem": "Cristalli blu e piccoli cristalli limpidi",
+   "cut": "ovali e tondi",
+   "color": "#1f3fa8",
+   "shape": "cab",
+   "price": 1300,
+   "desc": "Bracciale aperto d'oro martellato con cristalli blu tra granuli d'oro.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G108",
+   "cat": "lei/Bracciali",
+   "name": "Anar",
+   "gloss": "il sole",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "File di piccoli cristalli limpidi",
+   "cut": "tondi, a filo",
+   "color": "#e8c45a",
+   "shape": "cab",
+   "price": 2800,
+   "unit": "il set",
+   "desc": "Bracciali da braccio d'oro: fasce di soli, catenelle e cerchi sottili.",
+   "cls": "Monili · Bracciali da braccio (accorpo)",
+   "recipe": [
+    [
+     5,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G109",
+   "cat": "lei/Bracciali",
+   "name": "Lassëa",
+   "gloss": "di foglie",
+   "photo": true,
+   "metal": "Oro dal riflesso rosato, traforato",
+   "gem": "Foglie di piccoli cristalli rosa",
+   "cut": "a pavé",
+   "color": "#e8a0a8",
+   "shape": "cab",
+   "price": 1700,
+   "desc": "Bracciale rigido d'oro rosato con rami di foglie di cristallo rosa.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G110",
+   "cat": "lei/Bracciali",
+   "name": "Laurelassë",
+   "gloss": "foglia d'oro",
+   "photo": true,
+   "zoom": [
+    1.21,
+    50,
+    59
+   ],
+   "metal": "Oro",
+   "gem": "Foglie di piccoli cristalli limpidi",
+   "cut": "a pavé",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1600,
+   "desc": "Tralci d'oro intrecciati con foglie di cristalli limpidi.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
    "code": "G21",
    "cat": "lui/Bracciali",
    "name": "Vanda",
