@@ -818,6 +818,13 @@ const PHOTOS = {
   G68:"img/G68.jpg?v=20261103192100",
   G69:"img/G69.jpg?v=20261103192500",
   G70:"img/G70.jpg?v=20261104095500",
+  G71:"img/G71.jpg?v=20261104161200",
+  G72:"img/G72.jpg?v=20261104161200",
+  G73:"img/G73.jpg?v=20261104161200",
+  G74:"img/G74.jpg?v=20261104161200",
+  G75:"img/G75.jpg?v=20261104161200",
+  G76:"img/G76.jpg?v=20261104161200",
+  G77:"img/G77.jpg?v=20261104161200",
   G25:"img/G25.jpg?v=20261103211800",
   G26:"img/G26.jpg?v=20261103211800",
   G27:"img/G27.jpg?v=20261103211800",
@@ -903,6 +910,11 @@ const VETRINA = {
   G64:"img/G64-v.jpg?v=20261103215000",
   G69:"img/G69-v.jpg?v=20261103215000",
   G70:"img/G70-v.jpg?v=20261104095500",
+  G71:"img/G71-v.jpg?v=20261104161200",
+  G72:"img/G72-v.jpg?v=20261104161200",
+  G75:"img/G75-v.jpg?v=20261104161200",
+  G76:"img/G76-v.jpg?v=20261104161200",
+  G77:"img/G77-v.jpg?v=20261104161200",
 };
 /* Seconda foto «indossato» (facoltativa): CODICE:"img/CODICE-indossato.jpg?v=…" */
 const WORN = {
@@ -946,6 +958,20 @@ const ITEMS = [
     cls:"Monili · Collana", recipe:[[3,"Argento"]]},
   {code:"G70", cat:"lui/Collane", name:"Elenna", gloss:"verso le stelle", photo:true, zoom:[1.2,42,46], metal:"Argento lucido", gem:"Due perle di cristallo tinto di blu", cut:"a rondella", color:"#1f3f8f", shape:"cab", price:850, desc:"Catena d'argento con una stella a otto punte e due perle blu.",
     cls:"Monili · Collana", recipe:[[2,"Argento"],[1,"Cristallo"],[1,"Colori"]]},
+  {code:"G71", cat:"lei/Anelli", name:"Calima", gloss:"luminosa", photo:true, zoom:[1.42,50,60], metal:"Oro dal riflesso rosato", gem:"Cristallo limpido e piccoli cristalli", cut:"a cuscino posato a rombo, tra intrecci", color:"#f4f2ea", shape:"cab", price:1400, desc:"Oro rosato a intrecci, grande cristallo a rombo tra piccoli cristalli.",
+    cls:"Monili · Anello", recipe:[[1,"Oro"],[3,"Cristallo"]]},
+  {code:"G72", cat:"lei/Anelli", name:"Indil", gloss:"il giglio", photo:true, zoom:[1.42,55,50], metal:"Oro dal riflesso rosato", gem:"Petali di cristallo tinto di rosa pallido", cut:"a navetta, come un fiore", color:"#f3d9d6", shape:"cab", price:1500, desc:"Fiore di petali di cristallo rosa pallido tra foglie d'oro.",
+    cls:"Monili · Anello", recipe:[[1,"Oro"],[3,"Cristallo"],[1,"Colori"]]},
+  {code:"G73", cat:"lei/Anelli", name:"Naira", gloss:"ardente", photo:true, metal:"Oro cesellato", gem:"Cristallo tinto d'arancio fuoco", cut:"a navetta, tra fiamme d'oro", color:"#c4541a", shape:"cab", price:1300, desc:"Fiamme d'oro cesellate che avvolgono un cristallo arancio.",
+    cls:"Monili · Anello", recipe:[[2,"Oro"],[1,"Cristallo"],[1,"Colori"]]},
+  {code:"G74", cat:"lei/Anelli", name:"Arin", gloss:"il mattino", photo:true, metal:"Oro dal riflesso rosato", gem:"Cristallo color pesca, cristalli rosa e limpidi", cut:"ad aquilone, con baguette ai lati", color:"#f0a08a", shape:"cab", price:1400, desc:"Grande cristallo pesca ad aquilone, con due cristalli rosa ai lati.",
+    cls:"Monili · Anello", recipe:[[1,"Oro"],[3,"Cristallo"],[1,"Colori"]]},
+  {code:"G75", cat:"lei/Anelli", name:"Ëarwen", gloss:"fanciulla del mare", photo:true, zoom:[1.47,51,55], metal:"Oro", gem:"Cristallo tinto d'azzurro mare e piccoli cristalli limpidi", cut:"tondo, in cornice di filigrana", color:"#a9d6e0", shape:"cab", price:1600, unit:"i due anelli", desc:"Due anelli d'oro: cristallo azzurro in filigrana e fascia a foglie.",
+    cls:"Monili · Anello", recipe:[[2,"Oro"],[3,"Cristallo"],[1,"Colori"]]},
+  {code:"G76", cat:"lei/Anelli", name:"Malina", gloss:"dorata", photo:true, zoom:[1.97,48,60], metal:"Oro", gem:"Cristallo tinto d'ambra e due cristalli limpidi", cut:"ovale", color:"#b8560f", shape:"cab", price:1100, desc:"Cristallo ambra ovale tra due piccoli cristalli, gambo a granuli.",
+    cls:"Monili · Anello", recipe:[[1,"Oro"],[3,"Cristallo"],[1,"Colori"]]},
+  {code:"G77", cat:"lei/Anelli", name:"Lótë", gloss:"il fiore", photo:true, zoom:[1.37,50,54], metal:"Oro a scaglie", gem:"Cristallo tinto d'arancio e petali di cristallo limpido", cut:"a goccia, come un fiore di loto", color:"#d8551f", shape:"cab", price:1300, desc:"Fiore di loto: cristallo arancio e petali limpidi su oro a scaglie.",
+    cls:"Monili · Anello", recipe:[[1,"Oro"],[4,"Cristallo"],[1,"Colori"]]},
   {code:"G21", cat:"lui/Bracciali", name:"Vanda", gloss:"il giuramento", photo:true, zoom:[1.31,50,50], metal:"Argento brunito", finish:"catena a maglia grossa, piastra con fili intrecciati", price:950, desc:"Catena grossa con piastra a fili intrecciati.",
     cls:"Monili · Bracciale", recipe:[[3,"Argento"]]},
   {code:"G22", cat:"lui/Bracciali", name:"Lómë", gloss:"notte", photo:true, zoom:[1.21,50,50], metal:"Argento", gem:"Cristallo tinto di nero", cut:"a sfera", ct:"perle da 6 mm", color:"#151418", shape:"cab", price:850, desc:"Perle di cristallo nero e anelli d'argento.",
@@ -1231,6 +1257,7 @@ const CAT_INFO = {
   "lui/Cerchi":{kind:"gioielli", who:"lui", name:"Cerchi", slug:"lui-cerchi", desc:"cerchi d'argento per la fronte, da signore elfico", show:"Aran", crop:[1.6,"50%","55%"]},
   "coppia/Fedi":{kind:"gioielli", who:"coppia", name:"Fedi", slug:"coppia-fedi", desc:"fedi nuziali d'oro, d'argento e di ferro per gli sposi", show:"Veru", crop:[1.6,"50%","55%"]},
   "coppia/Fedine":{kind:"gioielli", who:"coppia", name:"Fedine", slug:"coppia-fedine", desc:"fedine di fidanzamento d'argento, d'oro e di ferro", show:"Órë", crop:[1.6,"50%","55%"]},
+  "lei/Anelli":{kind:"gioielli", who:"lei", name:"Anelli", slug:"lei-anelli", desc:"anelli d'oro con cristalli, a fiori e a fiamme", show:"Indil", crop:[1.6,"50%","55%"]},
   "lei/Diademi":{kind:"gioielli", who:"lei", name:"Diademi", slug:"lei-diademi", desc:"diademi d'argento e d'oro, con cristalli", show:"Silmë", crop:[1.6,"50%","55%"]},
   "lei/Collane":{kind:"gioielli", who:"lei", name:"Collane", slug:"lei-collane", desc:"ciondoli di cristallo su catenine d'argento", show:"Tintallë", crop:[1.6,"50%","55%"]},
   "lei/Orecchini":{kind:"gioielli", who:"lei", name:"Orecchini", slug:"lei-orecchini", desc:"orecchini pendenti d'argento e cristallo", show:"Rossë", crop:[1.6,"50%","55%"]},
@@ -1258,11 +1285,11 @@ const KINDS = {
   abiti:{label:"sartoria", title:"Tessuti", all:"Tessuti", allDesc:"abiti, mantelli, completi, toghe e accessori della sartoria", one:"capo", many:"capi", photo:"tailor", crop:[1.3,"50%","45%"]}
 };
 const WHOS = {
-  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"diademi, collane, orecchini, bracciali, abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
+  lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"anelli, diademi, collane, orecchini, bracciali, abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
   coppia:{label:"unioni", head:"Coppia", all:"Tutto per le unioni", allDesc:"fedi e fedine, da portare in due", photo:"interior", crop:[1.5,"30%","62%"]}
 };
-const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"lei-orecchini", diademi:"lei-diademi", "lei-anelli":"lei", coppie:"coppia", fedi:"coppia-fedi", fedine:"coppia-fedine"};
+const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"lei-orecchini", diademi:"lei-diademi", coppie:"coppia", fedi:"coppia-fedi", fedine:"coppia-fedine"};
 const CATS = Object.keys(CAT_INFO);
 const kindOf = c => CAT_INFO[c].kind, whoOf = c => CAT_INFO[c].who;
 const slug = c => CAT_INFO[c].slug;

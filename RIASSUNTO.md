@@ -22,11 +22,11 @@
 
 ## Stanze (cat → stanza)
 - **Per lui** · Monili: Anelli, Collane, Bracciali, Cerchi (diademi maschili: linee dritte, metallo brunito, niente pendenti; primo: Aran G54) · Tessuti: Mantelli, Completi, Toghe, Tuniche, Cerimonia, Accessori (cinture e borse di stoffa).
-- **Per lei** · Monili: Diademi, Collane, Orecchini, Bracciali · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia.
+- **Per lei** · Monili: Anelli (G71–G77, oro e cristalli colorati), Diademi, Collane, Orecchini, Bracciali · Tessuti: Mantelli, Abiti, Completi, Accessori (borse di stoffa), Cerimonia.
 - **Per la coppia** · Monili: Fedi (avorio: Veru G55, Melmë G56, Vanimelda G58 argento, Yúyo G59, Oialë G60 argento, Melda G65, Anarya G67, Anga G68 ferro brunito + oro; tolta Elenya G66, gemella d'argento di Anarya, foto ancora in originali/), Fedine (verde: Órë G57, Indis G61, Olassië G62, Rilya G63, Tintila G64, Angaina G69 ferro + argento); prezzi «la coppia». Nel sito si chiama **«Coppia»** (non «lui e lei»: vale per ogni coppia): voce nel menu in alto, colonna nel menu delle stanze e terza sala nell'elenco delle stanze (foto di Melmë). Indirizzi #coppia, #coppia-fedi, #coppia-fedine.
 - Le stanze vuote non compaiono. «Fermagli per lui» è stato tolto. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A104), G = monili (ultimo G70). A72 non esiste più.
+- Codici: A = tessuti (ultimo A104), G = monili (ultimo G77). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Erika li tiene per ora.
 
@@ -66,7 +66,7 @@
 - `python3 strumenti/certificato.py --numero 001 --codice A01 --intestato "Nome PG" --anno XXV --mese 2 --giorno 10 [--confezione] [--dedica "…" --firma "…"]` (legge `strumenti/pezzi.json`, che si rigenera con `node strumenti/estrai_pezzi.js`). Registro in `certificati/registro.md`. I certificati li gestisce Erika tramite Claude.
 
 ## Da fare, quando lo chiede lei
-- Gioielli per lei: Diademi, Collane, Orecchini. Prima parure: **Silmë** (G40 diadema, G41 Tintallë ciondolo, G42 Rossë orecchini, G43 Laurë bracciale), «alla maniera dei Silmarilli», foto su velluto blu al banco dell'orafo. Mancano anelli per lei. Diademi preziosi: Elentári (G44, oro, sette stelle di cristallo, tema stelle) e la sua versione sottile Tingilya (G53). Collezione **Diademi degli Elementi**: Nár G45 fuoco, Nén G46 acqua, Súlë G47 aria, Arda G48 terra (4000 l'uno, tutti insieme 14000 invece di 16000; ognuno ha il tema della Cerimonia abbinato). Versione sottile, collezione **Cerchietti degli Elementi**: Uryë G49, Sírë G50, Hwesta G51, Tasarë G52 (1200 l'uno, insieme 4200 invece di 4800).
+- Gioielli per lei: Diademi, Collane, Orecchini. Prima parure: **Silmë** (G40 diadema, G41 Tintallë ciondolo, G42 Rossë orecchini, G43 Laurë bracciale), «alla maniera dei Silmarilli», foto su velluto blu al banco dell'orafo.  Diademi preziosi: Elentári (G44, oro, sette stelle di cristallo, tema stelle) e la sua versione sottile Tingilya (G53). Collezione **Diademi degli Elementi**: Nár G45 fuoco, Nén G46 acqua, Súlë G47 aria, Arda G48 terra (4000 l'uno, tutti insieme 14000 invece di 16000; ognuno ha il tema della Cerimonia abbinato). Versione sottile, collezione **Cerchietti degli Elementi**: Uryë G49, Sírë G50, Hwesta G51, Tasarë G52 (1200 l'uno, insieme 4200 invece di 4800).
 - **Pelletteria**: Erika la vorrebbe. Su Lot esiste la classe «Articoli in Pelle» (borse, scarsella, sacca, otre, stivali, scarpe, guanti, cappello, cappuccio, gilet, coprispalle, manto, completi, cintola, falconeria); potrebbe sostituire «Oggettistica» (oggi vuota). Problema: Elrohir è vegetariano. Idee proposte: un **aiutante pellettiere** che lavora la pelle al posto suo; pelli solo «recuperate»; oppure «tela cerata» (cotone + Cera + Colori, da far approvare all'Universitas). Decisione ancora aperta.
 - Classi: massimo 3 per bottega (ora Monili, Tessuti, Oggettistica).
 - Eventuale ritaratura dei prezzi (ora 400–5200 monete).

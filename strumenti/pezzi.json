@@ -227,6 +227,231 @@
    ]
   },
   {
+   "code": "G71",
+   "cat": "lei/Anelli",
+   "name": "Calima",
+   "gloss": "luminosa",
+   "photo": true,
+   "zoom": [
+    1.42,
+    50,
+    60
+   ],
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Cristallo limpido e piccoli cristalli",
+   "cut": "a cuscino posato a rombo, tra intrecci",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1400,
+   "desc": "Oro rosato a intrecci, grande cristallo a rombo tra piccoli cristalli.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G72",
+   "cat": "lei/Anelli",
+   "name": "Indil",
+   "gloss": "il giglio",
+   "photo": true,
+   "zoom": [
+    1.42,
+    55,
+    50
+   ],
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Petali di cristallo tinto di rosa pallido",
+   "cut": "a navetta, come un fiore",
+   "color": "#f3d9d6",
+   "shape": "cab",
+   "price": 1500,
+   "desc": "Fiore di petali di cristallo rosa pallido tra foglie d'oro.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G73",
+   "cat": "lei/Anelli",
+   "name": "Naira",
+   "gloss": "ardente",
+   "photo": true,
+   "metal": "Oro cesellato",
+   "gem": "Cristallo tinto d'arancio fuoco",
+   "cut": "a navetta, tra fiamme d'oro",
+   "color": "#c4541a",
+   "shape": "cab",
+   "price": 1300,
+   "desc": "Fiamme d'oro cesellate che avvolgono un cristallo arancio.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     1,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G74",
+   "cat": "lei/Anelli",
+   "name": "Arin",
+   "gloss": "il mattino",
+   "photo": true,
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Cristallo color pesca, cristalli rosa e limpidi",
+   "cut": "ad aquilone, con baguette ai lati",
+   "color": "#f0a08a",
+   "shape": "cab",
+   "price": 1400,
+   "desc": "Grande cristallo pesca ad aquilone, con due cristalli rosa ai lati.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G75",
+   "cat": "lei/Anelli",
+   "name": "Ëarwen",
+   "gloss": "fanciulla del mare",
+   "photo": true,
+   "zoom": [
+    1.47,
+    51,
+    55
+   ],
+   "metal": "Oro",
+   "gem": "Cristallo tinto d'azzurro mare e piccoli cristalli limpidi",
+   "cut": "tondo, in cornice di filigrana",
+   "color": "#a9d6e0",
+   "shape": "cab",
+   "price": 1600,
+   "unit": "i due anelli",
+   "desc": "Due anelli d'oro: cristallo azzurro in filigrana e fascia a foglie.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G76",
+   "cat": "lei/Anelli",
+   "name": "Malina",
+   "gloss": "dorata",
+   "photo": true,
+   "zoom": [
+    1.97,
+    48,
+    60
+   ],
+   "metal": "Oro",
+   "gem": "Cristallo tinto d'ambra e due cristalli limpidi",
+   "cut": "ovale",
+   "color": "#b8560f",
+   "shape": "cab",
+   "price": 1100,
+   "desc": "Cristallo ambra ovale tra due piccoli cristalli, gambo a granuli.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G77",
+   "cat": "lei/Anelli",
+   "name": "Lótë",
+   "gloss": "il fiore",
+   "photo": true,
+   "zoom": [
+    1.37,
+    50,
+    54
+   ],
+   "metal": "Oro a scaglie",
+   "gem": "Cristallo tinto d'arancio e petali di cristallo limpido",
+   "cut": "a goccia, come un fiore di loto",
+   "color": "#d8551f",
+   "shape": "cab",
+   "price": 1300,
+   "desc": "Fiore di loto: cristallo arancio e petali limpidi su oro a scaglie.",
+   "cls": "Monili · Anello",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "G21",
    "cat": "lui/Bracciali",
    "name": "Vanda",
@@ -4455,6 +4680,19 @@
    "slug": "coppia-fedine",
    "desc": "fedine di fidanzamento d'argento, d'oro e di ferro",
    "show": "Órë",
+   "crop": [
+    1.6,
+    "50%",
+    "55%"
+   ]
+  },
+  "lei/Anelli": {
+   "kind": "gioielli",
+   "who": "lei",
+   "name": "Anelli",
+   "slug": "lei-anelli",
+   "desc": "anelli d'oro con cristalli, a fiori e a fiamme",
+   "show": "Indil",
    "crop": [
     1.6,
     "50%",
