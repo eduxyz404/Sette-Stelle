@@ -237,18 +237,18 @@
     50,
     60
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristallo limpido e piccoli cristalli",
    "cut": "a cuscino posato a rombo, tra intrecci",
    "color": "#f4f2ea",
    "shape": "cab",
    "price": 1400,
-   "desc": "Oro rosato a intrecci, grande cristallo a rombo tra piccoli cristalli.",
+   "desc": "Rame a intrecci, grande cristallo a rombo tra piccoli cristalli.",
    "cls": "Monili · Anello",
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      3,
@@ -267,18 +267,18 @@
     55,
     50
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Petali di cristallo tinto di rosa pallido",
    "cut": "a navetta, come un fiore",
    "color": "#f3d9d6",
    "shape": "cab",
    "price": 1500,
-   "desc": "Fiore di petali di cristallo rosa pallido tra foglie d'oro.",
+   "desc": "Fiore di petali di cristallo rosa pallido tra foglie di rame.",
    "cls": "Monili · Anello",
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      3,
@@ -325,7 +325,7 @@
    "name": "Arin",
    "gloss": "il mattino",
    "photo": true,
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristallo color pesca, cristalli rosa e limpidi",
    "cut": "ad aquilone, con baguette ai lati",
    "color": "#f0a08a",
@@ -336,7 +336,7 @@
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      3,
@@ -534,18 +534,18 @@
     48,
     60
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristallo grigio velato, navette e piccoli cristalli limpidi",
    "cut": "ovale, tra petali",
    "color": "#b9aea3",
    "shape": "cab",
    "price": 1300,
-   "desc": "Cristallo grigio velato tra petali di cristallo, oro rosato.",
+   "desc": "Cristallo grigio velato tra petali di cristallo, in rame.",
    "cls": "Monili · Anello",
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      4,
@@ -602,19 +602,19 @@
     54,
     52
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristallo rosa ad aquilone, navette rosso rubino e cristalli limpidi",
    "cut": "ad aquilone",
    "color": "#e8a0a8",
    "shape": "cab",
    "price": 1600,
    "unit": "i due anelli",
-   "desc": "Due anelli d'oro rosato: cristallo rosa ad aquilone e fascia con gocce rubino.",
+   "desc": "Due anelli di rame: cristallo rosa ad aquilone e fascia con gocce rubino.",
    "cls": "Monili · Anello",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      4,
@@ -637,7 +637,7 @@
     48,
     66
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristalli limpidi color champagne",
    "cut": "a navetta, a raggiera",
    "color": "#efe2d0",
@@ -648,7 +648,7 @@
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      4,
@@ -671,18 +671,18 @@
     52,
     55
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristallo rosso granato e cristalli limpidi",
    "cut": "ad aquilone, tra volute",
    "color": "#7a1430",
    "shape": "cab",
    "price": 1400,
-   "desc": "Cristallo granato ad aquilone tra volute d'oro rosato e cristalli.",
+   "desc": "Cristallo granato ad aquilone tra volute di rame e cristalli.",
    "cls": "Monili · Anello",
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      3,
@@ -700,7 +700,7 @@
    "name": "Lótessë",
    "gloss": "il mese dei fiori",
    "photo": true,
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Foglie di cristallo viola e rosa, fila di cristalli limpidi",
    "cut": "a navetta e a goccia",
    "color": "#b48ad8",
@@ -711,7 +711,7 @@
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      4,
@@ -734,7 +734,7 @@
     44,
     58
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Fiore di cristallo bianco perlato e foglie di cristallo limpido",
    "cut": "fiore intagliato e navette",
    "color": "#f6f2ee",
@@ -745,7 +745,7 @@
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      3,
@@ -803,19 +803,23 @@
     50,
     52
    ],
-   "metal": "Oro e oro dal riflesso rosato",
+   "metal": "Oro e rame",
    "gem": "Piccoli cristalli limpidi",
    "cut": "tondi, tra sole, luna e stelle",
    "color": "#e9d6a4",
    "shape": "cab",
    "price": 1800,
    "unit": "i tre bracciali",
-   "desc": "Tre bracciali d'oro con sole, luna e stelle incise.",
+   "desc": "Tre bracciali d'oro e di rame con sole, luna e stelle incise.",
    "cls": "Monili · 3 Bracciali (accorpo)",
    "recipe": [
     [
-     3,
+     2,
      "Oro"
+    ],
+    [
+     1,
+     "Rame"
     ],
     [
      4,
@@ -834,14 +838,14 @@
     50,
     52
    ],
-   "metal": "Ferro martellato e oro dal riflesso rosato",
+   "metal": "Ferro martellato e rame",
    "gem": "Cinque navette di cristallo limpido nella fede di lei",
    "cut": "a fiore di loto",
    "color": "#f4f2ea",
    "shape": "cab",
    "price": 1700,
    "unit": "la coppia",
-   "desc": "Fede di ferro martellato foderata d'oro; quella di lei con un loto di cristalli.",
+   "desc": "Fede di ferro martellato foderata di rame; quella di lei con un loto di cristalli.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
@@ -850,7 +854,7 @@
     ],
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      5,
@@ -869,19 +873,19 @@
     50,
     52
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Piccoli cristalli limpidi nella fede di lei",
    "cut": "tondi, lungo un tralcio di foglie",
    "color": "#f4f2ea",
    "shape": "cab",
    "price": 1600,
    "unit": "la coppia",
-   "desc": "Fede liscia d'oro rosato e fede a tralcio di foglie con piccoli cristalli.",
+   "desc": "Fede liscia di rame e fede a tralcio di foglie con piccoli cristalli.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      3,
@@ -900,19 +904,19 @@
     46,
     55
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cinque navette di cristallo limpido nella fede di lei",
    "cut": "a fiore di loto",
    "color": "#f4f2ea",
    "shape": "cab",
    "price": 1700,
    "unit": "la coppia",
-   "desc": "Fede d'oro rosato con loto inciso all'interno; quella di lei con un loto di cristalli.",
+   "desc": "Fede di rame con loto inciso all'interno; quella di lei con un loto di cristalli.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      5,
@@ -955,19 +959,19 @@
     54,
     58
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristalli azzurri e limpidi nella fede di lei",
    "cut": "tondi, tra foglie",
    "color": "#a9c4ec",
    "shape": "cab",
    "price": 1800,
    "unit": "la coppia",
-   "desc": "Fede a foglie d'oro rosato e fede a tralcio con cristalli azzurri.",
+   "desc": "Fede a foglie di rame e fede a tralcio con cristalli azzurri.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      6,
@@ -990,19 +994,19 @@
     47,
     54
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Piccoli cristalli limpidi nella fede di lei",
    "cut": "tondi, lungo la treccia",
    "color": "#f4f2ea",
    "shape": "cab",
    "price": 1600,
    "unit": "la coppia",
-   "desc": "Fede liscia d'oro rosato e fede a treccia con piccoli cristalli.",
+   "desc": "Fede liscia di rame e fede a treccia con piccoli cristalli.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      4,
@@ -1060,19 +1064,19 @@
     50,
     55
    ],
-   "metal": "Oro dal riflesso rosato e ferro brunito a nero",
+   "metal": "Rame e ferro brunito a nero",
    "gem": "Cristallo rosso rubino e scaglie di cristallo rosso",
    "cut": "ovale e a scaglie",
    "color": "#a01c2e",
    "shape": "cab",
    "price": 2000,
    "unit": "la coppia",
-   "desc": "Anello d'oro rosato con cristallo rubino; fede di ferro nero con scaglie rosse e oro.",
+   "desc": "Anello di rame con cristallo rubino; fede di ferro nero con scaglie rosse e di rame.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      1,
@@ -1133,19 +1137,19 @@
    "name": "Ilma",
    "gloss": "la luce delle stelle",
    "photo": true,
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "gem": "Cristallo nero cangiante, cristalli limpidi e neri",
    "cut": "ovale, con scaglie cangianti nella fede di lui",
    "color": "#3a1c3a",
    "shape": "cab",
    "price": 2100,
    "unit": "la coppia",
-   "desc": "Anello d'oro rosato con cristallo nero cangiante; fede con intarsio di scaglie cangianti.",
+   "desc": "Anello di rame con cristallo nero cangiante; fede con intarsio di scaglie cangianti.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      6,
@@ -1477,18 +1481,18 @@
    "name": "Lassëa",
    "gloss": "di foglie",
    "photo": true,
-   "metal": "Oro dal riflesso rosato, traforato",
+   "metal": "Rame, traforato",
    "gem": "Foglie di piccoli cristalli rosa",
    "cut": "a pavé",
    "color": "#e8a0a8",
    "shape": "cab",
    "price": 1700,
-   "desc": "Bracciale rigido d'oro rosato con rami di foglie di cristallo rosa.",
+   "desc": "Bracciale rigido di rame con rami di foglie di cristallo rosa.",
    "cls": "Monili · Bracciale",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ],
     [
      6,
@@ -1541,19 +1545,19 @@
     51,
     50
    ],
-   "metal": "Oro dal riflesso rosato a fiamme",
+   "metal": "Rame a fiamme",
    "gem": "Goccia di cristallo arancio fuoco, piccoli cristalli arancio e fucsia",
    "cut": "a goccia",
    "color": "#e0501a",
    "shape": "cab",
    "price": 1400,
    "unit": "il paio",
-   "desc": "Fiamme d'oro rosato con una goccia di cristallo arancio fuoco.",
+   "desc": "Fiamme di rame con una goccia di cristallo arancio fuoco.",
    "cls": "Monili · Orecchini",
    "recipe": [
     [
      1,
-     "Oro"
+     "Rame"
     ],
     [
      4,
@@ -1925,6 +1929,66 @@
     [
      1,
      "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G124",
+   "cat": "lei/Collane",
+   "name": "Lossëlótë",
+   "gloss": "fiore di neve",
+   "photo": true,
+   "zoom": [
+    2.4,
+    49,
+    70
+   ],
+   "metal": "Rame",
+   "gem": "Petali di cristallo limpido e un piccolo cristallo",
+   "cut": "a navetta, fiore a otto petali tra foglie di rame",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1200,
+   "desc": "Fiore di neve di cristallo tra foglie di rame, su catenina a sfere.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Rame"
+    ],
+    [
+     5,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G125",
+   "cat": "lei/Collane",
+   "name": "Isilmírë",
+   "gloss": "gioiello della luna",
+   "photo": true,
+   "zoom": [
+    1.41,
+    50,
+    64
+   ],
+   "metal": "Oro",
+   "gem": "Punta di cristallo limpido grezzo e luna di piccoli cristalli",
+   "cut": "a punta, appeso a un anello",
+   "color": "#f2f2f4",
+   "shape": "cab",
+   "price": 1100,
+   "desc": "Anello d'oro con luna di cristalli e una punta di cristallo limpido.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
     ]
    ]
   },
@@ -3090,16 +3154,16 @@
     49,
     52
    ],
-   "metal": "Oro dal riflesso rosato",
+   "metal": "Rame",
    "finish": "liscia e lucida, con due sottili linee incise ai bordi",
    "price": 1200,
    "unit": "la coppia",
-   "desc": "Fedine d'oro rosato, lisce, con due linee incise.",
+   "desc": "Fedine di rame, lisce, con due linee incise.",
    "cls": "Monili · Anello (coppia)",
    "recipe": [
     [
      2,
-     "Oro"
+     "Rame"
     ]
    ]
   },
@@ -6142,7 +6206,7 @@
    "who": "coppia",
    "name": "Fedi",
    "slug": "coppia-fedi",
-   "desc": "fedi nuziali d'oro, d'argento e di ferro per gli sposi",
+   "desc": "fedi nuziali d'oro, d'argento, di rame e di ferro per gli sposi",
    "show": "Veru",
    "crop": [
     1.6,
@@ -6155,7 +6219,7 @@
    "who": "coppia",
    "name": "Fedine",
    "slug": "coppia-fedine",
-   "desc": "fedine di fidanzamento d'argento, d'oro e di ferro",
+   "desc": "fedine di fidanzamento d'argento, d'oro, di rame e di ferro",
    "show": "Órë",
    "crop": [
     1.6,
