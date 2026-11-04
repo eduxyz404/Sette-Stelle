@@ -193,6 +193,40 @@
    ]
   },
   {
+   "code": "G70",
+   "cat": "lui/Collane",
+   "name": "Elenna",
+   "gloss": "verso le stelle",
+   "photo": true,
+   "zoom": [
+    1.2,
+    42,
+    46
+   ],
+   "metal": "Argento lucido",
+   "gem": "Due perle di cristallo tinto di blu",
+   "cut": "a rondella",
+   "color": "#1f3f8f",
+   "shape": "cab",
+   "price": 850,
+   "desc": "Catena d'argento con una stella a otto punte e due perle blu.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "G21",
    "cat": "lui/Bracciali",
    "name": "Vanda",
