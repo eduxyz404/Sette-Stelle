@@ -27,7 +27,7 @@
 - **Per la coppia** · Monili: Fedi (avorio: Veru G55, Melmë G56, Vanimelda G58 argento, Yúyo G59, Oialë G60 argento, Melda G65, Anarya G67, Anga G68 ferro brunito + oro; tolta Elenya G66, gemella d'argento di Anarya, foto ancora in originali/), Fedine (verde: Órë G57, Indis G61, Olassië G62, Rilya G63, Tintila G64, Angaina G69 ferro + argento); prezzi «la coppia». Nel sito si chiama **«Coppia»** (non «lui e lei»: vale per ogni coppia): voce nel menu in alto, colonna nel menu delle stanze e terza sala nell'elenco delle stanze (foto di Melmë). Indirizzi #coppia, #coppia-fedi, #coppia-fedine.
 - Le stanze vuote non compaiono. «Fermagli per lui» è stato tolto. Tolti tutti i pezzi senza foto vera (disegni).
 - Temi della Cerimonia: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra, sposo. Elenwë (A74) è senza tema.
-- Codici: A = tessuti (ultimo A104), G = monili (ultimo G125). A72 non esiste più.
+- Codici: A = tessuti (ultimo A109), G = monili (ultimo G125). A72 non esiste più.
 - I mantelli (Kemen, Mornië, Calma) sono «trattati a cera: respingono l'acqua» (+1× Cera in ricetta).
 - Regola dei Tessuti (ricettario): vietati abiti di taglio/stile moderno, cerniere, stampe moderne. Pezzi un po' a rischio: Yávië (A76), Verno (A67), Luinil (A77) — Edu li tiene per ora.
 

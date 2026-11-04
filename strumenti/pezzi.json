@@ -6146,6 +6146,153 @@
      "Colori"
     ]
    ]
+  },
+  {
+   "code": "A105",
+   "cat": "lei/Abiti",
+   "name": "Lómiel",
+   "gloss": "figlia del crepuscolo",
+   "photo": true,
+   "fabric": "Corpetto di velluto di cotone nero a spalle scoperte, maniche ampie di velo nero, gonna plissettata di cotone avorio",
+   "colorName": "Nero e avorio",
+   "trimName": "ricami d'oro a foglie sullo scollo, in vita e ai polsini",
+   "garment": "dress",
+   "color": "#141214",
+   "trim": "#e4c47c",
+   "price": 3600,
+   "desc": "Velluto nero e avorio plissettato, maniche di velo e ricami d'oro.",
+   "cls": "Tessuti · Abito lungo, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A106",
+   "cat": "lei/Abiti",
+   "name": "Morilótë",
+   "gloss": "il fiore nero",
+   "photo": true,
+   "fabric": "Cotone nero aderente, colletto alto, mantella di pizzo di cotone nero con strascico",
+   "colorName": "Nero",
+   "trimName": "colletto ricamato di perle di cristallo nero",
+   "garment": "dress",
+   "color": "#141214",
+   "trim": "#3a3a3d",
+   "price": 3400,
+   "desc": "Nero aderente con mantella di pizzo e colletto di perle di cristallo.",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "A107",
+   "cat": "lei/Abiti",
+   "name": "Aranel",
+   "gloss": "la principessa",
+   "photo": true,
+   "fabric": "Cotone color cioccolato, spalle scoperte, scollo a V, mantella di velo con strascico",
+   "colorName": "Cioccolato",
+   "trimName": "scollo e spalline profilati di cristalli",
+   "garment": "dress",
+   "color": "#3b1712",
+   "trim": "#dfe6f4",
+   "price": 3200,
+   "desc": "Cioccolato con mantella di velo, scollo profilato di cristalli.",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "A108",
+   "cat": "lei/Abiti",
+   "name": "Laurinquë",
+   "gloss": "fiori d'oro",
+   "photo": true,
+   "fabric": "Velluto di cotone verde oliva aderente, mantella di velluto in tinta con colletto alto, strascico",
+   "colorName": "Verde oliva",
+   "trimName": "riflessi dorati del velluto",
+   "garment": "dress",
+   "color": "#4a4318",
+   "trim": "#b8a24a",
+   "price": 3400,
+   "desc": "Velluto verde oliva aderente, con mantella e strascico.",
+   "excl": "Orecchini non inclusi",
+   "cls": "Tessuti · Abito con mantella, taglia media",
+   "recipe": [
+    [
+     5,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "A109",
+   "cat": "lei/Abiti",
+   "name": "Carnilótë",
+   "gloss": "il fiore rosso",
+   "photo": true,
+   "fabric": "Cotone rosso bordeaux senza maniche, colletto alto, corpetto con velo, gonna ampia con strascico",
+   "colorName": "Bordeaux",
+   "trimName": "tralci ricamati d'oro sul corpetto, fascia in vita con rosa",
+   "garment": "dress",
+   "color": "#6a0f1e",
+   "trim": "#e4c47c",
+   "price": 3400,
+   "desc": "Bordeaux a colletto alto, tralci d'oro sul corpetto e fascia con rosa.",
+   "cls": "Tessuti · Abito lungo, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
