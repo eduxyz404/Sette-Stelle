@@ -14,7 +14,6 @@ campione = next(p for p in dati['ITEMS'] if p['code'] == 'G56')
 esempio = C.pagina('000', campione, dati['CAT_INFO'][campione['cat']], 'x', 'I', 1, 1, True, nozze=True, dedica='x', firma='x')
 CSS = esempio[esempio.index('<style>') + 7:esempio.index('</style>')]
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">'
-EMAIL = ''  # indirizzo a cui il pulsante «Avvisa Edu» manda il riepilogo (vuoto: lo sceglie chi scrive)
 
 # Solo i dati che servono al certificato, dentro la pagina (niente file esterni da caricare)
 CAMPI = ('code', 'cat', 'name', 'gloss', 'photo', 'metal', 'finish', 'gem', 'cut', 'ct', 'fabric', 'colorName', 'trimName', 'desc', 'excl', 'cls', 'recipe')
@@ -190,7 +189,6 @@ iframe{{width:100%;height:760px;border:1px solid var(--line);border-radius:14px;
     <div class="bottoni">
       <button type="button" class="primo" id="copia">Copia il link</button>
       <button type="button" id="apri">Apri il certificato</button>
-      <button type="button" id="avvisa">Avvisa Edu</button>
     </div>
     <p class="msg-ok" id="ok" role="status"></p>
     <iframe id="vista" title="Anteprima del certificato"></iframe>
@@ -199,7 +197,6 @@ iframe{{width:100%;height:760px;border:1px solid var(--line);border-radius:14px;
 </div>
 <script>
 {DATA_JS}
-const EMAIL = {json.dumps(EMAIL)};
 const $ = id => document.getElementById(id);
 const salva = (k, v) => {{ try {{ localStorage.setItem("ss-cert-" + k, v); }} catch(e) {{}} }};
 const leggi = k => {{ try {{ return localStorage.getItem("ss-cert-" + k) || ""; }} catch(e) {{ return ""; }} }};
@@ -237,12 +234,6 @@ $("copia").addEventListener("click", async () => {{
   catch(e) {{ const r = document.createRange(); r.selectNodeContents($("link")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("ok").textContent = "Il link è selezionato: copialo tenendoci il dito sopra (o Ctrl+C)."; }}
 }});
 $("apri").addEventListener("click", () => window.open(ultimoLink, "_blank"));
-$("avvisa").addEventListener("click", () => {{
-  const p = PEZZI[ultimo.c], conf = {{"": "nessuna", c: "della bottega", s: "degli sposi"}}[ultimo.k];
-  const corpo = `Nuovo certificato della Bottega delle Sette Stelle\\n\\nN° ${{ultimo.n}}\\nPezzo: ${{p.code}} · ${{p.name}}\\nIntestato a: ${{ultimo.i}}\\nData di Lot: Anno ${{ultimo.a}} · Mese ${{ultimo.m}}° · Giorno ${{ultimo.g}}°\\nConfezione: ${{conf}}` +
-    (ultimo.d ? `\\nDedica: «${{ultimo.d}}»${{ultimo.f ? " — " + ultimo.f : ""}}` : "") + `\\n\\nLink: ${{ultimoLink}}`;
-  location.href = `mailto:${{EMAIL}}?subject=${{encodeURIComponent("Certificato N° " + ultimo.n + " · " + p.name)}}&body=${{encodeURIComponent(corpo)}}`;
-}});
 $("altro").addEventListener("click", () => {{
   $("modulo").reset(); $("anno").value = leggi("anno"); prossimo(); $("anteprima").hidden = true;
   $("esito").hidden = true; $("modulo").hidden = false; scrollTo({{top: 0, behavior: "smooth"}});
