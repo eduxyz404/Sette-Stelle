@@ -170,10 +170,10 @@ iframe{{width:100%;height:760px;border:1px solid var(--line);border-radius:14px;
       <span class="aiuto">Per le fedi si possono scrivere due nomi: «Nome e Nome».</span></label>
     <div class="campo"><span class="lbl">Data di Lot</span>
       <div class="riga">
-        <label><span class="aiuto">Anno</span><input id="anno" autocomplete="off" placeholder="XXV"></label>
+        <label><span class="aiuto">Anno</span><input id="anno" autocomplete="off" placeholder="XXIX"></label>
         <label><span class="aiuto">Mese</span><input id="mese" inputmode="numeric" autocomplete="off"></label>
         <label><span class="aiuto">Giorno</span><input id="giorno" inputmode="numeric" autocomplete="off"></label>
-      </div></div>
+      </div><span class="aiuto">È già la data di Lot di oggi: cambiala solo se il certificato è di un altro giorno.</span></div>
     <div class="campo"><span class="lbl">Confezione</span>
       <div class="scelte">
         <label><input type="radio" name="conf" value="" checked> Nessuna</label>
@@ -219,7 +219,20 @@ $("pezzo").addEventListener("change", () => {{
   if(CATS[p.cat].who === "coppia") document.querySelector('input[name=conf][value=s]').checked = true;
 }});
 function scegliChi(){{ const v = leggi("chi"); document.querySelector(`input[name=chi][value="${{v}}"]`).checked = true; }}
-$("anno").value = leggi("anno"); scegliChi(); prossimo();
+/* Calendario lottiano: l'anno I comincia il 9 aprile 1998; ogni mese va dal 9 di un mese reale all'8 del successivo */
+function romano(n){{ const v = [[1000,"M"],[900,"CM"],[500,"D"],[400,"CD"],[100,"C"],[90,"XC"],[50,"L"],[40,"XL"],[10,"X"],[9,"IX"],[5,"V"],[4,"IV"],[1,"I"]]; let r = ""; for(const [k, s] of v) while(n >= k){{ r += s; n -= k; }} return r; }}
+function dataLot(d){{
+  let y = d.getFullYear(), m = d.getMonth();
+  if(d.getDate() < 9) m -= 1;
+  if(m < 0){{ m += 12; y -= 1; }}
+  const inizio = new Date(y, m, 9);
+  const giorno = Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - inizio) / 864e5) + 1;
+  const mese = (m - 3 + 12) % 12 + 1;
+  const anno = y - 1998 + 1 - (m < 3 ? 1 : 0);
+  return {{ anno: romano(anno), mese, giorno }};
+}}
+function oggiLot(){{ const o = dataLot(new Date()); $("anno").value = o.anno; $("mese").value = o.mese; $("giorno").value = o.giorno; }}
+oggiLot(); scegliChi(); prossimo();
 let ultimoLink = "", ultimo = null;
 $("modulo").addEventListener("submit", ev => {{
   ev.preventDefault();
@@ -231,7 +244,7 @@ $("modulo").addEventListener("submit", ev => {{
   $("errore").textContent = "";
   const par = new URLSearchParams(); for(const [k, v] of Object.entries(q)) if(v) par.set(k, v);
   ultimoLink = new URL("c.html#" + par.toString(), location.href).href; ultimo = q;
-  salva("ultimo", parseInt(q.n, 10)); salva("anno", q.a); salva("chi", q.s);
+  salva("ultimo", parseInt(q.n, 10)); salva("chi", q.s);
   $("link").textContent = ultimoLink; $("vista").src = ultimoLink; $("ok").textContent = "";
   $("modulo").hidden = true; $("esito").hidden = false; $("esito").scrollIntoView({{behavior: "smooth"}});
 }});
@@ -241,7 +254,7 @@ $("copia").addEventListener("click", async () => {{
 }});
 $("apri").addEventListener("click", () => window.open(ultimoLink, "_blank"));
 $("altro").addEventListener("click", () => {{
-  $("modulo").reset(); $("anno").value = leggi("anno"); scegliChi(); prossimo(); $("anteprima").hidden = true;
+  $("modulo").reset(); oggiLot(); scegliChi(); prossimo(); $("anteprima").hidden = true;
   $("esito").hidden = true; $("modulo").hidden = false; scrollTo({{top: 0, behavior: "smooth"}});
 }});
 </script>
