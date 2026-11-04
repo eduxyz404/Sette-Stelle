@@ -793,6 +793,479 @@
    ]
   },
   {
+   "code": "G88",
+   "cat": "lei/Bracciali",
+   "name": "Ilmarë",
+   "gloss": "la splendente",
+   "photo": true,
+   "zoom": [
+    1.25,
+    50,
+    52
+   ],
+   "metal": "Oro e oro dal riflesso rosato",
+   "gem": "Piccoli cristalli limpidi",
+   "cut": "tondi, tra sole, luna e stelle",
+   "color": "#e9d6a4",
+   "shape": "cab",
+   "price": 1800,
+   "unit": "i tre bracciali",
+   "desc": "Tre bracciali d'oro con sole, luna e stelle incise.",
+   "cls": "Monili · 3 Bracciali (accorpo)",
+   "recipe": [
+    [
+     3,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G89",
+   "cat": "coppia/Fedi",
+   "name": "Tulca",
+   "gloss": "salda",
+   "photo": true,
+   "zoom": [
+    1.27,
+    50,
+    52
+   ],
+   "metal": "Ferro martellato e oro dal riflesso rosato",
+   "gem": "Cinque navette di cristallo limpido nella fede di lei",
+   "cut": "a fiore di loto",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1700,
+   "unit": "la coppia",
+   "desc": "Fede di ferro martellato foderata d'oro; quella di lei con un loto di cristalli.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     1,
+     "Ferro"
+    ],
+    [
+     2,
+     "Oro"
+    ],
+    [
+     5,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G90",
+   "cat": "coppia/Fedi",
+   "name": "Lassi",
+   "gloss": "le foglie",
+   "photo": true,
+   "zoom": [
+    2,
+    50,
+    52
+   ],
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Piccoli cristalli limpidi nella fede di lei",
+   "cut": "tondi, lungo un tralcio di foglie",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1600,
+   "unit": "la coppia",
+   "desc": "Fede liscia d'oro rosato e fede a tralcio di foglie con piccoli cristalli.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     3,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G91",
+   "cat": "coppia/Fedi",
+   "name": "Vanya",
+   "gloss": "la bella",
+   "photo": true,
+   "zoom": [
+    1.2,
+    46,
+    55
+   ],
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Cinque navette di cristallo limpido nella fede di lei",
+   "cut": "a fiore di loto",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1700,
+   "unit": "la coppia",
+   "desc": "Fede d'oro rosato con loto inciso all'interno; quella di lei con un loto di cristalli.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     5,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G92",
+   "cat": "coppia/Fedi",
+   "name": "Aldëa",
+   "gloss": "dell'albero",
+   "photo": true,
+   "zoom": [
+    1.97,
+    54,
+    56
+   ],
+   "metal": "Oro satinato",
+   "finish": "foglie incise all'interno di lui, tralcio in rilievo su quella di lei",
+   "price": 1500,
+   "unit": "la coppia",
+   "desc": "Fedi d'oro satinato: rami incisi dentro la sua, tralcio in rilievo sulla sua.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "G93",
+   "cat": "coppia/Fedi",
+   "name": "Tuilë",
+   "gloss": "la primavera",
+   "photo": true,
+   "zoom": [
+    1.81,
+    54,
+    58
+   ],
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Cristalli azzurri e limpidi nella fede di lei",
+   "cut": "tondi, tra foglie",
+   "color": "#a9c4ec",
+   "shape": "cab",
+   "price": 1800,
+   "unit": "la coppia",
+   "desc": "Fede a foglie d'oro rosato e fede a tralcio con cristalli azzurri.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G94",
+   "cat": "coppia/Fedi",
+   "name": "Vérë",
+   "gloss": "il voto",
+   "photo": true,
+   "zoom": [
+    1.29,
+    47,
+    54
+   ],
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Piccoli cristalli limpidi nella fede di lei",
+   "cut": "tondi, lungo la treccia",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1600,
+   "unit": "la coppia",
+   "desc": "Fede liscia d'oro rosato e fede a treccia con piccoli cristalli.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G95",
+   "cat": "coppia/Fedi",
+   "name": "Mornë",
+   "gloss": "la scura",
+   "photo": true,
+   "zoom": [
+    1.59,
+    50,
+    56
+   ],
+   "metal": "Ferro brunito a nero e oro",
+   "gem": "Scaglie di cristallo nero",
+   "cut": "in fila, con fogliette d'oro",
+   "color": "#14141a",
+   "shape": "cab",
+   "price": 1900,
+   "unit": "la coppia",
+   "desc": "Fedi di ferro brunito a nero con filetti d'oro e scaglie d'oro e cristallo nero.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Ferro"
+    ],
+    [
+     1,
+     "Oro"
+    ],
+    [
+     2,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G96",
+   "cat": "coppia/Fedi",
+   "name": "Nárëa",
+   "gloss": "di fiamma",
+   "photo": true,
+   "zoom": [
+    1.12,
+    50,
+    55
+   ],
+   "metal": "Oro dal riflesso rosato e ferro brunito a nero",
+   "gem": "Cristallo rosso rubino e scaglie di cristallo rosso",
+   "cut": "ovale e a scaglie",
+   "color": "#a01c2e",
+   "shape": "cab",
+   "price": 2000,
+   "unit": "la coppia",
+   "desc": "Anello d'oro rosato con cristallo rubino; fede di ferro nero con scaglie rosse e oro.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Ferro"
+    ],
+    [
+     5,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G97",
+   "cat": "coppia/Fedi",
+   "name": "Lómin",
+   "gloss": "ombroso",
+   "photo": true,
+   "zoom": [
+    1.09,
+    49,
+    54
+   ],
+   "metal": "Oro e ferro brunito a nero",
+   "gem": "Cristallo nero e piccoli cristalli limpidi",
+   "cut": "esagonale allungato",
+   "color": "#14141a",
+   "shape": "cab",
+   "price": 2000,
+   "unit": "la coppia",
+   "desc": "Anello d'oro con cristallo nero esagonale; fede di ferro nero con scaglie d'oro.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Ferro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G98",
+   "cat": "coppia/Fedi",
+   "name": "Ilma",
+   "gloss": "la luce delle stelle",
+   "photo": true,
+   "metal": "Oro dal riflesso rosato",
+   "gem": "Cristallo nero cangiante, cristalli limpidi e neri",
+   "cut": "ovale, con scaglie cangianti nella fede di lui",
+   "color": "#3a1c3a",
+   "shape": "cab",
+   "price": 2100,
+   "unit": "la coppia",
+   "desc": "Anello d'oro rosato con cristallo nero cangiante; fede con intarsio di scaglie cangianti.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G99",
+   "cat": "coppia/Fedi",
+   "name": "Tilion",
+   "gloss": "la luna che insegue il sole",
+   "photo": true,
+   "zoom": [
+    1.15,
+    52,
+    53
+   ],
+   "metal": "Oro e argento brunito",
+   "gem": "Cristallo giallo nella fede del sole, cristallo lattiginoso in quella della luna",
+   "cut": "tondi, tra raggi e volute",
+   "color": "#e8c45a",
+   "shape": "cab",
+   "price": 2000,
+   "unit": "la coppia",
+   "desc": "Fedi del sole e della luna: oro con cristallo giallo, argento con cristallo lattiginoso.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     2,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G100",
+   "cat": "coppia/Fedi",
+   "name": "Elenanar",
+   "gloss": "la stella e il sole",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Cristallo giallo e piccoli cristalli cangianti e limpidi",
+   "cut": "tondi, in una stella e in un sole",
+   "color": "#e8b43a",
+   "shape": "cab",
+   "price": 2000,
+   "unit": "la coppia",
+   "desc": "Fede intrecciata con stella e cristallo; fede col sole e un grande cristallo giallo.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G101",
+   "cat": "coppia/Fedi",
+   "name": "Aldu",
+   "gloss": "i due alberi",
+   "photo": true,
+   "zoom": [
+    1.29,
+    55,
+    56
+   ],
+   "metal": "Oro e argento",
+   "gem": "Cristallo limpido nella fede d'oro, cristallo nero in quella d'argento",
+   "cut": "tondi, in stelle a otto raggi",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1700,
+   "unit": "la coppia",
+   "desc": "Fede d'oro e fede d'argento con stelle e lune incise, un cristallo ciascuna.",
+   "cls": "Monili · Anello (coppia)",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     1,
+     "Argento"
+    ],
+    [
+     2,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "G21",
    "cat": "lui/Bracciali",
    "name": "Vanda",
@@ -5084,7 +5557,7 @@
    "who": "lei",
    "name": "Bracciali",
    "slug": "lei-bracciali",
-   "desc": "bracciali d'argento a rami, con cristalli",
+   "desc": "bracciali d'argento e d'oro, con cristalli",
    "show": "Laurë",
    "crop": [
     1.6,
