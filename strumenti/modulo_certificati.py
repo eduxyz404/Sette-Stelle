@@ -34,7 +34,7 @@ function certificatoHTML(q){
   const det = p.fabric ? [["Tessuto", p.fabric], ["Colore", p.colorName], ["Ricami", p.trimName]]
     : [["Metallo", p.metal]].concat(p.gem ? [["Pietra", `${p.gem}, taglio ${p.cut}`]].concat(p.ct ? [["Peso", p.ct]] : []) : [["Lavorazione", p.finish]]);
   const ric = p.recipe.concat(conf ? [[1, "Confezione"]] : []);
-  const et = `N° ${q.n}`, chi = q.s === "m" ? ["Madelyn", "la bottegaia", "madelyn"] : ["Elrohir", "il bottegaio", "elrohir"];
+  const et = `N° ${q.n}`, chi = q.s === "m" ? ["Nériva (Madelyn)", "la bottegaia", "madelyn"] : ["Elrohir", "il bottegaio", "elrohir"];
   const extra = [];
   if(nozze) extra.push(`<div class="box"><img src="../img/confezione-nozze.jpg" alt="La confezione degli sposi: scrigno avorio con fregi e stelle d'oro, interno di velluto blu notte, nastro avorio e blu con sigillo d'oro e cartellino «Agli Sposi · Due cammini, una stessa luce»"><span class="lbl">Confezione degli sposi</span></div>`);
   else if(conf) extra.push(`<div class="box"><img src="../img/${ded ? "confezione.jpg" : "confezione-semplice.jpg"}" alt="La confezione della bottega: scatola color pergamena con fregi d'oro, nastro di velluto blu e sigillo d'oro"><span class="lbl">Confezione</span></div>`);
@@ -160,7 +160,7 @@ iframe{{width:100%;height:760px;border:1px solid var(--line);border-radius:14px;
     <div class="campo"><span class="lbl">Chi crea il certificato</span>
       <div class="scelte">
         <label><input type="radio" name="chi" value=""> Elrohir</label>
-        <label><input type="radio" name="chi" value="m"> Madelyn</label>
+        <label><input type="radio" name="chi" value="m"> Nériva (Madelyn)</label>
       </div><span class="aiuto">Sotto il sigillo comparirà la sua firma.</span></div>
     <label><span class="lbl">Pezzo venduto</span>
       <select id="pezzo"></select></label>

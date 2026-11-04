@@ -22,7 +22,7 @@ SWATCH = {
     "Ametista": "#8c4fb3", "Agata": "#2a2630", "Ematite": "#4a4d58", "Tormalina": "#7fae3e", "Cristallo": "#cfe8ff",
     "Confezione": "#b08a5a",
 }
-FIRMATARI = {'elrohir': ('Elrohir', 'il bottegaio'), 'madelyn': ('Madelyn', 'la bottegaia')}  # chi firma il certificato
+FIRMATARI = {'elrohir': ('Elrohir', 'il bottegaio'), 'madelyn': ('Nériva (Madelyn)', 'la bottegaia')}  # chi firma il certificato
 RAINBOW = "conic-gradient(#e04848,#e3a03a,#e6d24a,#5cb85c,#4a8fe0,#8c4fb3,#e04848)"
 
 
