@@ -1531,6 +1531,404 @@
    ]
   },
   {
+   "code": "G111",
+   "cat": "lei/Orecchini",
+   "name": "Nárelë",
+   "gloss": "fiamma",
+   "photo": true,
+   "zoom": [
+    1.09,
+    51,
+    50
+   ],
+   "metal": "Oro dal riflesso rosato a fiamme",
+   "gem": "Goccia di cristallo arancio fuoco, piccoli cristalli arancio e fucsia",
+   "cut": "a goccia",
+   "color": "#e0501a",
+   "shape": "cab",
+   "price": 1400,
+   "unit": "il paio",
+   "desc": "Fiamme d'oro rosato con una goccia di cristallo arancio fuoco.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G112",
+   "cat": "lei/Orecchini",
+   "name": "Narquelië",
+   "gloss": "lo sfiorire del sole",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Cristalli rosso granato e piccoli cristalli limpidi",
+   "cut": "a navetta, come foglie d'acero",
+   "color": "#9b1420",
+   "shape": "cab",
+   "price": 1300,
+   "unit": "il paio",
+   "desc": "Cerchietti d'oro con foglie d'acero di cristallo rosso granato.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G113",
+   "cat": "lei/Orecchini",
+   "name": "Elanor",
+   "gloss": "stella-del-sole",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Fiore-stella di cristalli limpidi e perle di cristallo bianco perlato",
+   "cut": "a navetta e tonde",
+   "color": "#f6f2ee",
+   "shape": "cab",
+   "price": 1300,
+   "unit": "il paio",
+   "desc": "Fiore-stella di cristallo e catenelle con perle di cristallo perlato.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G114",
+   "cat": "lei/Orecchini",
+   "name": "Vingilótë",
+   "gloss": "fiore di spuma",
+   "photo": true,
+   "zoom": [
+    1.14,
+    56,
+    48
+   ],
+   "metal": "Oro",
+   "gem": "Petali di cristallo limpido",
+   "cut": "a goccia, fiore a sei petali",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1200,
+   "unit": "il paio",
+   "desc": "Cerchi ovali d'oro con un fiore a sei petali di cristallo.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G115",
+   "cat": "lei/Orecchini",
+   "name": "Isil",
+   "gloss": "la luna",
+   "photo": true,
+   "metal": "Oro inciso",
+   "gem": "Cristalli verde acqua lattiginosi e piccoli cristalli limpidi",
+   "cut": "ovali a cabochon",
+   "color": "#7fd0c4",
+   "shape": "cab",
+   "price": 1300,
+   "unit": "il paio",
+   "desc": "Lune d'oro incise con cristalli verde acqua su catenelle lunghe.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G116",
+   "cat": "lei/Orecchini",
+   "name": "Siril",
+   "gloss": "il ruscello",
+   "photo": true,
+   "metal": "Oro in filigrana",
+   "gem": "Goccia di cristallo limpido",
+   "cut": "a goccia sfaccettata",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1000,
+   "unit": "il paio",
+   "desc": "Gocce di cristallo in filigrana d'oro su catenella sottile.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     2,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G117",
+   "cat": "lei/Orecchini",
+   "name": "Helinë",
+   "gloss": "la viola",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Gocce di cristallo lilla, ovali e navette di cristallo limpido",
+   "cut": "a goccia allungata",
+   "color": "#c4a6e0",
+   "shape": "cab",
+   "price": 1500,
+   "unit": "il paio",
+   "desc": "Pendenti lunghi: cristalli limpidi a foglie e gocce di cristallo lilla.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G118",
+   "cat": "lei/Orecchini",
+   "name": "Elentirmo",
+   "gloss": "chi veglia le stelle",
+   "photo": true,
+   "zoom": [
+    1.3,
+    50,
+    53
+   ],
+   "metal": "Oro",
+   "gem": "Stelle a pavé di piccoli cristalli limpidi",
+   "cut": "a stella a molti raggi",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1400,
+   "unit": "il paio",
+   "desc": "Due stelle di cristallo a pavé unite da una barretta d'oro.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     5,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G119",
+   "cat": "lei/Orecchini",
+   "name": "Wenya",
+   "gloss": "verde",
+   "photo": true,
+   "zoom": [
+    1.27,
+    52,
+    48
+   ],
+   "metal": "Oro in filigrana a granuli",
+   "gem": "Cristallo verde acqua pallido e piccoli cristalli limpidi",
+   "cut": "ovale",
+   "color": "#c8e4dc",
+   "shape": "cab",
+   "price": 1200,
+   "unit": "il paio",
+   "desc": "Filigrana d'oro a granuli con un cristallo verde acqua pallido.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G120",
+   "cat": "lei/Orecchini",
+   "name": "Carnimírië",
+   "gloss": "gioiello rosso",
+   "photo": true,
+   "metal": "Oro traforato a volute",
+   "gem": "Cristalli rossi e piccoli cristalli limpidi",
+   "cut": "a goccia e a navetta",
+   "color": "#b0142a",
+   "shape": "cab",
+   "price": 1300,
+   "unit": "il paio",
+   "desc": "Gocce d'oro traforate a volute con cristalli rossi.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "G121",
+   "cat": "lei/Orecchini",
+   "name": "Írimë",
+   "gloss": "la desiderata",
+   "photo": true,
+   "zoom": [
+    1.63,
+    55,
+    55
+   ],
+   "metal": "Oro",
+   "gem": "Grandi cristalli limpidi",
+   "cut": "rettangolari a gradini",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1100,
+   "unit": "il paio",
+   "desc": "Grandi cristalli limpidi rettangolari pendenti da un gancio d'oro.",
+   "cls": "Monili · Orecchini",
+   "recipe": [
+    [
+     1,
+     "Oro"
+    ],
+    [
+     2,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G122",
+   "cat": "lei/Bracciali",
+   "name": "Tinwi",
+   "gloss": "le scintille",
+   "photo": true,
+   "metal": "Oro",
+   "gem": "Fila di cristalli limpidi",
+   "cut": "tondi, uno accanto all'altro",
+   "color": "#f4f2ea",
+   "shape": "cab",
+   "price": 1600,
+   "desc": "Bracciale d'oro con una fila continua di cristalli limpidi.",
+   "cls": "Monili · Bracciale",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     6,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "G123",
+   "cat": "lei/Collane",
+   "name": "Rúnya",
+   "gloss": "fiamma rossa",
+   "photo": true,
+   "zoom": [
+    1.76,
+    52,
+    62
+   ],
+   "metal": "Oro in filigrana",
+   "gem": "Cristallo rosso granato",
+   "cut": "a rombo",
+   "color": "#7a1430",
+   "shape": "cab",
+   "price": 1100,
+   "desc": "Ciondolo a rombo di filigrana d'oro con cristallo granato, su catenina.",
+   "cls": "Monili · Collana",
+   "recipe": [
+    [
+     2,
+     "Oro"
+    ],
+    [
+     1,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
    "code": "G21",
    "cat": "lui/Bracciali",
    "name": "Vanda",
@@ -5796,7 +6194,7 @@
    "who": "lei",
    "name": "Collane",
    "slug": "lei-collane",
-   "desc": "ciondoli di cristallo su catenine d'argento",
+   "desc": "ciondoli di cristallo su catenine d'argento e d'oro",
    "show": "Tintallë",
    "crop": [
     1.6,
@@ -5809,7 +6207,7 @@
    "who": "lei",
    "name": "Orecchini",
    "slug": "lei-orecchini",
-   "desc": "orecchini pendenti d'argento e cristallo",
+   "desc": "orecchini pendenti d'argento e d'oro, con cristalli",
    "show": "Rossë",
    "crop": [
     1.6,
