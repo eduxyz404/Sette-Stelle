@@ -157,7 +157,7 @@ function certificatoHTML(q){
   const det = p.fabric ? [["Tessuto", p.fabric], ["Colore", p.colorName], ["Ricami", p.trimName]]
     : [["Metallo", p.metal]].concat(p.gem ? [["Pietra", `${p.gem}, taglio ${p.cut}`]].concat(p.ct ? [["Peso", p.ct]] : []) : [["Lavorazione", p.finish]]);
   const ric = p.recipe.concat(conf ? [[1, "Confezione"]] : []);
-  const et = `N° ${q.n}`;
+  const et = `N° ${q.n}`, chi = q.s === "m" ? ["Madelyn", "la bottegaia", "madelyn"] : ["Elrohir", "il bottegaio", "elrohir"];
   const extra = [];
   if(nozze) extra.push(`<div class="box"><img src="../img/confezione-nozze.jpg" alt="La confezione degli sposi: scrigno avorio con fregi e stelle d'oro, interno di velluto blu notte, nastro avorio e blu con sigillo d'oro e cartellino «Agli Sposi · Due cammini, una stessa luce»"><span class="lbl">Confezione degli sposi</span></div>`);
   else if(conf) extra.push(`<div class="box"><img src="../img/${ded ? "confezione.jpg" : "confezione-semplice.jpg"}" alt="La confezione della bottega: scatola color pergamena con fregi d'oro, nastro di velluto blu e sigillo d'oro"><span class="lbl">Confezione</span></div>`);
@@ -184,7 +184,7 @@ function certificatoHTML(q){
     <div class="recipe"><h3>Ricetta di creazione</h3><small>${esc(p.cls)}</small>
       <ul>${ric.map(([n, m]) => `<li><span class="sw" style="background:${m === "Colori" ? RAINBOW : (SWATCH[m] || "#9aa3b8")}"></span><b>${n}×</b>${esc(m)}</li>`).join("")}</ul></div>
     <div class="sign"><img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle"><span class="seal-num">${esc(et)}</span>
-      <div class="firma"><img src="../img/${nozze ? "firma-elrohir-scura.png" : "firma-elrohir-oro.png"}" alt="Firma di Elrohir"><span>Elrohir · il bottegaio</span></div></div>
+      <div class="firma"><img src="../img/firma-${chi[2]}-${nozze ? "scura" : "oro"}.png" alt="Firma di ${chi[0]}"><span>${chi[0]} · ${chi[1]}</span></div></div>
   </footer>` };
 }
 const leggiLink = h => Object.fromEntries(new URLSearchParams(h.replace(/^#/, "")));

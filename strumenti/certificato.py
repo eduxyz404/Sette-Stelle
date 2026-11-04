@@ -22,6 +22,7 @@ SWATCH = {
     "Ametista": "#8c4fb3", "Agata": "#2a2630", "Ematite": "#4a4d58", "Tormalina": "#7fae3e", "Cristallo": "#cfe8ff",
     "Confezione": "#b08a5a",
 }
+FIRMATARI = {'elrohir': ('Elrohir', 'il bottegaio'), 'madelyn': ('Madelyn', 'la bottegaia')}  # chi firma il certificato
 RAINBOW = "conic-gradient(#e04848,#e3a03a,#e6d24a,#5cb85c,#4a8fe0,#8c4fb3,#e04848)"
 
 
@@ -64,7 +65,7 @@ VALACIRCA = """<svg class="dipper" viewBox="-8 -8 176 106" aria-hidden="true">
 ) + "</g></svg>"
 
 
-def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False, dedica=None, firma=None, dono=False, nozze=False):
+def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esempio=False, dedica=None, firma=None, dono=False, nozze=False, chi='elrohir'):
     e = html.escape
     if nozze:
         confezione = True  # la confezione degli sposi va in ricetta come quella normale
@@ -305,8 +306,8 @@ dd{{margin:0;font-size:1.08rem}}
       <img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle">
       <span class="seal-num">{e(etichetta)}</span>
       <div class="firma">
-        <img src="../img/{'firma-elrohir-scura.png' if nozze else 'firma-elrohir-oro.png'}" alt="Firma di Elrohir">
-        <span>Elrohir · il bottegaio</span>
+        <img src="../img/firma-{chi}-{'scura' if nozze else 'oro'}.png" alt="Firma di {FIRMATARI[chi][0]}">
+        <span>{FIRMATARI[chi][0]} · {FIRMATARI[chi][1]}</span>
       </div>
     </div>
   </footer>
@@ -337,6 +338,7 @@ def main():
     ap.add_argument('--dedica', help='testo della dedica, facoltativo')
     ap.add_argument('--firma', help='chi firma la dedica, facoltativo')
     ap.add_argument('--esempio', action='store_true')
+    ap.add_argument('--chi', choices=['elrohir', 'madelyn'], default='elrohir', help='chi firma: elrohir (predefinito) o madelyn')
     ap.add_argument('--nozze', action='store_true', help='confezione degli sposi (fedi e abiti nuziali)')
     ap.add_argument('--dono', action='store_true', help='certificato di dono: testata con la confezione e dedica in evidenza')
     ap.add_argument('--uscita')
@@ -346,7 +348,7 @@ def main():
     info = dati['CAT_INFO'][pezzo['cat']]
     out = pathlib.Path(a.uscita) if a.uscita else REPO / 'certificati' / f"{a.numero}.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio, a.dedica, a.firma, a.dono, a.nozze))
+    out.write_text(pagina(a.numero, pezzo, info, a.intestato, a.anno, a.mese, a.giorno, a.confezione, a.esempio, a.dedica, a.firma, a.dono, a.nozze, a.chi))
     print(out)
 
 

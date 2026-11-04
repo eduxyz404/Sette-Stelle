@@ -34,7 +34,7 @@ function certificatoHTML(q){
   const det = p.fabric ? [["Tessuto", p.fabric], ["Colore", p.colorName], ["Ricami", p.trimName]]
     : [["Metallo", p.metal]].concat(p.gem ? [["Pietra", `${p.gem}, taglio ${p.cut}`]].concat(p.ct ? [["Peso", p.ct]] : []) : [["Lavorazione", p.finish]]);
   const ric = p.recipe.concat(conf ? [[1, "Confezione"]] : []);
-  const et = `N° ${q.n}`;
+  const et = `N° ${q.n}`, chi = q.s === "m" ? ["Madelyn", "la bottegaia", "madelyn"] : ["Elrohir", "il bottegaio", "elrohir"];
   const extra = [];
   if(nozze) extra.push(`<div class="box"><img src="../img/confezione-nozze.jpg" alt="La confezione degli sposi: scrigno avorio con fregi e stelle d'oro, interno di velluto blu notte, nastro avorio e blu con sigillo d'oro e cartellino «Agli Sposi · Due cammini, una stessa luce»"><span class="lbl">Confezione degli sposi</span></div>`);
   else if(conf) extra.push(`<div class="box"><img src="../img/${ded ? "confezione.jpg" : "confezione-semplice.jpg"}" alt="La confezione della bottega: scatola color pergamena con fregi d'oro, nastro di velluto blu e sigillo d'oro"><span class="lbl">Confezione</span></div>`);
@@ -61,7 +61,7 @@ function certificatoHTML(q){
     <div class="recipe"><h3>Ricetta di creazione</h3><small>${esc(p.cls)}</small>
       <ul>${ric.map(([n, m]) => `<li><span class="sw" style="background:${m === "Colori" ? RAINBOW : (SWATCH[m] || "#9aa3b8")}"></span><b>${n}×</b>${esc(m)}</li>`).join("")}</ul></div>
     <div class="sign"><img class="seal" src="../img/sigillo-bottega.png" alt="Sigillo d'oro della Bottega delle Sette Stelle"><span class="seal-num">${esc(et)}</span>
-      <div class="firma"><img src="../img/${nozze ? "firma-elrohir-scura.png" : "firma-elrohir-oro.png"}" alt="Firma di Elrohir"><span>Elrohir · il bottegaio</span></div></div>
+      <div class="firma"><img src="../img/firma-${chi[2]}-${nozze ? "scura" : "oro"}.png" alt="Firma di ${chi[0]}"><span>${chi[0]} · ${chi[1]}</span></div></div>
   </footer>` };
 }
 const leggiLink = h => Object.fromEntries(new URLSearchParams(h.replace(/^#/, "")));
@@ -157,6 +157,11 @@ iframe{{width:100%;height:760px;border:1px solid var(--line);border-radius:14px;
     <label><span class="lbl">Numero del certificato</span>
       <input id="numero" inputmode="numeric" autocomplete="off">
       <span class="aiuto">Si propone da solo il numero successivo all'ultimo creato da questo telefono o computer.</span></label>
+    <div class="campo"><span class="lbl">Chi crea il certificato</span>
+      <div class="scelte">
+        <label><input type="radio" name="chi" value=""> Elrohir</label>
+        <label><input type="radio" name="chi" value="m"> Madelyn</label>
+      </div><span class="aiuto">Sotto il sigillo comparirà la sua firma.</span></div>
     <label><span class="lbl">Pezzo venduto</span>
       <select id="pezzo"></select></label>
     <div class="pezzo-anteprima" id="anteprima" hidden></div>
@@ -213,19 +218,20 @@ $("pezzo").addEventListener("change", () => {{
   a.hidden = false; a.innerHTML = `<img src="../img/${{p.code}}.jpg" alt=""><div><b>${{p.name}}</b> <i>«${{p.gloss}}»</i><br><span class="aiuto">${{p.desc}}</span></div>`;
   if(CATS[p.cat].who === "coppia") document.querySelector('input[name=conf][value=s]').checked = true;
 }});
-$("anno").value = leggi("anno"); prossimo();
+function scegliChi(){{ const v = leggi("chi"); document.querySelector(`input[name=chi][value="${{v}}"]`).checked = true; }}
+$("anno").value = leggi("anno"); scegliChi(); prossimo();
 let ultimoLink = "", ultimo = null;
 $("modulo").addEventListener("submit", ev => {{
   ev.preventDefault();
   const q = {{ n: tre(($("numero").value || "").replace(/\\D/g, "") || "0"), c: $("pezzo").value, i: $("intestato").value.trim(),
     a: $("anno").value.trim(), m: $("mese").value.trim(), g: $("giorno").value.trim(),
-    k: document.querySelector("input[name=conf]:checked").value, d: $("dedica").value.trim(), f: $("firma").value.trim() }};
+    k: document.querySelector("input[name=conf]:checked").value, d: $("dedica").value.trim(), f: $("firma").value.trim(), s: document.querySelector("input[name=chi]:checked").value }};
   const manca = [!q.c && "il pezzo", !q.i && "il nome", !(q.a && q.m && q.g) && "la data"].filter(Boolean);
   if(manca.length){{ $("errore").textContent = "Manca " + manca.join(", ") + "."; return; }}
   $("errore").textContent = "";
   const par = new URLSearchParams(); for(const [k, v] of Object.entries(q)) if(v) par.set(k, v);
   ultimoLink = new URL("c.html#" + par.toString(), location.href).href; ultimo = q;
-  salva("ultimo", parseInt(q.n, 10)); salva("anno", q.a);
+  salva("ultimo", parseInt(q.n, 10)); salva("anno", q.a); salva("chi", q.s);
   $("link").textContent = ultimoLink; $("vista").src = ultimoLink; $("ok").textContent = "";
   $("modulo").hidden = true; $("esito").hidden = false; $("esito").scrollIntoView({{behavior: "smooth"}});
 }});
@@ -235,7 +241,7 @@ $("copia").addEventListener("click", async () => {{
 }});
 $("apri").addEventListener("click", () => window.open(ultimoLink, "_blank"));
 $("altro").addEventListener("click", () => {{
-  $("modulo").reset(); $("anno").value = leggi("anno"); prossimo(); $("anteprima").hidden = true;
+  $("modulo").reset(); $("anno").value = leggi("anno"); scegliChi(); prossimo(); $("anteprima").hidden = true;
   $("esito").hidden = true; $("modulo").hidden = false; scrollTo({{top: 0, behavior: "smooth"}});
 }});
 </script>
