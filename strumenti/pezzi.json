@@ -6293,6 +6293,68 @@
      "Oro"
     ]
    ]
+  },
+  {
+   "code": "A110",
+   "cat": "lei/Abiti",
+   "name": "Rusca",
+   "gloss": "fulva",
+   "photo": true,
+   "fabric": "Velo di cotone plissé color ruggine, corpetto drappeggiato allacciato al collo, fianchi scoperti, gonna amplissima con strascico",
+   "colorName": "Ruggine",
+   "trimName": "catenelle e fasce d'oro intrecciate al collo e sotto il seno",
+   "garment": "dress",
+   "color": "#9a3d22",
+   "trim": "#e4c47c",
+   "price": 3000,
+   "desc": "Ruggine plissé allacciato al collo, fasce d'oro e gonna amplissima.",
+   "excl": "Bracciali non inclusi",
+   "cls": "Tessuti · Abito lungo, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "A111",
+   "cat": "lei/Abiti",
+   "name": "Hyarmen",
+   "gloss": "il sud",
+   "photo": true,
+   "fabric": "Cotone color ruggine aderente allacciato al collo, scollo profondo, gonna di frange di cotone con strascico",
+   "colorName": "Ruggine",
+   "trimName": "pizzo di cotone e ricami in tinta con perline di cristallo",
+   "garment": "dress",
+   "color": "#8a3a1a",
+   "trim": "#c46a3a",
+   "price": 3200,
+   "desc": "Ruggine allacciato al collo, pizzo ricamato e cascata di frange.",
+   "excl": "Orecchini non inclusi",
+   "cls": "Tessuti · Abito lungo, taglia media",
+   "recipe": [
+    [
+     4,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ],
+    [
+     1,
+     "Cristallo"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
