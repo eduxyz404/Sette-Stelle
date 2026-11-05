@@ -6486,6 +6486,41 @@
      "Cotone"
     ]
    ]
+  },
+  {
+   "code": "O13",
+   "cat": "ognuno/Set da tavola",
+   "name": "Yavanna",
+   "gloss": "colei che dona i frutti",
+   "photo": true,
+   "metal": "Legno chiaro, cristallo e argento",
+   "finish": "legno tornito con le sue venature, coperchio di cristallo",
+   "price": 2000,
+   "unit": "per due",
+   "desc": "Per due: piatti di legno chiaro, ciotola col coperchio di cristallo, posate d'argento.",
+   "cls": "Oggettistica · Set da tavola per due, con tovaglioli e runner (Tessuti)",
+   "recipe": [
+    [
+     8,
+     "Legno"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     2,
+     "Argento"
+    ],
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
