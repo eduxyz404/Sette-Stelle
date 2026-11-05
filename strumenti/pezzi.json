@@ -6462,16 +6462,20 @@
    "name": "Isilya",
    "gloss": "il giorno della luna",
    "photo": true,
-   "metal": "Cristallo bianco perlato e argento",
-   "finish": "liscio, riflessi di perla",
+   "metal": "Cristallo bianco, madreperla e argento",
+   "finish": "liscio, velato di madreperla",
    "price": 2400,
    "unit": "per due",
-   "desc": "Per due: piatti bianchi dai riflessi di perla, calici e posate d'argento.",
+   "desc": "Per due: piatti bianchi velati di madreperla, calici e posate d'argento.",
    "cls": "Oggettistica · Set da tavola per due, con tovaglioli e runner (Tessuti)",
    "recipe": [
     [
      8,
      "Cristallo"
+    ],
+    [
+     1,
+     "Perla"
     ],
     [
      2,
