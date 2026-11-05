@@ -1,5 +1,9 @@
 # Bottega delle Sette Stelle · riassunto per riprendere il lavoro
 
+## Fasce di prezzo (5/11/2026, dopo il confronto con Latte di Neve e Cuore di Tenebra)
+- Abiti lei 1500–2800 · Cerimonia lei 3250–3500, lui 2500–2950 · Completi 1800–3000 · Toghe 2650–2850 · Mantelli 1500–2000.
+- Collane e orecchini lei 1300–2000. Anelli, bracciali, fedi, diademi e accessori invariati. Parure Silmë 6200 (circa −10%).
+
 ## Regole ufficiali di Lot (Utility per Botteghe, applicate il 5/11/2026)
 - Pietre/cristalli: 1× per colore; 2× se 2–4 pietre di quel colore; 3× se più di 4 (un solo colore); con più colori massimo 2× per colore. Brillantini/pavé: 1× per colore, 2× se l'oggetto ne è tutto coperto. Se c'è già una pietra grande dello stesso colore, +1× soltanto.
 - Colori solo per parti colorate non naturali (cotone tinto, ecc.). Ferro/acciaio bruniti = naturali, niente Colori. Solo ferro e acciaio si bruniscono: **argento brunito = +1× Colori** (scelta di Edu). Oro può essere giallo, bianco, rosa; il Rame è già rosato.
