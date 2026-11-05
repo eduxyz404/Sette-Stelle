@@ -967,7 +967,15 @@ const PHOTOS = {
   A30:"img/A30.jpg?v=20261102185558",
   A31:"img/A31.jpg?v=202611010016",
   A32:"img/A32.jpg?v=202611010016",
-  A33:"img/A33.jpg?v=20261102191645"
+  A33:"img/A33.jpg?v=20261102191645",
+  O01:"img/O01.jpg?v=20261105132000",
+  O02:"img/O02.jpg?v=20261105132000",
+  O03:"img/O03.jpg?v=20261105132000",
+  O04:"img/O04.jpg?v=20261105132000",
+  O05:"img/O05.jpg?v=20261105132000",
+  O06:"img/O06.jpg?v=20261105132000",
+  O07:"img/O07.jpg?v=20261105132000",
+  O08:"img/O08.jpg?v=20261105132000"
 };
 /* Foto di vetrina ingrandite sui pezzi piccoli (strumenti/vetrina.py): nella scheda al posto della foto intera */
 const VETRINA = {
@@ -1489,6 +1497,22 @@ const ITEMS = [
     cls:"Tessuti · Abito lungo, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Oro"]]},
   {code:"A111", cat:"lei/Abiti", name:"Hyarmen", gloss:"il sud", photo:true, fabric:"Cotone color ruggine aderente allacciato al collo, scollo profondo, gonna di frange di cotone con strascico", colorName:"Ruggine", trimName:"pizzo di cotone e ricami in tinta con perline di cristallo", garment:"dress", color:"#8a3a1a", trim:"#c46a3a", price:2300, desc:"Ruggine allacciato al collo, pizzo ricamato e cascata di frange.", excl:"Orecchini non inclusi",
     cls:"Tessuti · Abito lungo, taglia media", recipe:[[4,"Cotone"],[1,"Colori"],[1,"Cristallo"]]},
+  {code:"O01", cat:"ognuno/Bicchieri", name:"Telumendil", gloss:"amico del cielo, una costellazione", photo:true, metal:"Cristallo e oro", finish:"inciso a costellazioni, filo d'oro sul bordo", price:700, unit:"la coppia", desc:"Due bicchieri di cristallo incisi a costellazioni, bordo d'oro.",
+    cls:"Oggettistica · 2 Bicchieri", recipe:[[2,"Cristallo"],[1,"Oro"]]},
+  {code:"O02", cat:"ognuno/Bicchieri", name:"Soronúmë", gloss:"l'aquila d'occidente, una costellazione", photo:true, metal:"Cristallo e oro", finish:"inciso a costellazioni, filo d'oro sul bordo", price:1500, unit:"il set", desc:"Caraffa e due bicchieri di cristallo a costellazioni, filo d'oro.",
+    cls:"Oggettistica · Caraffa e 2 bicchieri", recipe:[[4,"Cristallo"],[1,"Oro"]]},
+  {code:"O03", cat:"ognuno/Bicchieri", name:"Helca", gloss:"di ghiaccio", photo:true, metal:"Cristallo", finish:"intagliato a punte e a diamante", price:600, unit:"la coppia", desc:"Due bicchieri di cristallo intagliati a punte, come il ghiaccio.",
+    cls:"Oggettistica · 2 Bicchieri", recipe:[[2,"Cristallo"]]},
+  {code:"O04", cat:"ognuno/Bicchieri", name:"Helcaraxë", gloss:"il ghiaccio stridente", photo:true, metal:"Cristallo", finish:"intagliato a punte e a diamante, tappo sfaccettato", price:1300, unit:"il set", desc:"Caraffa e due bicchieri di cristallo intagliato a punte e diamanti.",
+    cls:"Oggettistica · Caraffa e 2 bicchieri", recipe:[[4,"Cristallo"]]},
+  {code:"O05", cat:"ognuno/Bicchieri", name:"Helyanwë", gloss:"arcobaleno", photo:true, metal:"Cristallo iridescente", finish:"tondi, intagliati a spirale", price:700, unit:"la coppia", desc:"Due bicchieri tondi di cristallo iridescente, intagliati a spirale.",
+    cls:"Oggettistica · 2 Bicchieri", recipe:[[2,"Cristallo"]]},
+  {code:"O06", cat:"ognuno/Bicchieri", name:"Sílima", gloss:"la luce dei Silmaril", photo:true, metal:"Cristallo iridescente", finish:"intagliato a spirale, tappo a sfera", price:1500, unit:"il set", desc:"Caraffa panciuta e due bicchieri di cristallo iridescente a spirale.",
+    cls:"Oggettistica · Caraffa e 2 bicchieri", recipe:[[4,"Cristallo"]]},
+  {code:"O07", cat:"ognuno/Bicchieri", name:"Fírima", gloss:"mortale", photo:true, metal:"Argento, rame e cristallo nero", finish:"teschio dipinto avorio, rose rosse, tralci d'argento", price:900, desc:"Calice a teschio con rose rosse, tralci d'argento e cristalli neri.",
+    cls:"Oggettistica · Calice", recipe:[[2,"Argento"],[1,"Rame"],[2,"Cristallo"],[1,"Colori"]]},
+  {code:"O08", cat:"ognuno/Bicchieri", name:"Námo", gloss:"il giudice dei morti", photo:true, metal:"Argento, rame e cristallo nero", finish:"teschi dipinti avorio, rose rosse, tralci d'argento", price:2400, unit:"il set", desc:"Caraffa a teschio e due calici, con rose rosse e cristalli neri.",
+    cls:"Oggettistica · Caraffa e 2 calici", recipe:[[5,"Argento"],[1,"Rame"],[3,"Cristallo"],[1,"Colori"]]},
 ];
 const CAT_INFO = {
   /* kind: oreficeria o sartoria · who: per chi · show: il pezzo mostrato nella stanza · crop: [zoom, x, y] della foto nel banner */
@@ -1513,7 +1537,8 @@ const CAT_INFO = {
   "lui/Toghe":{kind:"abiti", who:"lui", name:"Toghe", slug:"lui-toghe", desc:"vesti lunghe da studioso, mago e astronomo", show:"Ilmen", crop:[2.2,"35%","25%"]},
   "lui/Tuniche":{kind:"abiti", who:"lui", name:"Tuniche", slug:"lui-tuniche", desc:"tuniche di cotone, semplici e da lavoro", show:"Fána", crop:[2.0,"50%","35%"]},
   "lui/Cerimonia":{kind:"abiti", who:"lui", name:"Cerimonia", slug:"lui-cerimonia", desc:"abiti da sposo e da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Tinwerína", crop:[2.2,"68%","45%"]},
-  "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture e borse di stoffa", show:"Menelya", crop:[2.4,"73%","42%"]}
+  "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture e borse di stoffa", show:"Menelya", crop:[2.4,"73%","42%"]},
+  "ognuno/Bicchieri":{kind:"oggetti", who:"ognuno", name:"Bicchieri", slug:"bicchieri", desc:"bicchieri, calici e caraffe di cristallo e d'argento", show:"Telumendil", crop:[1.05,"50%","55%"]}
 };
 const PARURE = {
   /* gioielli pensati insieme: ogni pezzo con parure:"chiave" mostra il rimando al trio */
@@ -1529,11 +1554,13 @@ const KINDS = {
 const WHOS = {
   lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"anelli, diademi, collane, orecchini, bracciali, abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
   lui:{label:"per lui", head:"Per lui", all:"Tutto per lui", allDesc:"gioielli e abiti per lui", photo:"interior", crop:[1.5,"30%","62%"]},
-  coppia:{label:"unioni", head:"Coppia", all:"Tutto per le unioni", allDesc:"fedi e fedine, da portare in due", photo:"interior", crop:[1.5,"30%","62%"]}
+  coppia:{label:"unioni", head:"Coppia", all:"Tutto per le unioni", allDesc:"fedi e fedine, da portare in due", photo:"interior", crop:[1.5,"30%","62%"]},
+  ognuno:{label:"per tutti", head:"Per tutti", all:"Tutta l'oggettistica", allDesc:"oggetti per la casa, la tavola e lo scrittoio", photo:"oggetti", crop:[1.05,"50%","55%"], solo:true}
 };
 const ALIASES = {"lei-sposa":"lei-cerimonia", "lui-fermagli":"lui-anelli", "lei-vesti":"lei-abiti", "lui-vesti":"lui-completi", tutti:"gioielli", anelli:"lui-anelli", collane:"lui-collane", bracciali:"lui-bracciali", orecchini:"lei-orecchini", diademi:"lei-diademi", coppie:"coppia", fedi:"coppia-fedi", fedine:"coppia-fedine"};
 const CATS = Object.keys(CAT_INFO);
 const kindOf = c => CAT_INFO[c].kind, whoOf = c => CAT_INFO[c].who;
+const noPer = w => w === "coppia" || w === "ognuno";
 const slug = c => CAT_INFO[c].slug;
 const nameOf = c => CAT_INFO[c].name;
 const catsWhere = (kind, who) => CATS.filter(c => (!kind || kindOf(c) === kind) && (!who || whoOf(c) === who));
@@ -1723,7 +1750,7 @@ function card(it){
       ${APEX}
       <div class="${winClass(it)}"${it.photo ? ` role="button" tabindex="0" data-zoom="${it.code}" aria-label="Ingrandisci ${it.name}"` : ""}>${it.badge?`<span class="badge">${it.badge}</span>`:""}${visualFor(it)}${wornBtn(it)}</div>
       <div class="info">
-        <div class="cat">${nameOf(c)}${who === "coppia" ? "" : " · per " + who}</div>
+        <div class="cat">${nameOf(c)}${noPer(who) ? "" : " · per " + who}</div>
         <h3>${it.name}</h3>
         <p class="gloss">«${it.gloss}»</p>
         <p class="code">Cod. ${it.code}</p>
@@ -1747,7 +1774,7 @@ function renderCat(view){
   let label, title, desc, photo, crop, groups, tabsFor = null, kindTabs = null, nav;
   if(cat){
     const K = KINDS[kindOf(cat)], W = WHOS[whoOf(cat)];
-    label = `${K.label} · ${W.label}`; title = CAT_INFO[cat].title || nameOf(cat) + (whoOf(cat) === "coppia" ? "" : " " + W.label);
+    label = whoOf(cat) === "ognuno" ? K.label : `${K.label} · ${W.label}`; title = CAT_INFO[cat].title || nameOf(cat) + (noPer(whoOf(cat)) ? "" : " " + W.label);
     desc = CAT_INFO[cat].desc; photo = K.photo; crop = CAT_INFO[cat].crop;
     groups = [[null, itemsOf([cat])]];
     const ring = catsWhere(null, whoOf(cat));
@@ -1755,7 +1782,8 @@ function renderCat(view){
       tabsFor = whoOf(cat);
       const i = ring.indexOf(cat), prev = ring[(i + ring.length - 1) % ring.length], next = ring[(i + 1) % ring.length];
       nav = `<a href="#${slug(prev)}"><small>‹ stanza precedente</small><span>${nameOf(prev)}</span></a><a href="#${slug(next)}"><small>stanza successiva ›</small><span>${nameOf(next)}</span></a>`;
-    } else nav = `<a href="#stanze"><small>‹ torna alle</small><span>Stanze della bottega</span></a><a href="#gioielli"><small>vai a ›</small><span>Monili</span></a>`;
+    } else nav = kindOf(cat) === "oggetti" ? `<a href="#oggetti"><small>‹ torna a</small><span>Oggettistica</span></a><a href="#stanze"><small>vai alle ›</small><span>Stanze della bottega</span></a>`
+      : `<a href="#stanze"><small>‹ torna alle</small><span>Stanze della bottega</span></a><a href="#gioielli"><small>vai a ›</small><span>Monili</span></a>`;
   } else if(view.startsWith("parure-")){
     const key = view.slice(7), P = PARURE[key], K = KINDS.gioielli, list = ITEMS.filter(i => i.parure === key);
     label = `${K.label} · ${P.tipo || "parure"}`; title = P.name; desc = P.desc; photo = K.photo; crop = K.crop;
@@ -1787,23 +1815,26 @@ function renderCat(view){
   document.getElementById("roomnav").innerHTML = nav;
   const tabs = document.getElementById("tabs");
   if(tabsFor){
-    const jw = catsWhere("gioielli", tabsFor), ab = catsWhere("abiti", tabsFor);
     const tab = (href, name) => `<a class="tab" href="#${href}" ${href === view ? 'aria-current="page"' : ""}>${name}</a>`;
-    tabs.innerHTML = tab(tabsFor, "Tutto") + (jw.length ? `<span class="tab-sep">✦</span>` : "") + jw.map(c => tab(slug(c), nameOf(c))).join("")
-      + (ab.length ? `<span class="tab-sep">✦</span>` + ab.map(c => tab(slug(c), nameOf(c))).join("") : "");
+    tabs.innerHTML = (WHOS[tabsFor].solo ? tab("oggetti", "Tutto") : tab(tabsFor, "Tutto")) + Object.keys(KINDS).map(k => catsWhere(k, tabsFor)).filter(l => l.length)
+      .map(l => `<span class="tab-sep">✦</span>` + l.map(c => tab(slug(c), nameOf(c))).join("")).join("");
     tabs.hidden = false;
   } else if(kindTabs){
     const tab = (href, name) => `<a class="tab" href="#${href}">${name}</a>`;
     tabs.innerHTML = `<a class="tab" href="#${kindTabs}" aria-current="page">Tutto</a>` + Object.keys(WHOS).map(w => {
       const cs = catsWhere(kindTabs, w); if(!cs.length) return "";
-      return `<span class="tab-sep tab-who">✦ ${WHOS[w].label}</span>` + cs.map(c => tab(slug(c), nameOf(c))).join("");
+      return (WHOS[w].solo ? `<span class="tab-sep">✦</span>` : `<span class="tab-sep tab-who">✦ ${WHOS[w].label}</span>`) + cs.map(c => tab(slug(c), nameOf(c))).join("");
     }).join("");
     tabs.hidden = false;
   } else { tabs.innerHTML = ""; tabs.hidden = true; }
+  const KP = KINDS[view] || (WHOS[view] && WHOS[view].solo && KINDS.oggetti);
+  const presto = KP && KP.stanze ? KP.stanze.filter(([n]) => !CATS.some(c => kindOf(c) === "oggetti" && nameOf(c) === n && itemsOf([c]).length)) : [];
+  const prestoHTML = presto.length ? `<div class="rooms four presto">${presto.map(([n, d]) =>
+        `<div class="room">${APEX}<h3>${n}</h3><p>${d}</p><span class="count">presto in vetrina</span></div>`).join("")}</div>` : "";
   document.getElementById("grid").innerHTML = total ? groups.map(([head, list]) =>
     (head && groups.length > 1 ? `<h3 class="grid-head">${head}</h3>` : "") + sorted(list).map(card).join("")).join("")
-    : KINDS[view] && KINDS[view].stanze ? `<p class="empty">${KINDS[view].presto}</p><div class="rooms four presto">${KINDS[view].stanze.map(([n, d]) =>
-        `<div class="room">${APEX}<h3>${n}</h3><p>${d}</p><span class="count">presto in vetrina</span></div>`).join("")}</div>`
+      + (prestoHTML ? `<h3 class="grid-head">Presto in vetrina</h3>` + prestoHTML : "")
+    : prestoHTML ? `<p class="empty">${KP.presto}</p>` + prestoHTML
     : `<p class="empty">Nessun pezzo in questa vetrina, per ora.</p>`;
 }
 
@@ -1914,7 +1945,7 @@ function noteText(){
   const list = note.codes.map(c => ITEMS.find(i => i.code === c));
   const tot = list.reduce((n, it) => n + it.price, 0);
   return ["Ordine per la Bottega delle Sette Stelle (bottegai: Elrohir e Nériva / Madelyn)", "",
-    ...list.map(it => `• ${it.code} · ${it.name} (${nameOf(it.cat)}${whoOf(it.cat) === "coppia" ? "" : " per " + whoOf(it.cat)}) · ${fmt(it.price)} monete`),
+    ...list.map(it => `• ${it.code} · ${it.name} (${nameOf(it.cat)}${noPer(whoOf(it.cat)) ? "" : " per " + whoOf(it.cat)}) · ${fmt(it.price)} monete`),
     "", "Totale: " + fmt(tot) + " monete",
     note.name ? "Intestato a: " + note.name : "",
     "Confezione: " + ({ bottega: "della bottega", sposi: "degli sposi" }[note.conf] || "nessuna"),
@@ -1927,7 +1958,7 @@ function renderNote(){
   fab.setAttribute("aria-label", `Apri lo scrigno: ${list.length} ${list.length === 1 ? "pezzo" : "pezzi"}`);
   fab.classList.toggle("empty", !list.length);
   if(list.length && !tipSeen) hideTip(); fab.classList.toggle("tip-off", tipSeen);
-  document.getElementById("note-list").innerHTML = list.map(it => `<li><span class="np-code">${it.code}</span><span class="np-name">${it.name}<small>${nameOf(it.cat)}${whoOf(it.cat) === "coppia" ? "" : " per " + whoOf(it.cat)}</small></span><span class="np-price">${fmt(it.price)}</span><button type="button" class="np-del" data-del="${it.code}" aria-label="Togli ${it.name}">✕</button></li>`).join("");
+  document.getElementById("note-list").innerHTML = list.map(it => `<li><span class="np-code">${it.code}</span><span class="np-name">${it.name}<small>${nameOf(it.cat)}${noPer(whoOf(it.cat)) ? "" : " per " + whoOf(it.cat)}</small></span><span class="np-price">${fmt(it.price)}</span><button type="button" class="np-del" data-del="${it.code}" aria-label="Togli ${it.name}">✕</button></li>`).join("");
   document.getElementById("note-empty").hidden = list.length > 0;
   const tot = list.reduce((n, it) => n + it.price, 0);
   document.getElementById("note-total").innerHTML = list.length ? `<span>Totale</span><b>${COIN}${fmt(tot)} monete</b>` : "";

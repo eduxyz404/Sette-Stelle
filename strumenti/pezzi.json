@@ -6183,6 +6183,189 @@
      "Cristallo"
     ]
    ]
+  },
+  {
+   "code": "O01",
+   "cat": "ognuno/Bicchieri",
+   "name": "Telumendil",
+   "gloss": "amico del cielo, una costellazione",
+   "photo": true,
+   "metal": "Cristallo e oro",
+   "finish": "inciso a costellazioni, filo d'oro sul bordo",
+   "price": 700,
+   "unit": "la coppia",
+   "desc": "Due bicchieri di cristallo incisi a costellazioni, bordo d'oro.",
+   "cls": "Oggettistica · 2 Bicchieri",
+   "recipe": [
+    [
+     2,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "O02",
+   "cat": "ognuno/Bicchieri",
+   "name": "Soronúmë",
+   "gloss": "l'aquila d'occidente, una costellazione",
+   "photo": true,
+   "metal": "Cristallo e oro",
+   "finish": "inciso a costellazioni, filo d'oro sul bordo",
+   "price": 1500,
+   "unit": "il set",
+   "desc": "Caraffa e due bicchieri di cristallo a costellazioni, filo d'oro.",
+   "cls": "Oggettistica · Caraffa e 2 bicchieri",
+   "recipe": [
+    [
+     4,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Oro"
+    ]
+   ]
+  },
+  {
+   "code": "O03",
+   "cat": "ognuno/Bicchieri",
+   "name": "Helca",
+   "gloss": "di ghiaccio",
+   "photo": true,
+   "metal": "Cristallo",
+   "finish": "intagliato a punte e a diamante",
+   "price": 600,
+   "unit": "la coppia",
+   "desc": "Due bicchieri di cristallo intagliati a punte, come il ghiaccio.",
+   "cls": "Oggettistica · 2 Bicchieri",
+   "recipe": [
+    [
+     2,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "O04",
+   "cat": "ognuno/Bicchieri",
+   "name": "Helcaraxë",
+   "gloss": "il ghiaccio stridente",
+   "photo": true,
+   "metal": "Cristallo",
+   "finish": "intagliato a punte e a diamante, tappo sfaccettato",
+   "price": 1300,
+   "unit": "il set",
+   "desc": "Caraffa e due bicchieri di cristallo intagliato a punte e diamanti.",
+   "cls": "Oggettistica · Caraffa e 2 bicchieri",
+   "recipe": [
+    [
+     4,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "O05",
+   "cat": "ognuno/Bicchieri",
+   "name": "Helyanwë",
+   "gloss": "arcobaleno",
+   "photo": true,
+   "metal": "Cristallo iridescente",
+   "finish": "tondi, intagliati a spirale",
+   "price": 700,
+   "unit": "la coppia",
+   "desc": "Due bicchieri tondi di cristallo iridescente, intagliati a spirale.",
+   "cls": "Oggettistica · 2 Bicchieri",
+   "recipe": [
+    [
+     2,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "O06",
+   "cat": "ognuno/Bicchieri",
+   "name": "Sílima",
+   "gloss": "la luce dei Silmaril",
+   "photo": true,
+   "metal": "Cristallo iridescente",
+   "finish": "intagliato a spirale, tappo a sfera",
+   "price": 1500,
+   "unit": "il set",
+   "desc": "Caraffa panciuta e due bicchieri di cristallo iridescente a spirale.",
+   "cls": "Oggettistica · Caraffa e 2 bicchieri",
+   "recipe": [
+    [
+     4,
+     "Cristallo"
+    ]
+   ]
+  },
+  {
+   "code": "O07",
+   "cat": "ognuno/Bicchieri",
+   "name": "Fírima",
+   "gloss": "mortale",
+   "photo": true,
+   "metal": "Argento, rame e cristallo nero",
+   "finish": "teschio dipinto avorio, rose rosse, tralci d'argento",
+   "price": 900,
+   "desc": "Calice a teschio con rose rosse, tralci d'argento e cristalli neri.",
+   "cls": "Oggettistica · Calice",
+   "recipe": [
+    [
+     2,
+     "Argento"
+    ],
+    [
+     1,
+     "Rame"
+    ],
+    [
+     2,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
+  },
+  {
+   "code": "O08",
+   "cat": "ognuno/Bicchieri",
+   "name": "Námo",
+   "gloss": "il giudice dei morti",
+   "photo": true,
+   "metal": "Argento, rame e cristallo nero",
+   "finish": "teschi dipinti avorio, rose rosse, tralci d'argento",
+   "price": 2400,
+   "unit": "il set",
+   "desc": "Caraffa a teschio e due calici, con rose rosse e cristalli neri.",
+   "cls": "Oggettistica · Caraffa e 2 calici",
+   "recipe": [
+    [
+     5,
+     "Argento"
+    ],
+    [
+     1,
+     "Rame"
+    ],
+    [
+     3,
+     "Cristallo"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
@@ -6470,6 +6653,19 @@
     2.4,
     "73%",
     "42%"
+   ]
+  },
+  "ognuno/Bicchieri": {
+   "kind": "oggetti",
+   "who": "ognuno",
+   "name": "Bicchieri",
+   "slug": "bicchieri",
+   "desc": "bicchieri, calici e caraffe di cristallo e d'argento",
+   "show": "Telumendil",
+   "crop": [
+    1.05,
+    "50%",
+    "55%"
    ]
   }
  }

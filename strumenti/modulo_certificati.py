@@ -18,7 +18,7 @@ FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=C
 # Solo i dati che servono al certificato, dentro la pagina (niente file esterni da caricare)
 CAMPI = ('code', 'cat', 'name', 'gloss', 'photo', 'metal', 'finish', 'gem', 'cut', 'ct', 'fabric', 'colorName', 'trimName', 'desc', 'excl', 'cls', 'recipe')
 PEZZI = {p['code']: {k: p[k] for k in CAMPI if k in p} for p in dati['ITEMS']}
-CATS = {k: {'name': v['name'], 'who': v['who']} for k, v in dati['CAT_INFO'].items()}
+CATS = {k: {'name': v['name'], 'who': v['who'], 'kind': v['kind']} for k, v in dati['CAT_INFO'].items()}
 DATA_JS = 'const PEZZI = ' + json.dumps(PEZZI, ensure_ascii=False, separators=(',', ':')) + ';\nconst CATS = ' + \
           json.dumps(CATS, ensure_ascii=False, separators=(',', ':')) + ';'
 
@@ -29,10 +29,10 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&l
 /* Dati del certificato -> HTML (stessa struttura di strumenti/certificato.py) */
 function certificatoHTML(q){
   const p = PEZZI[q.c]; if(!p) return null;
-  const info = CATS[p.cat], per = {lei:"per lei", lui:"per lui", coppia:"· unioni"}[info.who];
+  const info = CATS[p.cat], per = {lei:"per lei", lui:"per lui", coppia:"· unioni", ognuno:"· oggettistica"}[info.who];
   const nozze = q.k === "s", conf = q.k === "c" || nozze, ded = (q.d || "").trim(), firma = (q.f || "").trim();
   const det = p.fabric ? [["Tessuto", p.fabric], ["Colore", p.colorName], ["Ricami", p.trimName]]
-    : [["Metallo", p.metal]].concat(p.gem ? [["Pietra", `${p.gem}, taglio ${p.cut}`]].concat(p.ct ? [["Peso", p.ct]] : []) : [["Lavorazione", p.finish]]);
+    : [[info.kind === "oggetti" ? "Materiali" : "Metallo", p.metal]].concat(p.gem ? [["Pietra", `${p.gem}, taglio ${p.cut}`]].concat(p.ct ? [["Peso", p.ct]] : []) : [["Lavorazione", p.finish]]);
   const ric = p.recipe.concat(conf ? [[1, "Confezione"]] : []);
   const et = `N° ${q.n}`, chi = q.s === "m" ? ["Nériva (Madelyn)", "la bottegaia", "madelyn"] : ["Elrohir", "il bottegaio", "elrohir"];
   const extra = [];
@@ -209,7 +209,7 @@ const tre = n => String(n).padStart(3, "0");
 function prossimo(){{ const u = parseInt(leggi("ultimo"), 10); $("numero").value = tre(isNaN(u) ? 1 : u + 1); }}
 // Elenco dei pezzi, raggruppati per stanza
 const gruppi = {{}};
-for(const p of Object.values(PEZZI)){{ const c = CATS[p.cat]; const g = c.name + " · " + (c.who === "coppia" ? "coppia" : "per " + c.who); (gruppi[g] = gruppi[g] || []).push(p); }}
+for(const p of Object.values(PEZZI)){{ const c = CATS[p.cat]; const g = c.name + " · " + (c.who === "coppia" ? "coppia" : c.who === "ognuno" ? "oggettistica" : "per " + c.who); (gruppi[g] = gruppi[g] || []).push(p); }}
 $("pezzo").innerHTML = '<option value="">— scegli il pezzo —</option>' + Object.keys(gruppi).sort().map(g =>
   `<optgroup label="${{g}}">` + gruppi[g].map(p => `<option value="${{p.code}}">${{p.code}} · ${{p.name}}</option>`).join("") + "</optgroup>").join("");
 $("pezzo").addEventListener("change", () => {{
