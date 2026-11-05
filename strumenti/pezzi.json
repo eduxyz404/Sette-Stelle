@@ -43,6 +43,10 @@
     [
      1,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -89,6 +93,10 @@
     [
      1,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -143,6 +151,10 @@
     [
      3,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -166,6 +178,10 @@
     [
      3,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -189,6 +205,10 @@
     [
      3,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -217,12 +237,8 @@
      "Argento"
     ],
     [
-     1,
+     2,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -283,10 +299,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -312,10 +324,6 @@
     [
      1,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -339,12 +347,8 @@
      "Rame"
     ],
     [
-     3,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -376,10 +380,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -410,10 +410,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -442,12 +438,8 @@
      "Oro"
     ],
     [
-     4,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -482,10 +474,6 @@
     [
      1,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -516,10 +504,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -548,12 +532,8 @@
      "Rame"
     ],
     [
-     4,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -584,10 +564,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -619,10 +595,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -651,12 +623,8 @@
      "Rame"
     ],
     [
-     4,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -687,10 +655,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -716,10 +680,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -750,10 +710,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -785,10 +741,6 @@
     [
      5,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -811,7 +763,7 @@
    "price": 1800,
    "unit": "i tre bracciali",
    "desc": "Tre bracciali d'oro e di rame con sole, luna e stelle incise.",
-   "cls": "Monili · 3 Bracciali (accorpo)",
+   "cls": "Monili · 3 Bracciali",
    "recipe": [
     [
      2,
@@ -822,7 +774,7 @@
      "Rame"
     ],
     [
-     4,
+     3,
      "Cristallo"
     ]
    ]
@@ -857,7 +809,7 @@
      "Rame"
     ],
     [
-     5,
+     3,
      "Cristallo"
     ]
    ]
@@ -919,7 +871,7 @@
      "Rame"
     ],
     [
-     5,
+     3,
      "Cristallo"
     ]
    ]
@@ -974,12 +926,8 @@
      "Rame"
     ],
     [
-     6,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1009,7 +957,7 @@
      "Rame"
     ],
     [
-     4,
+     3,
      "Cristallo"
     ]
    ]
@@ -1044,12 +992,8 @@
      "Oro"
     ],
     [
-     2,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1083,12 +1027,8 @@
      "Ferro"
     ],
     [
-     5,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1122,12 +1062,8 @@
      "Ferro"
     ],
     [
-     4,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1154,10 +1090,6 @@
     [
      6,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1221,12 +1153,8 @@
      "Oro"
     ],
     [
-     6,
+     5,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1262,10 +1190,6 @@
     [
      2,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1296,10 +1220,6 @@
     [
      1,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1323,7 +1243,7 @@
      "Oro"
     ],
     [
-     5,
+     3,
      "Cristallo"
     ]
    ]
@@ -1355,10 +1275,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1382,12 +1298,8 @@
      "Oro"
     ],
     [
-     6,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1413,10 +1325,6 @@
     [
      5,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1442,10 +1350,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1463,14 +1367,14 @@
    "price": 2800,
    "unit": "il set",
    "desc": "Bracciali da braccio d'oro: fasce di soli, catenelle e cerchi sottili.",
-   "cls": "Monili · Bracciali da braccio (accorpo)",
+   "cls": "Monili · Bracciali da braccio",
    "recipe": [
     [
      5,
      "Oro"
     ],
     [
-     4,
+     3,
      "Cristallo"
     ]
    ]
@@ -1495,12 +1399,8 @@
      "Rame"
     ],
     [
-     6,
+     2,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1529,7 +1429,7 @@
      "Oro"
     ],
     [
-     6,
+     2,
      "Cristallo"
     ]
    ]
@@ -1562,10 +1462,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1590,12 +1486,8 @@
      "Oro"
     ],
     [
-     6,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1620,12 +1512,8 @@
      "Oro"
     ],
     [
-     6,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1655,7 +1543,7 @@
      "Oro"
     ],
     [
-     6,
+     3,
      "Cristallo"
     ]
    ]
@@ -1683,10 +1571,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1737,12 +1621,8 @@
      "Oro"
     ],
     [
-     6,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1772,7 +1652,7 @@
      "Oro"
     ],
     [
-     5,
+     2,
      "Cristallo"
     ]
    ]
@@ -1805,10 +1685,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1835,10 +1711,6 @@
     [
      4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1893,7 +1765,7 @@
      "Oro"
     ],
     [
-     6,
+     3,
      "Cristallo"
     ]
    ]
@@ -1925,10 +1797,6 @@
     [
      1,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -1957,7 +1825,7 @@
      "Rame"
     ],
     [
-     5,
+     3,
      "Cristallo"
     ]
    ]
@@ -2012,6 +1880,10 @@
     [
      3,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -2041,12 +1913,8 @@
      "Argento"
     ],
     [
-     1,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2132,19 +2000,15 @@
    "price": 1500,
    "unit": "il tris",
    "desc": "Tre bracciali di cristalli tinti, con inserti d'oro.",
-   "cls": "Monili · 3 Bracciali (accorpo)",
+   "cls": "Monili · 3 Bracciali",
    "recipe": [
     [
      3,
      "Oro"
     ],
     [
-     3,
+     6,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2302,7 +2166,7 @@
      "Cotone"
     ],
     [
-     1,
+     2,
      "Cristallo"
     ],
     [
@@ -2366,6 +2230,10 @@
     [
      3,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -2384,6 +2252,10 @@
     [
      1,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -2409,10 +2281,6 @@
     [
      1,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2431,6 +2299,10 @@
     [
      1,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -2455,12 +2327,8 @@
      "Argento"
     ],
     [
-     3,
+     2,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2492,10 +2360,6 @@
     [
      1,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2528,10 +2392,6 @@
     [
      2,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2563,10 +2423,6 @@
     [
      1,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2591,7 +2447,7 @@
      "Oro"
     ],
     [
-     7,
+     3,
      "Cristallo"
     ]
    ]
@@ -2618,12 +2474,8 @@
      "Oro"
     ],
     [
-     7,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2649,12 +2501,8 @@
      "Argento"
     ],
     [
-     7,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2680,12 +2528,8 @@
      "Argento"
     ],
     [
-     6,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2711,12 +2555,8 @@
      "Oro"
     ],
     [
-     7,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2744,10 +2584,6 @@
     [
      3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2773,12 +2609,8 @@
      "Argento"
     ],
     [
-     5,
+     4,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2804,12 +2636,8 @@
      "Argento"
     ],
     [
-     4,
+     3,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2835,12 +2663,8 @@
      "Oro"
     ],
     [
-     3,
+     2,
      "Cristallo"
-    ],
-    [
-     1,
-     "Colori"
     ]
    ]
   },
@@ -2865,7 +2689,7 @@
      "Oro"
     ],
     [
-     7,
+     3,
      "Cristallo"
     ]
    ]
@@ -2885,6 +2709,10 @@
     [
      2,
      "Argento"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -2938,7 +2766,7 @@
      "Oro"
     ],
     [
-     3,
+     2,
      "Cristallo"
     ]
    ]
@@ -2969,7 +2797,7 @@
      "Argento"
     ],
     [
-     5,
+     3,
      "Cristallo"
     ]
    ]
@@ -3079,7 +2907,7 @@
      "Oro"
     ],
     [
-     3,
+     2,
      "Cristallo"
     ]
    ]
@@ -3114,7 +2942,7 @@
      "Oro"
     ],
     [
-     9,
+     3,
      "Cristallo"
     ]
    ]
@@ -4882,7 +4710,7 @@
    "trim": "#e4c47c",
    "price": 2600,
    "desc": "Completo da viaggio: mantello, tunica, fascia e borse.",
-   "cls": "Tessuti · Mantello, completo e borse (accorpo), taglia media",
+   "cls": "Tessuti · Mantello, completo e borse, taglia media",
    "recipe": [
     [
      5,
@@ -5072,7 +4900,7 @@
    "price": 2750,
    "desc": "Mantello e tunica verde bosco, bordati d'oro.",
    "excl": "Stivali non inclusi",
-   "cls": "Tessuti · Mantello e tunica (accorpo), taglia media",
+   "cls": "Tessuti · Mantello e tunica, taglia media",
    "recipe": [
     [
      4,
@@ -5107,7 +4935,7 @@
    "price": 2750,
    "desc": "Mantello nero foderato di cremisi, disco d'argento.",
    "excl": "Bracciali e stivali non inclusi",
-   "cls": "Tessuti · Mantello e completo (accorpo), taglia media",
+   "cls": "Tessuti · Mantello e completo, taglia media",
    "recipe": [
     [
      4,
@@ -5138,7 +4966,7 @@
    "price": 2700,
    "desc": "Mantello e giacca verde bosco a trama di rami.",
    "excl": "Bracciali, gambali e stivali non inclusi",
-   "cls": "Tessuti · Mantello e completo (accorpo), taglia media",
+   "cls": "Tessuti · Mantello e completo, taglia media",
    "recipe": [
     [
      4,

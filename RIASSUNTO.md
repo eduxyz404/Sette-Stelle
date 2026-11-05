@@ -1,5 +1,12 @@
 # Bottega delle Sette Stelle · riassunto per riprendere il lavoro
 
+## Regole ufficiali di Lot (Utility per Botteghe, applicate il 5/11/2026)
+- Pietre/cristalli: 1× per colore; 2× se 2–4 pietre di quel colore; 3× se più di 4 (un solo colore); con più colori massimo 2× per colore. Brillantini/pavé: 1× per colore, 2× se l'oggetto ne è tutto coperto. Se c'è già una pietra grande dello stesso colore, +1× soltanto.
+- Colori solo per parti colorate non naturali (cotone tinto, ecc.). Ferro/acciaio bruniti = naturali, niente Colori. Solo ferro e acciaio si bruniscono: **argento brunito = +1× Colori** (scelta di Edu). Oro può essere giallo, bianco, rosa; il Rame è già rosato.
+- Metallizzato: 1× Colori + metallo; glitter: 1× Colori + 1× Cristallo.
+- Confezione: 1×, facoltativa, obbligatoria se citata nel certificato.
+- **Accorpo solo tra classi diverse** (es. mantello + completo sono entrambi Tessuti → niente accorpo). Balla = 5 cotone; Lingotto = 10 pepite.
+
 ## Chi e cosa
 - Utente: **chiamarla «Edu»** (non «Erika»). **Rispondere sempre in italiano.** Nelle interfacce in inglese (GitHub ecc.) tradurre anche i pulsanti.
 - Sito di una bottega per il gioco di ruolo **ExtremeLot**: *Bottega delle Sette Stelle* (nome elfico **Valacirca**), bottegaio **Elrohir** (il suo nome non è il nome della bottega). Aperta a tutte le razze.
@@ -18,7 +25,7 @@
 ## Ricette (regole ExtremeLot, semplici)
 - Solo **cotone** (niente seta, niente lana), **1× Colori** per le tinte, **un metallo** (Oro o Argento) per ricami/fibbie.
 - **Metallo rosa = Rame** (mai «oro rosato»): in scheda e in ricetta.
-- **Niente pietre preziose**: al loro posto **Cristallo** (+ Colori se è colorato). Motivo: Edu non ha diamanti né altre gemme tra i materiali (a Lot esistono e le altre botteghe le usano, a prezzi alti). Il cliente può portare la sua pietra («Su commissione»).
+- **Niente pietre preziose**: al loro posto **Cristallo** (il cristallo può essere di qualsiasi colore: **niente Colori** per i cristalli tinti). Motivo: Edu non ha diamanti né altre gemme tra i materiali (a Lot esistono e le altre botteghe le usano, a prezzi alti). Il cliente può portare la sua pietra («Su commissione»).
 - Esempi: abito da cerimonia 4× Cotone · 1× Colori · 1× Oro/Argento; abito semplice 3× Cotone · 1× Colori; anello senza pietra 1× Argento; bracciale 2× metallo + 1× altro (senza pietra 3× Argento); collana 2×+1×.
 
 ## Stanze (cat → stanza)
