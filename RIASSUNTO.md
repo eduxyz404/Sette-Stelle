@@ -18,7 +18,7 @@
 ## Ricette (regole ExtremeLot, semplici)
 - Solo **cotone** (niente seta, niente lana), **1× Colori** per le tinte, **un metallo** (Oro o Argento) per ricami/fibbie.
 - **Metallo rosa = Rame** (mai «oro rosato»): in scheda e in ricetta.
-- **Niente pietre preziose**: al loro posto **Cristallo** (+ Colori se è colorato).
+- **Niente pietre preziose**: al loro posto **Cristallo** (+ Colori se è colorato). Motivo: Edu non ha diamanti né altre gemme tra i materiali (a Lot esistono e le altre botteghe le usano, a prezzi alti). Il cliente può portare la sua pietra («Su commissione»).
 - Esempi: abito da cerimonia 4× Cotone · 1× Colori · 1× Oro/Argento; abito semplice 3× Cotone · 1× Colori; anello senza pietra 1× Argento; bracciale 2× metallo + 1× altro (senza pietra 3× Argento); collana 2×+1×.
 
 ## Stanze (cat → stanza)
