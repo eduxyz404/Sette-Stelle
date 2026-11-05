@@ -87,7 +87,7 @@ def pagina(numero, pezzo, info, intestato, anno, mese, giorno, confezione, esemp
     extra = []
     if confezione and not dono and nozze:
         extra.append("""<div class="box">
-      <img src="../img/confezione-nozze.jpg" alt="La confezione degli sposi: scrigno avorio con fregi e stelle d'oro, interno di velluto blu notte, nastro avorio e blu con sigillo d'oro e cartellino «Agli Sposi · Due cammini, una stessa luce»">
+      <img src="../img/confezione-nozze.jpg?v=20261105" alt="La confezione degli sposi: scatola avorio con fregi e stelle d'oro e la scritta «Bottega delle Sette Stelle», nastro avorio e blu con sigillo d'oro e cartellino «Agli Sposi · Due cammini, una stessa luce»">
       <span class="lbl">Confezione degli sposi</span>
     </div>""")
     elif confezione and not dono:
