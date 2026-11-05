@@ -1,7 +1,7 @@
 # Bottega delle Sette Stelle · riassunto per riprendere il lavoro
 
 ## Fasce di prezzo (5/11/2026, dopo il confronto con Latte di Neve e Cuore di Tenebra)
-- Abiti lei 1500–2800 · Cerimonia lei 3250–3500, lui 2500–2950 · Completi 1800–3000 · Toghe 2650–2850 · Mantelli 1500–2000.
+- Abiti lei 1500–2800 · Cerimonia lei 3300–3500, lui 2500–3000 · Completi 1800–3000 · Toghe 2700–2900 · solo cifre tonde (centinaia, niente 50) · Mantelli 1500–2000.
 - Collane e orecchini lei 1300–2000. Anelli, bracciali, fedi, diademi e accessori invariati. Parure Silmë 6200 (circa −10%).
 
 ## Regole ufficiali di Lot (Utility per Botteghe, applicate il 5/11/2026)
