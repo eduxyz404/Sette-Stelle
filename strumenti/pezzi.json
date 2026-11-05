@@ -6397,6 +6397,37 @@
      "Colori"
     ]
    ]
+  },
+  {
+   "code": "O10",
+   "cat": "ognuno/Set da tavola",
+   "name": "Helluin",
+   "gloss": "la stella azzurra, Sirio",
+   "photo": true,
+   "metal": "Cristallo azzurro e oro",
+   "finish": "bordi d'oro ondulati, stelline d'oro",
+   "price": 2800,
+   "unit": "per due",
+   "desc": "Per due: piatti azzurri con stelline d'oro, calici, posate d'oro e zuppiera.",
+   "cls": "Oggettistica · Set da tavola per due, con tovaglioli, runner e sottopiatti intrecciati (Tessuti)",
+   "recipe": [
+    [
+     8,
+     "Cristallo"
+    ],
+    [
+     3,
+     "Oro"
+    ],
+    [
+     3,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
