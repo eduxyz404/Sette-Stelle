@@ -6366,6 +6366,37 @@
      "Colori"
     ]
    ]
+  },
+  {
+   "code": "O09",
+   "cat": "ognuno/Set da tavola",
+   "name": "Menelluin",
+   "gloss": "il cielo blu",
+   "photo": true,
+   "metal": "Cristallo blu notte e oro",
+   "finish": "cielo stellato dipinto, bordi d'oro",
+   "price": 3000,
+   "unit": "per due",
+   "desc": "Per due: piatti stellati, sottopiatti e posate d'oro, calici e zuppiera.",
+   "cls": "Oggettistica · Set da tavola per due, con tovaglioli e runner (Tessuti)",
+   "recipe": [
+    [
+     8,
+     "Cristallo"
+    ],
+    [
+     4,
+     "Oro"
+    ],
+    [
+     2,
+     "Cotone"
+    ],
+    [
+     1,
+     "Colori"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
@@ -6662,6 +6693,19 @@
    "slug": "bicchieri",
    "desc": "bicchieri, calici e caraffe di cristallo e d'argento",
    "show": "Telumendil",
+   "crop": [
+    1.05,
+    "50%",
+    "55%"
+   ]
+  },
+  "ognuno/Set da tavola": {
+   "kind": "oggetti",
+   "who": "ognuno",
+   "name": "Set da tavola",
+   "slug": "set-da-tavola",
+   "desc": "piatti, posate e candelieri per la tavola delle feste",
+   "show": "Menelluin",
    "crop": [
     1.05,
     "50%",

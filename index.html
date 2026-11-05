@@ -975,7 +975,8 @@ const PHOTOS = {
   O05:"img/O05.jpg?v=20261105132000",
   O06:"img/O06.jpg?v=20261105132000",
   O07:"img/O07.jpg?v=20261105132000",
-  O08:"img/O08.jpg?v=20261105132000"
+  O08:"img/O08.jpg?v=20261105132000",
+  O09:"img/O09.jpg?v=20261105133500"
 };
 /* Foto di vetrina ingrandite sui pezzi piccoli (strumenti/vetrina.py): nella scheda al posto della foto intera */
 const VETRINA = {
@@ -1513,6 +1514,8 @@ const ITEMS = [
     cls:"Oggettistica · Calice", recipe:[[2,"Argento"],[1,"Rame"],[2,"Cristallo"],[1,"Colori"]]},
   {code:"O08", cat:"ognuno/Bicchieri", name:"Námo", gloss:"il giudice dei morti", photo:true, metal:"Argento, rame e cristallo nero", finish:"teschi dipinti avorio, rose rosse, tralci d'argento", price:2400, unit:"il set", desc:"Caraffa a teschio e due calici, con rose rosse e cristalli neri.",
     cls:"Oggettistica · Caraffa e 2 calici", recipe:[[5,"Argento"],[1,"Rame"],[3,"Cristallo"],[1,"Colori"]]},
+  {code:"O09", cat:"ognuno/Set da tavola", name:"Menelluin", gloss:"il cielo blu", photo:true, metal:"Cristallo blu notte e oro", finish:"cielo stellato dipinto, bordi d'oro", price:3000, unit:"per due", desc:"Per due: piatti stellati, sottopiatti e posate d'oro, calici e zuppiera.",
+    cls:"Oggettistica · Set da tavola per due, con tovaglioli e runner (Tessuti)", recipe:[[8,"Cristallo"],[4,"Oro"],[2,"Cotone"],[1,"Colori"]]},
 ];
 const CAT_INFO = {
   /* kind: oreficeria o sartoria · who: per chi · show: il pezzo mostrato nella stanza · crop: [zoom, x, y] della foto nel banner */
@@ -1538,7 +1541,8 @@ const CAT_INFO = {
   "lui/Tuniche":{kind:"abiti", who:"lui", name:"Tuniche", slug:"lui-tuniche", desc:"tuniche di cotone, semplici e da lavoro", show:"Fána", crop:[2.0,"50%","35%"]},
   "lui/Cerimonia":{kind:"abiti", who:"lui", name:"Cerimonia", slug:"lui-cerimonia", desc:"abiti da sposo e da cerimonia a temi: stelle, mare, bosco, aria, notte d'oriente, fuoco, tenebra", show:"Tinwerína", crop:[2.2,"68%","45%"]},
   "lui/Accessori":{kind:"abiti", who:"lui", name:"Accessori", slug:"lui-accessori", desc:"cinture e borse di stoffa", show:"Menelya", crop:[2.4,"73%","42%"]},
-  "ognuno/Bicchieri":{kind:"oggetti", who:"ognuno", name:"Bicchieri", slug:"bicchieri", desc:"bicchieri, calici e caraffe di cristallo e d'argento", show:"Telumendil", crop:[1.05,"50%","55%"]}
+  "ognuno/Bicchieri":{kind:"oggetti", who:"ognuno", name:"Bicchieri", slug:"bicchieri", desc:"bicchieri, calici e caraffe di cristallo e d'argento", show:"Telumendil", crop:[1.05,"50%","55%"]},
+  "ognuno/Set da tavola":{kind:"oggetti", who:"ognuno", name:"Set da tavola", slug:"set-da-tavola", desc:"piatti, posate e candelieri per la tavola delle feste", show:"Menelluin", crop:[1.05,"50%","55%"]}
 };
 const PARURE = {
   /* gioielli pensati insieme: ogni pezzo con parure:"chiave" mostra il rimando al trio */
