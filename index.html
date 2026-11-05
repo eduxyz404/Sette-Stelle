@@ -370,7 +370,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .window.photo .badge{z-index:3}
 .info .excl{margin:0;font-size:.95rem;color:var(--gold);font-style:italic}
 .zoom{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(5,8,18,.92);padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
-.zoom img{max-width:100%;max-height:100%;border:1px solid rgba(230,194,122,.6);border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.9)}
+.zoom img{display:block;width:auto;height:auto;max-width:min(100%,calc(100vw - 32px));max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px);object-fit:contain;border:1px solid rgba(230,194,122,.6);border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.9)}
 .zoom-close{position:absolute;top:max(14px,env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px));font:inherit;font-size:1.2rem;width:44px;height:44px;border-radius:50%;
   border:1px solid var(--gold);background:rgba(10,15,31,.9);color:var(--gold-bright);cursor:pointer}
 @media (prefers-reduced-motion: reduce){.window.photo img.ph{transition:none}.item:hover .window.photo img.ph{transform:none}}
