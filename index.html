@@ -119,6 +119,9 @@ h1 em{font-style:italic;font-weight:500;color:var(--gold-bright)}
   border-radius:999px 999px 4px 4px / 150px 150px 4px 4px;box-shadow:0 0 0 5px var(--bg), 0 0 0 6px var(--line);
   padding:12px 12px 18px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;min-width:0;transition:box-shadow .25s, transform .25s}
 .room .window{width:100%}
+.rooms.presto{grid-column:1/-1}
+.rooms.presto .room{border-radius:120px 120px 4px 4px / 70px 70px 4px 4px;padding:38px 16px 22px;justify-content:flex-start}
+.rooms.presto .apex{position:static;transform:none;width:34px;height:34px;color:var(--gold);margin-bottom:4px}
 .room h3{font-family:var(--display);font-weight:500;font-size:clamp(1.5rem,3vw,1.9rem);margin:8px 0 0;line-height:1}
 .room p{margin:0;color:var(--muted);font-style:italic;font-size:.98rem}
 .room .count{font-family:var(--label);font-size:.72rem;letter-spacing:.18em;color:var(--silver)}
@@ -301,6 +304,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .rooms,.rooms.four{display:flex;flex-wrap:wrap;justify-content:center;gap:30px}
 .rooms > .room{flex:0 1 calc((100% - 60px) / 3)}
 @media (max-width:760px){.rooms,.rooms.four{gap:22px}.rooms > .room{flex-basis:calc((100% - 22px) / 2)}}
+@media (min-width:1000px){.rooms.presto{gap:20px}.rooms.presto > .room{flex-basis:calc((100% - 80px) / 5)}.rooms.presto .room p{font-size:.92rem}}
 .together{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;border-top:1px solid var(--line);padding-top:28px}
 .together div{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 .together a{font-family:var(--title);font-size:1.05rem;color:var(--fg);text-decoration:none;border:1px solid var(--gold);border-radius:999px;padding:8px 20px;box-shadow:inset 0 0 0 3px var(--bg), inset 0 0 0 4px var(--line)}
@@ -651,7 +655,7 @@ details.recipe ul{justify-content:center}
           <div class="hc-text">
             <span class="label">l'oggettistica</span>
             <h3>Oggettistica</h3>
-            <p>Scrigni, specchi, vasi, lanterne e oggetti da scrittoio, per la casa e per il viaggio.</p>
+            <p>Bicchieri, set da tavola, diari, set da scrittura e da pittura, scacchiere e fermacapelli.</p>
             <span class="count" data-count="oggetti"></span>
             <span class="go">entra ›</span>
           </div>
@@ -1520,7 +1524,7 @@ const PARURE = {
 const KINDS = {
   gioielli:{label:"oreficeria", title:"Monili", all:"Monili", allDesc:"anelli, collane, bracciali, orecchini, diademi, cerchi, fedi e fedine dell'oreficeria", one:"gioiello", many:"gioielli", photo:"interior", crop:[1.05,"45%","50%"]},
   abiti:{label:"sartoria", title:"Tessuti", all:"Tessuti", allDesc:"abiti, mantelli, completi, toghe e accessori della sartoria", one:"capo", many:"capi", photo:"tailor", crop:[1.3,"50%","45%"]},
-  oggetti:{label:"oggettistica", title:"Oggettistica", all:"Oggettistica", allDesc:"scrigni, specchi, vasi, lanterne e oggetti da scrittoio", one:"oggetto", many:"oggetti", photo:"oggetti", crop:[1.05,"50%","55%"], presto:"Le vetrine dell'oggettistica si aprono presto: scrigni, specchi, vasi, lanterne e oggetti da scrittoio."}
+  oggetti:{label:"oggettistica", title:"Oggettistica", all:"Oggettistica", allDesc:"bicchieri, set da tavola, diari, set da scrittura e da pittura, scacchiere e fermacapelli", one:"oggetto", many:"oggetti", photo:"oggetti", crop:[1.05,"50%","55%"], presto:"Le vetrine dell'oggettistica si aprono presto. Ecco le stanze che stiamo allestendo:", stanze:[["Bicchieri","calici e bicchieri di cristallo, con fili d'oro e d'argento"],["Set da tavola","piatti, posate e candelieri per la tavola delle feste"],["Diari","diari e quaderni rilegati in stoffa, con fermagli di metallo"],["Set da scrittura","calamai, sigilli e ceralacca, pronti per la prossima lettera"],["Pennini","pennini d'oro, d'argento e di rame, con il loro portapenna"],["Pennelli","pennelli fini e larghi, con ghiere di metallo"],["Set da pittura","tavolozze, pennelli e colori in cassette da viaggio"],["Set da scultura","scalpelli, mirette e stecche riposti in astuccio"],["Fermacapelli","forcine, pettinini e fermagli d'oro e d'argento"],["Scacchiera","scacchiere con i loro pezzi, per le sere lunghe"]]}
 };
 const WHOS = {
   lei:{label:"per lei", head:"Per lei", all:"Tutto per lei", allDesc:"anelli, diademi, collane, orecchini, bracciali, abiti, completi, mantelli e abiti da cerimonia per lei", photo:"tailor", crop:[1.6,"18%","42%"]},
@@ -1798,7 +1802,9 @@ function renderCat(view){
   } else { tabs.innerHTML = ""; tabs.hidden = true; }
   document.getElementById("grid").innerHTML = total ? groups.map(([head, list]) =>
     (head && groups.length > 1 ? `<h3 class="grid-head">${head}</h3>` : "") + sorted(list).map(card).join("")).join("")
-    : `<p class="empty">${KINDS[view] && KINDS[view].presto || "Nessun pezzo in questa vetrina, per ora."}</p>`;
+    : KINDS[view] && KINDS[view].stanze ? `<p class="empty">${KINDS[view].presto}</p><div class="rooms four presto">${KINDS[view].stanze.map(([n, d]) =>
+        `<div class="room">${APEX}<h3>${n}</h3><p>${d}</p><span class="count">presto in vetrina</span></div>`).join("")}</div>`
+    : `<p class="empty">Nessun pezzo in questa vetrina, per ora.</p>`;
 }
 
 /* Menu delle stanze: per lei, per lui, coppie e viste d'insieme */
