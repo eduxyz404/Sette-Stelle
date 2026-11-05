@@ -6455,6 +6455,33 @@
      "Cotone"
     ]
    ]
+  },
+  {
+   "code": "O12",
+   "cat": "ognuno/Set da tavola",
+   "name": "Isilya",
+   "gloss": "il giorno della luna",
+   "photo": true,
+   "metal": "Cristallo bianco perlato e argento",
+   "finish": "liscio, riflessi di perla",
+   "price": 2400,
+   "unit": "per due",
+   "desc": "Per due: piatti bianchi dai riflessi di perla, calici e posate d'argento.",
+   "cls": "Oggettistica · Set da tavola per due, con tovaglioli e runner (Tessuti)",
+   "recipe": [
+    [
+     8,
+     "Cristallo"
+    ],
+    [
+     2,
+     "Argento"
+    ],
+    [
+     2,
+     "Cotone"
+    ]
+   ]
   }
  ],
  "CAT_INFO": {
