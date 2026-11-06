@@ -167,5 +167,81 @@
  "Avorio": {
   "compra": 10,
   "vendi": 9
+ },
+ "Cassiterite": {
+  "compra": 35,
+  "vendi": 33
+ },
+ "Ematite": {
+  "compra": 35,
+  "vendi": 33
+ },
+ "Cristallo di Anatasio": {
+  "compra": 35,
+  "vendi": 33
+ },
+ "Cristallo di Calcite": {
+  "compra": 35,
+  "vendi": 33
+ },
+ "Rosa di LOT": {
+  "compra": 35,
+  "vendi": 33
+ },
+ "Cristallo di Leucite": {
+  "compra": 180,
+  "vendi": 167
+ },
+ "Calcopirite": {
+  "compra": 35,
+  "vendi": 33
+ },
+ "Zucchero": {
+  "compra": 196,
+  "vendi": 182
+ },
+ "Cacao": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Colori": {
+  "compra": 14,
+  "vendi": 13
+ },
+ "Corallo": {
+  "compra": 128,
+  "vendi": 119
+ },
+ "Cordame": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Cristallo": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Frumento": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Frutta": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Gesso": {
+  "compra": 6,
+  "vendi": 6
+ },
+ "Pergamena": {
+  "compra": 25,
+  "vendi": 23
+ },
+ "Perla": {
+  "compra": 40,
+  "vendi": 37
+ },
+ "Seta": {
+  "compra": 54,
+  "vendi": 50
  }
 }
