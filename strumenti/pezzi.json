@@ -6576,10 +6576,10 @@
    "name": "Rúmil",
    "gloss": "il primo che scrisse le lettere",
    "photo": true,
-   "metal": "Legno scuro, oro antico, ferro e piuma",
+   "metal": "Legno scuro, oricalco, ferro e piuma",
    "finish": "vassoio intagliato a intrecci, calamaio con coperchio",
-   "price": 1500,
-   "desc": "Vassoio intagliato, calamaio d'oro antico, piuma, coltellino e pergamene.",
+   "price": 1400,
+   "desc": "Vassoio intagliato, calamaio d'oricalco, piuma, coltellino e pergamene.",
    "cls": "Oggettistica · Set da scrittura, con panno (Tessuti)",
    "recipe": [
     [
@@ -6588,7 +6588,7 @@
     ],
     [
      2,
-     "Oro"
+     "Oricalco"
     ],
     [
      1,

@@ -1,6 +1,171 @@
-{"_nota": "Prezzi di mercato dei materiali a Lot (compra/vendi), dati da Edu il 6/11/2026. null = non ancora noto.",
- "Oro": {"compra": null, "vendi": 76}, "Argento": {"compra": null, "vendi": 46}, "Rame": {"compra": 18, "vendi": 17},
- "Ferro": {"compra": 22, "vendi": 20}, "Piombo": {"compra": 27, "vendi": 25}, "Legno": {"compra": 14, "vendi": 13},
- "Ceppi di Legno": {"compra": null, "vendi": 139}, "Pelle": {"compra": 123, "vendi": 114}, "Sabbia": {"compra": 6, "vendi": 6},
- "Vetro": {"compra": 60, "vendi": 56}, "Cera": {"compra": 6, "vendi": 6}, "Cotone": {"compra": null, "vendi": 60},
- "Lana": {"compra": 25, "vendi": 23}, "Resina di Mirra": {"compra": 87, "vendi": 81}, "Intaglia Zucche": {"compra": 18, "vendi": 17}}
+{
+ "_nota": "Prezzi di mercato dei materiali a Lot (compra/vendi), dati da Edu il 6/11/2026. null = non ancora noto.",
+ "Oro": {
+  "compra": null,
+  "vendi": 76
+ },
+ "Argento": {
+  "compra": null,
+  "vendi": 46
+ },
+ "Rame": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Ferro": {
+  "compra": 22,
+  "vendi": 20
+ },
+ "Piombo": {
+  "compra": 27,
+  "vendi": 25
+ },
+ "Legno": {
+  "compra": 14,
+  "vendi": 13
+ },
+ "Ceppi di Legno": {
+  "compra": null,
+  "vendi": 139
+ },
+ "Pelle": {
+  "compra": 123,
+  "vendi": 114
+ },
+ "Sabbia": {
+  "compra": 6,
+  "vendi": 6
+ },
+ "Vetro": {
+  "compra": 60,
+  "vendi": 56
+ },
+ "Cera": {
+  "compra": 6,
+  "vendi": 6
+ },
+ "Cotone": {
+  "compra": null,
+  "vendi": 60
+ },
+ "Lana": {
+  "compra": 25,
+  "vendi": 23
+ },
+ "Resina di Mirra": {
+  "compra": 87,
+  "vendi": 81
+ },
+ "Intaglia Zucche": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Pietra": {
+  "compra": 10,
+  "vendi": 9
+ },
+ "Pietra da Costruzione grande": {
+  "compra": 32,
+  "vendi": 30
+ },
+ "Carbone": {
+  "compra": 19,
+  "vendi": 18
+ },
+ "Zolfo": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Salnitro": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Pelliccia": {
+  "compra": 80,
+  "vendi": 74
+ },
+ "Sale": {
+  "compra": 11,
+  "vendi": 10
+ },
+ "Acciaio": {
+  "compra": null,
+  "vendi": 42
+ },
+ "Oricalco": {
+  "compra": null,
+  "vendi": 46
+ },
+ "Ceramica": {
+  "compra": null,
+  "vendi": 26
+ },
+ "Stagno": {
+  "compra": null,
+  "vendi": 17
+ },
+ "Bronzo": {
+  "compra": null,
+  "vendi": 37
+ },
+ "Lingotto d'Oro": {
+  "compra": null,
+  "vendi": 638
+ },
+ "Lingotto d'Argento": {
+  "compra": 544,
+  "vendi": 506
+ },
+ "Lingotto di Rame": {
+  "compra": null,
+  "vendi": 187
+ },
+ "Lingotto di Ferro": {
+  "compra": 237,
+  "vendi": 220
+ },
+ "Lingotto di Piombo": {
+  "compra": 296,
+  "vendi": 275
+ },
+ "Lingotto di Acciaio": {
+  "compra": null,
+  "vendi": 462
+ },
+ "Argilla": {
+  "compra": null,
+  "vendi": 6
+ },
+ "Olio": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Balla di Lana": {
+  "compra": 137,
+  "vendi": 127
+ },
+ "Balla di Cotone": {
+  "compra": 355,
+  "vendi": 330
+ },
+ "Balla di Seta": {
+  "compra": 296,
+  "vendi": 275
+ },
+ "Confezione": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Confezione Rossa": {
+  "compra": 18,
+  "vendi": 17
+ },
+ "Osso": {
+  "compra": 6,
+  "vendi": 6
+ },
+ "Avorio": {
+  "compra": 10,
+  "vendi": 9
+ }
+}

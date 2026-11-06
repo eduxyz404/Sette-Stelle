@@ -5,7 +5,7 @@
 - Collane e orecchini lei 1300–2000. Anelli, bracciali, fedi, diademi e accessori invariati. Parure Silmë 6200 (circa −10%).
 
 ## Vademecum per Bottegai (aggiornamento 22/03/2026, letto il 6/11/2026)
-- Ogni oggetto ha una **ricetta basica** proposta dal sistema; gli ingredienti in più vanno negli slot delle materie aggiuntive. «Si usa solo ciò che esiste a Lot»: niente leghe (no ottone, no peltro) → l'ottone si scrive «oro antico».
+- Ogni oggetto ha una **ricetta basica** proposta dal sistema; gli ingredienti in più vanno negli slot delle materie aggiuntive. «Si usa solo ciò che esiste a Lot»: niente leghe inventate (no ottone, no peltro), ma esistono **Oricalco** (l'«ottone» di Lot, rame + piombo), Bronzo, Stagno, Acciaio: il metallo color ottone è Oricalco. Prezzi di mercato dei materiali in `strumenti/materiali.json`.
 - Effetti: metallizzato = 1× Colori + 1× metallo; **perlato/madreperla = 1× Colori + 1× Perla**; brillantezza = +1× Cristallo.
 - Materiali che esistono e che possiamo usare: Legno, Ceppi di Legno, Vetro, Cristallo, Pergamena (non «Carta»), Cera, Cordame, Osso, Avorio, Ceramica (citata), Piombo, Carbone, Gesso, Perla.
 - Oggettistica, ricette basiche utili: Utensile casa/cucina (bicchiere, calice, ciotola…) 1x · Oggetto casa/cucina (bottiglia, vaso…) 2x · Servizio Tavola 5x 1x · Set scrittura 1x 1x 1x · Diario 6× Pergamena 1x · Taccuino 3× Pergamena 1x · Fermacapelli 1x · Pennino 1x · Pennello 1x · Set Pittura 2x 1x · Scacchiera 3x 1x · Specchio 1× Vetro 1× Piombo · Scrigno 1x · Scatola 2x · Lumen 1x 1x 1x.
