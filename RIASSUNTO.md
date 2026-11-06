@@ -4,6 +4,15 @@
 - Abiti lei 1500–2800 · Cerimonia lei 3300–3500, lui 2500–3000 · Completi 1800–3000 · Toghe 2700–2900 · solo cifre tonde (centinaia, niente 50) · Mantelli 1500–2000.
 - Collane e orecchini lei 1300–2000. Anelli, bracciali, fedi, diademi e accessori invariati. Parure Silmë 6200 (circa −10%).
 
+## Vademecum per Bottegai (aggiornamento 22/03/2026, letto il 6/11/2026)
+- Ogni oggetto ha una **ricetta basica** proposta dal sistema; gli ingredienti in più vanno negli slot delle materie aggiuntive. «Si usa solo ciò che esiste a Lot»: niente leghe (no ottone, no peltro) → l'ottone si scrive «oro antico».
+- Effetti: metallizzato = 1× Colori + 1× metallo; **perlato/madreperla = 1× Colori + 1× Perla**; brillantezza = +1× Cristallo.
+- Materiali che esistono e che possiamo usare: Legno, Ceppi di Legno, Vetro, Cristallo, Pergamena (non «Carta»), Cera, Cordame, Osso, Avorio, Ceramica (citata), Piombo, Carbone, Gesso, Perla.
+- Oggettistica, ricette basiche utili: Utensile casa/cucina (bicchiere, calice, ciotola…) 1x · Oggetto casa/cucina (bottiglia, vaso…) 2x · Servizio Tavola 5x 1x · Set scrittura 1x 1x 1x · Diario 6× Pergamena 1x · Taccuino 3× Pergamena 1x · Fermacapelli 1x · Pennino 1x · Pennello 1x · Set Pittura 2x 1x · Scacchiera 3x 1x · Specchio 1× Vetro 1× Piombo · Scrigno 1x · Scatola 2x · Lumen 1x 1x 1x.
+- Tessuti: taglia media (1–2 m) = basica + 1× tessuto; grande = +2×. Bottoni/decori evidenti si aggiungono.
+- Monili basiche: Anello 1x · Bracciale 2x 1x · Collana 2x 1x · Diadema 2x · Orecchini 2x · Parure 3x · Pendente 1x 1x.
+- Classi: bottega privata parte con 3; dopo 12 mesi di attività +2, dopo altri 12 +1 (massimo 6). 1 cambio di classe all'anno gratis (poi 5000 monete). Catalogo con https (GitHub Pages va bene). Consegna entro 15 giorni.
+
 ## Regole ufficiali di Lot (Utility per Botteghe, applicate il 5/11/2026)
 - Pietre/cristalli: 1× per colore; 2× se 2–4 pietre di quel colore; 3× se più di 4 (un solo colore); con più colori massimo 2× per colore. Brillantini/pavé: 1× per colore, 2× se l'oggetto ne è tutto coperto. Se c'è già una pietra grande dello stesso colore, +1× soltanto.
 - Colori solo per parti colorate non naturali (cotone tinto, ecc.). Ferro/acciaio bruniti = naturali, niente Colori. Solo ferro e acciaio si bruniscono: **argento brunito = +1× Colori** (scelta di Edu). Oro può essere giallo, bianco, rosa; il Rame è già rosato.

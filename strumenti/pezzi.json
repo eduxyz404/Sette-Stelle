@@ -6478,6 +6478,10 @@
      "Perla"
     ],
     [
+     1,
+     "Colori"
+    ],
+    [
      2,
      "Argento"
     ],
@@ -6531,7 +6535,7 @@
    "metal": "Legno scuro, oro antico, ferro e piuma",
    "finish": "vassoio intagliato a intrecci, calamaio con coperchio",
    "price": 1500,
-   "desc": "Vassoio intagliato, calamaio d'oro antico, piuma, coltellino e carta.",
+   "desc": "Vassoio intagliato, calamaio d'oro antico, piuma, coltellino e pergamene.",
    "cls": "Oggettistica · Set da scrittura, con panno (Tessuti)",
    "recipe": [
     [
@@ -6552,7 +6556,7 @@
     ],
     [
      2,
-     "Carta"
+     "Pergamena"
     ],
     [
      1,
@@ -6573,7 +6577,7 @@
    "metal": "Legno chiaro, cristallo, ferro e piuma",
    "finish": "vassoio scavato, calamaio di cristallo sfaccettato",
    "price": 1200,
-   "desc": "Vassoio di legno chiaro, calamaio di cristallo, piuma bianca e carta.",
+   "desc": "Vassoio di legno chiaro, calamaio di cristallo, piuma bianca e pergamene.",
    "cls": "Oggettistica · Set da scrittura, con panno (Tessuti)",
    "recipe": [
     [
@@ -6594,7 +6598,7 @@
     ],
     [
      2,
-     "Carta"
+     "Pergamena"
     ],
     [
      1,
