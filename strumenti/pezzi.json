@@ -6284,6 +6284,14 @@
     [
      2,
      "Cristallo"
+    ],
+    [
+     1,
+     "Perla"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -6303,6 +6311,14 @@
     [
      4,
      "Cristallo"
+    ],
+    [
+     1,
+     "Perla"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -6312,12 +6328,16 @@
    "name": "Fírima",
    "gloss": "mortale",
    "photo": true,
-   "metal": "Argento, rame e cristallo nero",
-   "finish": "teschio dipinto avorio, rose rosse, tralci d'argento",
+   "metal": "Osso, argento, rame e cristallo nero",
+   "finish": "teschio intagliato in osso raccolto da animali già morti, rose rosse, tralci d'argento",
    "price": 900,
-   "desc": "Calice a teschio con rose rosse, tralci d'argento e cristalli neri.",
+   "desc": "Calice a teschio d'osso con rose rosse, tralci d'argento e cristalli neri.",
    "cls": "Oggettistica · Calice",
    "recipe": [
+    [
+     1,
+     "Osso"
+    ],
     [
      2,
      "Argento"
@@ -6342,13 +6362,17 @@
    "name": "Námo",
    "gloss": "il giudice dei morti",
    "photo": true,
-   "metal": "Argento, rame e cristallo nero",
-   "finish": "teschi dipinti avorio, rose rosse, tralci d'argento",
+   "metal": "Osso, argento, rame e cristallo nero",
+   "finish": "teschi intagliati in osso raccolto da animali già morti, rose rosse, tralci d'argento",
    "price": 2400,
    "unit": "il set",
-   "desc": "Caraffa a teschio e due calici, con rose rosse e cristalli neri.",
+   "desc": "Caraffa a teschio e due calici d'osso, con rose rosse e cristalli neri.",
    "cls": "Oggettistica · Caraffa e 2 calici",
    "recipe": [
+    [
+     3,
+     "Osso"
+    ],
     [
      5,
      "Argento"
@@ -6373,7 +6397,7 @@
    "name": "Menelluin",
    "gloss": "il cielo blu",
    "photo": true,
-   "metal": "Cristallo blu notte e oro",
+   "metal": "Ceramica blu notte, cristallo e oro",
    "finish": "cielo stellato dipinto, bordi d'oro",
    "price": 3000,
    "unit": "per due",
@@ -6381,7 +6405,11 @@
    "cls": "Oggettistica · Set da tavola per due, con tovaglioli e runner (Tessuti)",
    "recipe": [
     [
-     8,
+     6,
+     "Ceramica"
+    ],
+    [
+     2,
      "Cristallo"
     ],
     [
@@ -6404,7 +6432,7 @@
    "name": "Helluin",
    "gloss": "la stella azzurra, Sirio",
    "photo": true,
-   "metal": "Cristallo azzurro e oro",
+   "metal": "Ceramica azzurra, cristallo e oro",
    "finish": "bordi d'oro ondulati, stelline d'oro",
    "price": 2800,
    "unit": "per due",
@@ -6412,7 +6440,11 @@
    "cls": "Oggettistica · Set da tavola per due, con tovaglioli, runner e sottopiatti intrecciati (Tessuti)",
    "recipe": [
     [
-     8,
+     6,
+     "Ceramica"
+    ],
+    [
+     2,
      "Cristallo"
     ],
     [
@@ -6435,7 +6467,7 @@
    "name": "Uinen",
    "gloss": "la signora dei mari",
    "photo": true,
-   "metal": "Cristallo verde acqua e oro",
+   "metal": "Ceramica verde acqua, cristallo e oro",
    "finish": "sfumato come il mare, bordi d'oro, conchiglia sul coperchio",
    "price": 2800,
    "unit": "per due",
@@ -6443,7 +6475,11 @@
    "cls": "Oggettistica · Set da tavola per due, con tovaglioli, runner e sottopiatti intrecciati (Tessuti)",
    "recipe": [
     [
-     8,
+     6,
+     "Ceramica"
+    ],
+    [
+     2,
      "Cristallo"
     ],
     [
@@ -6453,6 +6489,10 @@
     [
      3,
      "Cotone"
+    ],
+    [
+     1,
+     "Colori"
     ]
    ]
   },
@@ -6462,7 +6502,7 @@
    "name": "Isilya",
    "gloss": "il giorno della luna",
    "photo": true,
-   "metal": "Cristallo bianco, madreperla e argento",
+   "metal": "Ceramica bianca, madreperla, cristallo e argento",
    "finish": "liscio, velato di madreperla",
    "price": 2400,
    "unit": "per due",
@@ -6470,7 +6510,11 @@
    "cls": "Oggettistica · Set da tavola per due, con tovaglioli e runner (Tessuti)",
    "recipe": [
     [
-     8,
+     6,
+     "Ceramica"
+    ],
+    [
+     2,
      "Cristallo"
     ],
     [
